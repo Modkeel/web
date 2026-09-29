@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modkeel</title>
+<meta name="description" content="Modkeel keeps modded Minecraft steady: world backups when your mods change, the mod that crashed your game, and a one-click fix.">
+<meta property="og:title" content="Modkeel">
+<meta property="og:description" content="World backups, crash diagnosis and one-click fixes for modded Minecraft.">
+<meta property="og:image" content="https://modkeel.com/img/icon.png">
+<meta name="theme-color" content="#111923">
+<link rel="icon" type="image/png" href="img/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<style>
+:root {
+  --night: #0c131d;
+  --deep: #111923;
+  --ink: #1b2634;
+  --line: #2a3a4f;
+  --text: #e8edf3;
+  --muted: #9aabbf;
+  --keel: #f08a3c;
+  --keel-dark: #b25a22;
+  --keel-light: #ffb86e;
+  --water: #2c68a0;
+  --foam: #8cc8eb;
+  --plank: #b88752;
+  --px: 4px;
+}
+* { box-sizing: border-box; }
+html { background: var(--night); color: var(--text); scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--night);
+  font: 400 1.0625rem/1.6 "Bricolage Grotesque", Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+.pixel { font-family: "Silkscreen", monospace; letter-spacing: .04em; text-transform: uppercase; }
+.wrap { width: min(1120px, 100% - 32px); margin-inline: auto; }
+
+/* nav */
+nav {
+  position: absolute; inset: 0 0 auto; z-index: 3;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px max(16px, calc((100% - 1120px) / 2));
+}
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.25rem; text-decoration: none; }
+.brand img { width: 32px; height: 32px; image-rendering: pixelated; }
+nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: .95rem; }
+nav ul a { text-decoration: none; color: var(--muted); transition: color .15s; }
+nav ul a:hover { color: var(--text); }
+
+/* hero */
+.hero { position: relative; min-height: min(760px, 100svh); overflow: hidden; background: var(--night); isolation: isolate; }
+#sea { position: absolute; left: 0; top: 0; image-rendering: pixelated; z-index: -2; }
+.hero::after {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(12,19,29,.78) 0%, rgba(12,19,29,.35) 42%, rgba(12,19,29,0) 62%),
+    linear-gradient(0deg, var(--night) 0%, rgba(12,19,29,0) 18%);
+}
+.hero .wrap { padding-top: clamp(120px, 18vh, 180px); padding-bottom: 96px; }
+.tag { display: inline-block; font-size: .72rem; color: var(--keel-light); border: 2px solid var(--keel-dark); padding: 4px 10px; background: rgba(12,19,29,.6); }
+h1 {
+  font-weight: 800; font-size: clamp(2.6rem, 6.4vw, 4.8rem); line-height: .98;
+  letter-spacing: -.03em; margin: 22px 0 18px; max-width: 11ch;
+  text-shadow: 0 2px 24px rgba(0,0,0,.4);
+}
+h1 em { font-style: normal; color: var(--keel); }
+.lede { font-size: clamp(1.05rem, 1.6vw, 1.25rem); color: #c9d4e0; max-width: 34ch; margin: 0 0 32px; }
+.actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+
+/* pixel buttons: square corners, a hard shadow that the button presses into */
+.btn {
+  --edge: var(--keel-dark);
+  display: inline-flex; align-items: center; gap: 10px; padding: 13px 20px;
+  font: 600 1rem/1 "Bricolage Grotesque", sans-serif; text-decoration: none;
+  background: var(--keel); color: #1d0f05; border: 0;
+  box-shadow: inset -4px -4px 0 var(--edge), inset 4px 4px 0 var(--keel-light), 0 4px 0 #3b1d09;
+  transition: transform .08s steps(2), box-shadow .08s steps(2);
+}
+.btn:hover { filter: brightness(1.06); }
+.btn:active { transform: translateY(4px); box-shadow: inset -4px -4px 0 var(--edge), inset 4px 4px 0 var(--keel-light), 0 0 0 #3b1d09; }
+.btn.ghost {
+  --edge: #0a1119; background: rgba(27,38,52,.8); color: var(--text);
+  box-shadow: inset -4px -4px 0 var(--edge), inset 4px 4px 0 #34475e, 0 4px 0 #05080c;
+}
+.btn.ghost:active { box-shadow: inset -4px -4px 0 var(--edge), inset 4px 4px 0 #34475e, 0 0 0 #05080c; }
+.btn svg { width: 18px; height: 18px; shape-rendering: crispEdges; }
+.loaders { margin-top: 26px; font-size: .7rem; color: var(--muted); }
+
+/* sections */
+section { padding: clamp(72px, 10vw, 128px) 0; }
+.kicker { font-size: .75rem; color: var(--keel); margin: 0 0 14px; }
+h2 { font-weight: 800; font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 20px; max-width: 18ch; }
+p { margin: 0 0 16px; }
+.muted { color: var(--muted); }
+
+.companion { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 80px); align-items: start; }
+.shots { display: grid; gap: 14px; }
+.frame {
+  display: grid; border: 4px solid #05080c; outline: 4px solid var(--line);
+  box-shadow: 0 24px 60px rgba(0,0,0,.5), 0 0 80px rgba(240,138,60,.08); background: var(--ink);
+}
+.frame img { grid-area: 1 / 1; opacity: 0; transition: opacity .3s steps(3); }
+.frame img.on { opacity: 1; }
+.tabs { display: flex; gap: 10px; flex-wrap: wrap; }
+.tabs button {
+  font: .72rem/1 "Silkscreen", monospace; text-transform: uppercase; letter-spacing: .04em;
+  color: var(--muted); background: transparent; border: 2px solid var(--line); padding: 8px 12px; cursor: pointer;
+}
+.tabs button[aria-selected="true"] { color: var(--keel-light); border-color: var(--keel-dark); background: rgba(240,138,60,.08); }
+.caption { color: var(--muted); font-size: .92rem; margin: 0; min-height: 3em; }
+.features { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 22px; }
+.features li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; }
+.features b { display: block; font-weight: 600; font-size: 1.08rem; margin-bottom: 2px; }
+.features span { color: var(--muted); }
+.num { font-size: .8rem; color: var(--keel); border: 2px solid var(--line); height: 36px; display: grid; place-items: center; }
+
+.pack { background: var(--deep); border-block: 2px solid #182331; position: relative; overflow: hidden; }
+.pack::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+  background-image: linear-gradient(#182331 2px, transparent 2px), linear-gradient(90deg, #182331 2px, transparent 2px);
+  background-size: 32px 32px; mask-image: radial-gradient(ellipse at 80% 50%, #000 0%, transparent 60%);
+}
+.pack .wrap { position: relative; }
+.quote { font-weight: 800; font-size: clamp(1.8rem, 4.6vw, 3.4rem); line-height: 1.05; letter-spacing: -.02em; max-width: 20ch; margin: 0 0 28px; }
+.quote q { quotes: "\201C" "\201D"; color: var(--keel-light); }
+.facts { display: flex; flex-wrap: wrap; gap: 0; margin: 40px 0 0; padding: 0; list-style: none; border-top: 2px solid var(--line); }
+.facts li { flex: 1 1 180px; padding: 20px 24px 0 0; }
+.facts b { display: block; font-size: 1.6rem; font-weight: 800; color: var(--text); }
+.facts span { color: var(--muted); font-size: .95rem; }
+
+.next { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(32px, 6vw, 80px); align-items: center; }
+.term {
+  font: .92rem/1.7 ui-monospace, "Cascadia Code", Consolas, monospace; background: #070b11; color: #c9d4e0;
+  padding: 22px 24px; border: 4px solid #05080c; outline: 4px solid var(--line); overflow-x: auto; white-space: pre;
+}
+.term .p { color: var(--keel); }
+.term .ok { color: #7fd48a; }
+.term .dim { color: #5d6f86; }
+
+footer { border-top: 2px solid #182331; padding: 36px 0 48px; color: var(--muted); font-size: .9rem; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between; }
+footer a { color: var(--text); }
+.legal { flex-basis: 100%; font-size: .8rem; color: #6b7d93; margin: 8px 0 0; }
+
+/* reveal on scroll, in pixel steps */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .5s steps(5), transform .5s steps(4); }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+
+@media (max-width: 820px) {
+  nav ul li:not(:last-child) { display: none; }
+  .hero::after { background: linear-gradient(180deg, rgba(12,19,29,.8) 0%, rgba(12,19,29,.2) 55%, rgba(12,19,29,0) 70%), linear-gradient(0deg, var(--night) 0%, rgba(12,19,29,0) 14%); }
+  .hero { min-height: 760px; }
+  .hero .wrap { padding-top: 104px; padding-bottom: 240px; }
+  .companion, .next { grid-template-columns: 1fr; }
+  .shots { order: 2; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <canvas id="sea" aria-hidden="true"></canvas>
+  <nav>
+    <a class="brand" href="/"><img src="img/icon-64.png" alt="" width="32" height="32">Modkeel</a>
+    <ul>
+      <li><a href="#companion">Companion</a></li>
+      <li><a href="#packs">For pack authors</a></li>
+      <li><a href="#next">What's next</a></li>
+      <li><a href="https://github.com/Modkeel">GitHub</a></li>
+    </ul>
+  </nav>
+  <div class="wrap">
+    <span class="tag pixel">Companion 0.1 is out</span>
+    <h1>Modded Minecraft, <em>held steady.</em></h1>
+    <p class="lede">Modkeel backs up your worlds when your mods change, tells you which mod crashed the game, and fixes it in one click.</p>
+    <div class="actions">
+      <a class="btn" href="https://modrinth.com/mod/modkeel">
+        <svg viewBox="0 0 9 9" aria-hidden="true"><path fill="currentColor" d="M4 0h1v5h1V4h1v1H6v1H5v1H4V6H3V5H2V4h1v1h1zM0 7h1v1h7V7h1v2H0z"/></svg>
+        Download on Modrinth</a>
+      <a class="btn ghost" href="https://github.com/Modkeel/companion/releases">GitHub releases</a>
+    </div>
+    <p class="loaders pixel">Fabric · NeoForge · Forge &nbsp;/&nbsp; 1.20.1 to 26.x</p>
+  </div>
+</header>
+
+<main>
+<section id="companion">
+  <div class="wrap companion">
+    <div class="shots reveal">
+      <div class="tabs" role="tablist" aria-label="Screens">
+        <button role="tab" aria-selected="true" data-shot="0">After a crash</button>
+        <button role="tab" aria-selected="false" data-shot="1">Pack health</button>
+      </div>
+      <div class="frame">
+        <img class="on" src="img/gallery-crash.webp" width="852" height="479" alt="After a crash, Modkeel names the mod that most likely caused it and offers to disable it.">
+        <img src="img/gallery-health.webp" width="852" height="479" alt="The pack health screen: world backups, changes Modkeel made and fixes it is watching." loading="lazy">
+      </div>
+      <p class="caption" aria-live="polite">The next start names the likely cause, how sure Modkeel is and why.</p>
+    </div>
+    <div class="reveal">
+      <p class="kicker pixel">Modkeel Companion</p>
+      <h2>A safety net you drop in the mods folder.</h2>
+      <p class="muted">No setup, no config. Everything lives under the Modkeel button on the title screen.</p>
+      <ol class="features">
+        <li><span class="num pixel">01</span><div><b>Worlds survive mod changes</b><span>Before a world loads with a different set of mods, Modkeel saves a copy. Restoring never deletes anything.</span></div></li>
+        <li><span class="num pixel">02</span><div><b>The crash, in plain words</b><span>On the next start: the mod that most likely caused it, how sure Modkeel is, and why.</span></div></li>
+        <li><span class="num pixel">03</span><div><b>One-click fixes you can undo</b><span>Disable that mod or go back to the last set of mods that worked. Modkeel then checks the fix held.</span></div></li>
+        <li><span class="num pixel">04</span><div><b>Cannot be what breaks your pack</b><span>No mixins: it does not patch the game. Nothing leaves your computer.</span></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="packs" class="pack">
+  <div class="wrap reveal">
+    <p class="kicker pixel">For pack authors</p>
+    <p class="quote">Fewer <q>my game crashed, help</q> messages in your Discord.</p>
+    <p class="muted" style="max-width:56ch">Your players see which mod broke and fix it themselves. MIT licensed: put it in any pack, public or private, without asking.</p>
+    <ul class="facts">
+      <li><b>0</b><span>mixins</span></li>
+      <li><b>0</b><span>config files to ship</span></li>
+      <li><b>~130 KB</b><span>per jar</span></li>
+      <li><b>7</b><span>languages</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="next">
+  <div class="wrap next">
+    <div class="reveal">
+      <p class="kicker pixel">What's next</p>
+      <h2>Mods for the versions their authors skipped.</h2>
+      <p class="muted">The Modkeel CLI finds community ports of a mod on GitHub, compiles them and checks they load. Open source today; a desktop app and tested modpacks come next.</p>
+      <div class="actions" style="margin-top:28px">
+        <a class="btn ghost" href="https://github.com/Modkeel/modkeel">Modkeel CLI on GitHub</a>
+      </div>
+    </div>
+    <pre class="term reveal" aria-label="Example terminal session"><span class="p">$</span> modkeel get "Create" -m 1.21.10 -l neoforge
+<span class="dim">  Modrinth: no build for 1.21.10</span>
+<span class="dim">  GitHub: 3 community ports, 1 targets 1.21.10</span>
+<span class="dim">  compiling ...</span>
+<span class="ok">  ok</span> create-1.21.10.jar  <span class="dim">loads in a real server</span></pre>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Modkeel · open source, MIT</span>
+    <span><a href="https://github.com/Modkeel">GitHub</a> &nbsp;·&nbsp; <a href="https://github.com/Modkeel/companion/issues">Report a problem</a></span>
+    <p class="legal">Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
+  </div>
+</footer>
+
+<script src="sea.js" defer></script>
+<script>
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .15 });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  const CAPTIONS = ["The next start names the likely cause, how sure Modkeel is and why.",
+    "World backups, what Modkeel changed and the fixes it is watching."];
+  const tabs = document.querySelectorAll(".tabs button"), shots = document.querySelectorAll(".frame img");
+  tabs.forEach(t => t.addEventListener("click", () => {
+    const n = +t.dataset.shot;
+    tabs.forEach((b, i) => b.setAttribute("aria-selected", i === n));
+    shots.forEach((img, i) => img.classList.toggle("on", i === n));
+    document.querySelector(".caption").textContent = CAPTIONS[n];
+  }));
+</script>
+</body>
+</html>
