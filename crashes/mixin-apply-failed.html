@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minecraft crash: Mixin apply failed · Modkeel</title>
+<meta name="description" content="What 'Mixin apply failed' means in a modded Minecraft crash, how to find the mod that caused it, and how to fix it.">
+<link rel="canonical" href="https://modkeel.com/crashes/mixin-apply-failed">
+<meta name="theme-color" content="#111923">
+<link rel="icon" type="image/png" href="/img/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "headline": "Minecraft crash: Mixin apply failed",
+      "description": "What 'Mixin apply failed' means in a modded Minecraft crash, how to find the mod that caused it, and how to fix it.",
+      "datePublished": "2026-10-02",
+      "dateModified": "2026-10-02",
+      "author": {"@type": "Organization", "name": "Modkeel", "url": "https://modkeel.com"},
+      "about": "Modded Minecraft crashes (Fabric, NeoForge, Forge)"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What does 'Mixin apply failed' mean in Minecraft?",
+         "acceptedAnswer": {"@type": "Answer", "text": "A mod tried to change Minecraft's code with a mixin and the code it expected was not there. Usually the mod was made for another Minecraft version, or two mods change the same code."}},
+        {"@type": "Question", "name": "How do I find which mod caused a mixin crash?",
+         "acceptedAnswer": {"@type": "Answer", "text": "In the crash report, look for the mixin config named in the error, such as 'Mixin [examplemod.mixins.json:SomeMixin] from mod examplemod'. The text before .mixins.json, or the 'from mod' id, names the mod."}},
+        {"@type": "Question", "name": "How do I fix 'Mixin apply failed'?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Install the version of that mod made for your exact Minecraft version and loader. If it is already right, remove the most recently added mod that touches the same part of the game, or remove the named mod until it is updated."}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/crashes/">Crash help</a><a href="https://modrinth.com/mod/modkeel">Download</a></span></div></nav>
+<main class="wrap">
+  <a class="tag pixel" href="/crashes/">Crash help</a>
+  <h1>Minecraft crash: Mixin apply failed</h1>
+  <p class="lede">A mod tried to change Minecraft's code and the code it expected was not there.
+  Almost always the mod is for another Minecraft version, or two mods change the same code.</p>
+  <p class="updated">Updated October 2, 2026. Fabric, NeoForge and Forge.</p>
+
+  <h2>What you see</h2>
+  <p>The game closes while loading or right when a world opens. The crash report or log has one
+  of these:</p>
+  <pre><code>org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+Mixin [examplemod.mixins.json:LevelRendererMixin] from mod examplemod failed injection check
+org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Critical injection failure
+Mixin apply for mod examplemod failed examplemod.mixins.json:LevelRendererMixin</code></pre>
+
+  <h2>Why it happens</h2>
+  <p>Mods change the game with <b>mixins</b>: small patches that say "add this code inside that
+  method of Minecraft". A mixin names the exact method it patches. When the method is missing
+  or different, the mixin cannot apply and the game stops on purpose, before it runs broken.</p>
+  <ul>
+    <li><b>Wrong Minecraft version.</b> The most common cause. A mod for 1.21.1 is not a mod for
+      1.21.10: Minecraft renames and moves code even between patch versions.</li>
+    <li><b>Two mods patch the same code.</b> One mod already replaced the method the other one
+      wanted to patch. Each mod works alone; together they crash.</li>
+    <li><b>Wrong loader or library version.</b> A mod that patches another mod (for example
+      Sodium or Fabric API) needs the version of it that it was made for.</li>
+  </ul>
+
+  <h2>Find the mod</h2>
+  <ol>
+    <li>Open the newest file in <code>crash-reports</code> in your game folder, or
+      <code>logs/latest.log</code> if there is none.</li>
+    <li>Search for <code>mixins.json</code>. The line names a config such as
+      <code>examplemod.mixins.json</code> and often <code>from mod examplemod</code>: that is
+      the mod whose patch failed.</li>
+    <li>If the error names a method of another mod, that other mod is the second half of a
+      clash: the two do not work together in these versions.</li>
+  </ol>
+
+  <h2>Fix it</h2>
+  <ol>
+    <li>Download the named mod again, picking your exact Minecraft version and loader on its
+      Modrinth or CurseForge page.</li>
+    <li>If it was already the right version, think of what you added last. Remove that mod and
+      start again; if the game starts, the two mods clash.</li>
+    <li>If there is no version of the mod for your Minecraft yet, remove it until there is.
+      Keep a copy of your world first: removing a mod can remove its blocks and items.</li>
+  </ol>
+
+  <div class="note">
+    <h2>Let the game tell you</h2>
+    <p>The <a href="https://modrinth.com/mod/modkeel">Modkeel Companion</a> reads the crash on
+    the next start, names the mod that most likely caused it and how sure it is, and offers to
+    turn that mod off or go back to the mods that last worked. It backs up your worlds when
+    your mods change. Free and open source, for Fabric, NeoForge and Forge.</p>
+  </div>
+
+  <h2>Other crashes</h2>
+  <ul>
+    <li><a href="/crashes/noclassdeffounderror">NoClassDefFoundError, NoSuchMethodError and
+      ClassNotFoundException</a></li>
+    <li><a href="/crashes/mod-loading-failed">Mod loading failed: missing or incompatible
+      mods</a></li>
+    <li><a href="/crashes/out-of-memory">OutOfMemoryError: Java heap space</a></li>
+  </ul>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+</body>
+</html>

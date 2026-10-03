@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modded Minecraft crash help · Modkeel</title>
+<meta name="description" content="Why modded Minecraft crashes, read from the error in your crash report: mixin failures, missing classes, mod loading errors and out of memory, with the fix for each.">
+<link rel="canonical" href="https://modkeel.com/crashes/">
+<meta name="theme-color" content="#111923">
+<link rel="icon" type="image/png" href="/img/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/page.css">
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/crashes/">Crash help</a><a href="https://modrinth.com/mod/modkeel">Download</a></span></div></nav>
+<main class="wrap">
+  <span class="tag pixel">Crash help</span>
+  <h1>Why did my modded Minecraft crash?</h1>
+  <p class="lede">Open the newest file in <code>crash-reports</code> (or
+  <code>logs/latest.log</code>) and find the error. Most modded crashes are one of these four.</p>
+
+  <ul class="guides">
+    <li><a href="/crashes/mixin-apply-failed">Mixin apply failed</a>
+      <p><code>MixinTransformerError</code>, <code>InvalidInjectionException</code>. A mod could
+      not change the game's code: usually made for another Minecraft version, or two mods change
+      the same code.</p></li>
+    <li><a href="/crashes/noclassdeffounderror">NoClassDefFoundError, NoSuchMethodError</a>
+      <p><code>ClassNotFoundException</code>, <code>NoSuchFieldError</code>. A mod used code
+      the game does not have: a missing library mod or a version mismatch.</p></li>
+    <li><a href="/crashes/mod-loading-failed">Mod loading failed</a>
+      <p><code>Incompatible mods found!</code>, <code>Mod loading has failed</code>. A missing
+      or wrong mod, a mod for another loader, or the same mod twice.</p></li>
+    <li><a href="/crashes/out-of-memory">OutOfMemoryError: Java heap space</a>
+      <p>The game used all the memory the launcher gave it: give it more RAM, or remove heavy
+      mods.</p></li>
+  </ul>
+
+  <div class="note">
+    <h2>Let the game tell you</h2>
+    <p>The <a href="https://modrinth.com/mod/modkeel">Modkeel Companion</a> reads a crash on the
+    next start, names the mod that most likely caused it, and offers to turn it off or go back
+    to the mods that last worked. Free and open source, for Fabric, NeoForge and Forge.</p>
+  </div>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+</body>
+</html>

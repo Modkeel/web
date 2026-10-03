@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minecraft crash: Mod loading failed, incompatible mods · Modkeel</title>
+<meta name="description" content="What 'Incompatible mods found' and 'Mod loading has failed' mean in modded Minecraft, and how to fix missing, wrong or duplicate mods.">
+<link rel="canonical" href="https://modkeel.com/crashes/mod-loading-failed">
+<meta name="theme-color" content="#111923">
+<link rel="icon" type="image/png" href="/img/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "headline": "Minecraft crash: Mod loading failed, incompatible mods",
+      "description": "What 'Incompatible mods found' and 'Mod loading has failed' mean in modded Minecraft, and how to fix missing, wrong or duplicate mods.",
+      "datePublished": "2026-10-02",
+      "dateModified": "2026-10-02",
+      "author": {"@type": "Organization", "name": "Modkeel", "url": "https://modkeel.com"},
+      "about": "Modded Minecraft crashes (Fabric, NeoForge, Forge)"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What does 'Incompatible mods found' mean on Fabric?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Fabric checked what every mod requires before starting and found a missing mod, a wrong version or a mod that declares it breaks another. The message lists each problem in plain words: install or change what it names."}},
+        {"@type": "Question", "name": "What does 'Mod loading has failed' mean on NeoForge or Forge?",
+         "acceptedAnswer": {"@type": "Answer", "text": "One or more mods could not load. The error screen and the log list each one with the reason, often 'Missing or unsupported mandatory dependencies' with the mod and version that is needed."}},
+        {"@type": "Question", "name": "How do I fix a mod loading error in Minecraft?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Read the list of problems: install each required mod in the version it asks for, update mods that need a newer Minecraft or loader, remove mods for another loader, and remove duplicate copies of the same mod."}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/crashes/">Crash help</a><a href="https://modrinth.com/mod/modkeel">Download</a></span></div></nav>
+<main class="wrap">
+  <a class="tag pixel" href="/crashes/">Crash help</a>
+  <h1>Minecraft crash: Mod loading failed</h1>
+  <p class="lede">The loader checked your mods before starting and found something it cannot
+  run: a missing mod, a wrong version, a mod for another loader or the same mod twice.</p>
+  <p class="updated">Updated October 2, 2026. Fabric, NeoForge and Forge.</p>
+
+  <h2>What you see</h2>
+  <p>The game stops before the title screen. On Fabric:</p>
+  <pre><code>Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+ - Mod 'Example Mod' (examplemod) 2.1.0 requires version 0.110.0 or later of mod 'Fabric API' (fabric-api), but only the wrong version is present: 0.102.0!</code></pre>
+  <p>On NeoForge or Forge, an error screen and in the log:</p>
+  <pre><code>Mod loading has failed
+Missing or unsupported mandatory dependencies:
+    Mod ID: 'architectury', Requested by: 'examplemod', Expected range: '[13.0.0,)', Actual version: '[MISSING]'</code></pre>
+  <p>This is the kindest crash: the loader already says what is wrong. The fix is in the
+  message.</p>
+
+  <h2>Why it happens, and the fix for each</h2>
+  <ul>
+    <li><b>A required mod is missing.</b> <code>requires</code>, <code>[MISSING]</code>:
+      install that mod, in the version or range it names.</li>
+    <li><b>A required mod has the wrong version.</b> <code>only the wrong version is
+      present</code>, <code>Expected range</code>: update or downgrade it to that range.</li>
+    <li><b>A mod needs another Minecraft or loader version.</b> The required mod is
+      <code>minecraft</code>, <code>fabricloader</code>, <code>neoforge</code> or
+      <code>forge</code>: get the mod's version for your game, or update the loader.</li>
+    <li><b>Two mods cannot be together.</b> <code>is incompatible with</code>,
+      <code>breaks</code>: the author said so. Keep one.</li>
+    <li><b>The same mod twice.</b> <code>Duplicate mod</code>, <code>Found duplicate
+      mods</code>: delete the older file from the <code>mods</code> folder.</li>
+    <li><b>A mod for another loader.</b> A Fabric mod in a NeoForge game is skipped or rejected:
+      get the version for your loader.</li>
+  </ul>
+
+  <div class="note">
+    <h2>Let the game tell you</h2>
+    <p>On NeoForge and Forge, the <a href="https://modrinth.com/mod/modkeel">Modkeel
+    Companion</a> reads the failed load on the next start, names the mod in plain words and
+    offers to turn it off or go back to the mods that last worked. (Fabric stops these before any
+    mod runs, with the message above.) It backs up your worlds whenever your mods change. Free
+    and open source, for Fabric, NeoForge and Forge.</p>
+  </div>
+
+  <h2>Other crashes</h2>
+  <ul>
+    <li><a href="/crashes/mixin-apply-failed">Mixin apply failed</a></li>
+    <li><a href="/crashes/noclassdeffounderror">NoClassDefFoundError, NoSuchMethodError and
+      ClassNotFoundException</a></li>
+    <li><a href="/crashes/out-of-memory">OutOfMemoryError: Java heap space</a></li>
+  </ul>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# Modkeel
+
+> Modkeel keeps modded Minecraft steady. The Modkeel Companion is a free, open source (MIT) mod for Fabric, NeoForge and Forge that backs up worlds when the mods change, names the mod that most likely crashed the game, and offers a one-click fix (turn that mod off, or go back to the mods that last worked). It has no mixins, so it cannot be what breaks a pack, and it sends nothing unless the player chooses to share.
+
+- Supported: Fabric on Minecraft 1.20.1, 1.21.1, 1.21.11 and 26.x; NeoForge on 1.21.1; Forge on 1.20.1.
+- Download: [Modrinth](https://modrinth.com/mod/modkeel), [GitHub releases](https://github.com/Modkeel/companion/releases) (jars built by CI with provenance and VirusTotal scans).
+- Not an official Minecraft product; not affiliated with Mojang or Microsoft.
+
+## Crash help
+
+- [Why did my modded Minecraft crash?](https://modkeel.com/crashes/): the four common crash errors and how to read a crash report.
+- [Mixin apply failed](https://modkeel.com/crashes/mixin-apply-failed): MixinTransformerError, InvalidInjectionException; mod for another Minecraft version or two mods patching the same code.
+- [NoClassDefFoundError, NoSuchMethodError, ClassNotFoundException](https://modkeel.com/crashes/noclassdeffounderror): missing library mod or version mismatch.
+- [Mod loading failed](https://modkeel.com/crashes/mod-loading-failed): "Incompatible mods found!" (Fabric), "Mod loading has failed" (NeoForge, Forge); missing, wrong, duplicate or wrong-loader mods.
+- [OutOfMemoryError: Java heap space](https://modkeel.com/crashes/out-of-memory): how much RAM to give modded Minecraft and where to set it.
+
+## Project
+
+- [Privacy](https://modkeel.com/privacy): what the Companion sends, only when the player shares, and how to have it deleted.
+- [Companion source](https://github.com/Modkeel/companion)
+- [Modkeel CLI](https://github.com/Modkeel/modkeel): finds, builds and verifies community ports of mods for Minecraft versions their authors have not updated to yet.

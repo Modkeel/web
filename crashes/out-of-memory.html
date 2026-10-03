@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minecraft crash: OutOfMemoryError, Java heap space · Modkeel</title>
+<meta name="description" content="Why modded Minecraft crashes with OutOfMemoryError: Java heap space, how much RAM to give it, and how to set it in your launcher.">
+<link rel="canonical" href="https://modkeel.com/crashes/out-of-memory">
+<meta name="theme-color" content="#111923">
+<link rel="icon" type="image/png" href="/img/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "headline": "Minecraft crash: OutOfMemoryError, Java heap space",
+      "description": "Why modded Minecraft crashes with OutOfMemoryError: Java heap space, how much RAM to give it, and how to set it in your launcher.",
+      "datePublished": "2026-10-02",
+      "dateModified": "2026-10-02",
+      "author": {"@type": "Organization", "name": "Modkeel", "url": "https://modkeel.com"},
+      "about": "Modded Minecraft crashes (Fabric, NeoForge, Forge)"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What does OutOfMemoryError: Java heap space mean in Minecraft?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Minecraft used all the memory its launcher allowed it. Modded games need more than vanilla; the launcher's default is often too low for a modpack."}},
+        {"@type": "Question", "name": "How much RAM should I give modded Minecraft?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Around 4 GB for a few dozen mods, 6 to 8 GB for large modpacks. Leave at least 2 to 4 GB for the system, and do not give it all your RAM: too much can make pauses longer."}},
+        {"@type": "Question", "name": "How do I give Minecraft more RAM?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Set the memory of the instance or profile in your launcher: a memory slider in CurseForge, Modrinth App or Prism Launcher, or the JVM argument -Xmx6G in the official launcher's installation settings."}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/crashes/">Crash help</a><a href="https://modrinth.com/mod/modkeel">Download</a></span></div></nav>
+<main class="wrap">
+  <a class="tag pixel" href="/crashes/">Crash help</a>
+  <h1>Minecraft crash: OutOfMemoryError, Java heap space</h1>
+  <p class="lede">The game used all the memory the launcher gave it. Give Minecraft more RAM in
+  your launcher, or remove heavy mods.</p>
+  <p class="updated">Updated October 2, 2026. Fabric, NeoForge and Forge.</p>
+
+  <h2>What you see</h2>
+  <p>The game freezes for a while, then closes. The crash report or log has:</p>
+  <pre><code>java.lang.OutOfMemoryError: Java heap space
+java.lang.OutOfMemoryError: GC overhead limit exceeded</code></pre>
+  <p>Long freezes and stutter before the crash are the same problem starting: Java spends more
+  and more time freeing memory.</p>
+
+  <h2>Why it happens</h2>
+  <ul>
+    <li><b>The launcher gives too little memory.</b> Launchers start with 2 GB or so, made for
+      vanilla. Every mod, texture and loaded chunk needs some.</li>
+    <li><b>The pack grew.</b> A pack that ran fine needs more after you add mods, a resource pack
+      with high resolution textures or a higher render distance.</li>
+    <li><b>One mod leaks memory.</b> If memory runs out after a long time playing, whatever you
+      give it, a mod may keep things it never frees. Removing mods one by one finds it.</li>
+  </ul>
+
+  <h2>Fix it</h2>
+  <ol>
+    <li>Give the game more memory, in the settings of the instance or profile:
+      <ul>
+        <li><b>CurseForge app, Modrinth App, Prism Launcher:</b> the memory (RAM) slider.</li>
+        <li><b>Official launcher:</b> Installations, edit the installation, More options, and in
+          JVM arguments change <code>-Xmx2G</code> to <code>-Xmx6G</code>.</li>
+      </ul>
+    </li>
+    <li>As a guide: around 4 GB for a few dozen mods, 6 to 8 GB for a large modpack. Leave 2 to
+      4 GB for the rest of the computer.</li>
+    <li>Do not give it all your RAM. Above what the pack needs, more memory does not help and can
+      make pauses longer.</li>
+    <li>Still crashing with enough memory: lower render distance, remove high resolution
+      resource packs, and look for a mod that leaks.</li>
+  </ol>
+
+  <div class="note">
+    <h2>Let the game tell you</h2>
+    <p>The <a href="https://modrinth.com/mod/modkeel">Modkeel Companion</a> tells a memory crash
+    apart from a mod crash on the next start, so you do not remove mods that were not at fault,
+    and it shows the worst lag spikes of a session with the mods whose code ran during them.
+    Free and open source, for Fabric, NeoForge and Forge.</p>
+  </div>
+
+  <h2>Other crashes</h2>
+  <ul>
+    <li><a href="/crashes/mixin-apply-failed">Mixin apply failed</a></li>
+    <li><a href="/crashes/noclassdeffounderror">NoClassDefFoundError, NoSuchMethodError and
+      ClassNotFoundException</a></li>
+    <li><a href="/crashes/mod-loading-failed">Mod loading failed: missing or incompatible
+      mods</a></li>
+  </ul>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+</body>
+</html>
