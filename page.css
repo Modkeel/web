@@ -48,3 +48,20 @@ pre code { background: none; padding: 0; }
 .guides p { margin: 4px 0 0; }
 footer { border-top: 2px solid var(--ink); padding: 28px 0 40px; color: var(--muted); font-size: .9rem; }
 footer a { color: var(--text); }
+.paste { display: grid; gap: 10px; margin-top: 28px; padding: 14px; border: 2px dashed transparent; }
+.paste.drop { border-color: var(--keel); }
+.paste > label { font-weight: 600; color: var(--text); }
+.paste textarea { width: 100%; min-height: 220px; resize: vertical; background: var(--ink); color: var(--text); border: 2px solid var(--line); padding: 12px 14px; font: .9rem/1.5 Consolas, "Cascadia Mono", monospace; }
+.paste textarea:focus, .paste button:focus-visible, .file:focus-within { outline: 3px solid var(--keel-light); outline-offset: 2px; }
+.actions { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+.paste button { font: 800 1rem "Bricolage Grotesque", Georgia, serif; background: var(--keel); color: var(--night); border: 0; border-bottom: 4px solid var(--keel-dark); padding: 10px 20px; cursor: pointer; }
+.paste button:disabled { opacity: .6; cursor: wait; }
+.file { color: var(--keel-light); text-decoration: underline; cursor: pointer; }
+.file input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.hint { color: var(--muted); font-size: .95rem; margin: 0; }
+.result { border: 2px solid var(--keel-dark); padding: 6px 18px 12px; margin-top: 24px; }
+.result:focus { outline: none; }
+.result h2 { margin-top: 12px; }
+.suspects { gap: 14px; }
+.suspects p { margin: 0; }
+.reasons { margin-top: 4px; gap: 2px; font-size: .95rem; }

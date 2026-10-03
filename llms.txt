@@ -8,6 +8,7 @@
 
 ## Crash help
 
+- [Crash analyzer](https://modkeel.com/crashes/diagnose): paste a crash report or latest.log, get the mod that most likely caused it, the kind of crash and the fix. Nothing is stored.
 - [Why did my modded Minecraft crash?](https://modkeel.com/crashes/): the four common crash errors and how to read a crash report.
 - [Mixin apply failed](https://modkeel.com/crashes/mixin-apply-failed): MixinTransformerError, InvalidInjectionException; mod for another Minecraft version or two mods patching the same code.
 - [NoClassDefFoundError, NoSuchMethodError, ClassNotFoundException](https://modkeel.com/crashes/noclassdeffounderror): missing library mod or version mismatch.
@@ -21,6 +22,7 @@ Read-only JSON at https://api.modkeel.com, no key, open to any origin. Data: wha
 - [GET /v1](https://api.modkeel.com/v1): the list of endpoints.
 - [GET /v1/mods/{mod_id}?mc=](https://api.modkeel.com/v1/mods/sodium): the lab runs of a mod and the mods it ran with or clashed with.
 - [GET /v1/pairs/{mod_id}/{mod_id}?mc=](https://api.modkeel.com/v1/pairs/lithium/c2me): `ran_together`, `clash` or `untested`.
+- POST https://api.modkeel.com/v1/diagnose with a crash report or latest.log as the text body: kind, confidence, suspect mods with reasons, Minecraft version, loader, and a guide link. The text is not stored.
 
 ## Project
 

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minecraft crash log analyzer: which mod crashed? · Modkeel</title>
+<meta name="description" content="Paste a modded Minecraft crash report or latest.log and see which mod most likely caused the crash, what kind of crash it is and how to fix it. Fabric, NeoForge, Forge. Nothing is stored.">
+<link rel="canonical" href="https://modkeel.com/crashes/diagnose">
+<meta name="theme-color" content="#111923">
+<link rel="icon" type="image/png" href="/img/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Modkeel crash analyzer",
+  "url": "https://modkeel.com/crashes/diagnose",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "description": "Reads a modded Minecraft crash report or latest.log and names the mod that most likely caused the crash, for Fabric, NeoForge and Forge.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "Modkeel", "url": "https://modkeel.com/" }
+}
+</script>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/crashes/">Crash help</a><a href="https://modrinth.com/mod/modkeel">Download</a></span></div></nav>
+<main class="wrap">
+  <a class="tag pixel" href="/crashes/">Crash help</a>
+  <h1>Which mod crashed my game?</h1>
+  <p class="lede">Paste your crash report or <code>latest.log</code>, or drop the file here.
+  Modkeel reads the error and names the mod that most likely caused it.</p>
+
+  <form id="form" class="paste">
+    <label for="text">Crash report or log</label>
+    <textarea id="text" name="text" rows="12" spellcheck="false" autocomplete="off"
+      placeholder="---- Minecraft Crash Report ----"></textarea>
+    <div class="actions">
+      <button type="submit" id="go">Find the mod</button>
+      <label class="file">Or open a file<input type="file" id="file" accept=".txt,.log,text/plain"></label>
+    </div>
+    <p class="hint">Find it in your instance folder: the newest file in <code>crash-reports</code>,
+    or <code>logs/latest.log</code> when the game closed without a report.</p>
+  </form>
+
+  <section id="result" class="result" aria-live="polite" tabindex="-1" hidden></section>
+
+  <div class="note">
+    <h2>What happens to your text</h2>
+    <p>It goes to <code>api.modkeel.com</code>, is read in memory to find the mod, and is
+    dropped: not stored, not logged. Crash reports can hold your user name in file paths;
+    nothing of it is kept. <a href="/privacy">Privacy</a>.</p>
+  </div>
+
+  <div class="note">
+    <h2>Let the game tell you</h2>
+    <p>The <a href="https://modrinth.com/mod/modkeel">Modkeel Companion</a> does this on the next
+    start, with the jars in front of it, and offers to turn the mod off or go back to the mods
+    that last worked. Free and open source, for Fabric, NeoForge and Forge.</p>
+  </div>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+<script>
+(() => {
+  const API = "https://api.modkeel.com/v1/diagnose";
+  const form = document.getElementById("form");
+  const text = document.getElementById("text");
+  const file = document.getElementById("file");
+  const go = document.getElementById("go");
+  const result = document.getElementById("result");
+
+  const KIND = {
+    MIXIN_FAILED: ["A mod could not patch the game's code", "/crashes/mixin-apply-failed",
+      "It was most likely made for another Minecraft version, or two mods change the same code."],
+    MISSING_CLASS: ["A mod used code that is not there", "/crashes/noclassdeffounderror",
+      "A library mod is missing, or two mods are for different versions of each other."],
+    OUT_OF_MEMORY: ["The game ran out of memory", "/crashes/out-of-memory",
+      "Give the game more RAM in your launcher (6 to 8 GB for most packs), or remove heavy mods."],
+    MOD_LOADING: ["A mod failed to load", "/crashes/mod-loading-failed",
+      "A mod is missing a dependency, has the wrong version of one, or is for another loader."],
+    GENERIC: ["The game crashed in a mod's code", "/crashes/",
+      "That mod's code was running when the game crashed."],
+  };
+  const REASON = {
+    load_failed: "The loader says this mod failed to load.",
+    mixin: "The error names this mod's mixin.",
+    mixin_config: "Its mixin config is in the error.",
+    mixin_trace: "Its injected code is in the crash trace.",
+    trace: "Its code is in the crash trace.",
+    version: "The missing code belongs to it: likely a version mismatch.",
+  };
+  const SURE = { HIGH: "Most likely", MEDIUM: "Likely", LOW: "Possibly", NONE: "" };
+
+  const el = (tag, cls, txt) => {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (txt !== undefined) e.textContent = txt;
+    return e;
+  };
+
+  function show(nodes) {
+    result.replaceChildren(...nodes);
+    result.hidden = false;
+    result.focus();
+  }
+
+  function render(d) {
+    const [title, guide, why] = KIND[d.kind] || KIND.GENERIC;
+    const out = [el("h2", "", d.suspects.length || d.kind !== "GENERIC" ? title : "The game crashed")];
+    if (d.error) out.push(el("pre", "", d.error));
+    const LOADER = { fabric: "Fabric", neoforge: "NeoForge", forge: "Forge", quilt: "Quilt" };
+    const env = [d.mc && "Minecraft " + d.mc, LOADER[d.loader] || d.loader].filter(Boolean).join(" with ");
+    if (env) out.push(el("p", "updated", env));
+    if (d.suspects.length) {
+      const list = el("ol", "suspects");
+      d.suspects.forEach((s, i) => {
+        const li = el("li");
+        const head = el("p");
+        head.append(el("b", "", s.name), " ", el("code", "", s.id));
+        if (i === 0 && SURE[d.confidence]) head.append(" ", el("span", "tag pixel", SURE[d.confidence]));
+        li.append(head);
+        const reasons = el("ul", "reasons");
+        s.reasons.forEach((r) => reasons.append(el("li", "", REASON[r] || r)));
+        li.append(reasons);
+        list.append(li);
+      });
+      out.push(list);
+      const top = d.suspects[0];
+      const fix = el("p");
+      fix.append(el("b", "", "Try: "), d.kind === "MOD_LOADING"
+        ? `check that the mods ${top.name} needs are installed, in the versions it asks for, and that it is made for ${env || "your Minecraft version and loader"}.`
+        : `move ${top.name} out of your mods folder and start the game. If it starts, update ${top.name} to a version made for ${env || "your Minecraft version"}.`);
+      if (d.confidence === "LOW") fix.append(" Several mods are in the trace: if the first one is not it, try the next.");
+      out.push(fix);
+    } else if (d.kind !== "OUT_OF_MEMORY") {
+      out.push(el("p", "", "No mod stands out in this crash. The guide below shows how to read it."));
+    }
+    const more = el("p");
+    more.append(why + " ");
+    const a = el("a", "", "How to fix this kind of crash");
+    a.href = guide;
+    more.append(a, ".");
+    out.push(more);
+    show(out);
+  }
+
+  async function diagnose() {
+    const body = text.value.trim();
+    if (!body) {
+      show([el("p", "", "Paste a crash report or a log first.")]);
+      return;
+    }
+    go.disabled = true;
+    go.textContent = "Reading…";
+    try {
+      const r = await fetch(API, { method: "POST", body, headers: { "content-type": "text/plain" } });
+      if (r.status === 422) {
+        show([el("h2", "", "No crash found in this text"),
+          el("p", "", "Paste the whole crash report, from the line \"---- Minecraft Crash Report ----\" down, or the whole latest.log.")]);
+      } else if (r.status === 413) {
+        show([el("p", "", "That file is too large. Paste only the crash report, or the end of the log.")]);
+      } else if (r.status === 429) {
+        show([el("p", "", "Too many tries from your network. Wait an hour and try again.")]);
+      } else if (!r.ok) {
+        show([el("p", "", "Something went wrong on our side. Try again in a minute.")]);
+      } else {
+        render(await r.json());
+      }
+    } catch {
+      show([el("p", "", "Could not reach Modkeel. Check your connection and try again.")]);
+    } finally {
+      go.disabled = false;
+      go.textContent = "Find the mod";
+    }
+  }
+
+  async function load(f) {
+    if (!f) return;
+    text.value = await f.text();
+    diagnose();
+  }
+
+  form.addEventListener("submit", (e) => { e.preventDefault(); diagnose(); });
+  file.addEventListener("change", () => load(file.files[0]));
+  form.addEventListener("dragover", (e) => { e.preventDefault(); form.classList.add("drop"); });
+  form.addEventListener("dragleave", () => form.classList.remove("drop"));
+  form.addEventListener("drop", (e) => {
+    e.preventDefault();
+    form.classList.remove("drop");
+    load(e.dataTransfer.files[0]);
+  });
+})();
+</script>
+</body>
+</html>
