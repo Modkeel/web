@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modkeel MCP server: modded Minecraft for AI assistants · Modkeel</title>
+<meta name="description" content="Connect Claude, ChatGPT, Cursor or any MCP client to Modkeel: diagnose a modded Minecraft crash, and check what mods did in the Modkeel lab. No API key.">
+<link rel="canonical" href="https://modkeel.com/mcp">
+<meta name="theme-color" content="#111923">
+<link rel="icon" type="image/png" href="/img/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "Modkeel MCP server",
+  "url": "https://modkeel.com/mcp",
+  "documentation": "https://modkeel.com/llms.txt",
+  "description": "MCP server for modded Minecraft: crash diagnosis and lab facts about mods, for Fabric, NeoForge and Forge.",
+  "provider": { "@type": "Organization", "name": "Modkeel", "url": "https://modkeel.com/" }
+}
+</script>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/crashes/">Crash help</a><a href="https://modrinth.com/mod/modkeel">Download</a></span></div></nav>
+<main class="wrap">
+  <span class="tag pixel">For AI assistants</span>
+  <h1>Modkeel in your AI assistant</h1>
+  <p class="lede">Modkeel's MCP server lets Claude, ChatGPT, Cursor or any MCP client read a
+  modded Minecraft crash and check what mods did in the Modkeel lab. No API key.</p>
+
+  <pre><code>https://api.modkeel.com/mcp</code></pre>
+  <p class="updated">Streamable HTTP. Also in the <a href="https://registry.modelcontextprotocol.io/v0/servers?search=com.modkeel">MCP registry</a>
+  as <code>com.modkeel/modkeel</code>, and on <a href="https://smithery.ai/servers/modkeel/modkeel">Smithery</a>.</p>
+
+  <h2>Tools</h2>
+  <ul class="guides">
+    <li><b>diagnose_crash</b>
+      <p>Give it a crash report or <code>latest.log</code>. It returns the mod most likely
+      behind the crash, why, how sure it is, and how to fix that kind of crash. Same analyzer
+      as <a href="/crashes/diagnose">the crash page</a>. The text is read and dropped, never
+      stored.</p></li>
+    <li><b>mod_lab_runs</b>
+      <p>What the Modkeel lab saw a mod do: the Minecraft versions where it ran on a server or
+      client, or crashed, and the mods it ran with. By mod id, like <code>sodium</code>.</p></li>
+    <li><b>mod_pair</b>
+      <p>Whether two mods ran together in the lab, clashed, or were never tested together.
+      Untested means no run yet, not a conflict.</p></li>
+  </ul>
+
+  <h2>Connect</h2>
+  <h3>Claude Code</h3>
+  <pre><code>claude mcp add --transport http modkeel https://api.modkeel.com/mcp</code></pre>
+  <h3>Claude, ChatGPT and other apps</h3>
+  <p>Add a custom connector (in Claude: Settings, Connectors) with the URL above. No sign-in.</p>
+  <h3>Cursor, VS Code and clients with a JSON config</h3>
+  <pre><code>{
+  "mcpServers": {
+    "modkeel": { "url": "https://api.modkeel.com/mcp" }
+  }
+}</code></pre>
+
+  <div class="note">
+    <h2>Data and limits</h2>
+    <p>Lab data is CC BY 4.0: attribute "Modkeel lab data (modkeel.com)". Calls are rate
+    limited per network. The same data is a plain JSON API too, listed in
+    <a href="/llms.txt">llms.txt</a>. <a href="/privacy">Privacy</a>.</p>
+  </div>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+</body>
+</html>
