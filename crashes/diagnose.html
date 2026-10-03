@@ -3,8 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Minecraft crash log analyzer: which mod crashed? · Modkeel</title>
-<meta name="description" content="Paste a modded Minecraft crash report or latest.log and see which mod most likely caused the crash, what kind of crash it is and how to fix it. Fabric, NeoForge, Forge. Nothing is stored.">
+<title>Minecraft crash report reader: which mod crashed? · Modkeel</title>
+<meta name="description" content="Paste a Minecraft crash report (the text that starts with ---- Minecraft Crash Report ----) or latest.log and Modkeel reads it: which mod most likely caused the crash, what kind of crash it is and how to fix it. Fabric, NeoForge, Forge. Free, nothing is stored.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Modkeel">
+<meta property="og:title" content="Minecraft crash report reader: which mod crashed?">
+<meta property="og:description" content="Paste a Minecraft crash report (the text that starts with ---- Minecraft Crash Report ----) or latest.log and Modkeel reads it: which mod most likely caused the crash, what kind of crash it is and how to fix it. Fabric, NeoForge, Forge. Free, nothing is stored.">
+<meta property="og:url" content="https://modkeel.com/crashes/diagnose">
+<meta property="og:image" content="https://modkeel.com/img/icon.png">
 <link rel="canonical" href="https://modkeel.com/crashes/diagnose">
 <meta name="theme-color" content="#111923">
 <link rel="icon" type="image/png" href="/img/icon-64.png">
@@ -16,7 +22,8 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Modkeel crash analyzer",
+  "name": "Modkeel crash report reader",
+  "alternateName": ["Minecraft crash report reader", "Minecraft crash log analyzer"],
   "url": "https://modkeel.com/crashes/diagnose",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Any",
@@ -30,9 +37,10 @@
 <nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/crashes/">Crash help</a><a href="https://modrinth.com/mod/modkeel">Download</a></span></div></nav>
 <main class="wrap">
   <a class="tag pixel" href="/crashes/">Crash help</a>
-  <h1>Which mod crashed my game?</h1>
-  <p class="lede">Paste your crash report or <code>latest.log</code>, or drop the file here.
-  Modkeel reads the error and names the mod that most likely caused it.</p>
+  <h1>Minecraft crash report reader</h1>
+  <p class="lede">Which mod crashed your game? Paste the crash report, the text that starts
+  with <code>---- Minecraft Crash Report ----</code>, or your <code>latest.log</code>, or drop the
+  file here. Modkeel reads the error and names the mod that most likely caused it.</p>
 
   <form id="form" class="paste">
     <label for="text">Crash report or log</label>
@@ -47,6 +55,18 @@
   </form>
 
   <section id="result" class="result" aria-live="polite" tabindex="-1" hidden></section>
+
+  <div class="note">
+    <h2>How to read a Minecraft crash report</h2>
+    <p>A crash report starts with <code>---- Minecraft Crash Report ----</code>, then a joke
+    line, the time and a <code>Description</code> such as "Mod loading failed" or "Ticking
+    entity". The lines that matter come next: the exception (for example
+    <code>java.lang.NoClassDefFoundError</code> or <code>MixinApplyError</code>) and the stack
+    trace under it. Package names in that trace usually name the mod, and a mixin error names
+    the mod's mixin config. Further down, the mod list shows each mod's version. Paste it above and
+    Modkeel reads it for you; the <a href="/crashes/">crash help</a> pages explain the common
+    errors one by one.</p>
+  </div>
 
   <div class="note">
     <h2>What happens to your text</h2>

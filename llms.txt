@@ -8,7 +8,7 @@
 
 ## Crash help
 
-- [Crash analyzer](https://modkeel.com/crashes/diagnose): paste a crash report or latest.log, get the mod that most likely caused it, the kind of crash and the fix. Nothing is stored.
+- [Crash report reader](https://modkeel.com/crashes/diagnose): paste a crash report (starts with `---- Minecraft Crash Report ----`) or latest.log, get the mod that most likely caused it, the kind of crash and the fix. Nothing is stored.
 - [Why did my modded Minecraft crash?](https://modkeel.com/crashes/): the four common crash errors and how to read a crash report.
 - [Mixin apply failed](https://modkeel.com/crashes/mixin-apply-failed): MixinTransformerError, InvalidInjectionException; mod for another Minecraft version or two mods patching the same code.
 - [NoClassDefFoundError, NoSuchMethodError, ClassNotFoundException](https://modkeel.com/crashes/noclassdeffounderror): missing library mod or version mismatch.
