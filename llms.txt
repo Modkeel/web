@@ -15,6 +15,11 @@
 - [Mod loading failed](https://modkeel.com/crashes/mod-loading-failed): "Incompatible mods found!" (Fabric), "Mod loading has failed" (NeoForge, Forge); missing, wrong, duplicate or wrong-loader mods.
 - [OutOfMemoryError: Java heap space](https://modkeel.com/crashes/out-of-memory): how much RAM to give modded Minecraft and where to set it.
 
+## Lab data
+
+- [Mods tested by Minecraft version](https://modkeel.com/minecraft/): which mod releases ran on each Minecraft version in the Modkeel lab, which ran together, and which releases made for older versions did not start.
+- [Minecraft 26.2](https://modkeel.com/minecraft/26-2), [Minecraft 26.3](https://modkeel.com/minecraft/26-3).
+
 ## Data API
 
 Read-only JSON at https://api.modkeel.com, no key, open to any origin. Data: what the Modkeel lab saw mods do (CC BY 4.0, attribute "Modkeel lab data (modkeel.com)"). Mods are named by mod id (e.g. sodium, lithium); `mc` is an optional Minecraft version filter.

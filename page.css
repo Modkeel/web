@@ -69,4 +69,7 @@ footer a { color: var(--text); }
 table { width: 100%; border-collapse: collapse; font-size: .95rem; font-variant-numeric: tabular-nums; }
 th { text-align: left; color: var(--muted); font-weight: 600; font-size: .85rem; border-bottom: 2px solid var(--line); padding: 6px 12px 6px 0; }
 td { color: var(--body); border-bottom: 2px solid var(--ink); padding: 8px 12px 8px 0; vertical-align: top; }
-td:first-child { color: var(--text); white-space: nowrap; }
+td:first-child { color: var(--text); }
+td { overflow-wrap: anywhere; }
+td:last-child { white-space: nowrap; }
+@media (max-width: 480px) { th, td { padding-right: 8px; } table { font-size: .9rem; } }
