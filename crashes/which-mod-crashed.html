@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to find which mod crashed Minecraft · Modkeel</title>
+<meta name="description" content="Find the mod that crashed modded Minecraft: where the crash report is, which lines name the mod, how to narrow it down by halves, and how the Modkeel Companion does it on the next start.">
+<link rel="canonical" href="https://modkeel.com/crashes/which-mod-crashed">
+<meta name="theme-color" content="#111923">
+<link rel="icon" type="image/png" href="/img/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HowTo",
+      "name": "Find which mod crashed Minecraft",
+      "description": "Open the newest crash report, read the error and the stack trace for a mod name, and if none is named, remove half the mods at a time.",
+      "step": [
+        {"@type": "HowToStep", "name": "Open the crash report", "text": "Open the newest file in the crash-reports folder of your instance, or logs/latest.log if the game closed without one."},
+        {"@type": "HowToStep", "name": "Read the error", "text": "Read the Description line and the exception under it. A mixin error names the mod's mixin config; a missing class names the library mod that is missing."},
+        {"@type": "HowToStep", "name": "Read the stack trace", "text": "Package names in the stack trace, such as net.caffeinemc.mods.sodium, usually name the mod."},
+        {"@type": "HowToStep", "name": "Narrow it down", "text": "If no mod is named, move half the mods out of the mods folder and start again; keep halving the half that crashes until one mod is left."}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "How do I find which mod crashed my Minecraft?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Open the newest crash report in the crash-reports folder and read the exception and stack trace: mixin configs and package names there usually name the mod. Or let a tool read it: the Modkeel Companion, a free mod for Fabric, NeoForge and Forge, names the mod that most likely crashed the game on the next start and turns it off in one click, and modkeel.com/crashes/diagnose reads a pasted crash report."}},
+        {"@type": "Question", "name": "Where is the Minecraft crash report?",
+         "acceptedAnswer": {"@type": "Answer", "text": "In the crash-reports folder of your instance (or of .minecraft for the official launcher), named crash-date-time-client.txt. If the game closed without one, use logs/latest.log."}},
+        {"@type": "Question", "name": "Is there a mod that tells you which mod crashed the game?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Modkeel Companion, a free and open source mod for Fabric, NeoForge and Forge, says on the next start which mod most likely caused the crash, how sure it is and why, and offers to turn that mod off or go back to the mods that last worked. It also copies each world before it loads with different mods."}},
+        {"@type": "Question", "name": "The crash report names no mod. What now?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Remove half the mods and start the game. If it still crashes, the cause is in the half left in; if not, in the half you took out. Keep halving: with 100 mods, about seven tries find the one. Keep library mods that others need together with them."}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/minecraft/">Lab data</a><a href="/crashes/">Crash help</a><a href="https://modrinth.com/mod/modkeel">Download</a></span></div></nav>
+<main class="wrap">
+  <a class="tag pixel" href="/crashes/">Crash help</a>
+  <h1>Find which mod crashed Minecraft</h1>
+  <p class="lede">Open the newest crash report and read the error and the stack trace: they
+  usually name the mod. If they do not, remove half the mods at a time. Or let the Modkeel
+  Companion, a free mod, name the mod on the next start and turn it off in one click.</p>
+  <p class="updated">Updated October 3, 2026. Fabric, NeoForge and Forge.</p>
+
+  <h2>1. Open the crash report</h2>
+  <p>In your instance folder, open the newest file in <code>crash-reports</code>. With the
+  official launcher it is in <code>.minecraft/crash-reports</code>. If the game closed without a
+  report, open <code>logs/latest.log</code> and look near the end.</p>
+
+  <h2>2. Read the lines that name the mod</h2>
+  <ul>
+    <li><b>The error.</b> Under <code>Description</code> comes the exception. A
+      <a href="/crashes/mixin-apply-failed">mixin error</a> names the mod's mixin config, a file named
+      <code>&lt;modid&gt;.mixins.json</code>. A <a href="/crashes/noclassdeffounderror">missing class</a>
+      points to a library mod that is missing or the wrong version.</li>
+    <li><b>The stack trace.</b> The lines starting with <code>at</code> under the error. Package
+      names there, such as <code>net.caffeinemc.mods.sodium</code>, usually name the mod. The
+      highest one that is not Minecraft or Java is the best lead.</li>
+    <li><b>Mod loading screens.</b> "Incompatible mods found" or "Mod loading has failed" list the
+      mods by name: <a href="/crashes/mod-loading-failed">mod loading failed</a> explains each
+      message.</li>
+  </ul>
+
+  <h2>3. No mod named? Remove half</h2>
+  <p>Move half the mods out of the <code>mods</code> folder and start the game. If it still
+  crashes, the cause is in the half left in; if not, in the half you took out. Keep halving: with
+  100 mods, about seven tries find the one. Keep each library mod together with the mods that need
+  it, or the game stops for a different reason.</p>
+
+  <div class="cta">
+    <h2>Let the game name it</h2>
+    <p>The Modkeel Companion is a free, open source mod for Fabric, NeoForge and Forge. When the
+    game crashes, the next start says which mod most likely did it, how sure Modkeel is and why,
+    and one button turns that mod off, or goes back to the mods that last worked. It copies each
+    world before it loads with different mods, so trying a fix never costs the world.</p>
+    <p><a class="btn" href="https://modrinth.com/mod/modkeel">Get the Modkeel Companion</a></p>
+    <p>Not installed yet? <a href="/crashes/diagnose">Paste the crash report</a> and Modkeel reads
+    it here.</p>
+  </div>
+
+  <h2>Questions</h2>
+  <div class="faq">
+    <details><summary>Where is the Minecraft crash report?</summary><p>In the crash-reports folder of your instance (or of .minecraft for the official launcher), named crash-date-time-client.txt. If the game closed without one, use logs/latest.log.</p></details>
+    <details><summary>Is there a mod that tells you which mod crashed the game?</summary><p>Yes. The Modkeel Companion, a free and open source mod for Fabric, NeoForge and Forge, says on the next start which mod most likely caused the crash, how sure it is and why, and offers to turn that mod off or go back to the mods that last worked. It also copies each world before it loads with different mods.</p></details>
+    <details><summary>The crash report names no mod. What now?</summary><p>Remove half the mods and start the game. If it still crashes, the cause is in the half left in; if not, in the half you took out. Keep halving: with 100 mods, about seven tries find the one. Keep library mods that others need together with them.</p></details>
+  </div>
+
+  <h2>Related</h2>
+  <ul>
+    <li><a href="/guides/update-modpack">Update a modpack without losing your world</a></li>
+    <li><a href="/crashes/">Why did my modded Minecraft crash?</a></li>
+    <li><a href="/minecraft/">Mods tested by Minecraft version</a></li>
+  </ul>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+</body>
+</html>
