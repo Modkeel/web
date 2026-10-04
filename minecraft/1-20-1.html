@@ -73,7 +73,7 @@
      "name": "How much FPS does Sodium add on Minecraft 1.20.1?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 122% over terrain (227 to 504 FPS) on Minecraft 1.20.1."
+      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 122% over terrain (227 to 504 FPS) and 26% with 300 mobs behind a wall (58 to 74 FPS); it lowered the frame rate 11% with 300 mobs in view (84 to 74 FPS), because on Windows with an NVIDIA card Sodium turns on a driver workaround against crashes that makes each draw call wait, and this version draws mobs of mixed kinds in many small draw calls on Minecraft 1.20.1."
      }
     },
     {
@@ -148,7 +148,7 @@
 
   <h2>What the lab measured on 1.20.1</h2>
   <p>Frame rate on Minecraft 1.20.1 with each mod, against the same game without mods.</p>
-  <p><a href="/mods/sodium">Sodium</a> raised the frame rate 122% over terrain (227 to 504 FPS).</p>
+  <p><a href="/mods/sodium">Sodium</a> raised the frame rate 122% over terrain (227 to 504 FPS) and 26% with 300 mobs behind a wall (58 to 74 FPS); it lowered the frame rate 11% with 300 mobs in view (84 to 74 FPS), because on Windows with an NVIDIA card Sodium turns on a driver workaround against crashes that makes each draw call wait, and this version draws mobs of mixed kinds in many small draw calls.</p>
   <p><a href="/mods/iris">Iris Shaders</a>, which runs on Sodium and had no shader pack loaded, raised the frame rate 106% with 300 mobs in view (84 to 173 FPS), 117% over terrain (227 to 494 FPS) and 166% with 300 mobs behind a wall (58 to 156 FPS).</p>
   <p><a href="/mods/lithium">Lithium</a>, which speeds up game logic rather than drawing, lowered the frame rate 16% over terrain (227 to 192 FPS).</p>
   <p><a href="/mods/entityculling">Entity Culling</a> raised the frame rate 124% with 300 mobs behind a wall (58 to 131 FPS).</p>
@@ -206,7 +206,7 @@
 
   <h2>Questions</h2>
   <div class="faq">
-    <details><summary>How much FPS does Sodium add on Minecraft 1.20.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 122% over terrain (227 to 504 FPS) on Minecraft 1.20.1.</p></details>
+    <details><summary>How much FPS does Sodium add on Minecraft 1.20.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 122% over terrain (227 to 504 FPS) and 26% with 300 mobs behind a wall (58 to 74 FPS); it lowered the frame rate 11% with 300 mobs in view (84 to 74 FPS), because on Windows with an NVIDIA card Sodium turns on a driver workaround against crashes that makes each draw call wait, and this version draws mobs of mixed kinds in many small draw calls on Minecraft 1.20.1.</p></details>
     <details><summary>Do Sodium and Iris Shaders work together on Minecraft 1.20.1?</summary><p>Yes: in the Modkeel lab (data as of October 4, 2026), Sodium mc1.20.1-0.5.13-fabric and Iris Shaders 1.7.6+1.20.1 loaded a world together on a client on Minecraft 1.20.1.</p></details>
     <details><summary>Does FerriteCore work on Minecraft 1.20.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), FerriteCore 6.0.1 started a server on Minecraft 1.20.1.</p></details>
     <details><summary>Does Iris Shaders work on Minecraft 1.20.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), Iris Shaders 1.7.6+1.20.1 loaded a world on a client on Minecraft 1.20.1.</p></details>

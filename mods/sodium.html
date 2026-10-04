@@ -220,8 +220,8 @@
   <p>On Minecraft 26.2, Sodium raised the frame rate 70% with 300 mobs in view (110 to 188 FPS), 37% over terrain (286 to 391 FPS) and 102% with 300 mobs behind a wall (87 to 176 FPS).</p>
   <p>On Minecraft 26.1.2, Sodium raised the frame rate 50% with 300 mobs in view (122 to 184 FPS) and 72% with 300 mobs behind a wall (104 to 178 FPS).</p>
   <p>On Minecraft 1.21.11, Sodium raised the frame rate 33% with 300 mobs in view (150 to 199 FPS), 53% over terrain (292 to 446 FPS) and 59% with 300 mobs behind a wall (117 to 186 FPS).</p>
-  <p>On Minecraft 1.21.1, Sodium raised the frame rate 100% over terrain (324 to 650 FPS).</p>
-  <p>On Minecraft 1.20.1, Sodium raised the frame rate 122% over terrain (227 to 504 FPS).</p>
+  <p>On Minecraft 1.21.1, Sodium raised the frame rate 100% over terrain (324 to 650 FPS); it lowered the frame rate 33% with 300 mobs in view (111 to 74 FPS) and 20% with 300 mobs behind a wall (90 to 72 FPS), because on Windows with an NVIDIA card Sodium turns on a driver workaround against crashes that makes each draw call wait, and this version draws mobs of mixed kinds in many small draw calls.</p>
+  <p>On Minecraft 1.20.1, Sodium raised the frame rate 122% over terrain (227 to 504 FPS) and 26% with 300 mobs behind a wall (58 to 74 FPS); it lowered the frame rate 11% with 300 mobs in view (84 to 74 FPS), because on Windows with an NVIDIA card Sodium turns on a driver workaround against crashes that makes each draw call wait, and this version draws mobs of mixed kinds in many small draw calls.</p>
   <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted. <a href="/data/client-bench.json">Raw data</a>: every run's frame rate per second, Minecraft and Fabric Loader versions, GPU and driver, loaded mods and the SHA-1 of each jar, which Modrinth matches to the exact release.</p>
 
   <h2>Mods it ran with</h2>
