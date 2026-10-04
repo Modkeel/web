@@ -9,6 +9,10 @@
   --keel: #f08a3c;
   --keel-dark: #b25a22;
   --keel-light: #ffb86e;
+  --ok: #8fdc9a;
+  --ok-dark: #2f6b3c;
+  --bad: #ff9a8a;
+  --bad-dark: #8a3a30;
 }
 * { box-sizing: border-box; }
 html { background: var(--night); color: var(--text); }
@@ -73,3 +77,40 @@ td:first-child { color: var(--text); }
 td { overflow-wrap: anywhere; }
 td:last-child { white-space: nowrap; }
 @media (max-width: 480px) { th, td { padding-right: 8px; } table { font-size: .9rem; } }
+/* Lab data pages: result labels, version cards, mod-by-version grid, folding questions */
+.pill { display: inline-block; font-size: .8rem; font-weight: 600; line-height: 1.4; padding: 1px 8px; border: 2px solid; white-space: nowrap; }
+.pill.ok { color: var(--ok); border-color: var(--ok-dark); }
+.pill.bench { color: var(--keel-light); border-color: var(--keel-dark); }
+.pill.bad { color: var(--bad); border-color: var(--bad-dark); }
+.rel { font: .82rem/1.4 Consolas, "Cascadia Mono", monospace; color: var(--muted); overflow-wrap: anywhere; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(124px, 1fr)); gap: 10px; }
+.vcard { min-width: 0; display: grid; gap: 8px; align-content: start; justify-items: start; background: var(--ink); border-bottom: 4px solid var(--line); padding: 12px 14px; }
+.vcard .v { font-weight: 800; font-size: 1.5rem; line-height: 1; color: var(--text); }
+.vcard .v a { color: inherit; text-decoration: none; }
+.vcard .v a:hover { color: var(--keel-light); }
+.matrix th:not(:first-child), .matrix td:not(:first-child) { text-align: center; white-space: nowrap; }
+.none { color: var(--line); }
+.legend { font-size: .9rem; color: var(--muted); margin-top: 10px; }
+.legend b { color: var(--body); }
+.get { border: 2px solid var(--line); padding: 4px 18px 6px; margin-top: 40px; }
+.get h2 { margin-top: 14px; font-size: 1.15rem; }
+.faq { border-top: 2px solid var(--ink); }
+.faq details { border-bottom: 2px solid var(--ink); }
+.faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; font-weight: 600; color: var(--text); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-family: "Silkscreen", monospace; color: var(--keel-light); }
+.faq details[open] summary::after { content: "-"; }
+.faq summary:focus-visible { outline: 3px solid var(--keel-light); outline-offset: 2px; }
+.faq details p { margin: 0 0 14px; }
+.mates li { padding: 10px 0; }
+.mates li > a { font-size: 1rem; }
+.mates p { font-size: .95rem; }
+.cta { background: var(--ink); border: 2px solid var(--keel); padding: 4px 18px 10px; margin-top: 40px; }
+.cta h2 { margin-top: 14px; font-size: 1.25rem; }
+.cta .btn {
+  display: inline-block; padding: 12px 18px; font-weight: 600; text-decoration: none;
+  background: var(--keel); color: var(--night);
+  box-shadow: inset -4px -4px 0 var(--keel-dark), inset 4px 4px 0 var(--keel-light);
+}
+.cta .btn:hover { filter: brightness(1.06); }
+.cta .btn:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }

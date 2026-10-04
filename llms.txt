@@ -18,7 +18,8 @@
 ## Lab data
 
 - [Mods tested by Minecraft version](https://modkeel.com/minecraft/): which mod releases ran on each Minecraft version in the Modkeel lab, which ran together, and which releases made for older versions did not start.
-- [Minecraft 26.2](https://modkeel.com/minecraft/26-2), [Minecraft 26.3](https://modkeel.com/minecraft/26-3).
+- [Minecraft 26.3](https://modkeel.com/minecraft/26-3), [26.2](https://modkeel.com/minecraft/26-2), [1.21.11](https://modkeel.com/minecraft/1-21-11), [1.21.1](https://modkeel.com/minecraft/1-21-1), [1.20.1](https://modkeel.com/minecraft/1-20-1).
+- Per mod: which releases ran on which Minecraft version and the mods each ran with, at https://modkeel.com/mods/{mod_id}, e.g. [Sodium](https://modkeel.com/mods/sodium), [Lithium](https://modkeel.com/mods/lithium), [Iris Shaders](https://modkeel.com/mods/iris).
 
 ## Data API
 
