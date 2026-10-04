@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Entity Culling on Minecraft 26.2, 26.1.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases · Modkeel</title>
-<meta name="description" content="Which Entity Culling releases started in real Minecraft 26.2, 26.1.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.">
+<title>Entity Culling on Minecraft 26.3, 26.2, 26.1.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases · Modkeel</title>
+<meta name="description" content="Which Entity Culling releases started in real Minecraft 26.3, 26.2, 26.1.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Modkeel">
-<meta property="og:title" content="Entity Culling on Minecraft 26.2, 26.1.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases">
-<meta property="og:description" content="Which Entity Culling releases started in real Minecraft 26.2, 26.1.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.">
+<meta property="og:title" content="Entity Culling on Minecraft 26.3, 26.2, 26.1.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases">
+<meta property="og:description" content="Which Entity Culling releases started in real Minecraft 26.3, 26.2, 26.1.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.">
 <meta property="og:url" content="https://modkeel.com/mods/entityculling">
 <meta property="og:image" content="https://modkeel.com/img/og.png">
 <meta property="og:image:width" content="1200">
@@ -27,9 +27,29 @@
  "@context": "https://schema.org",
  "@graph": [
   {
+   "@type": "Dataset",
+   "name": "Modkeel lab client benchmark",
+   "description": "Frame rate per second of real Minecraft Fabric clients with and without client mods, with each run's game, loader, GPU, driver, loaded mods and jar SHA-1 hashes.",
+   "url": "https://modkeel.com/mods/entityculling",
+   "dateModified": "2026-10-04",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "name": "Modkeel",
+    "url": "https://modkeel.com"
+   },
+   "measurementTechnique": "How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted.",
+   "variableMeasured": "frames per second",
+   "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://modkeel.com/data/client-bench.json"
+   }
+  },
+  {
    "@type": "TechArticle",
-   "headline": "Entity Culling on Minecraft 26.2, 26.1.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases",
-   "description": "Which Entity Culling releases started in real Minecraft 26.2, 26.1.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.",
+   "headline": "Entity Culling on Minecraft 26.3, 26.2, 26.1.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases",
+   "description": "Which Entity Culling releases started in real Minecraft 26.3, 26.2, 26.1.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.",
    "datePublished": "2026-10-04",
    "dateModified": "2026-10-04",
    "url": "https://modkeel.com/mods/entityculling",
@@ -52,10 +72,18 @@
    "mainEntity": [
     {
      "@type": "Question",
-     "name": "Does Entity Culling raise FPS on Minecraft 26.2?",
+     "name": "How much FPS does Entity Culling add on Minecraft 26.3?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.2, Entity Culling did not change the frame rate with 300 mobs in view or over terrain by more than runs without mods differed."
+      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, Entity Culling raised the frame rate 106% with 300 mobs behind a wall (148 to 306 FPS)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Entity Culling work on Minecraft 26.3?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 ran in a client benchmark on Minecraft 26.3."
      }
     },
     {
@@ -79,7 +107,7 @@
      "name": "Does Entity Culling work on Minecraft 1.21.11?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 started a server on Minecraft 1.21.11."
+      "text": "In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 ran in a client benchmark on Minecraft 1.21.11."
      }
     },
     {
@@ -87,7 +115,7 @@
      "name": "Does Entity Culling work on Minecraft 1.21.1?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 started a server on Minecraft 1.21.1."
+      "text": "In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 ran in a client benchmark on Minecraft 1.21.1."
      }
     },
     {
@@ -95,7 +123,7 @@
      "name": "Does Entity Culling work on Minecraft 1.20.1?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 started a server on Minecraft 1.20.1."
+      "text": "In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 ran in a client benchmark on Minecraft 1.20.1."
      }
     },
     {
@@ -188,24 +216,29 @@
 <nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/minecraft/">Lab data</a><a href="/crashes/">Crash help</a><a href="https://github.com/Modkeel/companion/releases/latest">Download</a></span></div></nav>
 <main class="wrap">
   <a class="tag pixel" href="/minecraft/">Lab data</a>
-  <h1>Entity Culling on Minecraft 26.2 to 1.20.1</h1>
-  <p class="lede">Entity Culling releases started in real Minecraft 26.2, 26.1.2, 1.21.11, 1.21.1 and 1.20.1 games in the Modkeel lab. It ran in the same game as 9 other mods, among them Sodium, Lithium, FerriteCore and ModernFix.</p>
+  <h1>Entity Culling on Minecraft 26.3 to 1.20.1</h1>
+  <p class="lede">Entity Culling releases started in real Minecraft 26.3, 26.2, 26.1.2, 1.21.11, 1.21.1 and 1.20.1 games in the Modkeel lab. It ran in the same game as 9 other mods, among them Sodium, Lithium, FerriteCore and ModernFix.</p>
   <p class="updated">Lab data as of October 4, 2026. Mod id <code>entityculling</code>.</p>
 
   <h2>Minecraft versions</h2>
   <div class="cards">
-    <div class="vcard"><span class="v"><a href="/minecraft/26-2">26.2</a></span><span class="pill bench">Client benchmark</span><span class="rel">1.11.2</span></div>
-    <div class="vcard"><span class="v">26.1.2</span><span class="pill bench">Client benchmark</span><span class="rel">1.11.2</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-21-11">1.21.11</a></span><span class="pill ok">Server started</span><span class="rel">1.11.2</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-21-1">1.21.1</a></span><span class="pill ok">Server started</span><span class="rel">1.11.2</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-20-1">1.20.1</a></span><span class="pill ok">Server started</span><span class="rel">1.11.2</span></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/26-3">26.3</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/entityculling/version/F4loCvYt" title="SHA-1 f2196e803fe77cfbb62c4a2acb64803d98b4f61c">1.11.2</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/26-2">26.2</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/entityculling/version/RWjup6Jf" title="SHA-1 8a379bf40ab7125756afe7bbdf9501324bc37216">1.11.2</a></div>
+    <div class="vcard"><span class="v">26.1.2</span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/entityculling/version/YDFyjf5b" title="SHA-1 16f2fe0c762370775257a450983ec6e8a1c70b75">1.11.2</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-21-11">1.21.11</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/entityculling/version/CFBkR8Vm" title="SHA-1 95055aca69fedd76967f75957fc93762fbe73874">1.11.2</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-21-1">1.21.1</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/entityculling/version/AaC52CuD" title="SHA-1 c400f3fb5f8668f99cdb52b5d4f92d11b4e3edf1">1.11.2</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-20-1">1.20.1</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/entityculling/version/sV6RnlBw" title="SHA-1 fd43e8a962d7026fa5342c260fd3b3f98809913c">1.11.2</a></div>
   </div>
 
   <h2>What the lab measured</h2>
   <p>Frame rate with Entity Culling, against the same game without mods.</p>
+  <p>On Minecraft 26.3, Entity Culling raised the frame rate 106% with 300 mobs behind a wall (148 to 306 FPS).</p>
   <p>On Minecraft 26.2, Entity Culling did not change the frame rate with 300 mobs in view or over terrain by more than runs without mods differed.</p>
-  <p>On Minecraft 26.1.2, Entity Culling raised the frame rate 139% with 300 mobs behind a wall (99 to 237 FPS).</p>
-  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 6 runs. Runs without mods differed by up to 22%, so smaller changes are not counted.</p>
+  <p>On Minecraft 26.1.2, Entity Culling raised the frame rate 145% with 300 mobs behind a wall (104 to 254 FPS).</p>
+  <p>On Minecraft 1.21.11, Entity Culling raised the frame rate 88% with 300 mobs behind a wall (117 to 220 FPS).</p>
+  <p>On Minecraft 1.21.1, Entity Culling raised the frame rate 140% with 300 mobs behind a wall (90 to 217 FPS).</p>
+  <p>On Minecraft 1.20.1, Entity Culling raised the frame rate 124% with 300 mobs behind a wall (58 to 131 FPS).</p>
+  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted. <a href="/data/client-bench.json">Raw data</a>: every run's frame rate per second, Minecraft and Fabric Loader versions, GPU and driver, loaded mods and the SHA-1 of each jar, which Modrinth matches to the exact release.</p>
 
   <h2>Mods it ran with</h2>
   <div class="scroll"><table class="matrix">
@@ -240,12 +273,13 @@
 
   <h2>Questions</h2>
   <div class="faq">
-    <details><summary>Does Entity Culling raise FPS on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.2, Entity Culling did not change the frame rate with 300 mobs in view or over terrain by more than runs without mods differed.</p></details>
+    <details><summary>How much FPS does Entity Culling add on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, Entity Culling raised the frame rate 106% with 300 mobs behind a wall (148 to 306 FPS).</p></details>
+    <details><summary>Does Entity Culling work on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 ran in a client benchmark on Minecraft 26.3.</p></details>
     <details><summary>Does Entity Culling work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 ran in a client benchmark on Minecraft 26.2.</p></details>
     <details><summary>Does Entity Culling work on Minecraft 26.1.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 ran in a client benchmark on Minecraft 26.1.2.</p></details>
-    <details><summary>Does Entity Culling work on Minecraft 1.21.11?</summary><p>In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 started a server on Minecraft 1.21.11.</p></details>
-    <details><summary>Does Entity Culling work on Minecraft 1.21.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 started a server on Minecraft 1.21.1.</p></details>
-    <details><summary>Does Entity Culling work on Minecraft 1.20.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 started a server on Minecraft 1.20.1.</p></details>
+    <details><summary>Does Entity Culling work on Minecraft 1.21.11?</summary><p>In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 ran in a client benchmark on Minecraft 1.21.11.</p></details>
+    <details><summary>Does Entity Culling work on Minecraft 1.21.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 ran in a client benchmark on Minecraft 1.21.1.</p></details>
+    <details><summary>Does Entity Culling work on Minecraft 1.20.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), Entity Culling 1.11.2 ran in a client benchmark on Minecraft 1.20.1.</p></details>
     <details><summary>Does Entity Culling work with Concurrent Chunk Management Engine (Fabric)?</summary><p>In the Modkeel lab, Entity Culling and Concurrent Chunk Management Engine (Fabric) started a server together on Minecraft 1.20.1.</p></details>
     <details><summary>Does Entity Culling work with FerriteCore?</summary><p>In the Modkeel lab, Entity Culling and FerriteCore started a server together on Minecraft 1.21.11, 1.21.1 and 1.20.1.</p></details>
     <details><summary>Does Entity Culling work with ImmediatelyFast?</summary><p>In the Modkeel lab, Entity Culling and ImmediatelyFast ran together in a client benchmark on Minecraft 26.2.</p></details>

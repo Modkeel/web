@@ -27,6 +27,26 @@
  "@context": "https://schema.org",
  "@graph": [
   {
+   "@type": "Dataset",
+   "name": "Modkeel lab client benchmark",
+   "description": "Frame rate per second of real Minecraft Fabric clients with and without client mods, with each run's game, loader, GPU, driver, loaded mods and jar SHA-1 hashes.",
+   "url": "https://modkeel.com/mods/sodium",
+   "dateModified": "2026-10-04",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "name": "Modkeel",
+    "url": "https://modkeel.com"
+   },
+   "measurementTechnique": "How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted.",
+   "variableMeasured": "frames per second",
+   "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://modkeel.com/data/client-bench.json"
+   }
+  },
+  {
    "@type": "TechArticle",
    "headline": "Sodium on Minecraft 26.3, 26.2, 26.1.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases",
    "description": "Which Sodium releases started in real Minecraft 26.3, 26.2, 26.1.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.",
@@ -55,7 +75,7 @@
      "name": "How much FPS does Sodium add on Minecraft 26.3?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, Sodium raised the frame rate 75% with 300 mobs in view (92 to 160 FPS), 27% over terrain (242 to 306 FPS) and 88% with 300 mobs behind a wall (145 to 272 FPS)."
+      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, Sodium raised the frame rate 62% with 300 mobs in view (94 to 152 FPS), 23% over terrain (248 to 306 FPS) and 78% with 300 mobs behind a wall (148 to 264 FPS)."
      }
     },
     {
@@ -186,20 +206,23 @@
 
   <h2>Minecraft versions</h2>
   <div class="cards">
-    <div class="vcard"><span class="v"><a href="/minecraft/26-3">26.3</a></span><span class="pill bench">Client benchmark</span><span class="rel">mc26.3-0.9.3-alpha.1-fabric</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/26-2">26.2</a></span><span class="pill bench">Client benchmark</span><span class="rel">mc26.2-0.9.2-fabric</span></div>
-    <div class="vcard"><span class="v">26.1.2</span><span class="pill bench">Client benchmark</span><span class="rel">mc26.1.2-0.9.2-fabric</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-21-11">1.21.11</a></span><span class="pill ok">Loaded a world</span><span class="rel">mc1.21.11-0.8.15-beta.1-fabric</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-21-1">1.21.1</a></span><span class="pill ok">Loaded a world</span><span class="rel">mc1.21.1-0.8.13-fabric</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-20-1">1.20.1</a></span><span class="pill ok">Loaded a world</span><span class="rel">mc1.20.1-0.5.13-fabric</span></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/26-3">26.3</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/sodium/version/v4PSXean" title="SHA-1 5d88caf6f3e182cd39d0fb0d2e7200c5e613f287">mc26.3-0.9.3-alpha.1-fabric</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/26-2">26.2</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/sodium/version/xJZxADzI" title="SHA-1 62a70961a5b3e06938e06ab5f2dc4c5a51cf3323">mc26.2-0.9.2-fabric</a></div>
+    <div class="vcard"><span class="v">26.1.2</span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/sodium/version/tZQ3jqnf" title="SHA-1 d107b02081262e243e80559192a2de86007155d6">mc26.1.2-0.9.2-fabric</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-21-11">1.21.11</a></span><span class="pill ok">Loaded a world</span><a class="rel" href="https://modrinth.com/mod/sodium/version/RB7CDjTS" title="SHA-1 5469cef6f5dddd72a1216d9a15393c90d8eb5f33">mc1.21.11-0.8.15-beta.1-fabric</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-21-1">1.21.1</a></span><span class="pill ok">Loaded a world</span><a class="rel" href="https://modrinth.com/mod/sodium/version/SMxNOGZ6" title="SHA-1 003c114c85ca88ef3362e018deb6aca0c682d6a1">mc1.21.1-0.8.13-fabric</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-20-1">1.20.1</a></span><span class="pill ok">Loaded a world</span><a class="rel" href="https://modrinth.com/mod/sodium/version/OihdIimA" title="SHA-1 bcdbf37d9494e405cba210d7a80ed58e756297b5">mc1.20.1-0.5.13-fabric</a></div>
   </div>
 
   <h2>What the lab measured</h2>
   <p>Frame rate with Sodium, against the same game without mods.</p>
-  <p>On Minecraft 26.3, Sodium raised the frame rate 75% with 300 mobs in view (92 to 160 FPS), 27% over terrain (242 to 306 FPS) and 88% with 300 mobs behind a wall (145 to 272 FPS).</p>
-  <p>On Minecraft 26.2, Sodium raised the frame rate 64% with 300 mobs in view (109 to 179 FPS), 25% over terrain (282 to 354 FPS) and 97% with 300 mobs behind a wall (90 to 177 FPS).</p>
-  <p>On Minecraft 26.1.2, Sodium raised the frame rate 56% with 300 mobs in view (112 to 174 FPS) and 65% with 300 mobs behind a wall (99 to 163 FPS).</p>
-  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 1 to 6 runs. Runs without mods differed by up to 22%, so smaller changes are not counted.</p>
+  <p>On Minecraft 26.3, Sodium raised the frame rate 62% with 300 mobs in view (94 to 152 FPS), 23% over terrain (248 to 306 FPS) and 78% with 300 mobs behind a wall (148 to 264 FPS).</p>
+  <p>On Minecraft 26.2, Sodium raised the frame rate 70% with 300 mobs in view (110 to 188 FPS), 37% over terrain (286 to 391 FPS) and 102% with 300 mobs behind a wall (87 to 176 FPS).</p>
+  <p>On Minecraft 26.1.2, Sodium raised the frame rate 50% with 300 mobs in view (122 to 184 FPS) and 72% with 300 mobs behind a wall (104 to 178 FPS).</p>
+  <p>On Minecraft 1.21.11, Sodium raised the frame rate 33% with 300 mobs in view (150 to 199 FPS), 53% over terrain (292 to 446 FPS) and 59% with 300 mobs behind a wall (117 to 186 FPS).</p>
+  <p>On Minecraft 1.21.1, Sodium raised the frame rate 100% over terrain (324 to 650 FPS).</p>
+  <p>On Minecraft 1.20.1, Sodium raised the frame rate 122% over terrain (227 to 504 FPS).</p>
+  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted. <a href="/data/client-bench.json">Raw data</a>: every run's frame rate per second, Minecraft and Fabric Loader versions, GPU and driver, loaded mods and the SHA-1 of each jar, which Modrinth matches to the exact release.</p>
 
   <h2>Mods it ran with</h2>
   <div class="scroll"><table class="matrix">
@@ -232,7 +255,7 @@
 
   <h2>Questions</h2>
   <div class="faq">
-    <details><summary>How much FPS does Sodium add on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, Sodium raised the frame rate 75% with 300 mobs in view (92 to 160 FPS), 27% over terrain (242 to 306 FPS) and 88% with 300 mobs behind a wall (145 to 272 FPS).</p></details>
+    <details><summary>How much FPS does Sodium add on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, Sodium raised the frame rate 62% with 300 mobs in view (94 to 152 FPS), 23% over terrain (248 to 306 FPS) and 78% with 300 mobs behind a wall (148 to 264 FPS).</p></details>
     <details><summary>Does Sodium work on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), Sodium mc26.3-0.9.3-alpha.1-fabric ran in a client benchmark on Minecraft 26.3.</p></details>
     <details><summary>Does Sodium work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), Sodium mc26.2-0.9.2-fabric ran in a client benchmark on Minecraft 26.2.</p></details>
     <details><summary>Does Sodium work on Minecraft 26.1.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), Sodium mc26.1.2-0.9.2-fabric ran in a client benchmark on Minecraft 26.1.2.</p></details>

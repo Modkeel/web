@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>More Culling on Minecraft 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases · Modkeel</title>
-<meta name="description" content="Which More Culling releases started in real Minecraft 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.">
+<title>More Culling on Minecraft 26.3, 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases · Modkeel</title>
+<meta name="description" content="Which More Culling releases started in real Minecraft 26.3, 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Modkeel">
-<meta property="og:title" content="More Culling on Minecraft 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases">
-<meta property="og:description" content="Which More Culling releases started in real Minecraft 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.">
+<meta property="og:title" content="More Culling on Minecraft 26.3, 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases">
+<meta property="og:description" content="Which More Culling releases started in real Minecraft 26.3, 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.">
 <meta property="og:url" content="https://modkeel.com/mods/moreculling">
 <meta property="og:image" content="https://modkeel.com/img/og.png">
 <meta property="og:image:width" content="1200">
@@ -27,9 +27,29 @@
  "@context": "https://schema.org",
  "@graph": [
   {
+   "@type": "Dataset",
+   "name": "Modkeel lab client benchmark",
+   "description": "Frame rate per second of real Minecraft Fabric clients with and without client mods, with each run's game, loader, GPU, driver, loaded mods and jar SHA-1 hashes.",
+   "url": "https://modkeel.com/mods/moreculling",
+   "dateModified": "2026-10-04",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "name": "Modkeel",
+    "url": "https://modkeel.com"
+   },
+   "measurementTechnique": "How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted.",
+   "variableMeasured": "frames per second",
+   "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://modkeel.com/data/client-bench.json"
+   }
+  },
+  {
    "@type": "TechArticle",
-   "headline": "More Culling on Minecraft 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases",
-   "description": "Which More Culling releases started in real Minecraft 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.",
+   "headline": "More Culling on Minecraft 26.3, 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases",
+   "description": "Which More Culling releases started in real Minecraft 26.3, 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.",
    "datePublished": "2026-10-04",
    "dateModified": "2026-10-04",
    "url": "https://modkeel.com/mods/moreculling",
@@ -52,10 +72,18 @@
    "mainEntity": [
     {
      "@type": "Question",
-     "name": "Does More Culling raise FPS on Minecraft 26.2?",
+     "name": "Does More Culling raise FPS on Minecraft 26.3?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.2, More Culling did not change the frame rate with 300 mobs in view or over terrain by more than runs without mods differed."
+      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, More Culling did not change the frame rate with 300 mobs in view, over terrain or with 300 mobs behind a wall by more than runs without mods differed."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does More Culling work on Minecraft 26.3?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In the Modkeel lab (data as of October 4, 2026), More Culling 1.9.0 ran in a client benchmark on Minecraft 26.3."
      }
     },
     {
@@ -156,22 +184,27 @@
 <nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/minecraft/">Lab data</a><a href="/crashes/">Crash help</a><a href="https://github.com/Modkeel/companion/releases/latest">Download</a></span></div></nav>
 <main class="wrap">
   <a class="tag pixel" href="/minecraft/">Lab data</a>
-  <h1>More Culling on Minecraft 26.2 to 1.20.1</h1>
-  <p class="lede">More Culling releases started in real Minecraft 26.2, 1.21.11, 1.21.1 and 1.20.1 games in the Modkeel lab. It ran in the same game as 6 other mods, among them Sodium, Iris Shaders, ImmediatelyFast and Mod Menu.</p>
+  <h1>More Culling on Minecraft 26.3 to 1.20.1</h1>
+  <p class="lede">More Culling releases started in real Minecraft 26.3, 26.2, 1.21.11, 1.21.1 and 1.20.1 games in the Modkeel lab. It ran in the same game as 6 other mods, among them Sodium, Iris Shaders, ImmediatelyFast and Mod Menu.</p>
   <p class="updated">Lab data as of October 4, 2026. Mod id <code>moreculling</code>.</p>
 
   <h2>Minecraft versions</h2>
   <div class="cards">
-    <div class="vcard"><span class="v"><a href="/minecraft/26-2">26.2</a></span><span class="pill bench">Client benchmark</span><span class="rel">1.8.1</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-21-11">1.21.11</a></span><span class="pill ok">Loaded a world</span><span class="rel">1.6.2</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-21-1">1.21.1</a></span><span class="pill ok">Loaded a world</span><span class="rel">1.0.10</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-20-1">1.20.1</a></span><span class="pill ok">Loaded a world</span><span class="rel">1.20.1-0.24.6</span></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/26-3">26.3</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/moreculling/version/t7vAlfgO" title="SHA-1 7308b0b0b6fffb0e076cabf97db7fc889d9ada68">1.9.0</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/26-2">26.2</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/moreculling/version/D5oVCouK" title="SHA-1 189d90ef598883df8197ea18b510dba21e69bac4">1.8.1</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-21-11">1.21.11</a></span><span class="pill ok">Loaded a world</span><a class="rel" href="https://modrinth.com/mod/moreculling/version/wOzykoLV" title="SHA-1 11a929de62650cc536244d4c2ba889fa84c1c0f2">1.6.2</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-21-1">1.21.1</a></span><span class="pill ok">Loaded a world</span><a class="rel" href="https://modrinth.com/mod/moreculling/version/wUYbHzXF" title="SHA-1 d425f77706d8f6499aae64eb804b3802dad111d4">1.0.10</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-20-1">1.20.1</a></span><span class="pill ok">Loaded a world</span><a class="rel" href="https://modrinth.com/mod/moreculling/version/MI90wAbW" title="SHA-1 c99e1ede1b0a6b90467078a8abdd6259c83d77f4">1.20.1-0.24.6</a></div>
   </div>
 
   <h2>What the lab measured</h2>
   <p>Frame rate with More Culling, against the same game without mods.</p>
+  <p>On Minecraft 26.3, More Culling did not change the frame rate with 300 mobs in view, over terrain or with 300 mobs behind a wall by more than runs without mods differed.</p>
   <p>On Minecraft 26.2, More Culling did not change the frame rate with 300 mobs in view or over terrain by more than runs without mods differed.</p>
-  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 6 runs. Runs without mods differed by up to 22%, so smaller changes are not counted.</p>
+  <p>On Minecraft 1.21.11, More Culling did not change the frame rate with 300 mobs in view, over terrain or with 300 mobs behind a wall by more than runs without mods differed.</p>
+  <p>On Minecraft 1.21.1, More Culling did not change the frame rate with 300 mobs in view, over terrain or with 300 mobs behind a wall by more than runs without mods differed.</p>
+  <p>On Minecraft 1.20.1, More Culling did not change the frame rate with 300 mobs in view, over terrain or with 300 mobs behind a wall by more than runs without mods differed.</p>
+  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted. <a href="/data/client-bench.json">Raw data</a>: every run's frame rate per second, Minecraft and Fabric Loader versions, GPU and driver, loaded mods and the SHA-1 of each jar, which Modrinth matches to the exact release.</p>
 
   <h2>Mods it ran with</h2>
   <div class="scroll"><table class="matrix">
@@ -203,7 +236,8 @@
 
   <h2>Questions</h2>
   <div class="faq">
-    <details><summary>Does More Culling raise FPS on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.2, More Culling did not change the frame rate with 300 mobs in view or over terrain by more than runs without mods differed.</p></details>
+    <details><summary>Does More Culling raise FPS on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, More Culling did not change the frame rate with 300 mobs in view, over terrain or with 300 mobs behind a wall by more than runs without mods differed.</p></details>
+    <details><summary>Does More Culling work on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), More Culling 1.9.0 ran in a client benchmark on Minecraft 26.3.</p></details>
     <details><summary>Does More Culling work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), More Culling 1.8.1 ran in a client benchmark on Minecraft 26.2.</p></details>
     <details><summary>Does More Culling work on Minecraft 1.21.11?</summary><p>In the Modkeel lab (data as of October 4, 2026), More Culling 1.6.2 loaded a world on a client on Minecraft 1.21.11.</p></details>
     <details><summary>Does More Culling work on Minecraft 1.21.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), More Culling 1.0.10 loaded a world on a client on Minecraft 1.21.1.</p></details>

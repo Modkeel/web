@@ -27,6 +27,26 @@
  "@context": "https://schema.org",
  "@graph": [
   {
+   "@type": "Dataset",
+   "name": "Modkeel lab client benchmark",
+   "description": "Frame rate per second of real Minecraft Fabric clients with and without client mods, with each run's game, loader, GPU, driver, loaded mods and jar SHA-1 hashes.",
+   "url": "https://modkeel.com/minecraft/1-21-1",
+   "dateModified": "2026-10-04",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "name": "Modkeel",
+    "url": "https://modkeel.com"
+   },
+   "measurementTechnique": "How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 4 runs. Runs without mods differed by up to 23%, so smaller changes are not counted.",
+   "variableMeasured": "frames per second",
+   "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://modkeel.com/data/client-bench.json"
+   }
+  },
+  {
    "@type": "TechArticle",
    "headline": "Sodium, Iris Shaders and Lithium on Minecraft 1.21.1: lab-tested releases",
    "description": "Sodium mc1.21.1-0.8.13-fabric and Iris Shaders 1.8.14-beta.1+1.21.1-fabric loaded a world together on a client on Minecraft 1.21.1 in the Modkeel lab. Also tested: Lithium, FerriteCore, Entity Culling and 9 more. Lab data as of October 4, 2026.",
@@ -48,6 +68,14 @@
   {
    "@type": "FAQPage",
    "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How much FPS does Sodium add on Minecraft 1.21.1?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 100% over terrain (324 to 650 FPS) on Minecraft 1.21.1."
+     }
+    },
     {
      "@type": "Question",
      "name": "Do Sodium and Iris Shaders work together on Minecraft 1.21.1?",
@@ -77,7 +105,7 @@
      "name": "Does Lithium work on Minecraft 1.21.1?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), Lithium mc1.21.1-0.15.4-fabric started a server on Minecraft 1.21.1."
+      "text": "In the Modkeel lab (data as of October 4, 2026), Lithium mc1.21.1-0.15.4-fabric ran in a client benchmark on Minecraft 1.21.1."
      }
     },
     {
@@ -118,24 +146,33 @@
   <p class="lede">Sodium mc1.21.1-0.8.13-fabric and Iris Shaders 1.8.14-beta.1+1.21.1-fabric loaded a world together on a client on Minecraft 1.21.1 in the Modkeel lab. 14 mod releases started in real Minecraft 1.21.1 games in the Modkeel lab, among them Sodium, Iris Shaders, Lithium, FerriteCore and Entity Culling. The Modkeel lab also ran 42 pairs of mods in the same game.</p>
   <p class="updated">Lab data as of October 4, 2026. 14 releases ran, 42 pairs.</p>
 
+  <h2>What the lab measured on 1.21.1</h2>
+  <p>Frame rate on Minecraft 1.21.1 with each mod, against the same game without mods.</p>
+  <p><a href="/mods/sodium">Sodium</a> raised the frame rate 100% over terrain (324 to 650 FPS).</p>
+  <p><a href="/mods/iris">Iris Shaders</a>, which runs on Sodium and had no shader pack loaded, raised the frame rate 64% with 300 mobs in view (111 to 182 FPS), 80% over terrain (324 to 583 FPS) and 90% with 300 mobs behind a wall (90 to 172 FPS).</p>
+  <p><a href="/mods/entityculling">Entity Culling</a> raised the frame rate 140% with 300 mobs behind a wall (90 to 217 FPS).</p>
+  <p><a href="/mods/immediatelyfast">ImmediatelyFast</a> raised the frame rate 38% with 300 mobs in view (111 to 153 FPS) and 24% with 300 mobs behind a wall (90 to 112 FPS).</p>
+  <p><a href="/mods/lithium">Lithium</a> and <a href="/mods/moreculling">More Culling</a> did not change the frame rate with 300 mobs in view, over terrain or with 300 mobs behind a wall by more than runs without mods differed.</p>
+  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 4 runs. Runs without mods differed by up to 23%, so smaller changes are not counted. <a href="/data/client-bench.json">Raw data</a>: every run's frame rate per second, Minecraft and Fabric Loader versions, GPU and driver, loaded mods and the SHA-1 of each jar, which Modrinth matches to the exact release.</p>
+
   <h2>Releases that ran on 1.21.1</h2>
   <div class="scroll"><table>
     <thead><tr><th>Mod</th><th>Release</th><th>Result</th></tr></thead>
     <tbody>
-      <tr><td><a href="/mods/entityculling">Entity Culling</a></td><td><span class="rel">1.11.2</span></td><td><span class="pill ok">Server started</span></td></tr>
-      <tr><td><a href="/mods/ferritecore">FerriteCore</a></td><td><span class="rel">7.0.3-fabric</span></td><td><span class="pill ok">Server started</span></td></tr>
-      <tr><td><a href="/mods/immediatelyfast">ImmediatelyFast</a></td><td><span class="rel">1.6.14+1.21.1-fabric</span></td><td><span class="pill ok">Loaded a world</span></td></tr>
-      <tr><td><a href="/mods/iris">Iris Shaders</a></td><td><span class="rel">1.8.14-beta.1+1.21.1-fabric</span></td><td><span class="pill ok">Loaded a world</span></td></tr>
-      <tr><td><a href="/mods/krypton">Krypton</a></td><td><span class="rel">0.2.8</span></td><td><span class="pill ok">Server started</span></td></tr>
-      <tr><td><a href="/mods/lambdynlights">LambDynamicLights - Dynamic Lights</a></td><td><span class="rel">4.8.11+1.21.1</span></td><td><span class="pill ok">Loaded a world</span></td></tr>
-      <tr><td><a href="/mods/lithium">Lithium</a></td><td><span class="rel">mc1.21.1-0.15.4-fabric</span></td><td><span class="pill ok">Server started</span></td></tr>
-      <tr><td><a href="/mods/modmenu">Mod Menu</a></td><td><span class="rel">11.0.5</span></td><td><span class="pill ok">Loaded a world</span></td></tr>
-      <tr><td><a href="/mods/modernfix">ModernFix</a></td><td><span class="rel">5.25.1+mc1.21.1</span></td><td><span class="pill ok">Server started</span></td></tr>
-      <tr><td><a href="/mods/moreculling">More Culling</a></td><td><span class="rel">1.0.10</span></td><td><span class="pill ok">Loaded a world</span></td></tr>
-      <tr><td><a href="/mods/scalablelux">ScalableLux</a></td><td><span class="rel">0.3.0-alpha.0.7+1.21.1</span></td><td><span class="pill ok">Server started</span></td></tr>
-      <tr><td><a href="/mods/sodium">Sodium</a></td><td><span class="rel">mc1.21.1-0.8.13-fabric</span></td><td><span class="pill ok">Loaded a world</span></td></tr>
-      <tr><td><a href="/mods/sodium-extra">Sodium Extra</a></td><td><span class="rel">mc1.21.1-0.9.4+fabric</span></td><td><span class="pill ok">Loaded a world</span></td></tr>
-      <tr><td><a href="/mods/vmp">Very Many Players (Fabric)</a></td><td><span class="rel">0.2.0+beta.7.172+1.21.1</span></td><td><span class="pill ok">Server started</span></td></tr>
+      <tr><td><a href="/mods/entityculling">Entity Culling</a></td><td><a class="rel" href="https://modrinth.com/mod/entityculling/version/AaC52CuD" title="SHA-1 c400f3fb5f8668f99cdb52b5d4f92d11b4e3edf1">1.11.2</a></td><td><span class="pill bench">Client benchmark</span></td></tr>
+      <tr><td><a href="/mods/ferritecore">FerriteCore</a></td><td><a class="rel" href="https://modrinth.com/mod/ferrite-core/version/sOzRw3CG" title="SHA-1 a8a6a34fcda177da2828cedef44e0e538cf78aad">7.0.3-fabric</a></td><td><span class="pill ok">Server started</span></td></tr>
+      <tr><td><a href="/mods/immediatelyfast">ImmediatelyFast</a></td><td><a class="rel" href="https://modrinth.com/mod/immediatelyfast/version/7XKnsIC8" title="SHA-1 023805be7d701b9769e987449d217c557de5f848">1.6.14+1.21.1-fabric</a></td><td><span class="pill ok">Loaded a world</span></td></tr>
+      <tr><td><a href="/mods/iris">Iris Shaders</a></td><td><a class="rel" href="https://modrinth.com/mod/iris/version/bAo1Qhte" title="SHA-1 6776c0340845887477bfa463acc736ce7fcb6de5">1.8.14-beta.1+1.21.1-fabric</a></td><td><span class="pill ok">Loaded a world</span></td></tr>
+      <tr><td><a href="/mods/krypton">Krypton</a></td><td><a class="rel" href="https://modrinth.com/mod/krypton/version/Acz3ttTp" title="SHA-1 73e792eb5f120787becda4b87b6ff18b26caea50">0.2.8</a></td><td><span class="pill ok">Server started</span></td></tr>
+      <tr><td><a href="/mods/lambdynlights">LambDynamicLights - Dynamic Lights</a></td><td><a class="rel" href="https://modrinth.com/mod/lambdynamiclights/version/ksaGCvSu" title="SHA-1 7b5afc75a094b4e8a7118f9856eec959b10f2422">4.8.11+1.21.1</a></td><td><span class="pill ok">Loaded a world</span></td></tr>
+      <tr><td><a href="/mods/lithium">Lithium</a></td><td><a class="rel" href="https://modrinth.com/mod/lithium/version/N08Z8wog" title="SHA-1 7d82a004403b7780d4443d8e40361a55cfd0ae63">mc1.21.1-0.15.4-fabric</a></td><td><span class="pill bench">Client benchmark</span></td></tr>
+      <tr><td><a href="/mods/modmenu">Mod Menu</a></td><td><a class="rel" href="https://modrinth.com/mod/modmenu/version/6lgOkclV" title="SHA-1 2321d890a25b5985eba576d7cd8fe9a9c136e33d">11.0.5</a></td><td><span class="pill ok">Loaded a world</span></td></tr>
+      <tr><td><a href="/mods/modernfix">ModernFix</a></td><td><a class="rel" href="https://modrinth.com/mod/modernfix/version/NnNX8LBn" title="SHA-1 4ab39e9c736e7204146792c545ec5b29fc0a3872">5.25.1+mc1.21.1</a></td><td><span class="pill ok">Server started</span></td></tr>
+      <tr><td><a href="/mods/moreculling">More Culling</a></td><td><a class="rel" href="https://modrinth.com/mod/moreculling/version/wUYbHzXF" title="SHA-1 d425f77706d8f6499aae64eb804b3802dad111d4">1.0.10</a></td><td><span class="pill ok">Loaded a world</span></td></tr>
+      <tr><td><a href="/mods/scalablelux">ScalableLux</a></td><td><a class="rel" href="https://modrinth.com/mod/scalablelux/version/AodeMVa6" title="SHA-1 ff6baa9ab1f2aecf0eba5b72595085551adddc7a">0.3.0-alpha.0.7+1.21.1</a></td><td><span class="pill ok">Server started</span></td></tr>
+      <tr><td><a href="/mods/sodium">Sodium</a></td><td><a class="rel" href="https://modrinth.com/mod/sodium/version/SMxNOGZ6" title="SHA-1 003c114c85ca88ef3362e018deb6aca0c682d6a1">mc1.21.1-0.8.13-fabric</a></td><td><span class="pill ok">Loaded a world</span></td></tr>
+      <tr><td><a href="/mods/sodium-extra">Sodium Extra</a></td><td><a class="rel" href="https://modrinth.com/mod/sodium-extra/version/YEWu6red" title="SHA-1 628487b330c9589d26cada5c4a51ac457af80a1f">mc1.21.1-0.9.4+fabric</a></td><td><span class="pill ok">Loaded a world</span></td></tr>
+      <tr><td><a href="/mods/vmp">Very Many Players (Fabric)</a></td><td><a class="rel" href="https://modrinth.com/mod/vmp-fabric/version/VmlY7QTx" title="SHA-1 267975777ba52a23d4423a60e9288f9ce288344e">0.2.0+beta.7.172+1.21.1</a></td><td><span class="pill ok">Server started</span></td></tr>
     </tbody>
   </table></div>
 
@@ -168,10 +205,11 @@
 
   <h2>Questions</h2>
   <div class="faq">
+    <details><summary>How much FPS does Sodium add on Minecraft 1.21.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 100% over terrain (324 to 650 FPS) on Minecraft 1.21.1.</p></details>
     <details><summary>Do Sodium and Iris Shaders work together on Minecraft 1.21.1?</summary><p>Yes: in the Modkeel lab (data as of October 4, 2026), Sodium mc1.21.1-0.8.13-fabric and Iris Shaders 1.8.14-beta.1+1.21.1-fabric loaded a world together on a client on Minecraft 1.21.1.</p></details>
     <details><summary>Does FerriteCore work on Minecraft 1.21.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), FerriteCore 7.0.3-fabric started a server on Minecraft 1.21.1.</p></details>
     <details><summary>Does Iris Shaders work on Minecraft 1.21.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), Iris Shaders 1.8.14-beta.1+1.21.1-fabric loaded a world on a client on Minecraft 1.21.1.</p></details>
-    <details><summary>Does Lithium work on Minecraft 1.21.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), Lithium mc1.21.1-0.15.4-fabric started a server on Minecraft 1.21.1.</p></details>
+    <details><summary>Does Lithium work on Minecraft 1.21.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), Lithium mc1.21.1-0.15.4-fabric ran in a client benchmark on Minecraft 1.21.1.</p></details>
     <details><summary>Does Sodium work on Minecraft 1.21.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), Sodium mc1.21.1-0.8.13-fabric loaded a world on a client on Minecraft 1.21.1.</p></details>
     <details><summary>Which mods work together on Minecraft 1.21.1?</summary><p>In the Modkeel lab on Minecraft 1.21.1, these pairs ran in the same game: Entity Culling with FerriteCore; Entity Culling with Krypton; Entity Culling with Lithium; Entity Culling with ModernFix; Entity Culling with ScalableLux; Entity Culling with Very Many Players (Fabric); FerriteCore with Krypton; FerriteCore with Lithium; FerriteCore with ModernFix; FerriteCore with ScalableLux; FerriteCore with Very Many Players (Fabric); ImmediatelyFast with Iris Shaders; ImmediatelyFast with LambDynamicLights - Dynamic Lights; ImmediatelyFast with Mod Menu; ImmediatelyFast with More Culling; ImmediatelyFast with Sodium; ImmediatelyFast with Sodium Extra; Iris Shaders with LambDynamicLights - Dynamic Lights; Iris Shaders with Mod Menu; Iris Shaders with More Culling; Iris Shaders with Sodium; Iris Shaders with Sodium Extra; Krypton with Lithium; Krypton with ModernFix; Krypton with ScalableLux; Krypton with Very Many Players (Fabric); LambDynamicLights - Dynamic Lights with Mod Menu; LambDynamicLights - Dynamic Lights with More Culling; LambDynamicLights - Dynamic Lights with Sodium; LambDynamicLights - Dynamic Lights with Sodium Extra; Lithium with ModernFix; Lithium with ScalableLux; Lithium with Very Many Players (Fabric); Mod Menu with More Culling; Mod Menu with Sodium; Mod Menu with Sodium Extra; ModernFix with ScalableLux; ModernFix with Very Many Players (Fabric); More Culling with Sodium; More Culling with Sodium Extra; ScalableLux with Very Many Players (Fabric); Sodium with Sodium Extra.</p></details>
     <details><summary>How do I update my modpack to Minecraft 1.21.1 without losing my world?</summary><p>Swap each mod for a release made for 1.21.1: in the Modkeel lab, releases made for an older version often did not start. Keep a copy of the world first. The Modkeel Companion, a free mod for Fabric and NeoForge, copies each world before it loads with different mods; if the game then crashes, it names the mod that most likely caused it and turns that mod off, or goes back to the mods that last worked, in one click.</p></details>

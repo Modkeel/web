@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lithium on Minecraft 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases · Modkeel</title>
-<meta name="description" content="Which Lithium releases started in real Minecraft 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.">
+<title>Lithium on Minecraft 26.3, 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases · Modkeel</title>
+<meta name="description" content="Which Lithium releases started in real Minecraft 26.3, 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Modkeel">
-<meta property="og:title" content="Lithium on Minecraft 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases">
-<meta property="og:description" content="Which Lithium releases started in real Minecraft 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.">
+<meta property="og:title" content="Lithium on Minecraft 26.3, 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases">
+<meta property="og:description" content="Which Lithium releases started in real Minecraft 26.3, 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.">
 <meta property="og:url" content="https://modkeel.com/mods/lithium">
 <meta property="og:image" content="https://modkeel.com/img/og.png">
 <meta property="og:image:width" content="1200">
@@ -27,9 +27,29 @@
  "@context": "https://schema.org",
  "@graph": [
   {
+   "@type": "Dataset",
+   "name": "Modkeel lab client benchmark",
+   "description": "Frame rate per second of real Minecraft Fabric clients with and without client mods, with each run's game, loader, GPU, driver, loaded mods and jar SHA-1 hashes.",
+   "url": "https://modkeel.com/mods/lithium",
+   "dateModified": "2026-10-04",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "name": "Modkeel",
+    "url": "https://modkeel.com"
+   },
+   "measurementTechnique": "How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted.",
+   "variableMeasured": "frames per second",
+   "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://modkeel.com/data/client-bench.json"
+   }
+  },
+  {
    "@type": "TechArticle",
-   "headline": "Lithium on Minecraft 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases",
-   "description": "Which Lithium releases started in real Minecraft 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.",
+   "headline": "Lithium on Minecraft 26.3, 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases",
+   "description": "Which Lithium releases started in real Minecraft 26.3, 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.",
    "datePublished": "2026-10-04",
    "dateModified": "2026-10-04",
    "url": "https://modkeel.com/mods/lithium",
@@ -52,10 +72,18 @@
    "mainEntity": [
     {
      "@type": "Question",
-     "name": "Does Lithium raise FPS on Minecraft 26.2?",
+     "name": "Does Lithium raise FPS on Minecraft 26.3?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.2, Lithium, which speeds up game logic rather than drawing, did not change the frame rate with 300 mobs in view or over terrain by more than runs without mods differed."
+      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, Lithium, which speeds up game logic rather than drawing, did not change the frame rate with 300 mobs in view, over terrain or with 300 mobs behind a wall by more than runs without mods differed."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Lithium work on Minecraft 26.3?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In the Modkeel lab (data as of October 4, 2026), Lithium mc26.3-0.26.2-fabric ran in a client benchmark on Minecraft 26.3."
      }
     },
     {
@@ -71,7 +99,7 @@
      "name": "Does Lithium work on Minecraft 1.21.11?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), Lithium mc1.21.11-0.21.4-fabric started a server on Minecraft 1.21.11."
+      "text": "In the Modkeel lab (data as of October 4, 2026), Lithium mc1.21.11-0.21.4-fabric ran in a client benchmark on Minecraft 1.21.11."
      }
     },
     {
@@ -79,7 +107,7 @@
      "name": "Does Lithium work on Minecraft 1.21.1?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), Lithium mc1.21.1-0.15.4-fabric started a server on Minecraft 1.21.1."
+      "text": "In the Modkeel lab (data as of October 4, 2026), Lithium mc1.21.1-0.15.4-fabric ran in a client benchmark on Minecraft 1.21.1."
      }
     },
     {
@@ -87,7 +115,7 @@
      "name": "Does Lithium work on Minecraft 1.20.1?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), Lithium mc1.20.1-0.11.4-fabric started a server on Minecraft 1.20.1."
+      "text": "In the Modkeel lab (data as of October 4, 2026), Lithium mc1.20.1-0.11.4-fabric ran in a client benchmark on Minecraft 1.20.1."
      }
     },
     {
@@ -95,7 +123,7 @@
      "name": "Does Lithium work with Concurrent Chunk Management Engine (Fabric)?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab, Lithium and Concurrent Chunk Management Engine (Fabric) ran together in a server benchmark on Minecraft 26.2; and started a server together on Minecraft 1.20.1."
+      "text": "In the Modkeel lab, Lithium and Concurrent Chunk Management Engine (Fabric) ran together in a server benchmark on Minecraft 26.3 and 26.2; and started a server together on Minecraft 1.20.1."
      }
     },
     {
@@ -111,7 +139,7 @@
      "name": "Does Lithium work with FerriteCore?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab, Lithium and FerriteCore ran together in a server benchmark on Minecraft 26.2; and started a server together on Minecraft 1.21.11, 1.21.1 and 1.20.1."
+      "text": "In the Modkeel lab, Lithium and FerriteCore ran together in a server benchmark on Minecraft 26.3 and 26.2; and started a server together on Minecraft 1.21.11, 1.21.1 and 1.20.1."
      }
     },
     {
@@ -143,7 +171,7 @@
      "name": "Does Lithium work with ScalableLux?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab, Lithium and ScalableLux ran together in a server benchmark on Minecraft 26.2; and started a server together on Minecraft 1.21.1."
+      "text": "In the Modkeel lab, Lithium and ScalableLux ran together in a server benchmark on Minecraft 26.3 and 26.2; and started a server together on Minecraft 1.21.1."
      }
     },
     {
@@ -151,7 +179,7 @@
      "name": "Does Lithium work with Very Many Players (Fabric)?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab, Lithium and Very Many Players (Fabric) ran together in a server benchmark on Minecraft 26.2; and started a server together on Minecraft 1.21.11, 1.21.1 and 1.20.1."
+      "text": "In the Modkeel lab, Lithium and Very Many Players (Fabric) ran together in a server benchmark on Minecraft 26.3 and 26.2; and started a server together on Minecraft 1.21.11, 1.21.1 and 1.20.1."
      }
     },
     {
@@ -172,35 +200,40 @@
 <nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/minecraft/">Lab data</a><a href="/crashes/">Crash help</a><a href="https://github.com/Modkeel/companion/releases/latest">Download</a></span></div></nav>
 <main class="wrap">
   <a class="tag pixel" href="/minecraft/">Lab data</a>
-  <h1>Lithium on Minecraft 26.2 to 1.20.1</h1>
-  <p class="lede">Lithium releases started in real Minecraft 26.2, 1.21.11, 1.21.1 and 1.20.1 games in the Modkeel lab. It ran in the same game as 8 other mods, among them FerriteCore, Entity Culling, ModernFix and Concurrent Chunk Management Engine (Fabric).</p>
+  <h1>Lithium on Minecraft 26.3 to 1.20.1</h1>
+  <p class="lede">Lithium releases started in real Minecraft 26.3, 26.2, 1.21.11, 1.21.1 and 1.20.1 games in the Modkeel lab. It ran in the same game as 8 other mods, among them FerriteCore, Entity Culling, ModernFix and Concurrent Chunk Management Engine (Fabric).</p>
   <p class="updated">Lab data as of October 4, 2026. Mod id <code>lithium</code>.</p>
 
   <h2>Minecraft versions</h2>
   <div class="cards">
-    <div class="vcard"><span class="v"><a href="/minecraft/26-2">26.2</a></span><span class="pill bench">Client benchmark</span><span class="rel">mc26.2-0.25.3-fabric</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-21-11">1.21.11</a></span><span class="pill ok">Server started</span><span class="rel">mc1.21.11-0.21.4-fabric</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-21-1">1.21.1</a></span><span class="pill ok">Server started</span><span class="rel">mc1.21.1-0.15.4-fabric</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-20-1">1.20.1</a></span><span class="pill ok">Server started</span><span class="rel">mc1.20.1-0.11.4-fabric</span></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/26-3">26.3</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/lithium/version/xS0Q8LSi" title="SHA-1 dd5a4ec2c68d7601d8bce9076f789c55a5f8bef3">mc26.3-0.26.2-fabric</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/26-2">26.2</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/lithium/version/f7vZ0VWU" title="SHA-1 435ad0289209bb72195e7a423756a03f5dfa5a9a">mc26.2-0.25.3-fabric</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-21-11">1.21.11</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/lithium/version/Ow7wA0kG" title="SHA-1 203bdcb26e97b3217b045e1182651a7d7b6462ec">mc1.21.11-0.21.4-fabric</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-21-1">1.21.1</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/lithium/version/N08Z8wog" title="SHA-1 7d82a004403b7780d4443d8e40361a55cfd0ae63">mc1.21.1-0.15.4-fabric</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-20-1">1.20.1</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/lithium/version/iEcXOkz4" title="SHA-1 048227ed60a3005cf9fa55880dfe0cf20b0ba680">mc1.20.1-0.11.4-fabric</a></div>
   </div>
 
   <h2>What the lab measured</h2>
   <p>Frame rate with Lithium, against the same game without mods.</p>
+  <p>On Minecraft 26.3, Lithium, which speeds up game logic rather than drawing, did not change the frame rate with 300 mobs in view, over terrain or with 300 mobs behind a wall by more than runs without mods differed.</p>
   <p>On Minecraft 26.2, Lithium, which speeds up game logic rather than drawing, did not change the frame rate with 300 mobs in view or over terrain by more than runs without mods differed.</p>
-  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 6 runs. Runs without mods differed by up to 22%, so smaller changes are not counted.</p>
+  <p>On Minecraft 1.21.11, Lithium, which speeds up game logic rather than drawing, lowered the frame rate 5% over terrain (292 to 276 FPS).</p>
+  <p>On Minecraft 1.21.1, Lithium, which speeds up game logic rather than drawing, did not change the frame rate with 300 mobs in view, over terrain or with 300 mobs behind a wall by more than runs without mods differed.</p>
+  <p>On Minecraft 1.20.1, Lithium, which speeds up game logic rather than drawing, lowered the frame rate 16% over terrain (227 to 192 FPS).</p>
+  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted. <a href="/data/client-bench.json">Raw data</a>: every run's frame rate per second, Minecraft and Fabric Loader versions, GPU and driver, loaded mods and the SHA-1 of each jar, which Modrinth matches to the exact release.</p>
 
   <h2>Mods it ran with</h2>
   <div class="scroll"><table class="matrix">
-    <thead><tr><th>Mod</th><th>26.2</th><th>1.21.11</th><th>1.21.1</th><th>1.20.1</th></tr></thead>
+    <thead><tr><th>Mod</th><th>26.3</th><th>26.2</th><th>1.21.11</th><th>1.21.1</th><th>1.20.1</th></tr></thead>
     <tbody>
-      <tr><td><a href="/mods/ferritecore">FerriteCore</a></td><td><span class="pill bench">Bench</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td></tr>
-      <tr><td><a href="/mods/entityculling">Entity Culling</a></td><td><span class="none">–</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td></tr>
-      <tr><td><a href="/mods/modernfix">ModernFix</a></td><td><span class="none">–</span></td><td><span class="none">–</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td></tr>
-      <tr><td><a href="/mods/c2me">Concurrent Chunk Management Engine (Fabric)</a></td><td><span class="pill bench">Bench</span></td><td><span class="none">–</span></td><td><span class="none">–</span></td><td><span class="pill ok">Server</span></td></tr>
-      <tr><td><a href="/mods/krypton">Krypton</a></td><td><span class="none">–</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/moonrise-opt">Moonrise</a></td><td><span class="pill ok">Server</span></td><td><span class="none">–</span></td><td><span class="none">–</span></td><td><span class="none">–</span></td></tr>
-      <tr><td><a href="/mods/scalablelux">ScalableLux</a></td><td><span class="pill bench">Bench</span></td><td><span class="none">–</span></td><td><span class="pill ok">Server</span></td><td><span class="none">–</span></td></tr>
-      <tr><td><a href="/mods/vmp">Very Many Players (Fabric)</a></td><td><span class="pill bench">Bench</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td></tr>
+      <tr><td><a href="/mods/ferritecore">FerriteCore</a></td><td><span class="pill bench">Bench</span></td><td><span class="pill bench">Bench</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td></tr>
+      <tr><td><a href="/mods/entityculling">Entity Culling</a></td><td><span class="none">–</span></td><td><span class="none">–</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td></tr>
+      <tr><td><a href="/mods/modernfix">ModernFix</a></td><td><span class="none">–</span></td><td><span class="none">–</span></td><td><span class="none">–</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td></tr>
+      <tr><td><a href="/mods/c2me">Concurrent Chunk Management Engine (Fabric)</a></td><td><span class="pill bench">Bench</span></td><td><span class="pill bench">Bench</span></td><td><span class="none">–</span></td><td><span class="none">–</span></td><td><span class="pill ok">Server</span></td></tr>
+      <tr><td><a href="/mods/krypton">Krypton</a></td><td><span class="none">–</span></td><td><span class="none">–</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/moonrise-opt">Moonrise</a></td><td><span class="none">–</span></td><td><span class="pill ok">Server</span></td><td><span class="none">–</span></td><td><span class="none">–</span></td><td><span class="none">–</span></td></tr>
+      <tr><td><a href="/mods/scalablelux">ScalableLux</a></td><td><span class="pill bench">Bench</span></td><td><span class="pill bench">Bench</span></td><td><span class="none">–</span></td><td><span class="pill ok">Server</span></td><td><span class="none">–</span></td></tr>
+      <tr><td><a href="/mods/vmp">Very Many Players (Fabric)</a></td><td><span class="pill bench">Bench</span></td><td><span class="pill bench">Bench</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td><td><span class="pill ok">Server</span></td></tr>
     </tbody>
   </table></div>
   <p class="legend"><b>World</b>: loaded a world together on a client. <b>Server</b>: started a server together. <b>Bench</b>: ran together in a benchmark. <b>Clash</b>: did not run together. A dash: not tested together yet, which is not a conflict.</p>
@@ -221,19 +254,20 @@
 
   <h2>Questions</h2>
   <div class="faq">
-    <details><summary>Does Lithium raise FPS on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.2, Lithium, which speeds up game logic rather than drawing, did not change the frame rate with 300 mobs in view or over terrain by more than runs without mods differed.</p></details>
+    <details><summary>Does Lithium raise FPS on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, Lithium, which speeds up game logic rather than drawing, did not change the frame rate with 300 mobs in view, over terrain or with 300 mobs behind a wall by more than runs without mods differed.</p></details>
+    <details><summary>Does Lithium work on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), Lithium mc26.3-0.26.2-fabric ran in a client benchmark on Minecraft 26.3.</p></details>
     <details><summary>Does Lithium work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), Lithium mc26.2-0.25.3-fabric ran in a client benchmark on Minecraft 26.2.</p></details>
-    <details><summary>Does Lithium work on Minecraft 1.21.11?</summary><p>In the Modkeel lab (data as of October 4, 2026), Lithium mc1.21.11-0.21.4-fabric started a server on Minecraft 1.21.11.</p></details>
-    <details><summary>Does Lithium work on Minecraft 1.21.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), Lithium mc1.21.1-0.15.4-fabric started a server on Minecraft 1.21.1.</p></details>
-    <details><summary>Does Lithium work on Minecraft 1.20.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), Lithium mc1.20.1-0.11.4-fabric started a server on Minecraft 1.20.1.</p></details>
-    <details><summary>Does Lithium work with Concurrent Chunk Management Engine (Fabric)?</summary><p>In the Modkeel lab, Lithium and Concurrent Chunk Management Engine (Fabric) ran together in a server benchmark on Minecraft 26.2; and started a server together on Minecraft 1.20.1.</p></details>
+    <details><summary>Does Lithium work on Minecraft 1.21.11?</summary><p>In the Modkeel lab (data as of October 4, 2026), Lithium mc1.21.11-0.21.4-fabric ran in a client benchmark on Minecraft 1.21.11.</p></details>
+    <details><summary>Does Lithium work on Minecraft 1.21.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), Lithium mc1.21.1-0.15.4-fabric ran in a client benchmark on Minecraft 1.21.1.</p></details>
+    <details><summary>Does Lithium work on Minecraft 1.20.1?</summary><p>In the Modkeel lab (data as of October 4, 2026), Lithium mc1.20.1-0.11.4-fabric ran in a client benchmark on Minecraft 1.20.1.</p></details>
+    <details><summary>Does Lithium work with Concurrent Chunk Management Engine (Fabric)?</summary><p>In the Modkeel lab, Lithium and Concurrent Chunk Management Engine (Fabric) ran together in a server benchmark on Minecraft 26.3 and 26.2; and started a server together on Minecraft 1.20.1.</p></details>
     <details><summary>Does Lithium work with Entity Culling?</summary><p>In the Modkeel lab, Lithium and Entity Culling started a server together on Minecraft 1.21.11, 1.21.1 and 1.20.1.</p></details>
-    <details><summary>Does Lithium work with FerriteCore?</summary><p>In the Modkeel lab, Lithium and FerriteCore ran together in a server benchmark on Minecraft 26.2; and started a server together on Minecraft 1.21.11, 1.21.1 and 1.20.1.</p></details>
+    <details><summary>Does Lithium work with FerriteCore?</summary><p>In the Modkeel lab, Lithium and FerriteCore ran together in a server benchmark on Minecraft 26.3 and 26.2; and started a server together on Minecraft 1.21.11, 1.21.1 and 1.20.1.</p></details>
     <details><summary>Does Lithium work with Krypton?</summary><p>In the Modkeel lab, Lithium and Krypton started a server together on Minecraft 1.21.11, 1.21.1 and 1.20.1.</p></details>
     <details><summary>Does Lithium work with ModernFix?</summary><p>In the Modkeel lab, Lithium and ModernFix started a server together on Minecraft 1.21.1 and 1.20.1.</p></details>
     <details><summary>Does Lithium work with Moonrise?</summary><p>In the Modkeel lab, Lithium and Moonrise started a server together on Minecraft 26.2.</p></details>
-    <details><summary>Does Lithium work with ScalableLux?</summary><p>In the Modkeel lab, Lithium and ScalableLux ran together in a server benchmark on Minecraft 26.2; and started a server together on Minecraft 1.21.1.</p></details>
-    <details><summary>Does Lithium work with Very Many Players (Fabric)?</summary><p>In the Modkeel lab, Lithium and Very Many Players (Fabric) ran together in a server benchmark on Minecraft 26.2; and started a server together on Minecraft 1.21.11, 1.21.1 and 1.20.1.</p></details>
+    <details><summary>Does Lithium work with ScalableLux?</summary><p>In the Modkeel lab, Lithium and ScalableLux ran together in a server benchmark on Minecraft 26.3 and 26.2; and started a server together on Minecraft 1.21.1.</p></details>
+    <details><summary>Does Lithium work with Very Many Players (Fabric)?</summary><p>In the Modkeel lab, Lithium and Very Many Players (Fabric) ran together in a server benchmark on Minecraft 26.3 and 26.2; and started a server together on Minecraft 1.21.11, 1.21.1 and 1.20.1.</p></details>
     <details><summary>What if my game crashes after adding Lithium?</summary><p>Look at the crash report: it usually names the mod. The Modkeel Companion, a free mod for Fabric, NeoForge and Forge, copies each world before it loads with different mods; if the game then crashes, it names the mod that most likely caused it and turns that mod off, or goes back to the mods that last worked, in one click.</p></details>
   </div>
 

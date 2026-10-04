@@ -27,6 +27,26 @@
  "@context": "https://schema.org",
  "@graph": [
   {
+   "@type": "Dataset",
+   "name": "Modkeel lab client benchmark",
+   "description": "Frame rate per second of real Minecraft Fabric clients with and without client mods, with each run's game, loader, GPU, driver, loaded mods and jar SHA-1 hashes.",
+   "url": "https://modkeel.com/minecraft/26-2",
+   "dateModified": "2026-10-04",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "name": "Modkeel",
+    "url": "https://modkeel.com"
+   },
+   "measurementTechnique": "How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 6 runs. Runs without mods differed by up to 20%, so smaller changes are not counted.",
+   "variableMeasured": "frames per second",
+   "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://modkeel.com/data/client-bench.json"
+   }
+  },
+  {
    "@type": "TechArticle",
    "headline": "Sodium, Iris Shaders and Lithium on Minecraft 26.2: lab-tested releases",
    "description": "Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2 in the Modkeel lab. Also tested: Lithium, FerriteCore, Entity Culling and 19 more. Lab data as of October 4, 2026.",
@@ -53,7 +73,7 @@
      "name": "How much FPS does Sodium add on Minecraft 26.2?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 64% with 300 mobs in view (109 to 179 FPS), 25% over terrain (282 to 354 FPS) and 97% with 300 mobs behind a wall (90 to 177 FPS) on Minecraft 26.2."
+      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 70% with 300 mobs in view (110 to 188 FPS), 37% over terrain (286 to 391 FPS) and 102% with 300 mobs behind a wall (87 to 176 FPS) on Minecraft 26.2."
      }
     },
     {
@@ -144,10 +164,10 @@
 
   <h2>What the lab measured on 26.2</h2>
   <p>Frame rate on Minecraft 26.2 with each mod, against the same game without mods.</p>
-  <p><a href="/mods/sodium">Sodium</a> raised the frame rate 64% with 300 mobs in view (109 to 179 FPS), 25% over terrain (282 to 354 FPS) and 97% with 300 mobs behind a wall (90 to 177 FPS).</p>
-  <p><a href="/mods/iris">Iris Shaders</a>, which runs on Sodium and had no shader pack loaded, raised the frame rate 67% with 300 mobs in view (109 to 182 FPS), 31% over terrain (282 to 370 FPS) and 95% with 300 mobs behind a wall (90 to 176 FPS).</p>
+  <p><a href="/mods/sodium">Sodium</a> raised the frame rate 70% with 300 mobs in view (110 to 188 FPS), 37% over terrain (286 to 391 FPS) and 102% with 300 mobs behind a wall (87 to 176 FPS).</p>
+  <p><a href="/mods/iris">Iris Shaders</a>, which runs on Sodium and had no shader pack loaded, raised the frame rate 61% with 300 mobs in view (110 to 178 FPS), 33% over terrain (286 to 380 FPS) and 97% with 300 mobs behind a wall (87 to 172 FPS).</p>
   <p><a href="/mods/lithium">Lithium</a>, <a href="/mods/entityculling">Entity Culling</a>, <a href="/mods/immediatelyfast">ImmediatelyFast</a> and <a href="/mods/moreculling">More Culling</a> did not change the frame rate with 300 mobs in view or over terrain by more than runs without mods differed.</p>
-  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 6 runs. Runs without mods differed by up to 22%, so smaller changes are not counted.</p>
+  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 6 runs. Runs without mods differed by up to 20%, so smaller changes are not counted. <a href="/data/client-bench.json">Raw data</a>: every run's frame rate per second, Minecraft and Fabric Loader versions, GPU and driver, loaded mods and the SHA-1 of each jar, which Modrinth matches to the exact release.</p>
 
   <h2>Older releases that did not start on 26.2</h2>
   <p>Releases made for an earlier Minecraft version, run on 26.2 as they are. That is
@@ -155,22 +175,22 @@
   <div class="scroll"><table>
     <thead><tr><th>Mod</th><th>Release</th><th>Result</th></tr></thead>
     <tbody>
-      <tr><td><a href="https://modrinth.com/mod/athena-ctm">Athena</a></td><td><span class="rel">4.0.6 (made for 1.21.1, NeoForge)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/dynamictrees">Dynamic Trees</a></td><td><span class="rel">1.8.0-BETA04 (made for 26.1.2, NeoForge)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/endrem">End Remastered</a></td><td><span class="rel">6.3.0 (made for 1.21.1, NeoForge)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/fabrishot">Fabrishot</a></td><td><span class="rel">1.17.0 (made for 26.1.2, Fabric)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/forgified-fabric-api">Forgified Fabric API</a></td><td><span class="rel">0.116.15+2.3.5+1.21.1 (made for 1.21.1, NeoForge)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/patchouli">Patchouli</a></td><td><span class="rel">26.1-94-beta (made for 26.1.2, Fabric, Quilt)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/travelers-titles">Traveler&#x27;s Titles</a></td><td><span class="rel">26.1.2-Fabric-6.1.0 (made for 26.1.2, Fabric)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/yungs-better-desert-temples">YUNG&#x27;s Better Desert Temples</a></td><td><span class="rel">26.1.2-Fabric-5.1.1 (made for 26.1.2, Fabric)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/yungs-better-dungeons">YUNG&#x27;s Better Dungeons</a></td><td><span class="rel">26.1.2-Fabric-6.1.1 (made for 26.1.2, Fabric)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/yungs-better-jungle-temples">YUNG&#x27;s Better Jungle Temples</a></td><td><span class="rel">26.1.2-Fabric-4.1.1 (made for 26.1.2, Fabric)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/yungs-better-mineshafts">YUNG&#x27;s Better Mineshafts</a></td><td><span class="rel">26.1.2-Fabric-6.1.1 (made for 26.1.2, Fabric)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/yungs-better-nether-fortresses">YUNG&#x27;s Better Nether Fortresses</a></td><td><span class="rel">26.1.2-Fabric-4.1.1 (made for 26.1.2, Fabric)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/yungs-better-ocean-monuments">YUNG&#x27;s Better Ocean Monuments</a></td><td><span class="rel">26.1.2-Fabric-5.1.1 (made for 26.1.2, Fabric)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/yungs-better-strongholds">YUNG&#x27;s Better Strongholds</a></td><td><span class="rel">26.1.2-Fabric-6.1.1 (made for 26.1.2, Fabric)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/yungs-better-witch-huts">YUNG&#x27;s Better Witch Huts</a></td><td><span class="rel">26.1.2-Fabric-5.1.1 (made for 26.1.2, Fabric)</span></td><td><span class="pill bad">Did not start</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/yungs-extras">YUNG&#x27;s Extras</a></td><td><span class="rel">26.1.2-Fabric-6.1.0 (made for 26.1.2, Fabric)</span></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/athena-ctm">Athena</a></td><td><a class="rel" href="https://modrinth.com/mod/athena-ctm/version/dJgL278E" title="SHA-1 4bcbdf388bd5e387beca7c627224aac33584b55b">4.0.6 (made for 1.21.1, NeoForge)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/dynamictrees">Dynamic Trees</a></td><td><a class="rel" href="https://modrinth.com/mod/dynamictrees/version/djcEepCM" title="SHA-1 2c7c9cc8f0f94895ad1c0ba88bb238e2692d997e">1.8.0-BETA04 (made for 26.1.2, NeoForge)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/endrem">End Remastered</a></td><td><a class="rel" href="https://modrinth.com/mod/endrem/version/Xzg42PX9" title="SHA-1 d3fca102a9f5aeb108d5118665b86ead1dd30988">6.3.0 (made for 1.21.1, NeoForge)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/fabrishot">Fabrishot</a></td><td><a class="rel" href="https://modrinth.com/mod/fabrishot/version/Y8Tsud9e" title="SHA-1 cabc7f77ce10fd58cf33cbfd04eeda3ef33167c8">1.17.0 (made for 26.1.2, Fabric)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/forgified-fabric-api">Forgified Fabric API</a></td><td><a class="rel" href="https://modrinth.com/mod/forgified-fabric-api/version/V9WdDUTx" title="SHA-1 1a2c41d2efbe1c60159b90a165557e7c06d03a5c">0.116.15+2.3.5+1.21.1 (made for 1.21.1, NeoForge)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/patchouli">Patchouli</a></td><td><a class="rel" href="https://modrinth.com/mod/patchouli/version/AveV4Tjn" title="SHA-1 d90a5ad32d3d504b15fc57e5eb59b706c12b75e2">26.1-94-beta (made for 26.1.2, Fabric, Quilt)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/travelers-titles">Traveler&#x27;s Titles</a></td><td><a class="rel" href="https://modrinth.com/mod/travelers-titles/version/lRpJBRMb" title="SHA-1 45750276e3da25b592d363d9a70dc3531af86ac7">26.1.2-Fabric-6.1.0 (made for 26.1.2, Fabric)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/yungs-better-desert-temples">YUNG&#x27;s Better Desert Temples</a></td><td><a class="rel" href="https://modrinth.com/mod/yungs-better-desert-temples/version/8MkDZkJA" title="SHA-1 428ef2c95b334c145b26767f5c1a81d7951e5935">26.1.2-Fabric-5.1.1 (made for 26.1.2, Fabric)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/yungs-better-dungeons">YUNG&#x27;s Better Dungeons</a></td><td><a class="rel" href="https://modrinth.com/mod/yungs-better-dungeons/version/ZAy29qXU" title="SHA-1 0f3161628ce5df552ad728aaa7b39aaa785546ac">26.1.2-Fabric-6.1.1 (made for 26.1.2, Fabric)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/yungs-better-jungle-temples">YUNG&#x27;s Better Jungle Temples</a></td><td><a class="rel" href="https://modrinth.com/mod/yungs-better-jungle-temples/version/h8i7nZ2w" title="SHA-1 d336cf71b466692ada74e7776e9bec124467c5b5">26.1.2-Fabric-4.1.1 (made for 26.1.2, Fabric)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/yungs-better-mineshafts">YUNG&#x27;s Better Mineshafts</a></td><td><a class="rel" href="https://modrinth.com/mod/yungs-better-mineshafts/version/PCdPUNQs" title="SHA-1 5109b66048dd81cd79872743e842bcda484546cb">26.1.2-Fabric-6.1.1 (made for 26.1.2, Fabric)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/yungs-better-nether-fortresses">YUNG&#x27;s Better Nether Fortresses</a></td><td><a class="rel" href="https://modrinth.com/mod/yungs-better-nether-fortresses/version/itXNeE2A" title="SHA-1 0e71f1e1fe51b52c6b8a45a4669294f2d591f004">26.1.2-Fabric-4.1.1 (made for 26.1.2, Fabric)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/yungs-better-ocean-monuments">YUNG&#x27;s Better Ocean Monuments</a></td><td><a class="rel" href="https://modrinth.com/mod/yungs-better-ocean-monuments/version/8ZhDJBgB" title="SHA-1 c9fdf25e920f522eab18eb38a7354d32657d21aa">26.1.2-Fabric-5.1.1 (made for 26.1.2, Fabric)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/yungs-better-strongholds">YUNG&#x27;s Better Strongholds</a></td><td><a class="rel" href="https://modrinth.com/mod/yungs-better-strongholds/version/aYR5vkpj" title="SHA-1 0370595b9913e10362dc04c27ee655a480f9467c">26.1.2-Fabric-6.1.1 (made for 26.1.2, Fabric)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/yungs-better-witch-huts">YUNG&#x27;s Better Witch Huts</a></td><td><a class="rel" href="https://modrinth.com/mod/yungs-better-witch-huts/version/HEnkLCGz" title="SHA-1 ed29eda040c36e5f54ff4df1b31a9b78a379b8c9">26.1.2-Fabric-5.1.1 (made for 26.1.2, Fabric)</a></td><td><span class="pill bad">Did not start</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/yungs-extras">YUNG&#x27;s Extras</a></td><td><a class="rel" href="https://modrinth.com/mod/yungs-extras/version/LxlVkvKv" title="SHA-1 8cb5e5f083fe65747e70cb7b0d8369305ba63047">26.1.2-Fabric-6.1.0 (made for 26.1.2, Fabric)</a></td><td><span class="pill bad">Did not start</span></td></tr>
     </tbody>
   </table></div>
 
@@ -178,30 +198,30 @@
   <div class="scroll"><table>
     <thead><tr><th>Mod</th><th>Release</th><th>Result</th></tr></thead>
     <tbody>
-      <tr><td><a href="https://modrinth.com/mod/alternate-current">Alternate Current</a></td><td><span class="rel">mc26.2-1.9.0</span></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/async">Async</a></td><td><span class="rel">0.2.4+alpha-26.2</span></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="/mods/c2me">Concurrent Chunk Management Engine (Fabric)</a></td><td><span class="rel">0.4.2-alpha.0.52+26.2</span></td><td><span class="pill bench">Client benchmark</span></td></tr>
-      <tr><td><a href="/mods/entityculling">Entity Culling</a></td><td><span class="rel">1.11.2</span></td><td><span class="pill bench">Client benchmark</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/zfastnoise">Fast Noise</a></td><td><span class="rel">1.1.0-beta.6+26.2</span></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="/mods/ferritecore">FerriteCore</a></td><td><span class="rel">9.0.0-fabric</span></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/health-indicators">Health Indicators</a></td><td><span class="rel">26.1.0.0-beta (made for 26.1.2, Fabric)</span></td><td><span class="pill ok">Loaded a world</span></td></tr>
-      <tr><td><a href="/mods/immediatelyfast">ImmediatelyFast</a></td><td><span class="rel">1.16.5+26.2-fabric</span></td><td><span class="pill bench">Client benchmark</span></td></tr>
-      <tr><td><a href="/mods/iris">Iris Shaders</a></td><td><span class="rel">1.11.4+26.2-fabric</span></td><td><span class="pill bench">Client benchmark</span></td></tr>
-      <tr><td><a href="/mods/krypton">Krypton</a></td><td><span class="rel">0.3.1</span></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/ksyxis">Ksyxis</a></td><td><span class="rel">1.4.5</span></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/lazyai">LazyAI</a></td><td><span class="rel">1.7.0</span></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="/mods/lithium">Lithium</a></td><td><span class="rel">mc26.2-0.25.3-fabric</span></td><td><span class="pill bench">Client benchmark</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/modern-ui">Modern UI</a></td><td><span class="rel">3.13.0.5 (made for 26.1.2, Forge)</span></td><td><span class="pill ok">Server started</span></td></tr>
-      <tr><td><a href="/mods/modernfix">ModernFix</a></td><td><span class="rel">5.27.19-build.2</span></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/moonrise-opt">Moonrise</a></td><td><span class="rel">1.1.2+151ce65</span></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="/mods/moreculling">More Culling</a></td><td><span class="rel">1.8.1</span></td><td><span class="pill bench">Client benchmark</span></td></tr>
-      <tr><td><a href="/mods/scalablelux">ScalableLux</a></td><td><span class="rel">0.3.0-alpha.0.3+26.2</span></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/servercore">ServerCore</a></td><td><span class="rel">1.5.19+26.2</span></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="/mods/sodium">Sodium</a></td><td><span class="rel">mc26.2-0.9.2-fabric</span></td><td><span class="pill bench">Client benchmark</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/structure-layout-optimizer">Structure Layout Optimizer</a></td><td><span class="rel">1.1.4+26.1-fabric</span></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="/mods/vmp">Very Many Players (Fabric)</a></td><td><span class="rel">0.2.0+beta.7.236+26.2</span></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/yungs-better-end-island">YUNG&#x27;s Better End Island</a></td><td><span class="rel">26.1.2-Fabric-4.1.0 (made for 26.1.2, Fabric)</span></td><td><span class="pill ok">Server started</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/yungs-bridges">YUNG&#x27;s Bridges</a></td><td><span class="rel">26.1.2-Fabric-6.1.0 (made for 26.1.2, Fabric)</span></td><td><span class="pill ok">Server started</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/alternate-current">Alternate Current</a></td><td><a class="rel" href="https://modrinth.com/mod/alternate-current/version/blSBYnpw" title="SHA-1 f065e4422cf1d4d846c8e2b71a49ff748b5c9b2d">mc26.2-1.9.0</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/async">Async</a></td><td><a class="rel" href="https://modrinth.com/mod/async/version/T6OSY8vJ" title="SHA-1 ba258f6d9dd779a7231f52c5a36d792a8b932d63">0.2.4+alpha-26.2</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
+      <tr><td><a href="/mods/c2me">Concurrent Chunk Management Engine (Fabric)</a></td><td><a class="rel" href="https://modrinth.com/mod/c2me-fabric/version/LmKTn6Yc" title="SHA-1 994dcf809cbbf075a33b3f28c71331c845b415a2">0.4.2-alpha.0.52+26.2</a></td><td><span class="pill bench">Client benchmark</span></td></tr>
+      <tr><td><a href="/mods/entityculling">Entity Culling</a></td><td><a class="rel" href="https://modrinth.com/mod/entityculling/version/RWjup6Jf" title="SHA-1 8a379bf40ab7125756afe7bbdf9501324bc37216">1.11.2</a></td><td><span class="pill bench">Client benchmark</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/zfastnoise">Fast Noise</a></td><td><a class="rel" href="https://modrinth.com/mod/zfastnoise/version/RxI4fDfx" title="SHA-1 1c8e66ef04647320697c77fc99bb7d75e7400b7c">1.1.0-beta.6+26.2</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
+      <tr><td><a href="/mods/ferritecore">FerriteCore</a></td><td><a class="rel" href="https://modrinth.com/mod/ferrite-core/version/d5ddUdiB" title="SHA-1 eac76ff0f3753422c61b2c44487d0d195d88d4bc">9.0.0-fabric</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/health-indicators">Health Indicators</a></td><td><a class="rel" href="https://modrinth.com/mod/health-indicators/version/Z3Q8GBU3" title="SHA-1 49b54e6e86738f537ef2792404376fcd7cdc8c9b">26.1.0.0-beta (made for 26.1.2, Fabric)</a></td><td><span class="pill ok">Loaded a world</span></td></tr>
+      <tr><td><a href="/mods/immediatelyfast">ImmediatelyFast</a></td><td><a class="rel" href="https://modrinth.com/mod/immediatelyfast/version/pMWERcSu" title="SHA-1 0286260261591fe77ba0d332d5d5a2d2e868c2c6">1.16.5+26.2-fabric</a></td><td><span class="pill bench">Client benchmark</span></td></tr>
+      <tr><td><a href="/mods/iris">Iris Shaders</a></td><td><a class="rel" href="https://modrinth.com/mod/iris/version/gxZWWnKH" title="SHA-1 bd0b24731a94b8fe164531e6345718d30ab08ed2">1.11.4+26.2-fabric</a></td><td><span class="pill bench">Client benchmark</span></td></tr>
+      <tr><td><a href="/mods/krypton">Krypton</a></td><td><a class="rel" href="https://modrinth.com/mod/krypton/version/5WeL0Nkz" title="SHA-1 c83ed92c0f9f8523d7e6096151e74222fea91e96">0.3.1</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/ksyxis">Ksyxis</a></td><td><a class="rel" href="https://modrinth.com/mod/ksyxis/version/9CU8nnVG" title="SHA-1 026b789a30de912a40911443c37c2fc92579629e">1.4.5</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/lazyai">LazyAI</a></td><td><a class="rel" href="https://modrinth.com/mod/lazyai/version/jKkYzh8N" title="SHA-1 621deba178aa7bb2d60c642a1c5d88987f0c296c">1.7.0</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
+      <tr><td><a href="/mods/lithium">Lithium</a></td><td><a class="rel" href="https://modrinth.com/mod/lithium/version/f7vZ0VWU" title="SHA-1 435ad0289209bb72195e7a423756a03f5dfa5a9a">mc26.2-0.25.3-fabric</a></td><td><span class="pill bench">Client benchmark</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/modern-ui">Modern UI</a></td><td><a class="rel" href="https://modrinth.com/mod/modern-ui/version/PqKzBOVA" title="SHA-1 5c3988988f4bc41fe5458b2e5bde7469726d028b">3.13.0.5 (made for 26.1.2, Forge)</a></td><td><span class="pill ok">Server started</span></td></tr>
+      <tr><td><a href="/mods/modernfix">ModernFix</a></td><td><a class="rel" href="https://modrinth.com/mod/modernfix-mvus/version/50uUra83" title="SHA-1 a14d2ba0fd0d56d12d48bb9f1c44fd3d345bf5e2">5.27.19-build.2</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/moonrise-opt">Moonrise</a></td><td><a class="rel" href="https://modrinth.com/mod/moonrise-opt/version/72EQ5QZf" title="SHA-1 d31338bc63c5dd571d209315a15446d95765c0d8">1.1.2+151ce65</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
+      <tr><td><a href="/mods/moreculling">More Culling</a></td><td><a class="rel" href="https://modrinth.com/mod/moreculling/version/D5oVCouK" title="SHA-1 189d90ef598883df8197ea18b510dba21e69bac4">1.8.1</a></td><td><span class="pill bench">Client benchmark</span></td></tr>
+      <tr><td><a href="/mods/scalablelux">ScalableLux</a></td><td><a class="rel" href="https://modrinth.com/mod/scalablelux/version/EKLUURiy" title="SHA-1 d3637cc2fe15761ca66070e5916f17c80f03ba51">0.3.0-alpha.0.3+26.2</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/servercore">ServerCore</a></td><td><a class="rel" href="https://modrinth.com/mod/servercore/version/edrtnY9v" title="SHA-1 43eda9e44e32e0e736ada0ff125f83cb87cbd59a">1.5.19+26.2</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
+      <tr><td><a href="/mods/sodium">Sodium</a></td><td><a class="rel" href="https://modrinth.com/mod/sodium/version/xJZxADzI" title="SHA-1 62a70961a5b3e06938e06ab5f2dc4c5a51cf3323">mc26.2-0.9.2-fabric</a></td><td><span class="pill bench">Client benchmark</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/structure-layout-optimizer">Structure Layout Optimizer</a></td><td><a class="rel" href="https://modrinth.com/mod/structure-layout-optimizer/version/JwbecFqq" title="SHA-1 4a0fc84879fe358bdfd395af9238e14950dca748">1.1.4+26.1-fabric</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
+      <tr><td><a href="/mods/vmp">Very Many Players (Fabric)</a></td><td><a class="rel" href="https://modrinth.com/mod/vmp-fabric/version/d6FfpWFI" title="SHA-1 dcf1295db267f7b519ecdd7d1c9499910c7e6fc0">0.2.0+beta.7.236+26.2</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/yungs-better-end-island">YUNG&#x27;s Better End Island</a></td><td><a class="rel" href="https://modrinth.com/mod/yungs-better-end-island/version/382LcHvk" title="SHA-1 d298a63387676e4cc02006657dd53b991e0b9f7d">26.1.2-Fabric-4.1.0 (made for 26.1.2, Fabric)</a></td><td><span class="pill ok">Server started</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/yungs-bridges">YUNG&#x27;s Bridges</a></td><td><a class="rel" href="https://modrinth.com/mod/yungs-bridges/version/Emt3LgQS" title="SHA-1 2f539192db79f1d13a4370f2fc766f0e5f3a3b8c">26.1.2-Fabric-6.1.0 (made for 26.1.2, Fabric)</a></td><td><span class="pill ok">Server started</span></td></tr>
     </tbody>
   </table></div>
 
@@ -261,7 +281,7 @@
 
   <h2>Questions</h2>
   <div class="faq">
-    <details><summary>How much FPS does Sodium add on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 64% with 300 mobs in view (109 to 179 FPS), 25% over terrain (282 to 354 FPS) and 97% with 300 mobs behind a wall (90 to 177 FPS) on Minecraft 26.2.</p></details>
+    <details><summary>How much FPS does Sodium add on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 70% with 300 mobs in view (110 to 188 FPS), 37% over terrain (286 to 391 FPS) and 102% with 300 mobs behind a wall (87 to 176 FPS) on Minecraft 26.2.</p></details>
     <details><summary>Do Sodium and Iris Shaders work together on Minecraft 26.2?</summary><p>Yes: in the Modkeel lab (data as of October 4, 2026), Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2.</p></details>
     <details><summary>Does FerriteCore work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), FerriteCore 9.0.0-fabric ran in a server benchmark on Minecraft 26.2.</p></details>
     <details><summary>Does Iris Shaders work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), Iris Shaders 1.11.4+26.2-fabric ran in a client benchmark on Minecraft 26.2.</p></details>

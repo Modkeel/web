@@ -27,6 +27,26 @@
  "@context": "https://schema.org",
  "@graph": [
   {
+   "@type": "Dataset",
+   "name": "Modkeel lab client benchmark",
+   "description": "Frame rate per second of real Minecraft Fabric clients with and without client mods, with each run's game, loader, GPU, driver, loaded mods and jar SHA-1 hashes.",
+   "url": "https://modkeel.com/mods/iris",
+   "dateModified": "2026-10-04",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "name": "Modkeel",
+    "url": "https://modkeel.com"
+   },
+   "measurementTechnique": "How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted.",
+   "variableMeasured": "frames per second",
+   "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://modkeel.com/data/client-bench.json"
+   }
+  },
+  {
    "@type": "TechArticle",
    "headline": "Iris Shaders on Minecraft 26.3, 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases",
    "description": "Which Iris Shaders releases started in real Minecraft 26.3, 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.",
@@ -55,7 +75,7 @@
      "name": "How much FPS does Iris Shaders add on Minecraft 26.3?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, Iris Shaders, which runs on Sodium and had no shader pack loaded, raised the frame rate 61% with 300 mobs in view (92 to 148 FPS), 15% over terrain (242 to 278 FPS) and 78% with 300 mobs behind a wall (145 to 258 FPS)."
+      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, Iris Shaders, which runs on Sodium and had no shader pack loaded, raised the frame rate 57% with 300 mobs in view (94 to 148 FPS), 14% over terrain (248 to 282 FPS) and 75% with 300 mobs behind a wall (148 to 258 FPS)."
      }
     },
     {
@@ -170,18 +190,21 @@
 
   <h2>Minecraft versions</h2>
   <div class="cards">
-    <div class="vcard"><span class="v"><a href="/minecraft/26-3">26.3</a></span><span class="pill bench">Client benchmark</span><span class="rel">1.11.7+26.3-fabric</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/26-2">26.2</a></span><span class="pill bench">Client benchmark</span><span class="rel">1.11.4+26.2-fabric</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-21-11">1.21.11</a></span><span class="pill ok">Loaded a world</span><span class="rel">1.10.8+1.21.11-fabric</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-21-1">1.21.1</a></span><span class="pill ok">Loaded a world</span><span class="rel">1.8.14-beta.1+1.21.1-fabric</span></div>
-    <div class="vcard"><span class="v"><a href="/minecraft/1-20-1">1.20.1</a></span><span class="pill ok">Loaded a world</span><span class="rel">1.7.6+1.20.1</span></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/26-3">26.3</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/iris/version/vTN4NRGW" title="SHA-1 fa03640ba1e4ef2f7ae3619c6373a06e46d0ba2c">1.11.7+26.3-fabric</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/26-2">26.2</a></span><span class="pill bench">Client benchmark</span><a class="rel" href="https://modrinth.com/mod/iris/version/gxZWWnKH" title="SHA-1 bd0b24731a94b8fe164531e6345718d30ab08ed2">1.11.4+26.2-fabric</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-21-11">1.21.11</a></span><span class="pill ok">Loaded a world</span><a class="rel" href="https://modrinth.com/mod/iris/version/ka9PDlsN" title="SHA-1 acfbe6d065b6c35d85c14da04d35e073363f3acf">1.10.8+1.21.11-fabric</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-21-1">1.21.1</a></span><span class="pill ok">Loaded a world</span><a class="rel" href="https://modrinth.com/mod/iris/version/bAo1Qhte" title="SHA-1 6776c0340845887477bfa463acc736ce7fcb6de5">1.8.14-beta.1+1.21.1-fabric</a></div>
+    <div class="vcard"><span class="v"><a href="/minecraft/1-20-1">1.20.1</a></span><span class="pill ok">Loaded a world</span><a class="rel" href="https://modrinth.com/mod/iris/version/s5eFLITc" title="SHA-1 880c0b9ce38bb4997645793407c1801df83f4233">1.7.6+1.20.1</a></div>
   </div>
 
   <h2>What the lab measured</h2>
   <p>Frame rate with Iris Shaders, against the same game without mods.</p>
-  <p>On Minecraft 26.3, Iris Shaders, which runs on Sodium and had no shader pack loaded, raised the frame rate 61% with 300 mobs in view (92 to 148 FPS), 15% over terrain (242 to 278 FPS) and 78% with 300 mobs behind a wall (145 to 258 FPS).</p>
-  <p>On Minecraft 26.2, Iris Shaders, which runs on Sodium and had no shader pack loaded, raised the frame rate 67% with 300 mobs in view (109 to 182 FPS), 31% over terrain (282 to 370 FPS) and 95% with 300 mobs behind a wall (90 to 176 FPS).</p>
-  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 1 to 6 runs. Runs without mods differed by up to 22%, so smaller changes are not counted.</p>
+  <p>On Minecraft 26.3, Iris Shaders, which runs on Sodium and had no shader pack loaded, raised the frame rate 57% with 300 mobs in view (94 to 148 FPS), 14% over terrain (248 to 282 FPS) and 75% with 300 mobs behind a wall (148 to 258 FPS).</p>
+  <p>On Minecraft 26.2, Iris Shaders, which runs on Sodium and had no shader pack loaded, raised the frame rate 61% with 300 mobs in view (110 to 178 FPS), 33% over terrain (286 to 380 FPS) and 97% with 300 mobs behind a wall (87 to 172 FPS).</p>
+  <p>On Minecraft 1.21.11, Iris Shaders, which runs on Sodium and had no shader pack loaded, raised the frame rate 26% with 300 mobs in view (150 to 189 FPS), 45% over terrain (292 to 422 FPS) and 54% with 300 mobs behind a wall (117 to 180 FPS).</p>
+  <p>On Minecraft 1.21.1, Iris Shaders, which runs on Sodium and had no shader pack loaded, raised the frame rate 64% with 300 mobs in view (111 to 182 FPS), 80% over terrain (324 to 583 FPS) and 90% with 300 mobs behind a wall (90 to 172 FPS).</p>
+  <p>On Minecraft 1.20.1, Iris Shaders, which runs on Sodium and had no shader pack loaded, raised the frame rate 106% with 300 mobs in view (84 to 173 FPS), 117% over terrain (227 to 494 FPS) and 166% with 300 mobs behind a wall (58 to 156 FPS).</p>
+  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted. <a href="/data/client-bench.json">Raw data</a>: every run's frame rate per second, Minecraft and Fabric Loader versions, GPU and driver, loaded mods and the SHA-1 of each jar, which Modrinth matches to the exact release.</p>
 
   <h2>Mods it ran with</h2>
   <div class="scroll"><table class="matrix">
@@ -213,7 +236,7 @@
 
   <h2>Questions</h2>
   <div class="faq">
-    <details><summary>How much FPS does Iris Shaders add on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, Iris Shaders, which runs on Sodium and had no shader pack loaded, raised the frame rate 61% with 300 mobs in view (92 to 148 FPS), 15% over terrain (242 to 278 FPS) and 78% with 300 mobs behind a wall (145 to 258 FPS).</p></details>
+    <details><summary>How much FPS does Iris Shaders add on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, on Minecraft 26.3, Iris Shaders, which runs on Sodium and had no shader pack loaded, raised the frame rate 57% with 300 mobs in view (94 to 148 FPS), 14% over terrain (248 to 282 FPS) and 75% with 300 mobs behind a wall (148 to 258 FPS).</p></details>
     <details><summary>Does Iris Shaders work on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), Iris Shaders 1.11.7+26.3-fabric ran in a client benchmark on Minecraft 26.3.</p></details>
     <details><summary>Does Iris Shaders work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 4, 2026), Iris Shaders 1.11.4+26.2-fabric ran in a client benchmark on Minecraft 26.2.</p></details>
     <details><summary>Does Iris Shaders work on Minecraft 1.21.11?</summary><p>In the Modkeel lab (data as of October 4, 2026), Iris Shaders 1.10.8+1.21.11-fabric loaded a world on a client on Minecraft 1.21.11.</p></details>
