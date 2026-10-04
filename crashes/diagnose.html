@@ -24,16 +24,107 @@
 <link rel="stylesheet" href="/page.css">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Modkeel crash report reader",
-  "alternateName": ["Minecraft crash report reader", "Minecraft crash log analyzer"],
-  "url": "https://modkeel.com/crashes/diagnose",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "Any",
-  "description": "Reads a modded Minecraft crash report or latest.log and names the mod that most likely caused the crash, for Fabric, NeoForge and Forge.",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "publisher": { "@type": "Organization", "name": "Modkeel", "url": "https://modkeel.com/" }
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "name": "Modkeel crash report reader",
+   "alternateName": [
+    "Minecraft crash report reader",
+    "Minecraft crash log analyzer"
+   ],
+   "url": "https://modkeel.com/crashes/diagnose",
+   "applicationCategory": "UtilitiesApplication",
+   "operatingSystem": "Any",
+   "description": "Reads a modded Minecraft crash report or latest.log and names the mod that most likely caused the crash, for Fabric, NeoForge and Forge.",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Modkeel",
+    "url": "https://modkeel.com/"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Modkeel",
+     "item": "https://modkeel.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Crash help",
+     "item": "https://modkeel.com/crashes/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Crash report reader",
+     "item": "https://modkeel.com/crashes/diagnose"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is there a mod that tells you which mod crashed Minecraft?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The Modkeel Companion, a free and open source mod for Fabric, NeoForge and Forge, does what this page does on the next start, with the mod files in front of it: it names the mod that most likely caused the crash, says how sure it is and why, and offers to turn that mod off or go back to the mods that last worked. It also copies each world before it loads with different mods."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I have to upload my crash log?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The text you paste is sent to api.modkeel.com, read in memory to find the mod, and dropped: it is not stored and not logged. Crash reports can hold your user name in file paths; none of it is kept."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How sure is the answer?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Each answer says Most likely, Likely or Possibly, and why: for example the loader says the mod failed to load, the error names the mod's mixin, or the mod's code is in the crash trace. When several mods are in the trace and none stands out, it says Possibly: if the first mod is not it, try the next."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why does it name a mod that seems unrelated?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The mod named is the one whose code was running when the game crashed. Sometimes that mod is only where another mod's problem surfaced, for example a library mod called by the mod that is really out of date. Move the named mod out first; if the game still crashes, try the next one in the list."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "It found no crash. What did I paste wrong?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Paste the whole crash report, from the line ---- Minecraft Crash Report ---- down, or the whole logs/latest.log. The launcher's own log or a screenshot of the error does not have the lines it needs."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a Caused by line?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Java errors can wrap one another: each Caused by line is the error behind the one above it. The last Caused by in a block is usually the real problem, and the package names under it usually name the mod."
+     }
+    }
+   ]
+  }
+ ]
 }
 </script>
 </head>
@@ -70,6 +161,16 @@
     the mod's mixin config. Further down, the mod list shows each mod's version. Paste it above and
     Modkeel reads it for you; the <a href="/crashes/">crash help</a> pages explain the common
     errors one by one.</p>
+  </div>
+
+  <h2>Questions</h2>
+  <div class="faq">
+    <details><summary>Is there a mod that tells you which mod crashed Minecraft?</summary><p>Yes. The Modkeel Companion, a free and open source mod for Fabric, NeoForge and Forge, does what this page does on the next start, with the mod files in front of it: it names the mod that most likely caused the crash, says how sure it is and why, and offers to turn that mod off or go back to the mods that last worked. It also copies each world before it loads with different mods.</p></details>
+    <details><summary>Do I have to upload my crash log?</summary><p>The text you paste is sent to api.modkeel.com, read in memory to find the mod, and dropped: it is not stored and not logged. Crash reports can hold your user name in file paths; none of it is kept.</p></details>
+    <details><summary>How sure is the answer?</summary><p>Each answer says Most likely, Likely or Possibly, and why: for example the loader says the mod failed to load, the error names the mod&#x27;s mixin, or the mod&#x27;s code is in the crash trace. When several mods are in the trace and none stands out, it says Possibly: if the first mod is not it, try the next.</p></details>
+    <details><summary>Why does it name a mod that seems unrelated?</summary><p>The mod named is the one whose code was running when the game crashed. Sometimes that mod is only where another mod&#x27;s problem surfaced, for example a library mod called by the mod that is really out of date. Move the named mod out first; if the game still crashes, try the next one in the list.</p></details>
+    <details><summary>It found no crash. What did I paste wrong?</summary><p>Paste the whole crash report, from the line ---- Minecraft Crash Report ---- down, or the whole logs/latest.log. The launcher&#x27;s own log or a screenshot of the error does not have the lines it needs.</p></details>
+    <details><summary>What is a Caused by line?</summary><p>Java errors can wrap one another: each Caused by line is the error behind the one above it. The last Caused by in a block is usually the real problem, and the package names under it usually name the mod.</p></details>
   </div>
 
   <div class="note">
