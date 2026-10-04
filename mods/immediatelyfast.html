@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ImmediatelyFast on Minecraft 26.3, 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases · Modkeel</title>
 <meta name="description" content="Which ImmediatelyFast releases started in real Minecraft 26.3, 26.2, 1.21.11, 1.21.1, 1.20.1 games in the Modkeel lab, and which mods ran with it. Lab data as of October 4, 2026.">
+<link rel="canonical" href="https://modkeel.com/mods/immediatelyfast">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Modkeel">
 <meta property="og:title" content="ImmediatelyFast on Minecraft 26.3, 26.2, 1.21.11, 1.21.1 and 1.20.1: lab-tested releases">
@@ -15,7 +16,6 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Modkeel: the mod that most likely crashed the game, and a one-click fix">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://modkeel.com/mods/immediatelyfast">
 <meta name="theme-color" content="#111923">
 <link rel="icon" type="image/png" href="/img/icon-64.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +38,7 @@
     "name": "Modkeel",
     "url": "https://modkeel.com"
    },
-   "measurementTechnique": "How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted.",
+   "measurementTechnique": "How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H (an entry-level gaming laptop from 2020) joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted. Frame rates depend on the computer: on a faster one the numbers here are usually higher. The percentage is the better guide, but it moves too: mods that cut rendering work (Sodium, More Culling) gain most when the graphics card is the limit, and mods that cut entities or game logic (Entity Culling, Lithium) when the processor is. Some effects belong to one GPU brand: Sodium's drop with mobs on 1.21.1 and 1.20.1 only happens on NVIDIA cards.",
    "variableMeasured": "frames per second",
    "distribution": {
     "@type": "DataDownload",
@@ -212,7 +212,7 @@
   <p>On Minecraft 1.21.11, ImmediatelyFast raised the frame rate 14% over terrain (292 to 331 FPS).</p>
   <p>On Minecraft 1.21.1, ImmediatelyFast raised the frame rate 38% with 300 mobs in view (111 to 153 FPS) and 24% with 300 mobs behind a wall (90 to 112 FPS).</p>
   <p>On Minecraft 1.20.1, ImmediatelyFast raised the frame rate 14% with 300 mobs in view (84 to 96 FPS).</p>
-  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted. <a href="/data/client-bench.json">Raw data</a>: every run's frame rate per second, Minecraft and Fabric Loader versions, GPU and driver, loaded mods and the SHA-1 of each jar, which Modrinth matches to the exact release.</p>
+  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H (an entry-level gaming laptop from 2020) joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 23%, so smaller changes are not counted. Frame rates depend on the computer: on a faster one the numbers here are usually higher. The percentage is the better guide, but it moves too: mods that cut rendering work (Sodium, More Culling) gain most when the graphics card is the limit, and mods that cut entities or game logic (Entity Culling, Lithium) when the processor is. Some effects belong to one GPU brand: Sodium&#x27;s drop with mobs on 1.21.1 and 1.20.1 only happens on NVIDIA cards. <a href="/data/client-bench.json">Raw data</a>: every run's frame rate per second, Minecraft and Fabric Loader versions, GPU and driver, loaded mods and the SHA-1 of each jar, which Modrinth matches to the exact release.</p>
 
   <h2>Mods it ran with</h2>
   <div class="scroll"><table class="matrix">

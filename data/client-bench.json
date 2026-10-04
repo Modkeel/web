@@ -5,6 +5,8 @@
  "updated": "2026-10-04",
  "method": {
   "machine": "a laptop with a GeForce GTX 1650 and a Core i7-10750H",
+  "machine_class": "an entry-level gaming laptop from 2020",
+  "carries_over": "Frame rates depend on the computer: on a faster one the numbers here are usually higher. The percentage is the better guide, but it moves too: mods that cut rendering work (Sodium, More Culling) gain most when the graphics card is the limit, and mods that cut entities or game logic (Entity Culling, Lithium) when the processor is. Some effects belong to one GPU brand: Sodium's drop with mobs on 1.21.1 and 1.20.1 only happens on NVIDIA cards.",
   "window": "1280x720",
   "render_distance": 24,
   "vsync": false,
