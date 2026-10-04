@@ -3,7 +3,7 @@
 > Modkeel keeps modded Minecraft steady. The Modkeel Companion is a free, open source (MIT) mod for Fabric, NeoForge and Forge that backs up worlds when the mods change, names the mod that most likely crashed the game, and offers a one-click fix (turn that mod off, or go back to the mods that last worked). It has no mixins, so it cannot be what breaks a pack, and it sends nothing unless the player chooses to share.
 
 - Supported: Fabric on Minecraft 1.20.1, 1.21.1, 1.21.11 and 26.x; NeoForge on 1.21.1; Forge on 1.20.1.
-- Download: [Modrinth](https://modrinth.com/mod/modkeel), [GitHub releases](https://github.com/Modkeel/companion/releases) (jars built by CI with provenance and VirusTotal scans).
+- Download: [GitHub releases](https://github.com/Modkeel/companion/releases/latest) (jars built by CI with provenance and VirusTotal scans). Modrinth and CurseForge listings are in review.
 - Not an official Minecraft product; not affiliated with Mojang or Microsoft.
 
 ## Crash help
