@@ -10,6 +10,7 @@
 
 - [Find which mod crashed Minecraft](https://modkeel.com/crashes/which-mod-crashed): where the crash report is, which lines name the mod, narrowing it down by halves, and the Companion naming it on the next start.
 - [Update a modpack without losing your world](https://modkeel.com/guides/update-modpack): copy the world, swap each mod for a release made for the new version, keep a way back; lab counts of older releases that did not start.
+- [Crash helper mods compared](https://modkeel.com/guides/crash-mods-compared): Modkeel Companion, Crash Assistant, Not Enough Crashes, Neruina and CrashPatch; which names the mod, turns it off, keeps the game open or protects worlds.
 - [Crash report reader](https://modkeel.com/crashes/diagnose): paste a crash report (starts with `---- Minecraft Crash Report ----`) or latest.log, get the mod that most likely caused it, the kind of crash and the fix. Nothing is stored.
 - [Why did my modded Minecraft crash?](https://modkeel.com/crashes/): the four common crash errors and how to read a crash report.
 - [Mixin apply failed](https://modkeel.com/crashes/mixin-apply-failed): MixinTransformerError, InvalidInjectionException; mod for another Minecraft version or two mods patching the same code.

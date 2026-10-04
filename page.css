@@ -70,6 +70,11 @@ footer a { color: var(--text); }
 .suspects p { margin: 0; }
 .reasons { margin-top: 4px; gap: 2px; font-size: .95rem; }
 .scroll { overflow-x: auto; }
+.compare { table-layout: fixed; min-width: 640px; font-size: .9rem; }
+.compare th:first-child { width: 24%; }
+.compare td, .compare td:last-child { white-space: normal; overflow-wrap: normal; }
+.compare td:not(:first-child) { color: var(--body); }
+.compare thead th:not(:first-child) { color: var(--text); }
 table { width: 100%; border-collapse: collapse; font-size: .95rem; font-variant-numeric: tabular-nums; }
 th { text-align: left; color: var(--muted); font-weight: 600; font-size: .85rem; border-bottom: 2px solid var(--line); padding: 6px 12px 6px 0; }
 td { color: var(--body); border-bottom: 2px solid var(--ink); padding: 8px 12px 8px 0; vertical-align: top; }
