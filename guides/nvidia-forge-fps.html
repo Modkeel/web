@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forge and NeoForge at half the FPS on NVIDIA: the one-line fix · Modkeel</title>
+<meta name="description" content="On Windows with an NVIDIA card, Forge and NeoForge get about half the frame rate of Fabric with mobs on screen, because the driver does not recognise the game. One JVM argument fixes it. Measured in the Modkeel lab.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Modkeel">
+<meta property="og:title" content="Forge and NeoForge at half the FPS on NVIDIA: the one-line fix">
+<meta property="og:description" content="On Windows with an NVIDIA card, Forge and NeoForge get about half the frame rate of Fabric with mobs on screen, because the driver does not recognise the game. One JVM argument fixes it. Measured in the Modkeel lab.">
+<meta property="og:url" content="https://modkeel.com/guides/nvidia-forge-fps">
+<meta property="og:image" content="https://modkeel.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Modkeel: the mod that most likely crashed the game, and a one-click fix">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://modkeel.com/guides/nvidia-forge-fps">
+<meta name="theme-color" content="#111923">
+<link rel="icon" type="image/png" href="/img/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Forge and NeoForge at half the FPS on NVIDIA: the one-line fix",
+      "dateModified": "2026-10-04",
+      "author": {"@type": "Organization", "name": "Modkeel", "url": "https://modkeel.com/"}
+    },
+    {
+      "@type": "HowTo",
+      "name": "Make the NVIDIA driver recognise Minecraft on Forge and NeoForge",
+      "step": [
+        {"@type": "HowToStep", "text": "Open the settings of the Forge or NeoForge installation or instance in your launcher and find the JVM arguments (Java arguments) field."},
+        {"@type": "HowToStep", "text": "Add --enable-native-access net.minecraft.client.main.Main at the end, separated from the existing arguments by a space. Do not remove anything already there."},
+        {"@type": "HowToStep", "text": "Save and start the game. With many mobs on screen the frame rate should be close to Fabric's."}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Why is Forge or NeoForge slower than Fabric with mobs?",
+         "acceptedAnswer": {"@type": "Answer", "text": "On Windows with an NVIDIA graphics card, the driver has a game profile for Minecraft that it applies only when it finds net.minecraft.client.main.Main on the Java command line. Fabric puts that text there; Forge since 1.17 and NeoForge start the game another way, so the driver does not apply its Minecraft profile. In the Modkeel lab that halved the frame rate with 300 mobs in view."}},
+        {"@type": "Question", "name": "Should I turn on Threaded optimization in the NVIDIA Control Panel instead?",
+         "acceptedAnswer": {"@type": "Answer", "text": "No. In the Modkeel lab, forcing Threaded optimization on for Java without the argument dropped NeoForge 1.21.1 from 53 to 10-15 FPS with mobs. Copying every readable setting of the driver's Minecraft profile only reached 57-65 FPS. Only the argument, which lets the driver recognise the game, gave the full 94."}},
+        {"@type": "Question", "name": "Is the argument safe?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Yes. It asks Java to allow native access for a module named net.minecraft.client.main.Main, which does not exist, so Java only prints a warning in the log and changes nothing else. Its effect is that the class name appears on the command line as a word of its own, which is what the driver looks for. Java 17, 21 and 25 all accept it."}},
+        {"@type": "Question", "name": "Does this affect AMD or Intel graphics?",
+         "acceptedAnswer": {"@type": "Answer", "text": "The profile that matches the command line is NVIDIA's. The Modkeel lab measured it on an NVIDIA card only; on AMD and Intel the argument does nothing that we know of."}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/minecraft/">Lab data</a><a href="/crashes/">Crash help</a><a href="https://github.com/Modkeel/companion/releases/latest">Download</a></span></div></nav>
+<main class="wrap">
+  <span class="tag pixel">Performance guide</span>
+  <h1>Forge and NeoForge at half the FPS on NVIDIA: the one-line fix</h1>
+  <p class="lede">On Windows with an NVIDIA card, Forge and NeoForge run at about half of Fabric's
+  frame rate when many mobs are on screen. The cause is not the loader's code: the NVIDIA driver
+  has a Minecraft profile that it only applies when it sees <code>net.minecraft.client.main.Main</code>
+  on the Java command line. Fabric puts it there; Forge and NeoForge don't. Add one JVM argument
+  and the driver recognises the game again.</p>
+  <p class="updated">Measured October 4, 2026 in the Modkeel lab. Corrections are welcome on
+  <a href="https://github.com/Modkeel/companion/issues">GitHub</a>.</p>
+
+  <h2>The fix</h2>
+  <p>In your launcher, open the settings of the Forge or NeoForge installation and add this at the
+  end of the JVM arguments, after a space. Keep everything that is already there.</p>
+  <pre><code>--enable-native-access net.minecraft.client.main.Main</code></pre>
+  <ul>
+    <li><b>Minecraft Launcher:</b> Installations, the installation's <b>…</b> menu, Edit, More
+      options, JVM arguments.</li>
+    <li><b>Prism Launcher:</b> right-click the instance, Edit, Settings, Java, tick Java
+      arguments.</li>
+    <li><b>Modrinth App:</b> the instance's settings, Java and memory, Custom Java arguments.</li>
+    <li><b>CurseForge app:</b> Settings, Minecraft, Java Settings, Additional Arguments (applies
+      to every profile).</li>
+  </ul>
+  <p>The driver only matches the class name when it stands as a word of its own, with spaces
+  around it. Shorter forms such as <code>-Dnvidia.app=net.minecraft.client.main.Main</code> gave
+  no gain in the lab. This form is two ordinary arguments, so every launcher passes it on
+  unchanged. Java answers with one harmless line in the log:
+  <code>WARNING: Unknown module: net.minecraft.client.main.Main specified to
+  --enable-native-access</code>. It needs Java 17 or newer, which Minecraft 1.18 and later
+  use.</p>
+
+  <h2>What it changes</h2>
+  <p>What decides the frame rate is whether the driver recognises the game. Each loader is shown
+  as installed and with that one thing flipped: the text added to NeoForge and Forge, removed from
+  Fabric. The "text added" rows use Fabric's own wording of it. The argument above did as well
+  in runs side by side on a quiet machine: Forge 1.20.1 with 300 mobs in view reached 82 and 78
+  FPS with it, 82 and 79 with Fabric's wording.</p>
+  <div class="scroll">
+  <table class="compare">
+    <thead><tr><th>Loader</th><th>Driver recognises the game</th><th>Terrain</th><th>300 mobs in view</th><th>300 mobs behind a wall</th></tr></thead>
+    <tbody>
+      <tr class="group"><th colspan="5">Minecraft 1.21.1</th></tr>
+      <tr><td>Fabric, as installed</td><td>yes</td><td>306</td><td>107</td><td>90</td></tr>
+      <tr><td>Fabric, text removed</td><td>no</td><td>272</td><td>51</td><td>43</td></tr>
+      <tr><td>NeoForge, as installed</td><td>no</td><td>245</td><td>53</td><td>45</td></tr>
+      <tr><td>NeoForge, text added</td><td>yes</td><td>309</td><td>94</td><td>76</td></tr>
+      <tr class="group"><th colspan="5">Minecraft 1.20.1</th></tr>
+      <tr><td>Fabric, as installed</td><td>yes</td><td>225</td><td>87</td><td>58</td></tr>
+      <tr><td>Forge, as installed</td><td>no</td><td>153</td><td>47</td><td>34</td></tr>
+      <tr><td>Forge, text added</td><td>yes</td><td>222</td><td>83</td><td>58</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <style>.compare tr.group th{text-align:left;padding-top:1.1em;font-size:.85em;letter-spacing:.04em;text-transform:uppercase;opacity:.75}</style>
+  <p>The test works both ways: taking the text away from Fabric drops it to NeoForge's level, and
+  adding it to NeoForge or Forge brings them up to Fabric's. Nothing else changed between runs:
+  same computer, same NVIDIA driver (591.44), same world, no mods besides the loader.</p>
+  <p class="hint">How it was measured: a real client on a laptop with a GeForce GTX 1650 and a Core
+  i7-10750H (an entry-level gaming laptop from 2020), Windows 11, 1280x720, render distance 24,
+  VSync off. Each number is the median second of 20-second scenes over 2 to 4 runs; runs without
+  mods differ by up to 23%, so read the size of the gap, not the exact figure. On a faster
+  computer the frame rates are higher; the gap is largest where the processor, not the graphics
+  card, is the limit, as it is with many mobs. Desktop NVIDIA cards were not measured yet.</p>
+
+  <h2>Why it happens</h2>
+  <p>NVIDIA drivers carry settings for each known game and pick them by the program's name. Every
+  Minecraft runs as <code>javaw.exe</code>, so the driver's Minecraft profile looks at the
+  command line instead: it lists <code>net.minecraft.client.main.Main</code>, the game's own
+  entry point, and <code>net.minecraft.launchwrapper.Launch</code>, which old Forge (1.12 and
+  earlier) used. With the profile, the driver does the OpenGL work on a thread of its own; without
+  it, the game's render thread waits for every call, and a frame with hundreds of mobs, which
+  needs hundreds of draw calls, takes about twice as long.</p>
+  <p>Fabric adds <code>-DFabricMcEmu= net.minecraft.client.main.Main</code> to the command line,
+  a property no code reads, so the driver matches. Forge since 1.17 and NeoForge start through
+  their own bootstrap classes, which are not on the driver's list. Users noticed the slowdown when
+  it appeared in Forge 1.17, but without a cause it was put down to outdated drivers. In our
+  tests the driver was current and identical in every run; only the text changed.</p>
+
+  <h2>Don't just turn on Threaded optimization</h2>
+  <p>The usual advice is to set Threaded optimization to On in the NVIDIA Control Panel. For Java
+  without the argument, that made NeoForge 1.21.1 much slower: 10 to 15 FPS with mobs instead of
+  53. Copying every setting of the Minecraft profile that the driver lets programs read gave 57 to
+  65. Only the argument, which makes the driver treat the game as Minecraft, reached 94.</p>
+
+  <div class="cta">
+    <h2>Lab data for every version</h2>
+    <p>The Modkeel lab measures frame rates with and without popular mods on each Minecraft
+    version, and records which mod releases crash.</p>
+    <p><a class="btn" href="/minecraft/">See the lab data</a></p>
+  </div>
+
+  <h2>Questions</h2>
+  <div class="faq">
+    <details><summary>Why is Forge or NeoForge slower than Fabric with mobs?</summary><p>On Windows with an NVIDIA graphics card, the driver has a game profile for Minecraft that it applies only when it finds net.minecraft.client.main.Main on the Java command line. Fabric puts that text there; Forge since 1.17 and NeoForge start the game another way, so the driver does not apply its Minecraft profile. In the Modkeel lab that halved the frame rate with 300 mobs in view.</p></details>
+    <details><summary>Should I turn on Threaded optimization in the NVIDIA Control Panel instead?</summary><p>No. In the Modkeel lab, forcing Threaded optimization on for Java without the argument dropped NeoForge 1.21.1 from 53 to 10-15 FPS with mobs. Copying every readable setting of the driver's Minecraft profile only reached 57-65 FPS. Only the argument, which lets the driver recognise the game, gave the full 94.</p></details>
+    <details><summary>Is the argument safe?</summary><p>Yes. It asks Java to allow native access for a module named net.minecraft.client.main.Main, which does not exist, so Java only prints a warning in the log and changes nothing else. Its effect is that the class name appears on the command line as a word of its own, which is what the driver looks for. Java 17, 21 and 25 all accept it.</p></details>
+    <details><summary>Does this affect AMD or Intel graphics?</summary><p>The profile that matches the command line is NVIDIA's. The Modkeel lab measured it on an NVIDIA card only; on AMD and Intel the argument does nothing that we know of.</p></details>
+  </div>
+
+  <h2>Related</h2>
+  <ul>
+    <li><a href="/minecraft/1-21-1">Minecraft 1.21.1: lab data</a></li>
+    <li><a href="/minecraft/1-20-1">Minecraft 1.20.1: lab data</a></li>
+    <li><a href="/mods/sodium">Sodium: frame rates and known issues</a></li>
+  </ul>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+</body>
+</html>
