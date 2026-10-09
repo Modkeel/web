@@ -30,10 +30,11 @@
 Read-only JSON at https://api.modkeel.com, no key, open to any origin. Data: what the Modkeel lab saw mods do (CC BY 4.0, attribute "Modkeel lab data (modkeel.com)"). Mods are named by mod id (e.g. sodium, lithium); `mc` is an optional Minecraft version filter.
 
 - [GET /v1](https://api.modkeel.com/v1): the list of endpoints.
+- [GET /v1/mods?q={name}&mc=](https://api.modkeel.com/v1/mods?q=sodium): mod ids the lab has data on that match a name, with the versions tested.
 - [GET /v1/mods/{mod_id}?mc=](https://api.modkeel.com/v1/mods/sodium): the lab runs of a mod and the mods it ran with or clashed with.
 - [GET /v1/pairs/{mod_id}/{mod_id}?mc=](https://api.modkeel.com/v1/pairs/lithium/c2me): `ran_together`, `clash` or `untested`.
 - POST https://api.modkeel.com/v1/diagnose with a crash report or latest.log as the text body: kind, confidence, suspect mods with reasons, Minecraft version, loader, and a guide link. The text is not stored.
-- [MCP server](https://modkeel.com/mcp) at https://api.modkeel.com/mcp (Streamable HTTP, no key; also on Smithery: https://smithery.ai/servers/modkeel/modkeel): tools `diagnose_crash`, `mod_lab_runs` and `mod_pair`, for AI assistants.
+- [MCP server](https://modkeel.com/mcp) at https://api.modkeel.com/mcp (Streamable HTTP, no key; also on Smithery: https://smithery.ai/servers/modkeel/modkeel): tools `diagnose_crash`, `search_mods`, `get_mod_runs` and `check_mod_pair`, for AI assistants.
 
 ## Project
 
