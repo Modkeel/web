@@ -110,8 +110,10 @@ footer a { color: var(--text); }
   <code>search_mods</code>, <code>get_mod_runs</code>, <code>check_mod_pair</code> and
   <code>check_mod_list</code> only read the public lab data. <code>get_mod_info</code> and
   <code>find_mod_download</code> also ask <a href="https://modrinth.com">Modrinth</a> about the
-  mod named, sending only the mod, Minecraft version and loader, never your IP. None of them
-  keep anything about the request. Only the same hashed IP limit applies.</p>
+  mod named, sending only the mod, Minecraft version and loader, never your IP. The only thing
+  kept is a daily count of what <code>find_mod_download</code> was asked for (mod, Minecraft
+  version, loader and whether a build was found), so we know which mods players need ported.
+  It holds nothing about who asked. Only the same hashed IP limit applies.</p>
 
   <h2>What it is used for</h2>
   <p>To learn which mods crash with which, and which fixes work, so Modkeel can name the cause of
