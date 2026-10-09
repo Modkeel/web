@@ -64,7 +64,7 @@ footer a { color: var(--text); }
   <h1>Nothing is sent unless you choose to share</h1>
   <p class="lede">The Modkeel Companion works fully offline. It reaches the internet only to send
   what you ticked, and the screen shows you every field before it goes.</p>
-  <p class="updated">Updated October 2, 2026. Applies to Modkeel Companion 0.2.0 and later; 0.1.0
+  <p class="updated">Updated October 9, 2026. Applies to Modkeel Companion 0.2.0 and later; 0.1.0
   sends nothing at all.</p>
 
   <h2>What is sent, and when</h2>
@@ -102,6 +102,14 @@ footer a { color: var(--text); }
   <code>api.modkeel.com</code>, is read in memory to name the mod behind the crash, and is
   dropped: it is not stored or logged, and is not one of the reports above. Only the same hashed
   IP limit applies.</p>
+
+  <h2>The MCP server for AI assistants</h2>
+  <p>The <a href="/mcp">MCP server</a> at <code>api.modkeel.com/mcp</code> needs no account or
+  key. A crash report or log an assistant passes to <code>diagnose_crash</code> is handled like
+  the crash analyzer above: read in memory and dropped, never stored or logged. The other tools
+  (<code>search_mods</code>, <code>get_mod_runs</code>, <code>check_mod_pair</code>) only read
+  the public lab data and keep nothing about the request. Only the same hashed IP limit
+  applies.</p>
 
   <h2>What it is used for</h2>
   <p>To learn which mods crash with which, and which fixes work, so Modkeel can name the cause of
