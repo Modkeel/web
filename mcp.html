@@ -29,7 +29,7 @@
   "name": "Modkeel MCP server",
   "url": "https://modkeel.com/mcp",
   "documentation": "https://modkeel.com/llms.txt",
-  "description": "MCP server for modded Minecraft: crash diagnosis and lab facts about mods, for Fabric, NeoForge and Forge.",
+  "description": "MCP server for modded Minecraft: crash diagnosis, the right download of a mod for your version, and whether mods work together, for Fabric, NeoForge and Forge.",
   "provider": { "@type": "Organization", "name": "Modkeel", "url": "https://modkeel.com/" }
 }
 </script>
@@ -40,7 +40,8 @@
   <span class="tag pixel">For AI assistants</span>
   <h1>Modkeel in your AI assistant</h1>
   <p class="lede">Modkeel's MCP server lets Claude, ChatGPT, Cursor or any MCP client read a
-  modded Minecraft crash and check what mods did in the Modkeel lab. No API key.</p>
+  modded Minecraft crash, find the right file of a mod for your version, and check what mods
+  did in the Modkeel lab. No API key.</p>
 
   <pre><code>https://api.modkeel.com/mcp</code></pre>
   <p class="updated">Streamable HTTP. Also in the <a href="https://registry.modelcontextprotocol.io/v0/servers?search=com.modkeel">MCP registry</a>
@@ -59,13 +60,26 @@
     <li><b>get_mod_info</b>
       <p>What a mod is and where to get it: its Modrinth page (summary, loaders, the versions its
       author lists, client or server side, links) next to what the lab saw it do.</p></li>
+    <li><b>find_mod_download</b>
+      <p>The file to install for a mod on your Minecraft version and loader, with its link and
+      the mods it needs. When the author has no build yet, a port the lab verified in one of
+      its <a href="https://github.com/Modkeel/ports">modpacks</a>, or what you can do
+      instead.</p></li>
     <li><b>get_mod_runs</b>
       <p>What the Modkeel lab saw a mod do: the Minecraft versions where it ran on a server or
       client, or crashed, and the mods it ran with. By mod id, like <code>sodium</code>.</p></li>
     <li><b>check_mod_pair</b>
       <p>Whether two mods ran together in the lab, clashed, or were never tested together.
       Untested means no run yet, not a conflict.</p></li>
+    <li><b>check_mod_list</b>
+      <p>The same for a whole mod list or modpack in one call: what clashed, what crashed,
+      and what the lab never tested.</p></li>
   </ul>
+
+  <h2>Prompts</h2>
+  <p>Ready-made requests your assistant can list: <b>diagnose-crash</b> (why did my game
+  crash), <b>check-modpack</b> (will these mods work together) and <b>update-modpack</b>
+  (move my mods to another Minecraft version).</p>
 
   <h2>Connect</h2>
   <h3>Claude Code</h3>

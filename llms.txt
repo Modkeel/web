@@ -34,7 +34,7 @@ Read-only JSON at https://api.modkeel.com, no key, open to any origin. Data: wha
 - [GET /v1/mods/{mod_id}?mc=](https://api.modkeel.com/v1/mods/sodium): the lab runs of a mod and the mods it ran with or clashed with.
 - [GET /v1/pairs/{mod_id}/{mod_id}?mc=](https://api.modkeel.com/v1/pairs/lithium/c2me): `ran_together`, `clash` or `untested`.
 - POST https://api.modkeel.com/v1/diagnose with a crash report or latest.log as the text body: kind, confidence, suspect mods with reasons, Minecraft version, loader, and a guide link. The text is not stored.
-- [MCP server](https://modkeel.com/mcp) at https://api.modkeel.com/mcp (Streamable HTTP, no key; also on Smithery: https://smithery.ai/servers/modkeel/modkeel): tools `diagnose_crash`, `search_mods`, `get_mod_info`, `get_mod_runs` and `check_mod_pair`, for AI assistants.
+- [MCP server](https://modkeel.com/mcp) at https://api.modkeel.com/mcp (Streamable HTTP, no key; also on Smithery: https://smithery.ai/servers/modkeel/modkeel): tools `diagnose_crash`, `search_mods`, `get_mod_info`, `find_mod_download` (the file for a Minecraft version and loader, or a lab-verified port), `get_mod_runs`, `check_mod_pair` and `check_mod_list` (a whole mod list at once), and prompts `diagnose-crash`, `check-modpack` and `update-modpack`, for AI assistants.
 
 ## Project
 
