@@ -106,10 +106,12 @@ footer a { color: var(--text); }
   <h2>The MCP server for AI assistants</h2>
   <p>The <a href="/mcp">MCP server</a> at <code>api.modkeel.com/mcp</code> needs no account or
   key. A crash report or log an assistant passes to <code>diagnose_crash</code> is handled like
-  the crash analyzer above: read in memory and dropped, never stored or logged. The other tools
-  (<code>search_mods</code>, <code>get_mod_runs</code>, <code>check_mod_pair</code>) only read
-  the public lab data and keep nothing about the request. Only the same hashed IP limit
-  applies.</p>
+  the crash analyzer above: read in memory and dropped, never stored or logged.
+  <code>search_mods</code>, <code>get_mod_runs</code>, <code>check_mod_pair</code> and
+  <code>check_mod_list</code> only read the public lab data. <code>get_mod_info</code> and
+  <code>find_mod_download</code> also ask <a href="https://modrinth.com">Modrinth</a> about the
+  mod named, sending only the mod, Minecraft version and loader, never your IP. None of them
+  keep anything about the request. Only the same hashed IP limit applies.</p>
 
   <h2>What it is used for</h2>
   <p>To learn which mods crash with which, and which fixes work, so Modkeel can name the cause of
