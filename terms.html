@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of use · Modkeel</title>
+<meta name="description" content="The terms for using Modkeel: the Companion mod, the CLI, the website, the Reports API and the MCP server.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Modkeel">
+<meta property="og:title" content="Terms of use">
+<meta property="og:description" content="The terms for using Modkeel: the Companion mod, the CLI, the website, the Reports API and the MCP server.">
+<meta property="og:url" content="https://modkeel.com/terms">
+<meta property="og:image" content="https://modkeel.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Modkeel: the mod that most likely crashed the game, and a one-click fix">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#111923">
+<link rel="icon" type="image/png" href="img/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<style>
+:root {
+  --night: #0c131d;
+  --line: #2a3a4f;
+  --text: #e8edf3;
+  --muted: #9aabbf;
+  --keel: #f08a3c;
+  --keel-dark: #b25a22;
+  --keel-light: #ffb86e;
+}
+* { box-sizing: border-box; }
+html { background: var(--night); color: var(--text); }
+body {
+  margin: 0; background: var(--night);
+  font: 400 1.0625rem/1.65 "Bricolage Grotesque", Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--keel-light); }
+.pixel { font-family: "Silkscreen", monospace; letter-spacing: .04em; text-transform: uppercase; }
+.wrap { width: min(720px, 100% - 32px); margin-inline: auto; }
+nav { padding: 18px 0; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.25rem; text-decoration: none; color: var(--text); }
+.brand img { width: 32px; height: 32px; image-rendering: pixelated; }
+main { padding-block: 32px 64px; }
+.tag { display: inline-block; font-size: .72rem; color: var(--keel-light); border: 2px solid var(--keel-dark); padding: 4px 10px; }
+h1 { font-weight: 800; font-size: clamp(2.2rem, 5vw, 3.2rem); line-height: 1.05; letter-spacing: -.02em; margin: 18px 0 12px; text-wrap: balance; }
+h2 { font-weight: 800; font-size: 1.35rem; margin: 44px 0 10px; text-wrap: balance; }
+.lede { font-size: 1.2rem; color: #c9d4e0; margin: 0 0 8px; }
+p, li { color: #c9d4e0; }
+ul { padding-left: 1.2em; display: grid; gap: 8px; }
+b { color: var(--text); }
+code { font-family: Consolas, "Cascadia Mono", monospace; font-size: .92em; color: var(--text); background: #182331; padding: 1px 6px; }
+.updated { color: var(--muted); font-size: .9rem; }
+footer { border-top: 2px solid #182331; padding: 28px 0 40px; color: var(--muted); font-size: .9rem; }
+footer a { color: var(--text); }
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="img/icon-64.png" alt="">Modkeel</a></div></nav>
+<main class="wrap">
+  <span class="tag pixel">Terms</span>
+  <h1>Terms of use</h1>
+  <p class="lede">Modkeel is free. These terms cover the Companion mod, the command-line tool,
+  modkeel.com, the API at api.modkeel.com and the MCP server for AI assistants. Using any of
+  them means you accept these terms.</p>
+  <p class="updated">Updated October 10, 2026.</p>
+
+  <h2>What Modkeel gives you</h2>
+  <p>Answers about modded Minecraft (which mod most likely caused a crash, where to get a mod
+  for a Minecraft version, which mods ran together) drawn from the Modkeel lab's test runs,
+  from reports players chose to share, and from public mod catalogs such as Modrinth. They
+  are the best evidence we have, not a guarantee: a mod the lab never tested can still break a
+  pack, and a suggested fix can fail on yours.</p>
+
+  <h2>Back up before you change your mods</h2>
+  <p>Changing mods can damage a world. Keep a backup before you add, remove or update mods,
+  and before you install a port. The Companion backs up worlds when the mod set changes, but
+  no backup tool replaces your own copy of a world you care about.</p>
+
+  <h2>Mods and ports are their authors' work</h2>
+  <p>Modkeel links to mods on their authors' pages and does not own them. Ports offered by
+  Modkeel (the <a href="https://github.com/Modkeel/ports">Modkeel/ports</a> releases and
+  community forks) are builds of other people's open-source mods for a version their author
+  has not released yet. Each keeps its original licence, is not the author's own build, and
+  should not be reported to the original author as their bug.</p>
+
+  <h2>Fair use of the API and MCP server</h2>
+  <ul>
+    <li>Calls are rate limited per network. Do not work around the limits, run automated bulk
+      downloads of the data, or use the service to attack or overload anyone.</li>
+    <li>Do not send reports you did not get from a real game, or try to skew the crash
+      statistics.</li>
+    <li>Lab data is licensed CC BY 4.0: you may reuse it if you credit
+      "Modkeel lab data (modkeel.com)".</li>
+  </ul>
+
+  <h2>Your data</h2>
+  <p>What Modkeel collects, and what it never does, is described in the
+  <a href="/privacy">privacy policy</a>.</p>
+
+  <h2>Software licences</h2>
+  <p>The Companion and the command-line tool are open source under the MIT licence; that
+  licence governs the code. These terms govern the hosted services.</p>
+
+  <h2>No warranty</h2>
+  <p>Modkeel is provided as is, without warranty of any kind. To the extent the law allows,
+  Modkeel and its contributors are not liable for lost worlds, lost data, or other damage
+  from using it or relying on its answers.</p>
+
+  <h2>Changes</h2>
+  <p>We may change the services or these terms. The date above shows the last change; using
+  Modkeel after a change means you accept the new terms. We may stop or limit access for
+  anyone who breaks them.</p>
+
+  <h2>Not affiliated</h2>
+  <p>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
+  Not affiliated with Modrinth, CurseForge, OpenAI or Anthropic.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:support@modkeel.com">support@modkeel.com</a></p>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/support">Support</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+</body>
+</html>
