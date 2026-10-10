@@ -64,8 +64,36 @@ footer a { color: var(--text); }
   <h1>Nothing is sent unless you choose to share</h1>
   <p class="lede">The Modkeel Companion works fully offline. It reaches the internet only to send
   what you ticked, and the screen shows you every field before it goes.</p>
-  <p class="updated">Updated October 9, 2026. Applies to Modkeel Companion 0.2.0 and later; 0.1.0
-  sends nothing at all.</p>
+  <p class="updated">Updated October 10, 2026. Covers the Modkeel Companion (0.2.0 and later;
+  0.1.0 sends nothing at all), the crash analyzer on this site, and the MCP server for AI
+  assistants.</p>
+
+  <h2>At a glance</h2>
+  <ul>
+    <li><b>Personal data collected:</b> none that names you. Crash reports, fix outcomes and
+      play sessions you choose to share (game, mod and hardware details, linked by a random
+      install token); a daily-rotating hash of your IP address, used only for rate limits; and
+      a daily count of which mod, Minecraft version and loader the MCP server was asked
+      about.</li>
+    <li><b>Purposes:</b> naming the mod behind a crash, learning which fixes work, knowing which
+      mods need a port, and limiting abuse.</li>
+    <li><b>Recipients:</b> Cloudflare, which hosts the server and database; GitHub, which holds
+      the nightly database backup in a private repository; Modrinth, which receives only the
+      mod name, Minecraft version and loader for two MCP lookups. Other players and AI
+      assistants see only ranges for crashes at least 10 players reported. Nothing is sold, and
+      there are no ads or trackers.</li>
+    <li><b>Retention:</b> crash text pasted into the analyzer or passed to the MCP server is not
+      kept at all. IP hashes are deleted after 30 days. Shared reports are kept until you ask
+      for them to be deleted; backups holding them expire within 30 days of that. The daily
+      MCP counts hold nothing about who asked and are kept.</li>
+    <li><b>Your controls:</b> share nothing (the default), stop sharing, start over with a new
+      token, or have a token's reports deleted (see <a href="#controls">Stop or start
+      over</a>).</li>
+    <li><b>AI assistants:</b> when you use Modkeel in ChatGPT, Claude or another assistant, that
+      assistant's own privacy policy covers your conversation; Modkeel receives only what the
+      assistant passes to its tools.</li>
+    <li><b>Contact:</b> <a href="mailto:privacy@modkeel.com">privacy@modkeel.com</a>.</li>
+  </ul>
 
   <h2>What is sent, and when</h2>
   <ul>
@@ -124,7 +152,7 @@ footer a { color: var(--text); }
   a crash more surely for every player. Reports are not sold, and the mod has no ads or
   trackers.</p>
 
-  <h2>Stop or start over</h2>
+  <h2 id="controls">Stop or start over</h2>
   <ul>
     <li>Untick <b>Help other players</b> and turn off play sessions: nothing more is sent.</li>
     <li>Delete <code>modkeel/install.txt</code> in your game folder: the next share gets a new
@@ -138,6 +166,6 @@ footer a { color: var(--text); }
   <p>The Companion is open source (MIT). What it sends is built in
   <a href="https://github.com/Modkeel/companion/blob/main/core/src/modkeel/companion/core/Reports.java">Reports.java</a>.</p>
 </main>
-<footer><div class="wrap"><a href="/">modkeel.com</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/terms">Terms</a> · <a href="/support">Support</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
 </body>
 </html>
