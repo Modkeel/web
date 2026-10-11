@@ -64,7 +64,7 @@ footer a { color: var(--text); }
   <h1>Nothing is sent unless you choose to share</h1>
   <p class="lede">The Modkeel Companion works fully offline. It reaches the internet only to send
   what you ticked, and the screen shows you every field before it goes.</p>
-  <p class="updated">Updated October 10, 2026. Covers the Modkeel Companion (0.2.0 and later;
+  <p class="updated">Updated October 11, 2026. Covers the Modkeel Companion (0.2.0 and later;
   0.1.0 sends nothing at all), the crash analyzer on this site, and the MCP server for AI
   assistants.</p>
 
@@ -73,10 +73,10 @@ footer a { color: var(--text); }
     <li><b>Personal data collected:</b> none that names you. Crash reports, fix outcomes and
       play sessions you choose to share (game, mod and hardware details, linked by a random
       install token); a daily-rotating hash of your IP address, used only for rate limits; and
-      a daily count of which mod, Minecraft version and loader the MCP server was asked
-      about.</li>
+      daily counts of MCP server use: which mod, Minecraft version and loader it was asked
+      about, and how often each tool was called from which AI app.</li>
     <li><b>Purposes:</b> naming the mod behind a crash, learning which fixes work, knowing which
-      mods need a port, and limiting abuse.</li>
+      mods need a port, knowing which AI apps use the MCP server, and limiting abuse.</li>
     <li><b>Recipients:</b> Cloudflare, which hosts the server and database; GitHub, which holds
       the nightly database backup in a private repository; Modrinth, which receives only the
       mod name, Minecraft version and loader for two MCP lookups. Other players and AI
@@ -142,10 +142,13 @@ footer a { color: var(--text); }
   <code>search_mods</code>, <code>get_mod_runs</code>, <code>check_mod_pair</code> and
   <code>check_mod_list</code> only read the public lab data. <code>get_mod_info</code> and
   <code>find_mod_download</code> also ask <a href="https://modrinth.com">Modrinth</a> about the
-  mod named, sending only the mod, Minecraft version and loader, never your IP. The only thing
-  kept is a daily count of what <code>find_mod_download</code> was asked for (mod, Minecraft
-  version, loader and whether a build was found), so we know which mods players need ported.
-  It holds nothing about who asked. Only the same hashed IP limit applies.</p>
+  mod named, sending only the mod, Minecraft version and loader, never your IP. Two daily
+  counts are kept: what <code>find_mod_download</code> was asked for (mod, Minecraft version,
+  loader and whether a build was found), so we know which mods players need ported; and how
+  many times each tool was called, from which AI app (the name the app gives itself, such as
+  "claude-ai" or "openai-mcp") and whether it answered, so we know what is used. Neither holds
+  anything about who asked: no IP, account, question or text. Only the same hashed IP limit
+  applies.</p>
 
   <h2>What it is used for</h2>
   <p>To learn which mods crash with which, and which fixes work, so Modkeel can name the cause of
