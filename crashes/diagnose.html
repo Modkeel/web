@@ -269,7 +269,63 @@
     a.href = guide;
     more.append(a, ".");
     out.push(more);
+    out.push(...players(d.players), ...pack(d.pack));
+    const ask = el("p", "updated");
+    const mcp = el("a", "", "Modkeel in your AI assistant");
+    mcp.href = "/mcp";
+    ask.append("Rather ask in Claude or ChatGPT? ", mcp, " gives them this same reading, plus where to get a build of the mod.");
+    out.push(ask);
     show(out);
+  }
+
+  // What other players' Companion reports say about this same crash: only for crashes 10+
+  // players reported, as ranges from a monthly summary (the API sends null otherwise).
+  function players(p) {
+    if (!p) return [];
+    const box = el("div", "note");
+    box.append(el("h2", "", `${p.seen} players hit this same crash`));
+    if (p.fixes && p.fixes.length) {
+      const list = el("ul");
+      p.fixes.forEach((f) => {
+        const li = el("li");
+        li.append(el("b", "", f.title), ` worked for ${f.worked} of those who tried it.`);
+        list.append(li);
+      });
+      box.append(list);
+    }
+    box.append(el("p", "updated", `From Modkeel Companion reports, summary of ${p.as_of}.`));
+    return [box];
+  }
+
+  // The rest of the installed mods against the lab's runs: pairs that clashed and jars that
+  // crashed on that version, which the crash itself may not mention.
+  function pack(k) {
+    if (!k || !k.mods) return [];
+    const box = el("div", "note");
+    const issues = k.clashes.length + k.crashed.length;
+    box.append(el("h2", "", issues
+      ? `${issues} known problem${issues > 1 ? "s" : ""} in the rest of your mods`
+      : k.pairs_tested ? "No known problem in the rest of your mods"
+      : "The lab has not run these mods together yet"));
+    const where = (runs) => [...new Set(runs.map((r) => r.mc))].join(", ");
+    if (issues) {
+      const list = el("ul");
+      k.clashes.forEach((c) => {
+        const li = el("li");
+        li.append(el("code", "", c.mods[0]), " and ", el("code", "", c.mods[1]),
+          ` clashed in a lab run (Minecraft ${where(c.runs)}).`);
+        list.append(li);
+      });
+      k.crashed.forEach((c) => {
+        const li = el("li");
+        li.append(el("code", "", c.mod), ` crashed in a lab run (Minecraft ${where(c.runs)}).`);
+        list.append(li);
+      });
+      box.append(list);
+    }
+    box.append(el("p", "updated", `${k.mods} mods from the report checked against the Modkeel lab; ` +
+      `${k.pairs_tested} of their pairs ran together there. Mods the lab never ran are not counted as problems.`));
+    return [box];
   }
 
   async function diagnose() {
