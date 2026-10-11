@@ -84,8 +84,25 @@
   <h2>Connect</h2>
   <h3>Claude Code</h3>
   <pre><code>claude mcp add --transport http modkeel https://api.modkeel.com/mcp</code></pre>
-  <h3>Claude, ChatGPT and other apps</h3>
-  <p>Add a custom connector (in Claude: Settings, Connectors) with the URL above. No sign-in.</p>
+  <h3>Claude (web, desktop and mobile apps)</h3>
+  <ol>
+    <li>Open <b>Settings &rarr; Connectors</b> and choose <b>Add custom connector</b>.</li>
+    <li>Name it <code>Modkeel</code> and paste <code>https://api.modkeel.com/mcp</code> as the
+      URL. There is no sign-in.</li>
+    <li>In a chat, paste a crash report or ask about your mods. Claude calls Modkeel when it
+      helps.</li>
+  </ol>
+  <h3>ChatGPT</h3>
+  <ol>
+    <li>Open <b>Settings &rarr; Apps &rarr; Advanced settings</b> and turn on <b>Developer
+      mode</b>.</li>
+    <li>Choose <b>Create app</b>, name it <code>Modkeel</code>, paste
+      <code>https://api.modkeel.com/mcp</code> and pick <b>No authentication</b>.</li>
+    <li>In a new chat, select Modkeel from the <b>+</b> menu, then ask. With web search on,
+      ChatGPT may search the web instead; select Modkeel to make it use the lab data.</li>
+  </ol>
+  <p class="updated">Menu names change between app versions; look for Connectors or Apps.
+  Other MCP apps: add a remote (Streamable HTTP) server with the URL above.</p>
   <h3>Cursor, VS Code and clients with a JSON config</h3>
   <pre><code>{
   "mcpServers": {
