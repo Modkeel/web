@@ -1,0 +1,21 @@
+{
+  "serverInfo": {
+    "name": "modkeel",
+    "title": "Modkeel",
+    "version": "1.5.2",
+    "websiteUrl": "https://modkeel.com"
+  },
+  "description": "Modded Minecraft answers from real lab data (Fabric, NeoForge, Forge): the mod behind a crash, the right file of a mod for a Minecraft version and loader, and whether mods work together.",
+  "documentationUrl": "https://modkeel.com/mcp",
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://api.modkeel.com/mcp"
+  },
+  "capabilities": {
+    "tools": { "listChanged": false },
+    "prompts": { "listChanged": false }
+  },
+  "authentication": { "required": false },
+  "tools": ["diagnose_crash", "search_mods", "get_mod_info", "find_mod_download", "get_mod_runs", "check_mod_pair", "check_mod_list"],
+  "prompts": ["diagnose-crash", "check-modpack", "update-modpack"]
+}
