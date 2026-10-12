@@ -1,0 +1,144 @@
+[14:15:01] [main/INFO]: Loading Minecraft 26.3 with Fabric Loader 0.19.5
+[14:15:01] [main/INFO]: Mappings not present!
+[14:15:01] [main/INFO]: Loading 61 mods:
+	- fabric-api 0.162.0+26.3
+	   |-- fabric-advancement-api-v1 1.0.0+38c7a2d55d
+	   |-- fabric-api-base 2.0.6+fcdff87f5d
+	   |-- fabric-api-lookup-api-v1 2.0.24+3434d6d95d
+	   |-- fabric-biome-api-v1 20.1.0+c6aa69a85d
+	   |-- fabric-block-api-v1 3.1.0+0ae6f9115d
+	   |-- fabric-block-getter-api-v2 2.0.9+3434d6d95d
+	   |-- fabric-command-api-v2 3.1.2+fcdff87f5d
+	   |-- fabric-content-registries-v0 15.0.4+74ed1ea55d
+	   |-- fabric-convention-tags-v2 4.10.3+6b5b47fd5d
+	   |-- fabric-crash-report-info-v1 1.0.7+fcdff87f5d
+	   |-- fabric-creative-tab-api-v1 5.0.21+fcdff87f5d
+	   |-- fabric-data-attachment-api-v1 2.2.31+b9b88df45d
+	   |-- fabric-data-generation-api-v1 27.3.0+5be2453c5d
+	   |-- fabric-debug-api-v1 1.0.4+3434d6d95d
+	   |-- fabric-dimensions-v1 5.1.19+47f74c985d
+	   |-- fabric-entity-events-v1 6.0.4+3434d6d95d
+	   |-- fabric-events-interaction-v0 5.3.7+b9b88df45d
+	   |-- fabric-game-rule-api-v1 4.0.10+3434d6d95d
+	   |-- fabric-item-api-v1 14.7.0+cf6bc2db5d
+	   |-- fabric-key-mapping-api-v1 2.0.8+3434d6d95d
+	   |-- fabric-lifecycle-events-v1 4.1.9+ffef5f675d
+	   |-- fabric-loot-api-v3 4.0.8+4068fd645d
+	   |-- fabric-menu-api-v1 2.0.28+ed66f0a35d
+	   |-- fabric-message-api-v1 7.0.10+3434d6d95d
+	   |-- fabric-model-loading-api-v1 8.0.35+fcdff87f5d
+	   |-- fabric-networking-api-v1 6.3.9+b9b88df45d
+	   |-- fabric-object-builder-api-v1 24.1.10+3434d6d95d
+	   |-- fabric-particles-v1 5.0.25+3434d6d95d
+	   |-- fabric-permission-api-v1 1.0.8+fcdff87f5d
+	   |-- fabric-recipe-api-v1 10.0.9+b9b88df45d
+	   |-- fabric-registry-sync-v0 8.0.2+1ca9f6365d
+	   |-- fabric-renderer-api-v1 17.0.15+79385d0b5d
+	   |-- fabric-renderer-indigo 9.1.23+b9d63e335d
+	   |-- fabric-rendering-fluids-v1 6.0.6+3434d6d95d
+	   |-- fabric-rendering-v1 27.0.14+901a437c5d
+	   |-- fabric-resource-conditions-api-v1 6.2.0+0d124ae85d
+	   |-- fabric-resource-loader-v0 3.3.26+4fc5413f5d
+	   |-- fabric-resource-loader-v1 3.0.4+ba0d6c0d5d
+	   |-- fabric-screen-api-v1 5.2.4+48607d035d
+	   |-- fabric-serialization-api-v1 2.0.7+74ed1ea55d
+	   |-- fabric-sound-api-v1 2.0.7+3434d6d95d
+	   |-- fabric-tag-api-v1 2.1.10+fcdff87f5d
+	   |-- fabric-transfer-api-v1 8.0.25+fcdff87f5d
+	   \-- fabric-transitive-access-wideners-v1 8.1.16+52268a0e5d
+	- fabricloader 0.19.5
+	   \-- mixinextras 0.5.5
+	- java 25
+	- languagereload 1.7.7+26.2
+	- lithium 0.26.2+mc26.3
+	- minecraft 26.3
+	- modmenu 21.0.0
+	   \-- placeholder-api 3.2.0+26.3
+	- owo 0.13.1+26.2
+	   |-- blue_endless_jankson 1.2.2
+	   |-- com_github_kdl-org_kdl4j 1.0.1
+	   |-- io_wispforest_endec 0.1.12
+	   |-- io_wispforest_endec_gson 0.1.7
+	   |-- io_wispforest_endec_jankson 0.1.7
+	   \-- io_wispforest_endec_netty 0.1.6
+	- sodium 0.9.3-alpha.1+mc26.3
+[14:15:03] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/player/AppData/Roaming/.minecraft/libraries/net/fabricmc/sponge-mixin/0.17.4+mixin.0.8.7/sponge-mixin-0.17.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[14:15:04] [main/INFO]: Loaded configuration file for Lithium: 170 options available, 0 override(s) found.
+[14:15:04] [main/INFO]: Loaded configuration file for Sodium: 37 options available, 0 override(s) found
+[14:15:06] [main/WARN]: Error loading class: xyz/nucleoid/server/translations/impl/language/LanguageReader (java.lang.ClassNotFoundException: xyz/nucleoid/server/translations/impl/language/LanguageReader)
+[14:15:06] [main/WARN]: Error loading class: xyz/nucleoid/server/translations/impl/language/SystemDelegatedLanguage (java.lang.ClassNotFoundException: xyz/nucleoid/server/translations/impl/language/SystemDelegatedLanguage)
+[14:15:06] [main/WARN]: Error loading class: com/mojang/blaze3d/systems/CommandEncoder (java.lang.ClassNotFoundException: com/mojang/blaze3d/systems/CommandEncoder)
+[14:15:06] [main/WARN]: @Mixin target com.mojang.blaze3d.systems.CommandEncoder was not found owo.mixins.json:ui.CommandEncoderAccessor from mod owo
+[14:15:06] [main/WARN]: Error loading class: com/mojang/blaze3d/opengl/GlProgram (java.lang.ClassNotFoundException: com/mojang/blaze3d/opengl/GlProgram)
+[14:15:06] [main/WARN]: @Mixin target com.mojang.blaze3d.opengl.GlProgram was not found owo.mixins.json:shader.GlProgramAccessor from mod owo
+[14:15:06] [main/INFO]: Searching for graphics cards...
+[14:15:06] [main/INFO]: Found graphics adapter: AdapterInfo{vendor=NVIDIA, description='NVIDIA GeForce GTX 1650', adapterType=0x00002313, openglIcdFilePath='C:\WINDOWS\System32\DriverStore\FileRepository\nvaci.inf_amd64_b6d609b44425fbd4\nvoglv64.dll', openglIcdVersion=32.0.15.9144}
+[14:15:06] [main/INFO]: Found graphics adapter: AdapterInfo{vendor=INTEL, description='Intel(R) UHD Graphics', adapterType=0x0000232B, openglIcdFilePath='C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_5579cd97fbcd455d\ig9icd64.dll', openglIcdVersion=31.0.101.2141}
+[14:15:06] [main/WARN]: Sodium has applied one or more workarounds to prevent crashes or other issues on your system: [NVIDIA_THREADED_OPTIMIZATIONS_BROKEN]
+[14:15:06] [main/WARN]: This is not necessarily an issue, but it may result in certain features or optimizations being disabled. You can sometimes fix these issues by upgrading your graphics driver.
+[14:15:06] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[14:15:11] [Datafixer Bootstrap #0/INFO]: 307 Datafixer optimizations took 1865 milliseconds
+[14:15:21] [main/ERROR]: Mixin apply for mod owo failed owo.mixins.json:SetComponentsFunctionAccessor from mod owo -> net.minecraft.world.level.storage.loot.functions.SetComponentsFunction: org.spongepowered.asm.mixin.gen.throwables.InvalidAccessorException No candidates were found matching <init>(Ljava/util/List;Lnet/minecraft/core/component/DataComponentPatch;)V in net/minecraft/world/level/storage/loot/functions/SetComponentsFunction for owo.mixins.json:SetComponentsFunctionAccessor from mod owo->@Invoker[OBJECT_FACTORY]::createSetComponentsLootFunction(Ljava/util/List;Lnet/minecraft/core/component/DataComponentPatch;)Lnet/minecraft/world/level/storage/loot/functions/SetComponentsFunction; [ACCESSOR Applicator Phase -> owo.mixins.json:SetComponentsFunctionAccessor from mod owo -> Apply Accessors ->  -> Locate -> owo.mixins.json:SetComponentsFunctionAccessor from mod owo->@Invoker[OBJECT_FACTORY]::createSetComponentsLootFunction(Ljava/util/List;Lnet/minecraft/core/component/DataComponentPatch;)Lnet/minecraft/world/level/storage/loot/functions/SetComponentsFunction;]
+org.spongepowered.asm.mixin.gen.throwables.InvalidAccessorException: No candidates were found matching <init>(Ljava/util/List;Lnet/minecraft/core/component/DataComponentPatch;)V in net/minecraft/world/level/storage/loot/functions/SetComponentsFunction for owo.mixins.json:SetComponentsFunctionAccessor from mod owo->@Invoker[OBJECT_FACTORY]::createSetComponentsLootFunction(Ljava/util/List;Lnet/minecraft/core/component/DataComponentPatch;)Lnet/minecraft/world/level/storage/loot/functions/SetComponentsFunction; [ACCESSOR Applicator Phase -> owo.mixins.json:SetComponentsFunctionAccessor from mod owo -> Apply Accessors ->  -> Locate -> owo.mixins.json:SetComponentsFunctionAccessor from mod owo->@Invoker[OBJECT_FACTORY]::createSetComponentsLootFunction(Ljava/util/List;Lnet/minecraft/core/component/DataComponentPatch;)Lnet/minecraft/world/level/storage/loot/functions/SetComponentsFunction;]
+	at org.spongepowered.asm.mixin.gen.InvokerInfo.findTargetMethod(InvokerInfo.java:121)
+	at org.spongepowered.asm.mixin.gen.InvokerInfo.locate(InvokerInfo.java:103)
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.generateAccessors(MixinTargetContext.java:1504)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyAccessors(MixinApplicatorStandard.java:841)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.lambda$runApplicatorPass$5(MixinApplicatorStandard.java:343)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.processMixins(MixinApplicatorStandard.java:381)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.runApplicatorPass(MixinApplicatorStandard.java:341)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:240)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:351)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:237)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:435)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:336)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:231)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at knot//net.minecraft.world.level.storage.loot.functions.LootItemFunctions.bootstrap(LootItemFunctions.java:39)
+	at knot//net.minecraft.core.registries.BuiltInRegistries.lambda$internalRegister$1(BuiltInRegistries.java:312)
+	at knot//net.minecraft.core.registries.BuiltInRegistries.lambda$createContents$0(BuiltInRegistries.java:327)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:987)
+	at knot//net.minecraft.core.registries.BuiltInRegistries.createContents(BuiltInRegistries.java:325)
+	at knot//net.minecraft.server.Bootstrap.redirect$zmm000$fabric-registry-sync-v0$delayRegistryFreeze(Bootstrap.java:561)
+	at knot//net.minecraft.server.Bootstrap.bootStrap(Bootstrap.java:70)
+	at knot//net.minecraft.client.main.Main.main(Main.java:177)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:517)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+[14:15:21] [main/ERROR]: Minecraft has crashed!
+net.fabricmc.loader.impl.FormattedException: java.lang.RuntimeException: Mixin transformation of net.minecraft.client.Minecraft failed
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:63)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:519)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+Caused by: java.lang.RuntimeException: Mixin transformation of net.minecraft.client.Minecraft failed
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:440)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:336)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:231)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at knot//net.minecraft.client.main.Main.main(Main.java:251)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:517)
+	... 2 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:380)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:237)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:435)
+	... 8 more
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InjectionError: Critical injection failure: Callback method afterRender(ZLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V in owo.mixins.json:ui.MinecraftMixin from mod owo failed injection check, (0/1) succeeded. Scanned 0 target(s). No refMap loaded.
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.postInject(InjectionInfo.java:526)
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.applyInjections(MixinTargetContext.java:1477)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyInjections(MixinApplicatorStandard.java:832)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.lambda$runApplicatorPass$7(MixinApplicatorStandard.java:362)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.processMixins(MixinApplicatorStandard.java:381)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.runApplicatorPass(MixinApplicatorStandard.java:360)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:240)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:351)
+	... 11 more
