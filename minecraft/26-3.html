@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sodium, Iris Shaders and Lithium on Minecraft 26.3: lab-tested releases · Modkeel</title>
-<meta name="description" content="Sodium mc26.3-0.9.3-alpha.1-fabric and Iris Shaders 1.11.7+26.3-fabric ran together in a client benchmark on Minecraft 26.3 in the Modkeel lab. Also tested: Lithium, FerriteCore, Entity Culling and 19 more. Lab data as of October 4, 2026.">
+<title>Minecraft 26.3 mods: Sodium and Iris Shaders run together, 24 mods tested · Modkeel</title>
+<meta name="description" content="Sodium mc26.3-0.9.3-alpha.1-fabric and Iris Shaders 1.11.7+26.3-fabric ran together in a client benchmark on Minecraft 26.3 in the Modkeel lab. Also tested: Lithium, FerriteCore, Entity Culling and 19 more. Lab data as of October 5, 2026.">
 <link rel="canonical" href="https://modkeel.com/minecraft/26-3">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Modkeel">
-<meta property="og:title" content="Sodium, Iris Shaders and Lithium on Minecraft 26.3: lab-tested releases">
-<meta property="og:description" content="Sodium mc26.3-0.9.3-alpha.1-fabric and Iris Shaders 1.11.7+26.3-fabric ran together in a client benchmark on Minecraft 26.3 in the Modkeel lab. Also tested: Lithium, FerriteCore, Entity Culling and 19 more. Lab data as of October 4, 2026.">
+<meta property="og:title" content="Minecraft 26.3 mods: Sodium and Iris Shaders run together, 24 mods tested">
+<meta property="og:description" content="Sodium mc26.3-0.9.3-alpha.1-fabric and Iris Shaders 1.11.7+26.3-fabric ran together in a client benchmark on Minecraft 26.3 in the Modkeel lab. Also tested: Lithium, FerriteCore, Entity Culling and 19 more. Lab data as of October 5, 2026.">
 <meta property="og:url" content="https://modkeel.com/minecraft/26-3">
 <meta property="og:image" content="https://modkeel.com/img/og.png">
 <meta property="og:image:width" content="1200">
@@ -29,16 +29,16 @@
   {
    "@type": "Dataset",
    "name": "Modkeel lab client benchmark",
-   "description": "Frame rate per second of real Minecraft Fabric clients with and without client mods, with each run's game, loader, GPU, driver, loaded mods and jar SHA-1 hashes.",
+   "description": "Frame rate per second of real Minecraft Fabric, NeoForge and Forge clients with and without client mods, with each run's game, loader, GPU, driver, loaded mods and jar SHA-1 hashes.",
    "url": "https://modkeel.com/minecraft/26-3",
-   "dateModified": "2026-10-04",
+   "dateModified": "2026-10-05",
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "creator": {
     "@type": "Organization",
     "name": "Modkeel",
     "url": "https://modkeel.com"
    },
-   "measurementTechnique": "How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H (an entry-level gaming laptop from 2020) joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 22%, so smaller changes are not counted. Frame rates depend on the computer: on a faster one the numbers here are usually higher. The percentage is the better guide, but it moves too: mods that cut rendering work (Sodium, More Culling) gain most when the graphics card is the limit, and mods that cut entities or game logic (Entity Culling, Lithium) when the processor is. Some effects belong to one GPU brand: Sodium's drop with mobs on 1.21.1 and 1.20.1 only happens on NVIDIA cards.",
+   "measurementTechnique": "How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H (an entry-level gaming laptop from 2020) joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 4 runs. Runs without mods differed by up to 15%, so smaller changes are not counted. Frame rates depend on the computer: on a faster one the numbers here are usually higher. The percentage is the better guide, but it moves too: mods that cut rendering work (Sodium, More Culling) gain most when the graphics card is the limit, and mods that cut entities or game logic (Entity Culling, Lithium) when the processor is. Some effects belong to one GPU brand: Sodium's drop with mobs on 1.21.1 and 1.20.1 only happens on NVIDIA cards.",
    "variableMeasured": "frames per second",
    "distribution": {
     "@type": "DataDownload",
@@ -48,10 +48,10 @@
   },
   {
    "@type": "TechArticle",
-   "headline": "Sodium, Iris Shaders and Lithium on Minecraft 26.3: lab-tested releases",
-   "description": "Sodium mc26.3-0.9.3-alpha.1-fabric and Iris Shaders 1.11.7+26.3-fabric ran together in a client benchmark on Minecraft 26.3 in the Modkeel lab. Also tested: Lithium, FerriteCore, Entity Culling and 19 more. Lab data as of October 4, 2026.",
-   "datePublished": "2026-10-04",
-   "dateModified": "2026-10-04",
+   "headline": "Minecraft 26.3 mods: Sodium and Iris Shaders run together, 24 mods tested",
+   "description": "Sodium mc26.3-0.9.3-alpha.1-fabric and Iris Shaders 1.11.7+26.3-fabric ran together in a client benchmark on Minecraft 26.3 in the Modkeel lab. Also tested: Lithium, FerriteCore, Entity Culling and 19 more. Lab data as of October 5, 2026.",
+   "datePublished": "2026-10-05",
+   "dateModified": "2026-10-05",
    "url": "https://modkeel.com/minecraft/26-3",
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "author": {
@@ -73,7 +73,7 @@
      "name": "How much FPS does Sodium add on Minecraft 26.3?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 62% with 300 mobs in view (94 to 152 FPS), 23% over terrain (248 to 306 FPS) and 78% with 300 mobs behind a wall (148 to 264 FPS) on Minecraft 26.3."
+      "text": "In the Modkeel lab (data as of October 5, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 55% with 300 mobs in view (94 to 145 FPS), 23% over terrain (234 to 288 FPS) and 78% with 300 mobs behind a wall (144 to 256 FPS) on Minecraft 26.3."
      }
     },
     {
@@ -81,7 +81,7 @@
      "name": "Do Sodium and Iris Shaders work together on Minecraft 26.3?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes: in the Modkeel lab (data as of October 4, 2026), Sodium mc26.3-0.9.3-alpha.1-fabric and Iris Shaders 1.11.7+26.3-fabric ran together in a client benchmark on Minecraft 26.3."
+      "text": "Yes: in the Modkeel lab (data as of October 5, 2026), Sodium mc26.3-0.9.3-alpha.1-fabric and Iris Shaders 1.11.7+26.3-fabric ran together in a client benchmark on Minecraft 26.3."
      }
     },
     {
@@ -89,7 +89,7 @@
      "name": "Does FerriteCore work on Minecraft 26.3?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), FerriteCore 9.0.0-fabric ran in a server benchmark on Minecraft 26.3."
+      "text": "In the Modkeel lab (data as of October 5, 2026), FerriteCore 9.0.0-fabric ran in a server benchmark on Minecraft 26.3."
      }
     },
     {
@@ -97,7 +97,7 @@
      "name": "Does Iris Shaders work on Minecraft 26.3?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), Iris Shaders 1.11.7+26.3-fabric ran in a client benchmark on Minecraft 26.3."
+      "text": "In the Modkeel lab (data as of October 5, 2026), Iris Shaders 1.11.7+26.3-fabric ran in a client benchmark on Minecraft 26.3."
      }
     },
     {
@@ -105,7 +105,7 @@
      "name": "Does Lithium work on Minecraft 26.3?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), Lithium mc26.3-0.26.2-fabric ran in a client benchmark on Minecraft 26.3."
+      "text": "In the Modkeel lab (data as of October 5, 2026), Lithium mc26.3-0.26.2-fabric ran in a client benchmark on Minecraft 26.3."
      }
     },
     {
@@ -113,7 +113,7 @@
      "name": "Does Sodium work on Minecraft 26.3?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 4, 2026), Sodium mc26.3-0.9.3-alpha.1-fabric ran in a client benchmark on Minecraft 26.3."
+      "text": "In the Modkeel lab (data as of October 5, 2026), Sodium mc26.3-0.9.3-alpha.1-fabric ran in a client benchmark on Minecraft 26.3."
      }
     },
     {
@@ -160,15 +160,15 @@
   <a class="tag pixel" href="/minecraft/">Lab data</a>
   <h1>Mods tested on Minecraft 26.3</h1>
   <p class="lede">Sodium mc26.3-0.9.3-alpha.1-fabric and Iris Shaders 1.11.7+26.3-fabric ran together in a client benchmark on Minecraft 26.3 in the Modkeel lab. Releases of 13 mods, among them Bobby, Chat Patches and CustomSkinLoader, made for an older Minecraft version did not start on 26.3 in the Modkeel lab: use a release made for 26.3. 25 mod releases started in real Minecraft 26.3 games in the Modkeel lab, among them Sodium, Iris Shaders, Lithium, FerriteCore and Entity Culling. The Modkeel lab also ran 11 pairs of mods in the same game.</p>
-  <p class="updated">Lab data as of October 4, 2026. 25 releases ran, 11 pairs, 13 older releases did not start, 19 ports.</p>
+  <p class="updated">Lab data as of October 5, 2026. 25 releases ran, 11 pairs, 13 older releases did not start, 19 ports.</p>
 
   <h2>What the lab measured on 26.3</h2>
   <p>Frame rate on Minecraft 26.3 with each mod, against the same game without mods.</p>
-  <p><a href="/mods/sodium">Sodium</a> raised the frame rate 62% with 300 mobs in view (94 to 152 FPS), 23% over terrain (248 to 306 FPS) and 78% with 300 mobs behind a wall (148 to 264 FPS).</p>
-  <p><a href="/mods/iris">Iris Shaders</a>, which runs on Sodium and had no shader pack loaded, raised the frame rate 57% with 300 mobs in view (94 to 148 FPS), 14% over terrain (248 to 282 FPS) and 75% with 300 mobs behind a wall (148 to 258 FPS).</p>
-  <p><a href="/mods/entityculling">Entity Culling</a> raised the frame rate 106% with 300 mobs behind a wall (148 to 306 FPS).</p>
+  <p><a href="/mods/sodium">Sodium</a> raised the frame rate 55% with 300 mobs in view (94 to 145 FPS), 23% over terrain (234 to 288 FPS) and 78% with 300 mobs behind a wall (144 to 256 FPS).</p>
+  <p><a href="/mods/iris">Iris Shaders</a>, which runs on Sodium and had no shader pack loaded, raised the frame rate 56% with 300 mobs in view (94 to 146 FPS), 13% over terrain (234 to 264 FPS) and 73% with 300 mobs behind a wall (144 to 250 FPS).</p>
+  <p><a href="/mods/entityculling">Entity Culling</a> raised the frame rate 110% with 300 mobs behind a wall (144 to 303 FPS).</p>
   <p><a href="/mods/lithium">Lithium</a>, <a href="/mods/immediatelyfast">ImmediatelyFast</a> and <a href="/mods/moreculling">More Culling</a> did not change the frame rate with 300 mobs in view, over terrain or with 300 mobs behind a wall by more than runs without mods differed.</p>
-  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H (an entry-level gaming laptop from 2020) joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 8 runs. Runs without mods differed by up to 22%, so smaller changes are not counted. Frame rates depend on the computer: on a faster one the numbers here are usually higher. The percentage is the better guide, but it moves too: mods that cut rendering work (Sodium, More Culling) gain most when the graphics card is the limit, and mods that cut entities or game logic (Entity Culling, Lithium) when the processor is. Some effects belong to one GPU brand: Sodium&#x27;s drop with mobs on 1.21.1 and 1.20.1 only happens on NVIDIA cards. <a href="/data/client-bench.json">Raw data</a>: every run's frame rate per second, Minecraft and Fabric Loader versions, GPU and driver, loaded mods and the SHA-1 of each jar, which Modrinth matches to the exact release.</p>
+  <p class="hint">How it was measured: a real Fabric client on a laptop with a GeForce GTX 1650 and a Core i7-10750H (an entry-level gaming laptop from 2020) joined the same world at 1280x720, render distance 24, VSync off. Each number is the median second of 20-second scenes over 2 to 4 runs. Runs without mods differed by up to 15%, so smaller changes are not counted. Frame rates depend on the computer: on a faster one the numbers here are usually higher. The percentage is the better guide, but it moves too: mods that cut rendering work (Sodium, More Culling) gain most when the graphics card is the limit, and mods that cut entities or game logic (Entity Culling, Lithium) when the processor is. Some effects belong to one GPU brand: Sodium&#x27;s drop with mobs on 1.21.1 and 1.20.1 only happens on NVIDIA cards. <a href="/data/client-bench.json">Raw data</a>: every run's frame rate per second, Minecraft and loader versions, GPU and driver, loaded mods and the SHA-1 of each jar, which Modrinth matches to the exact release.</p>
 
   <h2>Older releases that did not start on 26.3</h2>
   <p>Releases made for an earlier Minecraft version, run on 26.3 as they are. That is
@@ -198,7 +198,7 @@
     <tbody>
       <tr><td><a href="https://modrinth.com/mod/alternate-current">Alternate Current</a></td><td><a class="rel" href="https://modrinth.com/mod/alternate-current/version/nSBWPz6x" title="SHA-1 1316efc4195fbf152f8521542bc2435bd588ddb6">mc26.3-1.9.0</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
       <tr><td><a href="https://modrinth.com/mod/async">Async</a></td><td><a class="rel" href="https://modrinth.com/mod/async/version/gcduhoHv" title="SHA-1 bde225ad18d305d4a4d3e51a09c17b1de7be38e2">0.2.5+alpha-26.3</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/better-mount-hud">Better Mount HUD</a></td><td><a class="rel" href="https://modrinth.com/mod/better-mount-hud/version/M3Fe5t0L" title="SHA-1 f86040d5010c7aad1c677c7a7fefe52d3b386abd">1.3.1 (made for 26.2, Fabric)</a></td><td><span class="pill ok">Loaded a world</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/better-mount-hud">Better Mount HUD</a></td><td><a class="rel" href="https://modrinth.com/mod/better-mount-hud/version/M3Fe5t0L" title="SHA-1 f86040d5010c7aad1c677c7a7fefe52d3b386abd">1.3.1</a></td><td><span class="pill ok">Loaded a world</span></td></tr>
       <tr><td><a href="https://modrinth.com/mod/carry-on">Carry On</a></td><td><a class="rel" href="https://modrinth.com/mod/carry-on/version/fuV8BHlz" title="SHA-1 3dbc5f73ccbaec35dbca4c07b731998938a5b09c">2.11.2 (made for 26.2, Fabric)</a></td><td><span class="pill ok">Server started</span></td></tr>
       <tr><td><a href="/mods/c2me">Concurrent Chunk Management Engine (Fabric)</a></td><td><a class="rel" href="https://modrinth.com/mod/c2me-fabric/version/FXjQDzq7" title="SHA-1 1aa0ea7893737a54f855b1c04ff93f2f68c1fa80">0.4.2-alpha.0.89+26.3</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
       <tr><td><a href="/mods/entityculling">Entity Culling</a></td><td><a class="rel" href="https://modrinth.com/mod/entityculling/version/F4loCvYt" title="SHA-1 f2196e803fe77cfbb62c4a2acb64803d98b4f61c">1.11.2</a></td><td><span class="pill bench">Client benchmark</span></td></tr>
@@ -274,12 +274,12 @@
 
   <h2>Questions</h2>
   <div class="faq">
-    <details><summary>How much FPS does Sodium add on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 62% with 300 mobs in view (94 to 152 FPS), 23% over terrain (248 to 306 FPS) and 78% with 300 mobs behind a wall (148 to 264 FPS) on Minecraft 26.3.</p></details>
-    <details><summary>Do Sodium and Iris Shaders work together on Minecraft 26.3?</summary><p>Yes: in the Modkeel lab (data as of October 4, 2026), Sodium mc26.3-0.9.3-alpha.1-fabric and Iris Shaders 1.11.7+26.3-fabric ran together in a client benchmark on Minecraft 26.3.</p></details>
-    <details><summary>Does FerriteCore work on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), FerriteCore 9.0.0-fabric ran in a server benchmark on Minecraft 26.3.</p></details>
-    <details><summary>Does Iris Shaders work on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), Iris Shaders 1.11.7+26.3-fabric ran in a client benchmark on Minecraft 26.3.</p></details>
-    <details><summary>Does Lithium work on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), Lithium mc26.3-0.26.2-fabric ran in a client benchmark on Minecraft 26.3.</p></details>
-    <details><summary>Does Sodium work on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 4, 2026), Sodium mc26.3-0.9.3-alpha.1-fabric ran in a client benchmark on Minecraft 26.3.</p></details>
+    <details><summary>How much FPS does Sodium add on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 5, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 55% with 300 mobs in view (94 to 145 FPS), 23% over terrain (234 to 288 FPS) and 78% with 300 mobs behind a wall (144 to 256 FPS) on Minecraft 26.3.</p></details>
+    <details><summary>Do Sodium and Iris Shaders work together on Minecraft 26.3?</summary><p>Yes: in the Modkeel lab (data as of October 5, 2026), Sodium mc26.3-0.9.3-alpha.1-fabric and Iris Shaders 1.11.7+26.3-fabric ran together in a client benchmark on Minecraft 26.3.</p></details>
+    <details><summary>Does FerriteCore work on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 5, 2026), FerriteCore 9.0.0-fabric ran in a server benchmark on Minecraft 26.3.</p></details>
+    <details><summary>Does Iris Shaders work on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 5, 2026), Iris Shaders 1.11.7+26.3-fabric ran in a client benchmark on Minecraft 26.3.</p></details>
+    <details><summary>Does Lithium work on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 5, 2026), Lithium mc26.3-0.26.2-fabric ran in a client benchmark on Minecraft 26.3.</p></details>
+    <details><summary>Does Sodium work on Minecraft 26.3?</summary><p>In the Modkeel lab (data as of October 5, 2026), Sodium mc26.3-0.9.3-alpha.1-fabric ran in a client benchmark on Minecraft 26.3.</p></details>
     <details><summary>Does Bobby work on Minecraft 26.3?</summary><p>Not the release made for 26.2: in the Modkeel lab, Bobby 5.2.15+mc26.2 did not start on Minecraft 26.3. Use a release made for 26.3.</p></details>
     <details><summary>Does Chat Patches work on Minecraft 26.3?</summary><p>Not the release made for 26.2: in the Modkeel lab, Chat Patches 8.0-alpha.11+26.2-fabric did not start on Minecraft 26.3. Use a release made for 26.3.</p></details>
     <details><summary>Which mods work together on Minecraft 26.3?</summary><p>In the Modkeel lab on Minecraft 26.3, these pairs ran in the same game: Concurrent Chunk Management Engine (Fabric) with FerriteCore; Concurrent Chunk Management Engine (Fabric) with Lithium; Concurrent Chunk Management Engine (Fabric) with ScalableLux; Concurrent Chunk Management Engine (Fabric) with Very Many Players (Fabric); FerriteCore with Lithium; FerriteCore with ScalableLux; FerriteCore with Very Many Players (Fabric); Iris Shaders with Sodium; Lithium with ScalableLux; Lithium with Very Many Players (Fabric); ScalableLux with Very Many Players (Fabric).</p></details>
