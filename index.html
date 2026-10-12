@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Modkeel</title>
+<title>Modkeel: which mod crashed Minecraft, and the fix</title>
 <meta name="description" content="Modkeel keeps modded Minecraft steady: world backups when your mods change, the mod that crashed your game, and a one-click fix.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Modkeel">
-<meta property="og:title" content="Modkeel">
+<meta property="og:title" content="Modkeel: which mod crashed Minecraft, and the fix">
 <meta property="og:description" content="World backups, crash diagnosis and one-click fixes for modded Minecraft.">
 <meta property="og:url" content="https://modkeel.com/">
 <meta property="og:image" content="https://modkeel.com/img/og.png">
@@ -150,6 +150,14 @@ p { margin: 0 0 16px; }
 .term .ok { color: #7fd48a; }
 .term .dim { color: #5d6f86; }
 
+/* links into the guides and lab pages: what players search for, one click from home */
+.read { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px 40px; margin-top: 28px; }
+.read h3 { font-size: .8rem; color: var(--keel-light); margin: 0 0 8px; }
+.read ul { list-style: none; margin: 0 0 20px; padding: 0; }
+.read li { padding: 6px 0; border-bottom: 2px solid #182331; }
+.read a { color: var(--text); text-decoration: none; }
+.read a:hover { color: var(--keel-light); }
+
 footer { border-top: 2px solid #182331; padding: 36px 0 48px; color: var(--muted); font-size: .9rem; }
 footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between; }
 footer a { color: var(--text); }
@@ -238,7 +246,7 @@ footer a { color: var(--text); }
         <li><span class="num pixel">01</span><div><b>Worlds survive mod changes</b><span>Before a world loads with a different set of mods, Modkeel saves a copy. Restoring never deletes anything.</span></div></li>
         <li><span class="num pixel">02</span><div><b>The crash, in plain words</b><span>On the next start: the mod that most likely caused it, how sure Modkeel is, and why.</span></div></li>
         <li><span class="num pixel">03</span><div><b>One-click fixes you can undo</b><span>Disable that mod or go back to the last set of mods that worked. Modkeel then checks the fix held.</span></div></li>
-        <li><span class="num pixel">04</span><div><b>Cannot be what breaks your pack</b><span>No mixins: it does not patch the game. Nothing is sent unless you choose to share (<a href="privacy.html">privacy</a>).</span></div></li>
+        <li><span class="num pixel">04</span><div><b>Cannot be what breaks your pack</b><span>No mixins: it does not patch the game. Nothing is sent unless you choose to share (<a href="/privacy">privacy</a>).</span></div></li>
       </ol>
     </div>
   </div>
@@ -255,6 +263,43 @@ footer a { color: var(--text); }
       <li><b>~130 KB</b><span>per jar</span></li>
       <li><b>7</b><span>languages</span></li>
     </ul>
+  </div>
+</section>
+
+<section id="read">
+  <div class="wrap reveal">
+    <p class="kicker pixel">Guides and lab data</p>
+    <h2>Answers from real games, not guesses.</h2>
+    <div class="read">
+      <div>
+        <h3 class="pixel">Crashes</h3>
+        <ul>
+          <li><a href="/crashes/diagnose">Crash report reader: which mod crashed?</a></li>
+          <li><a href="/crashes/which-mod-crashed">How to find which mod crashed Minecraft</a></li>
+          <li><a href="/guides/crash-mods-compared">Crash mods compared</a></li>
+          <li><a href="/guides/nvidia-forge-fps">Forge at half the FPS on NVIDIA: the fix</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pixel">Minecraft versions</h3>
+        <ul>
+          <li><a href="/minecraft/26-3">Minecraft 26.3 mods tested</a></li>
+          <li><a href="/minecraft/26-2">Minecraft 26.2 mods tested</a></li>
+          <li><a href="/minecraft/1-21-1">Minecraft 1.21.1 mods tested</a></li>
+          <li><a href="/guides/update-modpack">Update a modpack without losing your world</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pixel">Mods</h3>
+        <ul>
+          <li><a href="/mods/sodium">Sodium: which releases run</a></li>
+          <li><a href="/mods/iris">Iris Shaders: which releases run</a></li>
+          <li><a href="/mods/lithium">Lithium: which releases run</a></li>
+          <li><a href="/mods/entityculling">Entity Culling: which releases run</a></li>
+          <li><a href="/minecraft/">All lab data</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -280,7 +325,7 @@ footer a { color: var(--text); }
 <footer>
   <div class="wrap">
     <span>Modkeel · open source, MIT</span>
-    <span><a href="https://github.com/Modkeel">GitHub</a> &nbsp;·&nbsp; <a href="https://github.com/Modkeel/companion/issues">Report a problem</a> &nbsp;·&nbsp; <a href="/crashes/">Crash help</a> &nbsp;·&nbsp; <a href="/minecraft/">Lab data</a> &nbsp;·&nbsp; <a href="/mcp">For AI assistants</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="/terms">Terms</a> &nbsp;·&nbsp; <a href="/support">Support</a></span>
+    <span><a href="https://github.com/Modkeel">GitHub</a> &nbsp;·&nbsp; <a href="https://github.com/Modkeel/companion/issues">Report a problem</a> &nbsp;·&nbsp; <a href="/crashes/">Crash help</a> &nbsp;·&nbsp; <a href="/minecraft/">Lab data</a> &nbsp;·&nbsp; <a href="/mcp">For AI assistants</a> &nbsp;·&nbsp; <a href="/privacy">Privacy</a> &nbsp;·&nbsp; <a href="/terms">Terms</a> &nbsp;·&nbsp; <a href="/support">Support</a></span>
     <p class="legal">Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
   </div>
 </footer>
