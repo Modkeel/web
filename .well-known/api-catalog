@@ -1,0 +1,22 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://api.modkeel.com/mcp",
+      "service-desc": [
+        { "href": "https://modkeel.com/.well-known/mcp/server-card.json", "type": "application/json" }
+      ],
+      "service-doc": [
+        { "href": "https://modkeel.com/mcp", "type": "text/html" }
+      ]
+    },
+    {
+      "anchor": "https://api.modkeel.com/v1",
+      "service-desc": [
+        { "href": "https://api.modkeel.com/v1", "type": "application/json" }
+      ],
+      "service-doc": [
+        { "href": "https://modkeel.com/llms.txt", "type": "text/markdown" }
+      ]
+    }
+  ]
+}

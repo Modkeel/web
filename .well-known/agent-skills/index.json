@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "modkeel",
+      "type": "skill-md",
+      "description": "Answer modded Minecraft questions from the Modkeel lab's real runs: the mod behind a crash, the right file for a Minecraft version and loader, and whether mods work together.",
+      "url": "/.well-known/agent-skills/modkeel/SKILL.md",
+      "digest": "sha256:5001342c0ed29e6fe8a0364fc71f796919a8aad48df34df5ac1ec39ed4b4d73c"
+    }
+  ]
+}
