@@ -126,3 +126,6 @@ td:last-child { white-space: nowrap; }
 }
 .cta .btn:hover { filter: brightness(1.06); }
 .cta .btn:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+figcaption { color: var(--muted); font-size: .9rem; margin-top: 6px; }
+.dl { font-size: .95rem; border-left: 4px solid var(--keel-dark); padding-left: 14px; }
+section { scroll-margin-top: 16px; }
