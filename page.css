@@ -129,3 +129,14 @@ td:last-child { white-space: nowrap; }
 figcaption { color: var(--muted); font-size: .9rem; margin-top: 6px; }
 .dl { font-size: .95rem; border-left: 4px solid var(--keel-dark); padding-left: 14px; }
 section { scroll-margin-top: 16px; }
+.chart { display: block; width: 100%; height: auto; margin-top: 18px; }
+.chart .grid { stroke: var(--ink); stroke-width: 2; }
+.chart .axis { fill: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.chart .line { fill: none; stroke-width: 3; stroke-linejoin: round; }
+.chart .line.fabric { stroke: var(--keel); }
+.chart .line.neoforge { stroke: var(--ok); }
+.chart .end { font-size: 13px; font-weight: 600; }
+.chart .end.fabric { fill: var(--keel-light); }
+.chart .end.neoforge { fill: var(--ok); }
+.plot { margin: 18px 0 0; }
+.wraps { white-space: normal; }

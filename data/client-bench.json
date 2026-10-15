@@ -2,7 +2,7 @@
  "name": "Modkeel lab client benchmark",
  "license": "CC BY 4.0",
  "source": "https://modkeel.com/minecraft/",
- "updated": "2026-10-05",
+ "updated": "2026-10-13",
  "method": {
   "machine": "a laptop with a GeForce GTX 1650 and a Core i7-10750H",
   "machine_class": "an entry-level gaming laptop from 2020",
@@ -20,6 +20,13 @@
  },
  "check_a_jar": "POST https://api.modrinth.com/v2/version_files {\"hashes\": [sha1], \"algorithm\": \"sha1\"}",
  "releases": [
+  {
+   "mod": "Sodium",
+   "minecraft": "1.21.1",
+   "release": "mc1.21.1-0.8.13-neoforge",
+   "sha1": "1757289be21ed18db5b0d90703fa3db1b2de5693",
+   "modrinth": "https://modrinth.com/mod/sodium/version/uMOpc5uV"
+  },
   {
    "mod": "Sodium",
    "minecraft": "26.1.2",
@@ -40,6 +47,13 @@
    "release": "mc26.3-0.9.3-alpha.1-fabric",
    "sha1": "5d88caf6f3e182cd39d0fb0d2e7200c5e613f287",
    "modrinth": "https://modrinth.com/mod/sodium/version/v4PSXean"
+  },
+  {
+   "mod": "Iris Shaders",
+   "minecraft": "1.21.1",
+   "release": "1.8.14-beta.1+1.21.1-neoforge",
+   "sha1": "1bd129cf7bce65d6b1c0543045f0620c98a0f885",
+   "modrinth": "https://modrinth.com/mod/iris/version/KduFYu4t"
   },
   {
    "mod": "Iris Shaders",
@@ -64,10 +78,24 @@
   },
   {
    "mod": "Entity Culling",
+   "minecraft": "1.20.1",
+   "release": "1.11.2",
+   "sha1": "856ef2e3c5bbde87fa5f06515c42fbca8af24a74",
+   "modrinth": "https://modrinth.com/mod/entityculling/version/HPDH6g5B"
+  },
+  {
+   "mod": "Entity Culling",
    "minecraft": "1.21.1",
    "release": "1.11.2",
    "sha1": "c400f3fb5f8668f99cdb52b5d4f92d11b4e3edf1",
    "modrinth": "https://modrinth.com/mod/entityculling/version/AaC52CuD"
+  },
+  {
+   "mod": "Entity Culling",
+   "minecraft": "1.21.1",
+   "release": "1.11.2",
+   "sha1": "2f723582d44b60b41d701a797846eaa45a3fef58",
+   "modrinth": "https://modrinth.com/mod/entityculling/version/8w8FfUPs"
   },
   {
    "mod": "Entity Culling",
@@ -96,6 +124,20 @@
    "release": "1.11.2",
    "sha1": "f2196e803fe77cfbb62c4a2acb64803d98b4f61c",
    "modrinth": "https://modrinth.com/mod/entityculling/version/F4loCvYt"
+  },
+  {
+   "mod": "ImmediatelyFast",
+   "minecraft": "1.20.1",
+   "release": "1.5.5+1.20.4-forge",
+   "sha1": "9eacd407b7dea636d375dc47335d92f616484ea2",
+   "modrinth": "https://modrinth.com/mod/immediatelyfast/version/rvsLEEZU"
+  },
+  {
+   "mod": "ImmediatelyFast",
+   "minecraft": "1.21.1",
+   "release": "1.6.14+1.21.1-neoforge",
+   "sha1": "fee59af2f39c66d09c4c09f441c799e76af70f97",
+   "modrinth": "https://modrinth.com/mod/immediatelyfast/version/OUpXxw4n"
   },
   {
    "mod": "ImmediatelyFast",
@@ -148,6 +190,13 @@
   },
   {
    "mod": "More Culling",
+   "minecraft": "1.21.1",
+   "release": "1.0.10",
+   "sha1": "7e2d906031fdba883649eef6ef48a4dbdbb0f6cf",
+   "modrinth": "https://modrinth.com/mod/moreculling/version/5M4T2FfG"
+  },
+  {
+   "mod": "More Culling",
    "minecraft": "26.2",
    "release": "1.8.1",
    "sha1": "189d90ef598883df8197ea18b510dba21e69bac4",
@@ -159,6 +208,27 @@
    "release": "1.9.0",
    "sha1": "7308b0b0b6fffb0e076cabf97db7fc889d9ada68",
    "modrinth": "https://modrinth.com/mod/moreculling/version/t7vAlfgO"
+  },
+  {
+   "mod": "Embeddium",
+   "minecraft": "1.20.1",
+   "release": "0.3.31+mc1.20.1",
+   "sha1": "bb2fa8f3e493af16af9160d049f96c614a1faf2f",
+   "modrinth": "https://modrinth.com/mod/embeddium/version/UTbfe5d1"
+  },
+  {
+   "mod": "Embeddium",
+   "minecraft": "1.21.1",
+   "release": "1.0.15+mc1.21.1",
+   "sha1": "56063839172a000d079272794bad366f2ad4cbbd",
+   "modrinth": "https://modrinth.com/mod/embeddium/version/J7b96IEd"
+  },
+  {
+   "mod": "Oculus",
+   "minecraft": "1.20.1",
+   "release": "1.20.1-1.8.0",
+   "sha1": "984f774e71790deaec674c7587bd24e0711871b2",
+   "modrinth": "https://modrinth.com/mod/oculus/version/iQ1SwGc3"
   }
  ],
  "driver_arg": {

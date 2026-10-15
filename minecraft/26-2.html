@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Minecraft 26.2 mods: Sodium and Iris Shaders run together, 24 mods tested · Modkeel</title>
-<meta name="description" content="Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2 in the Modkeel lab. Also tested: Lithium, FerriteCore, Entity Culling and 19 more. Lab data as of October 5, 2026.">
+<title>Minecraft 26.2 mods: 66% of top Fabric mods ready, Sodium and Iris Shaders run together · Modkeel</title>
+<meta name="description" content="As of October 14, 2026, 199 of the 300 most downloaded Fabric mods (66%) and 183 NeoForge mods (61%) have a release build for Minecraft 26.2; 11 of them started in a real 26.2 game in the Modkeel lab. Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2 in the Modkeel lab.">
 <link rel="canonical" href="https://modkeel.com/minecraft/26-2">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Modkeel">
-<meta property="og:title" content="Minecraft 26.2 mods: Sodium and Iris Shaders run together, 24 mods tested">
-<meta property="og:description" content="Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2 in the Modkeel lab. Also tested: Lithium, FerriteCore, Entity Culling and 19 more. Lab data as of October 5, 2026.">
+<meta property="og:title" content="Minecraft 26.2 mods: 66% of top Fabric mods ready, Sodium and Iris Shaders run together">
+<meta property="og:description" content="As of October 14, 2026, 199 of the 300 most downloaded Fabric mods (66%) and 183 NeoForge mods (61%) have a release build for Minecraft 26.2; 11 of them started in a real 26.2 game in the Modkeel lab. Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2 in the Modkeel lab.">
 <meta property="og:url" content="https://modkeel.com/minecraft/26-2">
 <meta property="og:image" content="https://modkeel.com/img/og.png">
 <meta property="og:image:width" content="1200">
@@ -28,10 +28,30 @@
  "@graph": [
   {
    "@type": "Dataset",
+   "name": "Minecraft 26.2 mod readiness",
+   "description": "Which of the 300 most downloaded Modrinth mods for Fabric and NeoForge have a release build for Minecraft 26.2, the first day each one had it, and which of them started in a real game in the Modkeel lab.",
+   "url": "https://modkeel.com/minecraft/26-2",
+   "dateModified": "2026-10-14",
+   "temporalCoverage": "2026-06-16/2026-10-14",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "name": "Modkeel",
+    "url": "https://modkeel.com"
+   },
+   "variableMeasured": "mods with a release build for the Minecraft version",
+   "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://modkeel.com/data/readiness.json"
+   }
+  },
+  {
+   "@type": "Dataset",
    "name": "Modkeel lab client benchmark",
    "description": "Frame rate per second of real Minecraft Fabric, NeoForge and Forge clients with and without client mods, with each run's game, loader, GPU, driver, loaded mods and jar SHA-1 hashes.",
    "url": "https://modkeel.com/minecraft/26-2",
-   "dateModified": "2026-10-05",
+   "dateModified": "2026-10-13",
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "creator": {
     "@type": "Organization",
@@ -48,10 +68,10 @@
   },
   {
    "@type": "TechArticle",
-   "headline": "Minecraft 26.2 mods: Sodium and Iris Shaders run together, 24 mods tested",
-   "description": "Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2 in the Modkeel lab. Also tested: Lithium, FerriteCore, Entity Culling and 19 more. Lab data as of October 5, 2026.",
-   "datePublished": "2026-10-05",
-   "dateModified": "2026-10-05",
+   "headline": "Minecraft 26.2 mods: 66% of top Fabric mods ready, Sodium and Iris Shaders run together",
+   "description": "As of October 14, 2026, 199 of the 300 most downloaded Fabric mods (66%) and 183 NeoForge mods (61%) have a release build for Minecraft 26.2; 11 of them started in a real 26.2 game in the Modkeel lab. Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2 in the Modkeel lab.",
+   "datePublished": "2026-10-13",
+   "dateModified": "2026-10-13",
    "url": "https://modkeel.com/minecraft/26-2",
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "author": {
@@ -70,10 +90,18 @@
    "mainEntity": [
     {
      "@type": "Question",
+     "name": "Which mods work on Minecraft 26.2?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "As of October 14, 2026, 199 of the 300 most downloaded Fabric mods (66%) and 183 NeoForge mods (61%) have a release build for Minecraft 26.2; 11 of them started in a real 26.2 game in the Modkeel lab. Among the mods that started in the lab: Sodium, Iris Shaders, Lithium, FerriteCore and Entity Culling. Still without a Fabric release build: ModernFix, Sound Physics Remastered and Indium."
+     }
+    },
+    {
+     "@type": "Question",
      "name": "How much FPS does Sodium add on Minecraft 26.2?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 5, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 64% with 300 mobs in view (109 to 179 FPS), 40% over terrain (277 to 388 FPS) and 95% with 300 mobs behind a wall (86 to 168 FPS) on Minecraft 26.2."
+      "text": "In the Modkeel lab (data as of October 13, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 64% with 300 mobs in view (109 to 179 FPS), 40% over terrain (277 to 388 FPS) and 95% with 300 mobs behind a wall (86 to 168 FPS) on Minecraft 26.2."
      }
     },
     {
@@ -81,7 +109,7 @@
      "name": "Do Sodium and Iris Shaders work together on Minecraft 26.2?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes: in the Modkeel lab (data as of October 5, 2026), Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2."
+      "text": "Yes: in the Modkeel lab (data as of October 13, 2026), Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2."
      }
     },
     {
@@ -89,7 +117,7 @@
      "name": "Does FerriteCore work on Minecraft 26.2?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 5, 2026), FerriteCore 9.0.0-fabric ran in a server benchmark on Minecraft 26.2."
+      "text": "In the Modkeel lab (data as of October 13, 2026), FerriteCore 9.0.0-fabric ran in a server benchmark on Minecraft 26.2."
      }
     },
     {
@@ -97,7 +125,7 @@
      "name": "Does Iris Shaders work on Minecraft 26.2?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 5, 2026), Iris Shaders 1.11.4+26.2-fabric ran in a client benchmark on Minecraft 26.2."
+      "text": "In the Modkeel lab (data as of October 13, 2026), Iris Shaders 1.11.4+26.2-fabric ran in a client benchmark on Minecraft 26.2."
      }
     },
     {
@@ -105,7 +133,7 @@
      "name": "Does Lithium work on Minecraft 26.2?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 5, 2026), Lithium mc26.2-0.25.3-fabric ran in a client benchmark on Minecraft 26.2."
+      "text": "In the Modkeel lab (data as of October 13, 2026), Lithium mc26.2-0.25.3-fabric ran in a client benchmark on Minecraft 26.2."
      }
     },
     {
@@ -113,7 +141,7 @@
      "name": "Does Sodium work on Minecraft 26.2?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In the Modkeel lab (data as of October 5, 2026), Sodium mc26.2-0.9.2-fabric ran in a client benchmark on Minecraft 26.2."
+      "text": "In the Modkeel lab (data as of October 13, 2026), Sodium mc26.2-0.9.2-fabric ran in a client benchmark on Minecraft 26.2."
      }
     },
     {
@@ -158,9 +186,90 @@
 <nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/minecraft/">Lab data</a><a href="/crashes/">Crash help</a><a href="https://github.com/Modkeel/companion/releases/latest">Download</a></span></div></nav>
 <main class="wrap">
   <a class="tag pixel" href="/minecraft/">Lab data</a>
-  <h1>Mods tested on Minecraft 26.2</h1>
-  <p class="lede">Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2 in the Modkeel lab. Releases of 16 mods, among them Athena, Dynamic Trees and End Remastered, made for an older Minecraft version did not start on 26.2 in the Modkeel lab: use a release made for 26.2. 24 mod releases started in real Minecraft 26.2 games in the Modkeel lab, among them Sodium, Iris Shaders, Lithium, FerriteCore and Entity Culling. The Modkeel lab also ran 16 pairs of mods in the same game.</p>
-  <p class="updated">Lab data as of October 5, 2026. 24 releases ran, 16 pairs, 16 older releases did not start, 22 ports.</p>
+  <h1>Which mods work on Minecraft 26.2</h1>
+  <p class="lede">As of October 14, 2026, 199 of the 300 most downloaded Fabric mods (66%) and 183 NeoForge mods (61%) have a release build for Minecraft 26.2; 11 of them started in a real 26.2 game in the Modkeel lab. Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2 in the Modkeel lab. Releases of 16 mods, among them Athena, Dynamic Trees and End Remastered, made for an older Minecraft version did not start on 26.2 in the Modkeel lab: use a release made for 26.2. 23 mod releases started in real Minecraft 26.2 games in the Modkeel lab, among them Sodium, Iris Shaders, Lithium, FerriteCore and Entity Culling. The Modkeel lab also ran 16 pairs of mods in the same game.</p>
+  <p class="updated">Lab data as of October 13, 2026. 23 releases ran, 16 pairs, 16 older releases did not start, 22 ports.</p>
+
+  <h2>How many mods are ready for 26.2</h2>
+  <p>Of the 300 most downloaded Modrinth mods for each loader, as of October 14, 2026:
+  <b>199 Fabric mods (66%)</b> and <b>183 NeoForge mods
+  (61%)</b> have a release build for Minecraft 26.2. The lab column is what
+  only Modkeel adds: which of them started in a real 26.2 game.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Loader</th><th>Ready</th><th>Pre-release only</th><th>Other loader only</th><th>Not updated yet</th><th>Started in the lab</th></tr></thead>
+    <tbody>
+      <tr><td>Fabric</td><td>199 (66%)</td><td>17</td><td>1</td><td>83</td><td>11</td></tr>
+      <tr><td>NeoForge</td><td>183 (61%)</td><td>18</td><td>8</td><td>91</td><td>10</td></tr>
+    </tbody>
+  </table></div>
+  <figure class="plot">
+<svg class="chart" viewBox="0 0 640 220" role="img" aria-labelledby="ready-cap">
+<line class="grid" x1="44" x2="536" y1="190.0" y2="190.0"/><text class="axis" x="38" y="194.0" text-anchor="end">0%</text>
+<line class="grid" x1="44" x2="536" y1="145.5" y2="145.5"/><text class="axis" x="38" y="149.5" text-anchor="end">25%</text>
+<line class="grid" x1="44" x2="536" y1="101.0" y2="101.0"/><text class="axis" x="38" y="105.0" text-anchor="end">50%</text>
+<line class="grid" x1="44" x2="536" y1="56.5" y2="56.5"/><text class="axis" x="38" y="60.5" text-anchor="end">75%</text>
+<line class="grid" x1="44" x2="536" y1="12.0" y2="12.0"/><text class="axis" x="38" y="16.0" text-anchor="end">100%</text>
+<text class="axis" x="44.0" y="212" text-anchor="middle">Jun 16</text>
+<text class="axis" x="290.0" y="212" text-anchor="middle">Aug 15</text>
+<text class="axis" x="536.0" y="212" text-anchor="middle">Oct 14</text>
+<polyline class="line fabric" points="44.0,155.0 48.1,134.2 52.2,120.0 56.3,116.4 60.4,111.1 64.5,107.5 68.6,102.8 72.7,99.2 76.8,98.0 80.9,95.7 85.0,95.1 89.1,94.5 93.2,94.5 97.3,94.5 101.4,92.1 105.5,92.1 109.6,90.3 113.7,90.3 117.8,89.1 121.9,88.5 126.0,87.9 130.1,87.4 134.2,86.2 138.3,85.6 142.4,85.6 146.5,85.6 150.6,85.0 154.7,85.0 158.8,84.4 162.9,84.4 167.0,84.4 171.1,83.8 175.2,82.6 179.3,82.6 183.4,80.8 187.5,80.8 191.6,80.8 195.7,80.8 199.8,80.8 203.9,80.8 208.0,80.8 212.1,80.8 216.2,80.8 220.3,80.8 224.4,80.2 228.5,80.2 232.6,80.2 236.7,79.6 240.8,79.6 244.9,79.6 249.0,79.6 253.1,79.6 257.2,79.6 261.3,79.6 265.4,79.6 269.5,79.6 273.6,79.6 277.7,79.6 281.8,79.0 285.9,79.0 290.0,79.0 294.1,78.5 298.2,78.5 302.3,78.5 306.4,77.9 310.5,77.9 314.6,77.9 318.7,77.9 322.8,77.9 326.9,77.9 331.0,77.9 335.1,77.9 339.2,77.9 343.3,77.9 347.4,76.7 351.5,76.1 355.6,75.5 359.7,75.5 363.8,75.5 367.9,75.5 372.0,75.5 376.1,75.5 380.2,75.5 384.3,75.5 388.4,75.5 392.5,74.9 396.6,74.9 400.7,74.9 404.8,74.9 408.9,74.3 413.0,74.3 417.1,74.3 421.2,74.3 425.3,73.7 429.4,73.7 433.5,73.1 437.6,73.1 441.7,73.1 445.8,73.1 449.9,73.1 454.0,73.1 458.1,73.1 462.2,73.1 466.3,73.1 470.4,73.1 474.5,73.1 478.6,73.1 482.7,73.1 486.8,73.1 490.9,73.1 495.0,72.5 499.1,72.5 503.2,72.5 507.3,71.9 511.4,71.9 515.5,71.9 519.6,71.9 523.7,71.9 527.8,71.9 531.9,71.9 536.0,71.9"/><text class="end fabric" x="542.0" y="75.9">Fabric 66%</text>
+<polyline class="line neoforge" points="44.0,163.9 48.1,144.3 52.2,131.9 56.3,128.9 60.4,121.2 64.5,118.2 68.6,116.4 72.7,113.5 76.8,113.5 80.9,110.5 85.0,109.9 89.1,109.3 93.2,108.7 97.3,108.7 101.4,105.7 105.5,105.7 109.6,104.6 113.7,104.6 117.8,103.4 121.9,102.8 126.0,102.2 130.1,101.6 134.2,100.4 138.3,99.8 142.4,99.8 146.5,99.8 150.6,99.8 154.7,99.8 158.8,99.8 162.9,98.6 167.0,98.6 171.1,98.0 175.2,97.4 179.3,97.4 183.4,95.1 187.5,94.5 191.6,94.5 195.7,93.9 199.8,93.9 203.9,93.9 208.0,93.9 212.1,93.9 216.2,93.9 220.3,93.9 224.4,93.3 228.5,93.3 232.6,93.3 236.7,92.7 240.8,92.7 244.9,92.7 249.0,92.7 253.1,92.7 257.2,92.7 261.3,92.7 265.4,92.7 269.5,92.7 273.6,92.7 277.7,92.7 281.8,92.1 285.9,92.1 290.0,92.1 294.1,91.5 298.2,91.5 302.3,91.5 306.4,91.5 310.5,91.5 314.6,91.5 318.7,91.5 322.8,91.5 326.9,91.5 331.0,91.5 335.1,91.5 339.2,91.5 343.3,91.5 347.4,90.3 351.5,89.7 355.6,89.1 359.7,89.1 363.8,89.1 367.9,89.1 372.0,88.5 376.1,88.5 380.2,88.5 384.3,88.5 388.4,88.5 392.5,87.9 396.6,87.9 400.7,87.4 404.8,87.4 408.9,86.8 413.0,86.8 417.1,86.8 421.2,86.8 425.3,85.6 429.4,85.6 433.5,83.8 437.6,83.8 441.7,83.8 445.8,83.8 449.9,83.8 454.0,83.8 458.1,83.8 462.2,83.8 466.3,83.2 470.4,83.2 474.5,83.2 478.6,83.2 482.7,83.2 486.8,83.2 490.9,83.2 495.0,82.6 499.1,82.6 503.2,82.6 507.3,82.6 511.4,82.0 515.5,82.0 519.6,82.0 523.7,82.0 527.8,82.0 531.9,82.0 536.0,81.4"/><text class="end neoforge" x="542.0" y="90.9">NeoForge 61%</text>
+</svg>
+  <figcaption id="ready-cap">Share of the top 300 mods per loader with a release build for
+  26.2, each day since it came out on June 16, 2026. Half of the Fabric mods ready today had a release build 2 days after 26.2 came out. Half of the NeoForge mods ready today had a release build 2 days after 26.2 came out.</figcaption>
+  </figure>
+  <h3>Most downloaded mods still waiting for 26.2</h3>
+  <p>No release build for 26.2 on at least one loader they are made for, most downloaded
+  first. Until its author updates it, a release made for an earlier version may not start on
+  26.2.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Mod</th><th>Fabric</th><th>NeoForge</th><th>Modkeel lab</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://modrinth.com/mod/modernfix">ModernFix</a></td><td><span class="pill bad">Not updated yet</span></td><td><span class="pill bad">Not updated yet</span></td><td><span class="wraps">ModernFix-mVUS 5.27.19-build.2 started in a real 26.2 game</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/sound-physics-remastered">Sound Physics Remastered</a></td><td><span class="pill bench">Pre-release only</span></td><td><span class="pill bench">Pre-release only</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/indium">Indium</a></td><td><span class="pill bad">Not updated yet</span></td><td><span class="none">Not on this loader</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/moonlight">Moonlight Lib</a></td><td><span class="pill bad">Not updated yet</span></td><td><span class="pill bad">Not updated yet</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/terrablender">TerraBlender</a></td><td><span class="pill bench">Pre-release only</span></td><td><span class="pill bench">Pre-release only</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/c2me-fabric">Concurrent Chunk Management Engine (Fabric)</a></td><td><span class="pill bench">Pre-release only</span></td><td><span class="none">Not on this loader</span></td><td><span class="wraps">0.4.2-alpha.0.52+26.2 started in a real 26.2 game</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/memoryleakfix">Memory Leak Fix</a></td><td><span class="pill bad">Not updated yet</span></td><td><span class="none">Not on this loader</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/oculus">Oculus</a></td><td><span class="none">Not on this loader</span></td><td><span class="pill bad">Not updated yet</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/embeddium">Embeddium</a></td><td><span class="pill bad">Not updated yet</span></td><td><span class="pill bad">Not updated yet</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/cobblemon">Cobblemon</a></td><td><span class="pill bad">Not updated yet</span></td><td><span class="pill bad">Not updated yet</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/patchouli">Patchouli</a></td><td><span class="pill bad">Not updated yet</span></td><td><span class="pill bad">Not updated yet</span></td><td><span class="wraps">Release made for 26.1.2 did not start on 26.2</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/yungs-api">YUNG&#x27;s API</a></td><td><span class="pill bad">Not updated yet</span></td><td><span class="pill bad">Not updated yet</span></td><td><span class="wraps"><a href="/ports/yungs-mods-26-2-fabric">Port Modkeel built and tested</a></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/modelfix">Model Gap Fix</a></td><td><span class="pill bad">Not updated yet</span></td><td><span class="pill bad">Not updated yet</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/coroutil">CoroUtil</a></td><td><span class="pill bad">Not updated yet</span></td><td><span class="pill bad">Not updated yet</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/visuality">Visuality</a></td><td><span class="pill bench">Pre-release only</span></td><td><span class="none">Not on this loader</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/emi">EMI</a></td><td><span class="pill bad">Not updated yet</span></td><td><span class="pill bad">Not updated yet</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/forgified-fabric-api">Forgified Fabric API</a></td><td><span class="none">Not on this loader</span></td><td><span class="pill bench">Pre-release only</span></td><td><span class="wraps">Release made for 1.21.1 did not start on 26.2</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/supplementaries">Supplementaries</a></td><td><span class="pill bad">Not updated yet</span></td><td><span class="pill bad">Not updated yet</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/playeranimator">playerAnimator</a></td><td><span class="pill bad">Not updated yet</span></td><td><span class="pill bad">Not updated yet</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/rrls">Remove Reloading Screen</a></td><td><span class="pill bench">Pre-release only</span></td><td><span class="pill bench">Pre-release only</span></td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+    </tbody>
+  </table></div>
+  <h3>Newest 26.2 builds</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>Mod</th><th>First release build</th><th>Modkeel lab</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://modrinth.com/mod/connector-extras">Connector Extras</a></td><td>October 14, 2026</td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/zoomify">Zoomify (Zoom)</a></td><td>October 8, 2026</td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/particle-rain">Particle Rain</a></td><td>October 7, 2026</td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/the-lost-cities">The Lost Cities</a></td><td>October 4, 2026</td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/first-person-model">First-person Model</a></td><td>September 27, 2026</td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/entityculling">Entity Culling</a></td><td>September 19, 2026</td><td><span class="wraps">1.11.2 started in a real 26.2 game</span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/not-enough-animations">Not Enough Animations</a></td><td>September 19, 2026</td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/naturalist">Naturalist</a></td><td>September 19, 2026</td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/3dskinlayers">3D Skin Layers</a></td><td>September 17, 2026</td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/distanthorizons">Distant Horizons</a></td><td>September 17, 2026</td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/immersive-aircraft">Immersive Aircraft</a></td><td>September 13, 2026</td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+      <tr><td><a href="https://modrinth.com/mod/resourcify">Resourcify</a></td><td>September 11, 2026</td><td><span class="wraps"><span class="none">Not tested yet</span></span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="hint">How this is counted: the 300 most downloaded Modrinth mods for Fabric and
+  for NeoForge, checked once a day. <b>Ready</b>: a release build (not alpha or beta) for 26.2
+  on that loader. <b>Pre-release only</b>: only alpha or beta builds. <b>Other loader only</b>:
+  a 26.2 build for another loader. The daily line uses today's top list and each build's
+  publish date. Download the data: <a href="/data/readiness.json">readiness.json</a> (CC BY 4.0).</p>
 
   <h2>What the lab measured on 26.2</h2>
   <p>Frame rate on Minecraft 26.2 with each mod, against the same game without mods.</p>
@@ -237,7 +346,6 @@
       <tr><td><a href="/mods/immediatelyfast">ImmediatelyFast</a></td><td><a class="rel" href="https://modrinth.com/mod/immediatelyfast/version/pMWERcSu" title="SHA-1 0286260261591fe77ba0d332d5d5a2d2e868c2c6">1.16.5+26.2-fabric</a></td><td><span class="pill bench">Client benchmark</span></td></tr>
       <tr><td><a href="/mods/iris">Iris Shaders</a></td><td><a class="rel" href="https://modrinth.com/mod/iris/version/gxZWWnKH" title="SHA-1 bd0b24731a94b8fe164531e6345718d30ab08ed2">1.11.4+26.2-fabric</a></td><td><span class="pill bench">Client benchmark</span></td></tr>
       <tr><td><a href="/mods/krypton">Krypton</a></td><td><a class="rel" href="https://modrinth.com/mod/krypton/version/5WeL0Nkz" title="SHA-1 c83ed92c0f9f8523d7e6096151e74222fea91e96">0.3.1</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
-      <tr><td><a href="https://modrinth.com/mod/ksyxis">Ksyxis</a></td><td><a class="rel" href="https://modrinth.com/mod/ksyxis/version/9CU8nnVG" title="SHA-1 026b789a30de912a40911443c37c2fc92579629e">1.4.5 (made for 26.3, Fabric, Forge, legacy-fabric, NeoForge, ornithe, Quilt)</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
       <tr><td><a href="https://modrinth.com/mod/lazyai">LazyAI</a></td><td><a class="rel" href="https://modrinth.com/mod/lazyai/version/jKkYzh8N" title="SHA-1 621deba178aa7bb2d60c642a1c5d88987f0c296c">1.7.0</a></td><td><span class="pill bench">Server benchmark</span></td></tr>
       <tr><td><a href="/mods/lithium">Lithium</a></td><td><a class="rel" href="https://modrinth.com/mod/lithium/version/f7vZ0VWU" title="SHA-1 435ad0289209bb72195e7a423756a03f5dfa5a9a">mc26.2-0.25.3-fabric</a></td><td><span class="pill bench">Client benchmark</span></td></tr>
       <tr><td><a href="https://modrinth.com/mod/modern-ui">Modern UI</a></td><td><a class="rel" href="https://modrinth.com/mod/modern-ui/version/PqKzBOVA" title="SHA-1 5c3988988f4bc41fe5458b2e5bde7469726d028b">3.13.0.5 (made for 26.1.2, Forge)</a></td><td><span class="pill ok">Server started</span></td></tr>
@@ -318,12 +426,13 @@
 
   <h2>Questions</h2>
   <div class="faq">
-    <details><summary>How much FPS does Sodium add on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 5, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 64% with 300 mobs in view (109 to 179 FPS), 40% over terrain (277 to 388 FPS) and 95% with 300 mobs behind a wall (86 to 168 FPS) on Minecraft 26.2.</p></details>
-    <details><summary>Do Sodium and Iris Shaders work together on Minecraft 26.2?</summary><p>Yes: in the Modkeel lab (data as of October 5, 2026), Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2.</p></details>
-    <details><summary>Does FerriteCore work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 5, 2026), FerriteCore 9.0.0-fabric ran in a server benchmark on Minecraft 26.2.</p></details>
-    <details><summary>Does Iris Shaders work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 5, 2026), Iris Shaders 1.11.4+26.2-fabric ran in a client benchmark on Minecraft 26.2.</p></details>
-    <details><summary>Does Lithium work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 5, 2026), Lithium mc26.2-0.25.3-fabric ran in a client benchmark on Minecraft 26.2.</p></details>
-    <details><summary>Does Sodium work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 5, 2026), Sodium mc26.2-0.9.2-fabric ran in a client benchmark on Minecraft 26.2.</p></details>
+    <details><summary>Which mods work on Minecraft 26.2?</summary><p>As of October 14, 2026, 199 of the 300 most downloaded Fabric mods (66%) and 183 NeoForge mods (61%) have a release build for Minecraft 26.2; 11 of them started in a real 26.2 game in the Modkeel lab. Among the mods that started in the lab: Sodium, Iris Shaders, Lithium, FerriteCore and Entity Culling. Still without a Fabric release build: ModernFix, Sound Physics Remastered and Indium.</p></details>
+    <details><summary>How much FPS does Sodium add on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 13, 2026), on a laptop with a GeForce GTX 1650 and a Core i7-10750H, Sodium raised the frame rate 64% with 300 mobs in view (109 to 179 FPS), 40% over terrain (277 to 388 FPS) and 95% with 300 mobs behind a wall (86 to 168 FPS) on Minecraft 26.2.</p></details>
+    <details><summary>Do Sodium and Iris Shaders work together on Minecraft 26.2?</summary><p>Yes: in the Modkeel lab (data as of October 13, 2026), Sodium mc26.2-0.9.2-fabric and Iris Shaders 1.11.4+26.2-fabric ran together in a client benchmark on Minecraft 26.2.</p></details>
+    <details><summary>Does FerriteCore work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 13, 2026), FerriteCore 9.0.0-fabric ran in a server benchmark on Minecraft 26.2.</p></details>
+    <details><summary>Does Iris Shaders work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 13, 2026), Iris Shaders 1.11.4+26.2-fabric ran in a client benchmark on Minecraft 26.2.</p></details>
+    <details><summary>Does Lithium work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 13, 2026), Lithium mc26.2-0.25.3-fabric ran in a client benchmark on Minecraft 26.2.</p></details>
+    <details><summary>Does Sodium work on Minecraft 26.2?</summary><p>In the Modkeel lab (data as of October 13, 2026), Sodium mc26.2-0.9.2-fabric ran in a client benchmark on Minecraft 26.2.</p></details>
     <details><summary>Does Athena work on Minecraft 26.2?</summary><p>Not the release made for 1.21.1: in the Modkeel lab, Athena 4.0.6 did not start on Minecraft 26.2. Use a release made for 26.2.</p></details>
     <details><summary>Does Dynamic Trees work on Minecraft 26.2?</summary><p>Not the release made for 26.1.2: in the Modkeel lab, Dynamic Trees 1.8.0-BETA04 did not start on Minecraft 26.2. Use a release made for 26.2.</p></details>
     <details><summary>Which mods work together on Minecraft 26.2?</summary><p>In the Modkeel lab on Minecraft 26.2, these pairs ran in the same game: Concurrent Chunk Management Engine (Fabric) with FerriteCore; Concurrent Chunk Management Engine (Fabric) with Lithium; Concurrent Chunk Management Engine (Fabric) with ScalableLux; Concurrent Chunk Management Engine (Fabric) with Very Many Players (Fabric); Entity Culling with ImmediatelyFast; Entity Culling with Sodium; FerriteCore with Lithium; FerriteCore with Moonrise; FerriteCore with ScalableLux; FerriteCore with Very Many Players (Fabric); ImmediatelyFast with Sodium; Iris Shaders with Sodium; Lithium with Moonrise; Lithium with ScalableLux; Lithium with Very Many Players (Fabric); ScalableLux with Very Many Players (Fabric).</p></details>
