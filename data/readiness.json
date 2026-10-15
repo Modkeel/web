@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-14",
+ "checked": "2026-10-15",
  "top": 300,
  "released": {
   "26.3": "2026-09-15",
@@ -285,8 +285,8 @@
    "r0v8vy1s",
    "NTi7d3Xc",
    "fJFETWDN",
-   "ouNrBQtq",
    "1u6JkXh5",
+   "ouNrBQtq",
    "F8BQNPWX",
    "C7I0BCni",
    "6FtRfnLg",
@@ -793,7 +793,7 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "fabric": {
       "release": "2026-03-24",
       "latest": "2026-03-24"
@@ -803,7 +803,7 @@
       "latest": "2026-03-24"
      }
     },
-    "26.2": {
+    "26.3": {
      "fabric": {
       "release": "2026-03-24",
       "latest": "2026-03-24"
@@ -984,15 +984,15 @@
     "library"
    ],
    "builds": {
-    "26.3": {
-     "fabric": {
-      "release": "2026-09-07",
-      "latest": "2026-10-09"
-     }
-    },
     "26.2": {
      "fabric": {
       "release": "2026-06-03",
+      "latest": "2026-10-09"
+     }
+    },
+    "26.3": {
+     "fabric": {
+      "release": "2026-09-07",
       "latest": "2026-10-09"
      }
     }
@@ -1001,7 +1001,7 @@
   "1bokaNcj": {
    "slug": "xaeros-minimap",
    "title": "Xaero's Minimap",
-   "downloads": 117691665,
+   "downloads": 117776860,
    "icon": "https://cdn.modrinth.com/data/1bokaNcj/354080f65407e49f486fcf9c4580e82c45ae63b8_96.webp",
    "loaders": [
     "adventure",
@@ -1054,7 +1054,7 @@
   "BVzZfTc1": {
    "slug": "entitytexturefeatures",
    "title": "[ETF] Entity Texture Features",
-   "downloads": 107796550,
+   "downloads": 107867039,
    "icon": "https://cdn.modrinth.com/data/BVzZfTc1/af683d206d50b05258d865b0d6e4aa2f2cee12f2_96.webp",
    "loaders": [
     "decoration",
@@ -1068,29 +1068,29 @@
     "26.3": {
      "neoforge": {
       "release": "2026-09-16",
-      "latest": "2026-10-04"
+      "latest": "2026-10-15"
      },
      "fabric": {
       "release": "2026-09-16",
-      "latest": "2026-10-04"
+      "latest": "2026-10-15"
      },
      "quilt": {
       "release": "2026-09-16",
-      "latest": "2026-10-04"
+      "latest": "2026-10-15"
      }
     },
     "26.2": {
      "neoforge": {
       "release": "2026-06-17",
-      "latest": "2026-10-04"
+      "latest": "2026-10-15"
      },
      "fabric": {
       "release": "2026-06-17",
-      "latest": "2026-10-04"
+      "latest": "2026-10-15"
      },
      "quilt": {
       "release": "2026-06-17",
-      "latest": "2026-10-04"
+      "latest": "2026-10-15"
      }
     }
    }
@@ -1222,7 +1222,7 @@
   "4I1XuqiY": {
    "slug": "entity-model-features",
    "title": "[EMF] Entity Model Features",
-   "downloads": 102394607,
+   "downloads": 102466068,
    "icon": "https://cdn.modrinth.com/data/4I1XuqiY/6e5bbd0d06b1741bfdab6c0cfab6de8fdaf0064c_96.webp",
    "loaders": [
     "decoration",
@@ -1237,29 +1237,29 @@
     "26.3": {
      "neoforge": {
       "release": "2026-09-16",
-      "latest": "2026-10-05"
+      "latest": "2026-10-15"
      },
      "fabric": {
       "release": "2026-09-16",
-      "latest": "2026-10-05"
+      "latest": "2026-10-15"
      },
      "quilt": {
       "release": "2026-09-16",
-      "latest": "2026-10-05"
+      "latest": "2026-10-15"
      }
     },
     "26.2": {
      "neoforge": {
       "release": "2026-06-17",
-      "latest": "2026-10-05"
+      "latest": "2026-10-15"
      },
      "fabric": {
       "release": "2026-06-17",
-      "latest": "2026-10-05"
+      "latest": "2026-10-15"
      },
      "quilt": {
       "release": "2026-06-17",
-      "latest": "2026-10-05"
+      "latest": "2026-10-15"
      }
     }
    }
@@ -2574,7 +2574,7 @@
   "k2ZPuTBm": {
    "slug": "essential",
    "title": "Essential Mod",
-   "downloads": 47235896,
+   "downloads": 47279437,
    "icon": "https://cdn.modrinth.com/data/k2ZPuTBm/7f7ac7cf2a46d5f02e9644372c44b3095ad61ffb_96.webp",
    "loaders": [
     "fabric",
@@ -2588,13 +2588,13 @@
     "26.3": {
      "fabric": {
       "release": "2026-09-15",
-      "latest": "2026-09-17"
+      "latest": "2026-10-15"
      }
     },
     "26.2": {
      "fabric": {
       "release": "2026-06-16",
-      "latest": "2026-09-17"
+      "latest": "2026-10-15"
      }
     }
    }
@@ -3688,15 +3688,15 @@
     "quilt"
    ],
    "builds": {
-    "26.3": {
-     "fabric": {
-      "pre": "2026-09-20",
-      "latest": "2026-09-20"
-     }
-    },
     "26.2": {
      "fabric": {
       "pre": "2026-06-18",
+      "latest": "2026-09-20"
+     }
+    },
+    "26.3": {
+     "fabric": {
+      "pre": "2026-09-20",
       "latest": "2026-09-20"
      }
     }
@@ -3773,13 +3773,13 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "fabric": {
       "release": "2026-03-24",
       "latest": "2026-03-24"
      }
     },
-    "26.2": {
+    "26.3": {
      "fabric": {
       "release": "2026-03-24",
       "latest": "2026-03-24"
@@ -3801,24 +3801,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "fabric": {
-      "release": "2026-09-15",
-      "latest": "2026-09-15"
-     },
-     "quilt": {
-      "release": "2026-09-15",
-      "latest": "2026-09-15"
-     },
-     "forge": {
-      "release": "2026-09-15",
-      "latest": "2026-09-15"
-     },
-     "neoforge": {
-      "release": "2026-09-15",
-      "latest": "2026-09-15"
-     }
-    },
     "26.2": {
      "fabric": {
       "release": "2026-05-31",
@@ -3834,6 +3816,24 @@
      },
      "neoforge": {
       "release": "2026-05-31",
+      "latest": "2026-09-15"
+     }
+    },
+    "26.3": {
+     "fabric": {
+      "release": "2026-09-15",
+      "latest": "2026-09-15"
+     },
+     "quilt": {
+      "release": "2026-09-15",
+      "latest": "2026-09-15"
+     },
+     "forge": {
+      "release": "2026-09-15",
+      "latest": "2026-09-15"
+     },
+     "neoforge": {
+      "release": "2026-09-15",
       "latest": "2026-09-15"
      }
     }
@@ -4383,20 +4383,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-09-27",
-      "latest": "2026-10-01"
-     },
-     "fabric": {
-      "release": "2026-09-27",
-      "latest": "2026-10-01"
-     },
-     "quilt": {
-      "release": "2026-09-27",
-      "latest": "2026-10-01"
-     }
-    },
     "26.2": {
      "neoforge": {
       "release": "2026-06-19",
@@ -4408,6 +4394,20 @@
      },
      "quilt": {
       "release": "2026-06-19",
+      "latest": "2026-10-01"
+     }
+    },
+    "26.3": {
+     "neoforge": {
+      "release": "2026-09-27",
+      "latest": "2026-10-01"
+     },
+     "fabric": {
+      "release": "2026-09-27",
+      "latest": "2026-10-01"
+     },
+     "quilt": {
+      "release": "2026-09-27",
       "latest": "2026-10-01"
      }
     }
@@ -4618,13 +4618,13 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "fabric": {
       "release": "2026-06-19",
       "latest": "2026-06-19"
      }
     },
-    "26.2": {
+    "26.3": {
      "fabric": {
       "release": "2026-06-19",
       "latest": "2026-06-19"
@@ -4800,24 +4800,6 @@
     "quilt"
    ],
    "builds": {
-    "26.3": {
-     "fabric": {
-      "release": "2026-10-11",
-      "latest": "2026-10-11"
-     },
-     "forge": {
-      "release": "2026-10-11",
-      "latest": "2026-10-11"
-     },
-     "neoforge": {
-      "release": "2026-10-11",
-      "latest": "2026-10-11"
-     },
-     "quilt": {
-      "release": "2026-10-11",
-      "latest": "2026-10-11"
-     }
-    },
     "26.2": {
      "fabric": {
       "release": "2026-06-20",
@@ -4833,6 +4815,24 @@
      },
      "quilt": {
       "release": "2026-06-20",
+      "latest": "2026-10-11"
+     }
+    },
+    "26.3": {
+     "fabric": {
+      "release": "2026-10-11",
+      "latest": "2026-10-11"
+     },
+     "forge": {
+      "release": "2026-10-11",
+      "latest": "2026-10-11"
+     },
+     "neoforge": {
+      "release": "2026-10-11",
+      "latest": "2026-10-11"
+     },
+     "quilt": {
+      "release": "2026-10-11",
       "latest": "2026-10-11"
      }
     }
@@ -4849,7 +4849,7 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "fabric": {
       "release": "2023-06-12",
       "latest": "2023-06-12"
@@ -4859,7 +4859,7 @@
       "latest": "2023-06-12"
      }
     },
-    "26.2": {
+    "26.3": {
      "fabric": {
       "release": "2023-06-12",
       "latest": "2023-06-12"
@@ -4983,13 +4983,13 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "fabric": {
       "release": "2026-07-30",
       "latest": "2026-07-30"
      }
     },
-    "26.2": {
+    "26.3": {
      "fabric": {
       "release": "2026-07-30",
       "latest": "2026-07-30"
@@ -5081,20 +5081,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-09-19",
-      "latest": "2026-09-19"
-     },
-     "fabric": {
-      "release": "2026-09-19",
-      "latest": "2026-09-19"
-     },
-     "forge": {
-      "release": "2026-09-19",
-      "latest": "2026-09-19"
-     }
-    },
     "26.2": {
      "neoforge": {
       "release": "2026-06-18",
@@ -5106,6 +5092,20 @@
      },
      "forge": {
       "release": "2026-06-18",
+      "latest": "2026-09-19"
+     }
+    },
+    "26.3": {
+     "neoforge": {
+      "release": "2026-09-19",
+      "latest": "2026-09-19"
+     },
+     "fabric": {
+      "release": "2026-09-19",
+      "latest": "2026-09-19"
+     },
+     "forge": {
+      "release": "2026-09-19",
       "latest": "2026-09-19"
      }
     }
@@ -5388,7 +5388,7 @@
   "XeEZ3fK2": {
    "slug": "freecam",
    "title": "Freecam",
-   "downloads": 22348013,
+   "downloads": 22369997,
    "icon": "https://cdn.modrinth.com/data/XeEZ3fK2/9529a900a2aa6ed56c1b3167f165bac91b3acd6e_96.webp",
    "loaders": [
     "fabric",
@@ -5399,24 +5399,26 @@
    "builds": {
     "26.3": {
      "neoforge": {
-      "pre": "2026-09-15",
-      "latest": "2026-10-12"
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-15"
      },
      "fabric": {
-      "pre": "2026-09-15",
-      "latest": "2026-10-12"
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-15"
      }
     },
     "26.2": {
      "neoforge": {
-      "pre": "2026-06-19",
-      "latest": "2026-10-12",
-      "release": "2026-08-31"
+      "release": "2026-08-31",
+      "latest": "2026-10-15",
+      "pre": "2026-06-19"
      },
      "fabric": {
-      "pre": "2026-06-19",
-      "latest": "2026-10-12",
-      "release": "2026-08-31"
+      "release": "2026-08-31",
+      "latest": "2026-10-15",
+      "pre": "2026-06-19"
      }
     }
    }
@@ -5741,24 +5743,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-09-16",
-      "latest": "2026-09-20"
-     },
-     "forge": {
-      "release": "2026-09-16",
-      "latest": "2026-09-20"
-     },
-     "fabric": {
-      "release": "2026-09-16",
-      "latest": "2026-09-20"
-     },
-     "quilt": {
-      "release": "2026-09-16",
-      "latest": "2026-09-20"
-     }
-    },
     "26.2": {
      "neoforge": {
       "release": "2026-06-16",
@@ -5774,6 +5758,24 @@
      },
      "quilt": {
       "release": "2026-06-16",
+      "latest": "2026-09-20"
+     }
+    },
+    "26.3": {
+     "neoforge": {
+      "release": "2026-09-16",
+      "latest": "2026-09-20"
+     },
+     "forge": {
+      "release": "2026-09-16",
+      "latest": "2026-09-20"
+     },
+     "fabric": {
+      "release": "2026-09-16",
+      "latest": "2026-09-20"
+     },
+     "quilt": {
+      "release": "2026-09-16",
       "latest": "2026-09-20"
      }
     }
@@ -6052,7 +6054,7 @@
     "worldgen"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "neoforge": {
       "release": "2026-07-23",
       "latest": "2026-07-23"
@@ -6086,7 +6088,7 @@
       "latest": "2026-05-04"
      }
     },
-    "26.2": {
+    "26.3": {
      "neoforge": {
       "release": "2026-07-23",
       "latest": "2026-07-23"
@@ -6311,7 +6313,7 @@
   "3qAYkBMB": {
    "slug": "polytone",
    "title": "Polytone",
-   "downloads": 18646084,
+   "downloads": 18665225,
    "icon": "https://cdn.modrinth.com/data/3qAYkBMB/828636188cd2427eb1158dd1e0bddd42d318ccbf_96.webp",
    "loaders": [
     "fabric",
@@ -6319,6 +6321,18 @@
     "neoforge"
    ],
    "builds": {
+    "26.2": {
+     "neoforge": {
+      "pre": "2026-06-28",
+      "latest": "2026-10-15",
+      "release": "2026-09-09"
+     },
+     "fabric": {
+      "pre": "2026-06-28",
+      "latest": "2026-10-15",
+      "release": "2026-09-09"
+     }
+    },
     "26.3": {
      "neoforge": {
       "pre": "2026-10-10",
@@ -6327,18 +6341,6 @@
      "fabric": {
       "pre": "2026-10-10",
       "latest": "2026-10-10"
-     }
-    },
-    "26.2": {
-     "neoforge": {
-      "release": "2026-09-09",
-      "latest": "2026-10-09",
-      "pre": "2026-06-28"
-     },
-     "fabric": {
-      "release": "2026-09-09",
-      "latest": "2026-10-09",
-      "pre": "2026-06-28"
      }
     }
    }
@@ -6757,16 +6759,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "fabric": {
-      "release": "2026-10-10",
-      "latest": "2026-10-10"
-     },
-     "neoforge": {
-      "release": "2026-10-10",
-      "latest": "2026-10-10"
-     }
-    },
     "26.2": {
      "fabric": {
       "release": "2026-07-08",
@@ -6779,6 +6771,16 @@
      "quilt": {
       "release": "2026-07-08",
       "latest": "2026-07-08"
+     }
+    },
+    "26.3": {
+     "fabric": {
+      "release": "2026-10-10",
+      "latest": "2026-10-10"
+     },
+     "neoforge": {
+      "release": "2026-10-10",
+      "latest": "2026-10-10"
      }
     }
    }
@@ -6796,7 +6798,7 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "fabric": {
       "release": "2026-06-17",
       "latest": "2026-06-17"
@@ -6806,7 +6808,7 @@
       "latest": "2026-06-17"
      }
     },
-    "26.2": {
+    "26.3": {
      "fabric": {
       "release": "2026-06-17",
       "latest": "2026-06-17"
@@ -6904,7 +6906,7 @@
   "REfW2AEX": {
    "slug": "invmove",
    "title": "InvMove",
-   "downloads": 17355073,
+   "downloads": 17360911,
    "icon": "https://cdn.modrinth.com/data/REfW2AEX/24c63fa80c1e94bc45ca600ba9e0993ff91d289b_96.webp",
    "loaders": [
     "fabric",
@@ -7559,16 +7561,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-10-13",
-      "latest": "2026-10-13"
-     },
-     "fabric": {
-      "release": "2026-10-13",
-      "latest": "2026-10-13"
-     }
-    },
     "26.2": {
      "neoforge": {
       "release": "2026-08-16",
@@ -7576,6 +7568,16 @@
      },
      "fabric": {
       "release": "2026-08-16",
+      "latest": "2026-10-13"
+     }
+    },
+    "26.3": {
+     "neoforge": {
+      "release": "2026-10-13",
+      "latest": "2026-10-13"
+     },
+     "fabric": {
+      "release": "2026-10-13",
       "latest": "2026-10-13"
      }
     }
@@ -8081,16 +8083,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-09-17",
-      "latest": "2026-09-17"
-     },
-     "fabric": {
-      "release": "2026-09-12",
-      "latest": "2026-09-17"
-     }
-    },
     "26.2": {
      "neoforge": {
       "release": "2026-06-17",
@@ -8098,6 +8090,16 @@
      },
      "fabric": {
       "release": "2026-06-17",
+      "latest": "2026-09-17"
+     }
+    },
+    "26.3": {
+     "neoforge": {
+      "release": "2026-09-17",
+      "latest": "2026-09-17"
+     },
+     "fabric": {
+      "release": "2026-09-12",
       "latest": "2026-09-17"
      }
     }
@@ -8523,9 +8525,9 @@
     "quilt"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "neoforge": {
-      "pre": "2026-09-16",
+      "pre": "2026-09-05",
       "latest": "2026-09-16"
      },
      "fabric": {
@@ -8533,9 +8535,9 @@
       "latest": "2026-07-02"
      }
     },
-    "26.2": {
+    "26.3": {
      "neoforge": {
-      "pre": "2026-09-05",
+      "pre": "2026-09-16",
       "latest": "2026-09-16"
      },
      "fabric": {
@@ -9473,22 +9475,10 @@
    ],
    "builds": {}
   },
-  "ouNrBQtq": {
-   "slug": "sophisticated-backpacks-unoffical-fabric-port",
-   "title": "Sophisticated Backpacks (Unoffical Fabric port)",
-   "downloads": 11532181,
-   "icon": "https://cdn.modrinth.com/data/ouNrBQtq/0681de545fe72aa7e1bfccba1b8a12765f658c09_96.webp",
-   "loaders": [
-    "equipment",
-    "fabric",
-    "storage"
-   ],
-   "builds": {}
-  },
   "1u6JkXh5": {
    "slug": "worldedit",
    "title": "WorldEdit",
-   "downloads": 11528068,
+   "downloads": 11532542,
    "icon": "https://cdn.modrinth.com/data/1u6JkXh5/30698991048ced77e60c4e8284007d3782f2e6a3_96.webp",
    "loaders": [
     "bukkit",
@@ -9504,52 +9494,26 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "bukkit": {
-      "pre": "2026-09-21",
-      "latest": "2026-09-24"
-     },
-     "folia": {
-      "pre": "2026-09-21",
-      "latest": "2026-09-24"
-     },
-     "paper": {
-      "pre": "2026-09-21",
-      "latest": "2026-09-24"
-     },
-     "spigot": {
-      "pre": "2026-09-21",
-      "latest": "2026-09-24"
-     },
-     "fabric": {
-      "pre": "2026-09-21",
-      "latest": "2026-09-24"
-     },
-     "neoforge": {
-      "pre": "2026-09-21",
-      "latest": "2026-09-24"
-     }
-    },
     "26.2": {
      "bukkit": {
-      "pre": "2026-06-18",
-      "latest": "2026-09-24",
-      "release": "2026-07-04"
+      "release": "2026-07-04",
+      "latest": "2026-10-15",
+      "pre": "2026-06-18"
      },
      "folia": {
-      "pre": "2026-06-18",
-      "latest": "2026-09-24",
-      "release": "2026-07-04"
+      "release": "2026-07-04",
+      "latest": "2026-10-15",
+      "pre": "2026-06-18"
      },
      "paper": {
-      "pre": "2026-06-18",
-      "latest": "2026-09-24",
-      "release": "2026-07-04"
+      "release": "2026-07-04",
+      "latest": "2026-10-15",
+      "pre": "2026-06-18"
      },
      "spigot": {
-      "pre": "2026-06-18",
-      "latest": "2026-09-24",
-      "release": "2026-07-04"
+      "release": "2026-07-04",
+      "latest": "2026-10-15",
+      "pre": "2026-06-18"
      },
      "fabric": {
       "release": "2026-07-04",
@@ -9560,9 +9524,53 @@
       "release": "2026-07-04",
       "latest": "2026-08-09",
       "pre": "2026-06-18"
+     }
+    },
+    "26.3": {
+     "bukkit": {
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-21"
+     },
+     "folia": {
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-21"
+     },
+     "paper": {
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-21"
+     },
+     "spigot": {
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-21"
+     },
+     "fabric": {
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-21"
+     },
+     "neoforge": {
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-21"
      }
     }
    }
+  },
+  "ouNrBQtq": {
+   "slug": "sophisticated-backpacks-unoffical-fabric-port",
+   "title": "Sophisticated Backpacks (Unoffical Fabric port)",
+   "downloads": 11532181,
+   "icon": "https://cdn.modrinth.com/data/ouNrBQtq/0681de545fe72aa7e1bfccba1b8a12765f658c09_96.webp",
+   "loaders": [
+    "equipment",
+    "fabric",
+    "storage"
+   ],
+   "builds": {}
   },
   "F8BQNPWX": {
    "slug": "naturalist",
@@ -10040,20 +10048,6 @@
     "worldgen"
    ],
    "builds": {
-    "26.3": {
-     "fabric": {
-      "release": "2026-09-17",
-      "latest": "2026-09-17"
-     },
-     "forge": {
-      "release": "2026-09-17",
-      "latest": "2026-09-17"
-     },
-     "neoforge": {
-      "release": "2026-09-17",
-      "latest": "2026-09-17"
-     }
-    },
     "26.2": {
      "fabric": {
       "release": "2026-05-22",
@@ -10065,6 +10059,20 @@
      },
      "neoforge": {
       "release": "2026-05-22",
+      "latest": "2026-09-17"
+     }
+    },
+    "26.3": {
+     "fabric": {
+      "release": "2026-09-17",
+      "latest": "2026-09-17"
+     },
+     "forge": {
+      "release": "2026-09-17",
+      "latest": "2026-09-17"
+     },
+     "neoforge": {
+      "release": "2026-09-17",
       "latest": "2026-09-17"
      }
     }
@@ -10085,28 +10093,6 @@
     "worldgen"
    ],
    "builds": {
-    "26.3": {
-     "fabric": {
-      "release": "2026-09-24",
-      "latest": "2026-09-24"
-     },
-     "forge": {
-      "release": "2026-09-24",
-      "latest": "2026-09-24"
-     },
-     "neoforge": {
-      "release": "2026-09-24",
-      "latest": "2026-09-24"
-     },
-     "quilt": {
-      "release": "2026-09-24",
-      "latest": "2026-09-24"
-     },
-     "datapack": {
-      "release": "2026-09-24",
-      "latest": "2026-09-24"
-     }
-    },
     "26.2": {
      "fabric": {
       "release": "2026-06-16",
@@ -10126,6 +10112,28 @@
      },
      "datapack": {
       "release": "2026-06-16",
+      "latest": "2026-09-24"
+     }
+    },
+    "26.3": {
+     "fabric": {
+      "release": "2026-09-24",
+      "latest": "2026-09-24"
+     },
+     "forge": {
+      "release": "2026-09-24",
+      "latest": "2026-09-24"
+     },
+     "neoforge": {
+      "release": "2026-09-24",
+      "latest": "2026-09-24"
+     },
+     "quilt": {
+      "release": "2026-09-24",
+      "latest": "2026-09-24"
+     },
+     "datapack": {
+      "release": "2026-09-24",
       "latest": "2026-09-24"
      }
     }
@@ -10170,15 +10178,15 @@
     "neoforge"
    ],
    "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-10-10",
-      "latest": "2026-10-10"
-     }
-    },
     "26.2": {
      "neoforge": {
       "release": "2026-06-28",
+      "latest": "2026-10-10"
+     }
+    },
+    "26.3": {
+     "neoforge": {
+      "release": "2026-10-10",
       "latest": "2026-10-10"
      }
     }
