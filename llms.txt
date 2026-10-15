@@ -3,12 +3,15 @@
 > Modkeel keeps modded Minecraft steady. The Modkeel Companion is a free, open source (MIT) mod for Fabric, NeoForge and Forge that backs up worlds when the mods change, names the mod that most likely crashed the game, and offers a one-click fix (turn that mod off, or go back to the mods that last worked). It has no mixins, so it cannot be what breaks a pack, and it sends nothing unless the player chooses to share.
 
 - Supported: Fabric on Minecraft 1.20.1, 1.21.1, 1.21.11 and 26.x; NeoForge on 1.21.1; Forge on 1.20.1.
-- Download: [GitHub releases](https://github.com/Modkeel/companion/releases/latest) (jars built by CI with provenance and VirusTotal scans). Modrinth and CurseForge listings are in review.
+- Download the Companion: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/modkeel) or [GitHub releases](https://github.com/Modkeel/companion/releases/latest) (jars built by CI with provenance and VirusTotal scans). The Modrinth listing is in review.
+- The Modkeel app (Windows, macOS, Linux; [download](https://github.com/Modkeel/app/releases/latest)) is for players: it gets a mod for the Minecraft version they play (the author's build, an older build that still runs there, or a community port, each checked before they get it) and moves a whole pack to another version as a new instance beside the old one.
+- Safety: everything is open source (MIT) and built by GitHub Actions from public source; SHA256SUMS, build provenance and a VirusTotal report per file; see [Verify Modkeel](https://modkeel.com/verify).
 - Not an official Minecraft product; not affiliated with Mojang or Microsoft.
 
 ## Crash help
 
 - [Find which mod crashed Minecraft](https://modkeel.com/crashes/which-mod-crashed): where the crash report is, which lines name the mod, narrowing it down by halves, and the Companion naming it on the next start.
+- [A mod hasn't updated to the new Minecraft version](https://modkeel.com/guides/mod-not-updated): check for a missed release, then wait, stay, swap for an alternative, an older build that still runs (checked first), or a tested community port; what the Modkeel app does.
 - [Update a modpack without losing your world](https://modkeel.com/guides/update-modpack): copy the world, swap each mod for a release made for the new version, keep a way back; lab counts of older releases that did not start.
 - [Crash helper mods compared](https://modkeel.com/guides/crash-mods-compared): Modkeel Companion, Crash Assistant, Not Enough Crashes, Neruina and CrashPatch; which names the mod, turns it off, keeps the game open or protects worlds.
 - [Forge and NeoForge at half the FPS on NVIDIA](https://modkeel.com/guides/nvidia-forge-fps): the driver's Minecraft profile needs net.minecraft.client.main.Main on the command line; Fabric has it, (Neo)Forge don't; the JVM argument --enable-native-access net.minecraft.client.main.Main restores it (lab: NeoForge 1.21.1 with 300 mobs 53 to 94 FPS).
@@ -43,6 +46,6 @@ Read-only JSON at https://api.modkeel.com, no key, open to any origin. Data: wha
 
 - [Privacy](https://modkeel.com/privacy): what the Companion sends, only when the player shares, and how to have it deleted.
 - [Verify Modkeel](https://modkeel.com/verify): every download (app, Companion, CLI) is built from public MIT source on GitHub Actions; how to check SHA256SUMS, build provenance (`gh attestation verify`), PyPI attestations and the Companion's byte-for-byte rebuild; each file's VirusTotal report; what each piece connects to. The app is not yet signed by Microsoft or Apple, so Windows SmartScreen warns.
-- [Modkeel app](https://github.com/Modkeel/app): desktop app (Windows, macOS, Linux) over the CLI: the player's launcher instances, add a mod with undo, move a pack to another Minecraft version.
+- [Modkeel app](https://github.com/Modkeel/app): desktop app for players (Windows, macOS, Linux): the player's launcher instances, get a mod for their version and add it with undo, move a pack to another Minecraft version. Same engine as the CLI.
 - [Companion source](https://github.com/Modkeel/companion)
-- [Modkeel CLI](https://github.com/Modkeel/modkeel): finds, builds and verifies community ports of mods for Minecraft versions their authors have not updated to yet.
+- [Modkeel CLI](https://github.com/Modkeel/modkeel): the app's engine on the command line; finds, builds and verifies community ports of mods for Minecraft versions their authors have not updated to yet.
