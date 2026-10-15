@@ -42,5 +42,7 @@ Read-only JSON at https://api.modkeel.com, no key, open to any origin. Data: wha
 ## Project
 
 - [Privacy](https://modkeel.com/privacy): what the Companion sends, only when the player shares, and how to have it deleted.
+- [Verify Modkeel](https://modkeel.com/verify): every download (app, Companion, CLI) is built from public MIT source on GitHub Actions; how to check SHA256SUMS, build provenance (`gh attestation verify`), PyPI attestations and the Companion's byte-for-byte rebuild; each file's VirusTotal report; what each piece connects to. The app is not yet signed by Microsoft or Apple, so Windows SmartScreen warns.
+- [Modkeel app](https://github.com/Modkeel/app): desktop app (Windows, macOS, Linux) over the CLI: the player's launcher instances, add a mod with undo, move a pack to another Minecraft version.
 - [Companion source](https://github.com/Modkeel/companion)
 - [Modkeel CLI](https://github.com/Modkeel/modkeel): finds, builds and verifies community ports of mods for Minecraft versions their authors have not updated to yet.

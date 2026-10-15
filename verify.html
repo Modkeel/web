@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verify Modkeel · Modkeel</title>
+<meta name="description" content="Every Modkeel file is built from public source on GitHub's machines. How to check the app, the Companion mod and the CLI yourself, and what each one connects to.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Modkeel">
+<meta property="og:title" content="Verify Modkeel">
+<meta property="og:description" content="Every Modkeel file is built from public source on GitHub's machines. How to check the app, the Companion mod and the CLI yourself, and what each one connects to.">
+<meta property="og:url" content="https://modkeel.com/verify">
+<meta property="og:image" content="https://modkeel.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Modkeel: the mod that most likely crashed the game, and a one-click fix">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#111923">
+<link rel="canonical" href="https://modkeel.com/verify">
+<link rel="icon" type="image/png" href="img/icon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Verify Modkeel",
+  "description": "How to check that each Modkeel file was built from its public source, and what each one connects to.",
+  "url": "https://modkeel.com/verify",
+  "dateModified": "2026-10-14",
+  "publisher": {"@type": "Organization", "name": "Modkeel", "url": "https://modkeel.com"}
+}
+</script>
+<style>
+:root {
+  --night: #0c131d;
+  --line: #2a3a4f;
+  --text: #e8edf3;
+  --muted: #9aabbf;
+  --keel: #f08a3c;
+  --keel-dark: #b25a22;
+  --keel-light: #ffb86e;
+}
+* { box-sizing: border-box; }
+html { background: var(--night); color: var(--text); }
+body {
+  margin: 0; background: var(--night);
+  font: 400 1.0625rem/1.65 "Bricolage Grotesque", Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--keel-light); }
+.pixel { font-family: "Silkscreen", monospace; letter-spacing: .04em; text-transform: uppercase; }
+.wrap { width: min(720px, 100% - 32px); margin-inline: auto; }
+nav { padding: 18px 0; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.25rem; text-decoration: none; color: var(--text); }
+.brand img { width: 32px; height: 32px; image-rendering: pixelated; }
+main { padding-block: 32px 64px; }
+.tag { display: inline-block; font-size: .72rem; color: var(--keel-light); border: 2px solid var(--keel-dark); padding: 4px 10px; }
+h1 { font-weight: 800; font-size: clamp(2.2rem, 5vw, 3.2rem); line-height: 1.05; letter-spacing: -.02em; margin: 18px 0 12px; text-wrap: balance; }
+h2 { font-weight: 800; font-size: 1.35rem; margin: 44px 0 10px; text-wrap: balance; }
+h3 { font-weight: 600; font-size: 1.05rem; margin: 24px 0 6px; }
+.lede { font-size: 1.2rem; color: #c9d4e0; margin: 0 0 8px; }
+p, li, td { color: #c9d4e0; }
+ul, ol { padding-left: 1.2em; display: grid; gap: 8px; }
+b, th { color: var(--text); }
+code { font-family: Consolas, "Cascadia Mono", monospace; font-size: .92em; color: var(--text); background: #182331; padding: 1px 6px; }
+pre { background: #182331; border-left: 3px solid var(--keel-dark); padding: 12px 14px; overflow-x: auto; margin: 10px 0; }
+pre code { background: none; padding: 0; }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 2px solid #182331; }
+th { font-weight: 600; }
+.updated { color: var(--muted); font-size: .9rem; }
+footer { border-top: 2px solid #182331; padding: 28px 0 40px; color: var(--muted); font-size: .9rem; }
+footer a { color: var(--text); }
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="img/icon-64.png" alt="">Modkeel</a></div></nav>
+<main class="wrap">
+  <span class="tag pixel">Verify</span>
+  <h1>Don't take our word for it: check every file</h1>
+  <p class="lede">Every Modkeel download is built from public source code on GitHub's machines,
+  not on someone's computer, and each one can be traced to the exact commit that made it.
+  This page shows how, with commands you can run.</p>
+  <p class="updated">Updated October 14, 2026. Covers the Modkeel app 0.1.4, the Modkeel
+  Companion mod 0.3.0 and the Modkeel CLI 0.1.11.</p>
+
+  <h2>At a glance</h2>
+  <div class="scroll">
+  <table>
+    <tr><th>Piece</th><th>Source (license)</th><th>Built by</th><th>How to check a file</th></tr>
+    <tr><td><b>Modkeel app</b> (Windows, macOS, Linux)</td>
+      <td><a href="https://github.com/Modkeel/app">Modkeel/app</a> (MIT)</td>
+      <td><a href="https://github.com/Modkeel/app/blob/main/.github/workflows/release.yml">release.yml</a></td>
+      <td>SHA256SUMS, build provenance, VirusTotal report per file</td></tr>
+    <tr><td><b>Modkeel Companion</b> (the mod)</td>
+      <td><a href="https://github.com/Modkeel/companion">Modkeel/companion</a> (MIT; lab data CC BY 4.0)</td>
+      <td><a href="https://github.com/Modkeel/companion/blob/main/.github/workflows/release.yml">release.yml</a></td>
+      <td>SHA256SUMS, build provenance, rebuild it byte for byte, VirusTotal report per jar</td></tr>
+    <tr><td><b>Modkeel CLI</b> (<code>pip install modkeel</code>, also the app's engine)</td>
+      <td><a href="https://github.com/Modkeel/modkeel">Modkeel/modkeel</a> (MIT)</td>
+      <td><a href="https://github.com/Modkeel/modkeel/blob/main/.github/workflows/release.yml">release.yml</a>, uploaded to PyPI by Trusted Publishing</td>
+      <td>PyPI provenance attestation</td></tr>
+  </table>
+  </div>
+
+  <h2>The app installers</h2>
+  <p>Each release on the <a href="https://github.com/Modkeel/app/releases">releases page</a> is
+  built for all three systems by one workflow run from the tagged commit.</p>
+  <ol>
+    <li><b>Checksum.</b> Compare the file with the release's <code>SHA256SUMS</code>:
+<pre><code>sha256sum Modkeel_0.1.4_linux_amd64.AppImage
+certutil -hashfile Modkeel_0.1.4_windows_x64-setup.exe SHA256   # Windows</code></pre></li>
+    <li><b>Provenance.</b> GitHub signs a record of which repository, workflow and commit built
+      each file. With the <a href="https://cli.github.com">GitHub CLI</a>:
+<pre><code>gh attestation verify Modkeel_0.1.4_windows_x64-setup.exe -R Modkeel/app</code></pre>
+      It fails if a single byte of the file differs from what the workflow built.</li>
+    <li><b>Antivirus.</b> The release notes list every file's
+      <a href="https://www.virustotal.com">VirusTotal</a> result, whatever it says, with a link
+      to the full report. The files are rescanned weekly and the table updated, so a false
+      positive that an engine fixes disappears from it.</li>
+  </ol>
+  <p><b>Updates</b> are signed with the app's own update key; the installed app refuses an
+  update whose signature does not match the public key built into it
+  (<code>src-tauri/tauri.conf.json</code>).</p>
+  <p><b>The engine inside.</b> The app does the work through the Modkeel CLI, the same one on
+  PyPI at the version <code>engine/requirements.txt</code> pins. On Windows it runs inside
+  python.org's embeddable Python, whose files are signed by the Python Software Foundation,
+  rather than as one packed executable.</p>
+
+  <h3>Why Windows or an antivirus may warn</h3>
+  <p>The installers are not yet signed with a Microsoft or Apple certificate. Windows shows
+  "Windows protected your PC" for any unsigned program it has not seen often (<b>More info</b>
+  &gt; <b>Run anyway</b>), and machine-learning antivirus engines sometimes flag unsigned
+  installers. For 0.1.4, one engine of 70 flagged the Windows installer as a "potentially
+  unwanted" program (Sophos, <code>Generic ML PUA</code>): a guess from the file's shape, not a
+  known threat. None of the 40 programs and libraries inside it is flagged by Sophos; you can
+  see every one in the report. The checks above are how you know the file is the one built
+  from the public code.</p>
+
+  <h2>The Companion mod</h2>
+  <p>Jars on the <a href="https://github.com/Modkeel/companion/releases">releases page</a> carry
+  the same checksum and provenance (<code>gh attestation verify &lt;jar&gt; -R
+  Modkeel/companion</code>). The mod's build is also <b>reproducible</b>: from the tagged source,
+  with the JDK the workflow uses, you get the same bytes.</p>
+<pre><code>git clone https://github.com/Modkeel/companion && cd companion
+git checkout v0.3.0
+python build.py --all
+sha256sum build/release/*.jar      # same as the release's SHA256SUMS</code></pre>
+  <p>Before a release goes public, the maintainer rebuilds it this way and compares it with the
+  GitHub build; if one byte differs, it is not published. The mod has no mixins (it does not
+  patch the game's code).</p>
+
+  <h2>The CLI on PyPI</h2>
+  <p>PyPI accepts <code>modkeel</code> uploads only from the release workflow of
+  <a href="https://github.com/Modkeel/modkeel">Modkeel/modkeel</a> (Trusted Publishing: no
+  password or token exists to steal), and stores a signed attestation of which workflow made each
+  file. To check one:</p>
+<pre><code>pip install pypi-attestations
+python -m pypi_attestations verify pypi --repository https://github.com/Modkeel/modkeel \
+    pypi:modkeel-0.1.11-py3-none-any.whl</code></pre>
+  <p>It prints <code>OK</code> when the file on PyPI was built by that repository.</p>
+
+  <h2>What each one connects to</h2>
+  <ul>
+    <li><b>The Companion</b> sends nothing unless you tick <b>Help other players</b>, and shows
+      every field first (<a href="/privacy">privacy</a>). On NeoForge and Forge the loader itself
+      checks the repository's <code>updates.json</code> for a newer version.</li>
+    <li><b>The CLI and the app</b> talk to <a href="https://modrinth.com">Modrinth</a> and GitHub
+      to find and download mods; to Mojang, Fabric and NeoForge for the game's mappings and
+      loaders when a check needs them; to Prism Launcher's metadata when it makes a new instance; to Adoptium when a build needs a JDK you do not have; and
+      to <code>api.modkeel.com/v1/cf</code> to look mods up on CurseForge (CurseForge's key
+      cannot ship inside a download, so our server asks for you; it receives the JAR
+      fingerprints and keeps only a rate-limit counter on a hash of your IP that changes
+      daily). Sharing build results with Modkeel is off.</li>
+    <li><b>The app</b> also reads <code>latest.json</code> from its GitHub releases at start, to
+      offer updates.</li>
+  </ul>
+
+  <h2>Public history and scans</h2>
+  <ul>
+    <li>The code is developed in Modkeel's private workspace, next to its lab data, and each
+      change to a public piece is copied to its repository as its own commit, with its date.
+      Commits in <a href="https://github.com/Modkeel/app/commits/main">Modkeel/app</a> and
+      <a href="https://github.com/Modkeel/companion/commits/main">Modkeel/companion</a> are
+      signed (GitHub shows them as Verified).</li>
+    <li>CodeQL scans the app and the Companion on every push and weekly, and both publish their
+      <a href="https://scorecard.dev">OpenSSF Scorecard</a>.</li>
+    <li>Each repository has an <code>ARCHITECTURE.md</code>: what every folder and main file
+      does, so a person or an AI assistant can read the code quickly.</li>
+    <li>Modkeel's code, tests and texts are written with Claude (Anthropic's AI), directed by its
+      developer, who reviews them and tests every release in real games before it ships.</li>
+  </ul>
+
+  <h2>Found something?</h2>
+  <p>Security issues: see <code>SECURITY.md</code> in
+  <a href="https://github.com/Modkeel/app/blob/main/SECURITY.md">the app</a> or
+  <a href="https://github.com/Modkeel/companion/blob/main/SECURITY.md">the Companion</a>.
+  Anything else: <a href="/support">support</a>.</p>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/support">Support</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+</body>
+</html>
