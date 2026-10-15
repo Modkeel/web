@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A mod hasn't updated to the new Minecraft version: what you can do · Modkeel</title>
+<meta name="description" content="A mod you need has no release for the Minecraft version you want to play. Your options, from waiting to an older build that still runs or a tested community port, and how to tell which ones are safe.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Modkeel">
+<meta property="og:title" content="A mod hasn't updated to the new Minecraft version: what you can do">
+<meta property="og:description" content="Your options when a mod has no release for the new Minecraft version, from waiting to an older build that still runs or a tested community port.">
+<meta property="og:url" content="https://modkeel.com/guides/mod-not-updated">
+<meta property="og:image" content="https://modkeel.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Modkeel: the mod that most likely crashed the game, and a one-click fix">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://modkeel.com/guides/mod-not-updated">
+<meta name="theme-color" content="#111923">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HowTo",
+      "name": "What to do when a mod hasn't updated to the new Minecraft version",
+      "description": "Check for a release you missed, then choose between waiting, staying on the old version, an alternative mod, an older build that still runs, or a tested community port.",
+      "step": [
+        {"@type": "HowToStep", "name": "Check for a release you missed", "text": "Look at the mod's Modrinth and CurseForge pages and its GitHub releases. Authors sometimes publish a new version on one site first, or under a different loader."},
+        {"@type": "HowToStep", "name": "Decide if you can wait", "text": "If your world depends on the mod's blocks or creatures, stay on the version you play until the author releases. Removing the mod deletes its things from the world when it saves."},
+        {"@type": "HowToStep", "name": "Try an older build that still runs", "text": "A release made for an older Minecraft version sometimes runs unchanged on a patch release. Only use one that was checked against the new version, and open a copy of the world first."},
+        {"@type": "HowToStep", "name": "Use a tested community port", "text": "Someone may have built the mod for the new version from its source. Use one that was started in a real game on that version, and keep a copy of the world."}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Can I use a mod made for an older Minecraft version?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Sometimes, but usually not. In the Modkeel lab on October 3, 2026, releases of 16 mods made for an older version did not start on Minecraft 26.2. A few older builds do run on a patch release when the game code they touch did not change; check that before you rely on one, and open a copy of the world first."}},
+        {"@type": "Question", "name": "How long do mod authors take to update?",
+         "acceptedAnswer": {"@type": "Answer", "text": "It varies from days to months, and some mods never update. Libraries and performance mods tend to come first; large content mods often take longest."}},
+        {"@type": "Question", "name": "Is it safe to use an unofficial port of a mod?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Only if you can tell where it came from and that it runs. Prefer ports built from public source, started in a real game on your version, and offered with a checksum. Modkeel's ports are built from the mod's own source on GitHub Actions and started in a real Minecraft server and client before they are listed."}},
+        {"@type": "Question", "name": "What does Modkeel do when a mod hasn't updated?",
+         "acceptedAnswer": {"@type": "Answer", "text": "The free Modkeel app (Windows, macOS, Linux) looks for a build of the mod that runs on your Minecraft version: the author's own build, an older build that still runs there, or a community port. It checks each one before you get it and says how it knows. It can also move a whole pack to another version beside the old one, never over it."}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/minecraft/">Lab data</a><a href="/crashes/">Crash help</a><a href="https://github.com/Modkeel/app/releases/latest">Download</a></span></div></nav>
+<main class="wrap">
+  <span class="tag pixel">Modpack guide</span>
+  <h1>A mod hasn't updated to the new version</h1>
+  <p class="lede">A new Minecraft version is out and a mod you need has no release for it. You can
+  wait, stay where you are, swap it for another mod, or use a build that was checked on the new
+  version: an older one that still runs, or a community port.</p>
+  <p class="updated">Updated October 15, 2026. Fabric, NeoForge and Forge.</p>
+
+  <h2>First, check you didn't miss a release</h2>
+  <ul>
+    <li><b>Look on every site.</b> Authors sometimes publish on Modrinth, CurseForge or GitHub
+      releases first, and the others follow days later.</li>
+    <li><b>Check the other loaders.</b> A mod may be out for Fabric on the new version before
+      NeoForge, or the other way round.</li>
+    <li><b>Read the version list, not the title.</b> A release made for 1.21.1 is not one for
+      1.21.10: they are different versions.</li>
+  </ul>
+
+  <h2>Your options</h2>
+  <ol>
+    <li><b>Wait.</b> The safest choice for a world that depends on the mod. Removing a mod deletes
+      its blocks, items and creatures from the world the next time it saves, and adding it back
+      does not restore them.</li>
+    <li><b>Stay on the version you play.</b> Keep your instance as it is and try the new version
+      in a separate one. Nothing forces you to update.</li>
+    <li><b>Swap it for an alternative.</b> For performance, map or interface mods there is often
+      another mod that does the same job on the new version. The
+      <a href="/minecraft/">lab data</a> lists which releases ran on each version.</li>
+    <li><b>Use an older build that still runs.</b> On a patch release, a build made for the
+      previous version sometimes runs unchanged, when the game code it touches did not change. In
+      the Modkeel lab most did not: releases of 16 mods made for an older version did not start
+      on <a href="/minecraft/26-2">Minecraft 26.2</a>. Only use one that was checked on the new
+      version.</li>
+    <li><b>Use a tested community port.</b> Someone may have built the mod for the new version
+      from its source. Prefer one built from public source and started in a real game, like
+      <a href="/ports/">Modkeel's ports</a>.</li>
+  </ol>
+  <p>Whichever you pick, copy the world first, or let the
+  <a href="https://www.curseforge.com/minecraft/mc-mods/modkeel">Modkeel Companion</a> do it: it
+  copies each world before it loads with different mods.</p>
+
+  <div class="cta">
+    <h2>Let Modkeel find a build that runs</h2>
+    <p>The Modkeel app is free and open source (MIT) for Windows, macOS and Linux. Name a mod and
+    the Minecraft version you play: it looks for the author's own build, an older build that still
+    runs there, or a community port, checks each one before you get it, and says how it knows. It
+    can also move a whole pack to another version, as a new instance beside the old one.</p>
+    <p><a class="btn" href="https://github.com/Modkeel/app/releases/latest">Download the Modkeel app</a></p>
+    <p>Every download is built on GitHub Actions from public source: <a href="/verify">how to
+    check one</a>.</p>
+  </div>
+
+  <h2>Questions</h2>
+  <div class="faq">
+    <details><summary>Can I use a mod made for an older Minecraft version?</summary><p>Sometimes, but usually not. In the Modkeel lab on October 3, 2026, releases of 16 mods made for an older version did not start on Minecraft 26.2. A few older builds do run on a patch release when the game code they touch did not change; check that before you rely on one, and open a copy of the world first.</p></details>
+    <details><summary>How long do mod authors take to update?</summary><p>It varies from days to months, and some mods never update. Libraries and performance mods tend to come first; large content mods often take longest.</p></details>
+    <details><summary>Is it safe to use an unofficial port of a mod?</summary><p>Only if you can tell where it came from and that it runs. Prefer ports built from public source, started in a real game on your version, and offered with a checksum. Modkeel's ports are built from the mod's own source on GitHub Actions and started in a real Minecraft server and client before they are listed.</p></details>
+    <details><summary>What does Modkeel do when a mod hasn't updated?</summary><p>The free Modkeel app (Windows, macOS, Linux) looks for a build of the mod that runs on your Minecraft version: the author's own build, an older build that still runs there, or a community port. It checks each one before you get it and says how it knows. It can also move a whole pack to another version beside the old one, never over it.</p></details>
+  </div>
+
+  <h2>Related</h2>
+  <ul>
+    <li><a href="/guides/update-modpack">Update a modpack without losing your world</a></li>
+    <li><a href="/minecraft/">Mods tested by Minecraft version</a></li>
+    <li><a href="/ports/">Community ports tested by Modkeel</a></li>
+    <li><a href="/crashes/mod-loading-failed">Mod loading failed: missing or incompatible mods</a></li>
+  </ul>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+</body>
+</html>

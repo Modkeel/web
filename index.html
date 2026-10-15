@@ -160,6 +160,12 @@ p { margin: 0 0 16px; }
 .read a { color: var(--text); text-decoration: none; }
 .read a:hover { color: var(--keel-light); }
 
+/* questions players and assistants ask: visible, and the same text as the FAQPage data */
+.qa { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px 48px; margin-top: 28px; }
+.qa h3 { font-weight: 600; font-size: 1.15rem; margin: 0 0 8px; }
+.qa p { color: var(--muted); margin: 0; max-width: 60ch; }
+.qa a { color: var(--keel-light); }
+
 footer { border-top: 2px solid #182331; padding: 36px 0 48px; color: var(--muted); font-size: .9rem; }
 footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between; }
 footer a { color: var(--text); }
@@ -188,7 +194,7 @@ footer a { color: var(--text); }
      "publisher": {"@id": "https://modkeel.com/#org"}},
     {"@type": "Organization", "@id": "https://modkeel.com/#org", "name": "Modkeel", "url": "https://modkeel.com/",
      "logo": "https://modkeel.com/img/icon.png",
-     "description": "Tools for modded Minecraft: the Modkeel Companion mod (world backups, crash diagnosis, one-click fixes) and the Modkeel CLI.",
+     "description": "Free, open source tools for modded Minecraft: the Modkeel Companion mod (world backups, crash diagnosis, one-click fixes) and the Modkeel app (mods for the Minecraft version you play, checked before you get them).",
      "sameAs": ["https://github.com/Modkeel", "https://www.curseforge.com/minecraft/mc-mods/modkeel", "https://pypi.org/project/modkeel/", "https://discord.gg/9MPy4ucDCC"]}
   ]
 }
@@ -209,6 +215,46 @@ footer a { color: var(--text); }
   "publisher": {"@id": "https://modkeel.com/#org"}
 }
 </script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "What is Modkeel?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Free, open source (MIT) tools for modded Minecraft. The Modkeel Companion is a mod for Fabric, NeoForge and Forge that backs up worlds when the mods change, names the mod that most likely crashed the game and fixes it in one click. The Modkeel app (Windows, macOS, Linux) gets a mod for the Minecraft version you play, even when its author has not released for it yet, and can move a whole pack to another version."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is Modkeel safe to download?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Every download is built from public MIT source by GitHub Actions, never on someone's computer. Each release comes with SHA256SUMS, a signed build provenance record and a VirusTotal report per file, and the Companion jar can be rebuilt byte for byte from its source. The Companion sends nothing unless you choose to share a report. The app is not yet signed by Microsoft or Apple, so Windows SmartScreen and macOS warn once when you first open it. Download only from GitHub releases, CurseForge (the Companion) or PyPI (the CLI)."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Which Minecraft versions and loaders does it support?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The Companion runs on Fabric for Minecraft 1.20.1, 1.21.1, 1.21.11 and 26.x, on NeoForge for 1.21.1 and on Forge for 1.20.1."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "A mod hasn't updated to my Minecraft version. What does Modkeel do?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The Modkeel app looks for a build of that mod that runs on your version: the author's own build, an older build that still runs there, or a community port. It checks each one before you get it and tells you how it knows. Packs move as a new instance beside the old one, never over it."
+   }
+  }
+ ]
+}
+</script>
 </head>
 <body>
 
@@ -219,14 +265,14 @@ footer a { color: var(--text); }
     <ul>
       <li><a href="#companion">Companion</a></li>
       <li><a href="#packs">For pack authors</a></li>
-      <li><a href="#next">What's next</a></li>
+      <li><a href="#next">App</a></li>
       <li><a href="/crashes/">Crash help</a></li>
       <li><a href="/minecraft/">Lab data</a></li>
       <li><a href="https://github.com/Modkeel">GitHub</a></li>
     </ul>
   </nav>
   <div class="wrap">
-    <span class="tag pixel">Companion 0.2 is out</span>
+    <span class="tag pixel">Companion 0.3 is out</span>
     <h1>Modded Minecraft, <em>held steady.</em></h1>
     <p class="lede">Modkeel backs up your worlds when your mods change, tells you which mod crashed the game, and fixes it in one click.</p>
     <div class="actions">
@@ -281,6 +327,19 @@ footer a { color: var(--text); }
   </div>
 </section>
 
+<section id="questions">
+  <div class="wrap reveal">
+    <p class="kicker pixel">Questions</p>
+    <h2>What it is, and is it safe?</h2>
+    <div class="qa">
+      <div><h3>What is Modkeel?</h3><p>Free, open source (MIT) tools for modded Minecraft. The Modkeel Companion is a mod for Fabric, NeoForge and Forge that backs up worlds when the mods change, names the mod that most likely crashed the game and fixes it in one click. The Modkeel app (Windows, macOS, Linux) gets a mod for the Minecraft version you play, even when its author has not released for it yet, and can move a whole pack to another version.</p></div>
+      <div><h3>Is Modkeel safe to download?</h3><p>Every download is built from public MIT source by GitHub Actions, never on someone's computer. Each release comes with SHA256SUMS, a signed build provenance record and a VirusTotal report per file, and the Companion jar can be rebuilt byte for byte from its source. The Companion sends nothing unless you choose to share a report. The app is not yet signed by Microsoft or Apple, so Windows SmartScreen and macOS warn once when you first open it. Download only from GitHub releases, CurseForge (the Companion) or PyPI (the CLI). <a href="/verify">How to check a download</a>.</p></div>
+      <div><h3>Which Minecraft versions and loaders does it support?</h3><p>The Companion runs on Fabric for Minecraft 1.20.1, 1.21.1, 1.21.11 and 26.x, on NeoForge for 1.21.1 and on Forge for 1.20.1.</p></div>
+      <div><h3>A mod hasn't updated to my Minecraft version. What does Modkeel do?</h3><p>The Modkeel app looks for a build of that mod that runs on your version: the author's own build, an older build that still runs there, or a community port. It checks each one before you get it and tells you how it knows. Packs move as a new instance beside the old one, never over it. <a href="/guides/mod-not-updated">All your options</a>.</p></div>
+    </div>
+  </div>
+</section>
+
 <section id="read">
   <div class="wrap reveal">
     <p class="kicker pixel">Guides and lab data</p>
@@ -302,6 +361,7 @@ footer a { color: var(--text); }
           <li><a href="/minecraft/26-2">Minecraft 26.2 mods tested</a></li>
           <li><a href="/minecraft/1-21-1">Minecraft 1.21.1 mods tested</a></li>
           <li><a href="/guides/update-modpack">Update a modpack without losing your world</a></li>
+          <li><a href="/guides/mod-not-updated">A mod hasn't updated: what you can do</a></li>
         </ul>
       </div>
       <div>
@@ -321,11 +381,12 @@ footer a { color: var(--text); }
 <section id="next">
   <div class="wrap next">
     <div class="reveal">
-      <p class="kicker pixel">What's next</p>
-      <h2>Mods for the versions their authors skipped.</h2>
-      <p class="muted">The Modkeel CLI finds community ports of a mod on GitHub, compiles them and checks they load. Open source today; a desktop app and tested modpacks come next.</p>
+      <p class="kicker pixel">Modkeel app</p>
+      <h2>Mods for the version you play.</h2>
+      <p class="muted">Name a mod and your Minecraft version. The Modkeel app (Windows, macOS, Linux) finds the author's build, an older build that still runs there, or a community port, checks each one before you get it, and tells you how it knows. It can also move a whole pack to another version, as a new instance beside the old one. The same engine is the open source Modkeel CLI.</p>
       <div class="actions" style="margin-top:28px">
-        <a class="btn ghost" href="https://github.com/Modkeel/modkeel">Modkeel CLI on GitHub</a>
+        <a class="btn" href="https://github.com/Modkeel/app/releases/latest">Download the app</a>
+        <a class="btn ghost" href="https://github.com/Modkeel/modkeel">CLI on GitHub</a>
       </div>
     </div>
     <pre class="term reveal" aria-label="Example terminal session"><span class="p">$</span> modkeel get "Create" -m 1.21.10 -l neoforge
