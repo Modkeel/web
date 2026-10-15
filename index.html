@@ -16,7 +16,9 @@
 <meta property="og:image:alt" content="Modkeel: the mod that most likely crashed the game, and a one-click fix">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#111923">
-<link rel="icon" type="image/png" href="img/icon-64.png">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
@@ -181,6 +183,19 @@ footer a { color: var(--text); }
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "WebSite", "@id": "https://modkeel.com/#site", "name": "Modkeel", "url": "https://modkeel.com/",
+     "publisher": {"@id": "https://modkeel.com/#org"}},
+    {"@type": "Organization", "@id": "https://modkeel.com/#org", "name": "Modkeel", "url": "https://modkeel.com/",
+     "logo": "https://modkeel.com/img/icon.png",
+     "description": "Tools for modded Minecraft: the Modkeel Companion mod (world backups, crash diagnosis, one-click fixes) and the Modkeel CLI.",
+     "sameAs": ["https://github.com/Modkeel", "https://www.curseforge.com/minecraft/mc-mods/modkeel", "https://pypi.org/project/modkeel/", "https://discord.gg/9MPy4ucDCC"]}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Modkeel Companion",
   "applicationCategory": "GameApplication",
@@ -191,7 +206,7 @@ footer a { color: var(--text); }
   "license": "https://opensource.org/licenses/MIT",
   "isAccessibleForFree": true,
   "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
-  "publisher": {"@type": "Organization", "name": "Modkeel", "url": "https://modkeel.com", "sameAs": ["https://github.com/Modkeel"]}
+  "publisher": {"@id": "https://modkeel.com/#org"}
 }
 </script>
 </head>
