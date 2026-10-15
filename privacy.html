@@ -65,7 +65,7 @@ footer a { color: var(--text); }
   <h1>Nothing is sent unless you choose to share</h1>
   <p class="lede">The Modkeel Companion works fully offline. It reaches the internet only to send
   what you ticked, and the screen shows you every field before it goes.</p>
-  <p class="updated">Updated October 11, 2026. Covers the Modkeel Companion (0.2.0 and later;
+  <p class="updated">Updated October 15, 2026. Covers the Modkeel Companion (0.2.0 and later;
   0.1.0 sends nothing at all), the crash analyzer on this site, and the MCP server for AI
   assistants.</p>
 
@@ -81,12 +81,16 @@ footer a { color: var(--text); }
     <li><b>Recipients:</b> Cloudflare, which hosts the server and database; GitHub, which holds
       the nightly database backup in a private repository; Modrinth, which receives only the
       mod name, Minecraft version and loader for two MCP lookups. Other players and AI
-      assistants see only ranges for crashes at least 10 players reported. Nothing is sold, and
-      there are no ads or trackers.</li>
+      assistants see only ranges for crashes at least 10 players reported. Nothing is shown,
+      sold or shared per install: everything we publish or license is a total over at least 10
+      installs. There are no ads or trackers.</li>
     <li><b>Retention:</b> crash text pasted into the analyzer or passed to the MCP server is not
-      kept at all. IP hashes are deleted after 30 days. Shared reports are kept until you ask
-      for them to be deleted; backups holding them expire within 30 days of that. The daily
-      MCP counts hold nothing about who asked and are kept.</li>
+      kept at all. IP hashes are deleted after 30 days. Shared reports and sessions keep their
+      install token for 90 days, the time a fix's outcome needs to come in; then the token is
+      removed from them, and what is left counts toward totals but cannot be traced back to
+      your install. Within those 90 days you can have a token's reports deleted; backups
+      holding them expire within 30 days of that. The daily MCP counts hold nothing about who
+      asked and are kept.</li>
     <li><b>Your controls:</b> share nothing (the default), stop sharing, start over with a new
       token, or have a token's reports deleted (see <a href="#controls">Stop or start
       over</a>).</li>
@@ -106,8 +110,11 @@ footer a { color: var(--text); }
     <li><b>Play sessions</b>, only if you also turn on <b>Also share play sessions</b>: minutes
       played, whether the game crashed, the worst lag spikes and the mods whose code ran during
       them. Turn it off any time in Modkeel &gt; Settings.</li>
-    <li><b>A random install token</b> that links those reports together. It is created on the
-      first share and kept in <code>modkeel/install.txt</code>.</li>
+    <li><b>A random install number (token)</b> that links those reports together, so we can
+      limit abuse and count each install once. It is created on the first share and kept in
+      <code>modkeel/install.txt</code>. It is not linked to your Minecraft, Modrinth or
+      CurseForge account, and deleting that file makes a new one. After 90 days we remove it
+      from your reports and sessions.</li>
   </ul>
 
   <h2>What is never sent</h2>
@@ -124,7 +131,8 @@ footer a { color: var(--text); }
   <p>Reports go to <code>api.modkeel.com</code>, a Cloudflare Worker with a Cloudflare D1
   database. IP addresses are not stored: to limit abuse, the server keeps a hash of the IP with
   a secret that changes every day, and removes even that after 30 days. There is no endpoint
-  that lists or exports reports.</p>
+  that lists or exports reports, and we never show, sell or share anything per install:
+  everything we publish or license is a total over at least 10 installs.</p>
   <p>When the <a href="/crashes/diagnose">crash analyzer</a> or the MCP server diagnoses a
   crash that at least 10 players reported, it also says roughly how many (a range such as
   20&ndash;49) and which fixes worked for most of them, from a summary rebuilt once a month.
@@ -162,8 +170,10 @@ footer a { color: var(--text); }
     <li>Delete <code>modkeel/install.txt</code> in your game folder: the next share gets a new
       token, unlinked from the old reports.</li>
     <li>To have the reports of a token deleted, email the token to
-      <a href="mailto:privacy@modkeel.com">privacy@modkeel.com</a>. The token is not linked to
-      who you are; we delete its reports and reply when it is done.</li>
+      <a href="mailto:privacy@modkeel.com">privacy@modkeel.com</a> within 90 days of the
+      report. The token is not linked to who you are; we delete its reports and reply when it
+      is done. After 90 days the token is already removed from them, so they can no longer be
+      found by it.</li>
   </ul>
 
   <h2>Source</h2>
