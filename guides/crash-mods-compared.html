@@ -67,7 +67,7 @@
   problems; Not Enough Crashes lists the mods in the crash and keeps the game open; Neruina stops
   ticking crashes from breaking a world; the Modkeel Companion names the one mod that most likely
   caused the crash, turns it off in one click and copies worlds before mods change.</p>
-  <p class="updated">Checked October 4, 2026, from each mod's Modrinth page and files; tested in a real game October 12, 2026. Written by
+  <p class="updated">Checked October 4, 2026, from each mod's Modrinth page and files; tested in a real game October 12 and 15, 2026. Written by
   Modkeel, which makes the Companion; corrections are welcome on
   <a href="https://github.com/Modkeel/companion/issues">GitHub</a>.</p>
 
@@ -94,14 +94,46 @@
   <b>Neruina</b> did nothing, as expected: it guards ticking entities and blocks, not crashes in
   other code. The <b>Modkeel Companion</b> let the game close, then on the next start said the
   world was safe, named Crash Test Mod and offered one button to turn it off.</p>
-  <p class="hint">One crash of one kind, on one version: a crash in a ticking entity would favour
-  Neruina, and a known driver or mod conflict would favour Crash Assistant's fixes. We make the
-  Companion; the screens below are what each mod showed, unedited apart from the strip.</p>
+  <p class="hint">One crash of one kind, on one version: a known driver or mod conflict would
+  favour Crash Assistant's fixes, and a crash in a ticking entity favours Neruina (the next
+  test). We make the Companion; the screens below are what each mod showed, unedited apart from
+  the strip.</p>
   <div class="shots" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:14px;margin:18px 0">
     <img src="/img/guides/crash-modkeel.jpg" width="872" height="547" loading="lazy" style="display:block;width:100%;height:auto" alt="Modkeel Companion on the next start after the crash: your world is safe, it was probably Crash Test Mod, button Disable Crash Test Mod">
     <img src="/img/guides/crash-notenoughcrashes.jpg" width="872" height="547" loading="lazy" style="display:block;width:100%;height:auto" alt="Not Enough Crashes crash screen: potential causes Crash Test Mod and Fabric Lifecycle Events, buttons Back to Title Screen and Show crash log">
     <img src="/img/guides/crash-crashpatch.jpg" width="872" height="547" loading="lazy" style="display:block;width:100%;height:auto" alt="CrashPatch crash screen: your game crashed, this could have been caused by Minecraft">
     <img src="/img/guides/crash-crash-assistant.jpg" width="730" height="652" loading="lazy" style="display:block;width:100%;height:auto" alt="Crash Assistant window after the game closed: available log files with Open and Upload buttons, and Upload all logs and copy a message for support">
+  </div>
+
+  <h2>A ticking entity crash, five crash mods</h2>
+  <p>The second kind of crash is the one Neruina is built for: a mod's code fails while a mob
+  ticks, the crash report says "Ticking entity", and in a saved world the same mob can crash the
+  game again every time it loads. On October 15, 2026 we ran it the same way: Crash Test Mod
+  summons a burning pig, and the pig's first fire damage runs into an error in the test mod's
+  code.</p>
+  <figure style="margin:18px 0;max-width:720px"><img src="/img/guides/crash-mods-same-crash-entity.png"
+  width="720" height="518" loading="lazy" style="display:block;width:100%;height:auto"
+  alt="A ticking entity crash on Minecraft 26.2 Fabric with each crash mod. No crash mod: the game closes and says nothing. Neruina: a chat message names the pig, which it suspends, and the game stays open; it does not name the mod. Modkeel Companion: on the next start names Crash Test Mod and offers to turn it off; the game had closed. Crash Assistant: its own window after the game closes, with logs to share. Not Enough Crashes: crash screen naming Crash Test Mod and one innocent mod, then the game closes. CrashPatch: crash screen naming Minecraft, then the game closes.">
+  <figcaption>Tested in the Modkeel lab: reuse the image with a link to this page.</figcaption></figure>
+  <p><b>Neruina</b> did its job: the game kept running, the pig froze in place still burning, and
+  a chat message said it had caught a ticking entity, a pig at those coordinates, suspended it,
+  with buttons to learn more and copy the crash. It named the pig, not the mod whose code failed,
+  and the mod stays installed, so the next mob that runs that code can fail too. <b>Not Enough
+  Crashes</b> and <b>CrashPatch</b> showed their crash screens (Not Enough Crashes named Crash
+  Test Mod and Fabric Entity Events, which only passed the error along; CrashPatch again named
+  Minecraft), but this crash happened in the world's own server inside the game, and it came back
+  on every frame until they gave up ("the game has crashed an excessive amount of times") and the
+  game closed. <b>Crash Assistant</b> opened the same window as before, with the logs to share
+  and no mod named. The <b>Modkeel Companion</b> did what it did for the first crash: the game
+  closed, and the next start said the world was safe, named Crash Test Mod and offered to turn
+  it off.</p>
+  <p class="hint">Neruina keeps you playing; the Companion names the mod to remove. They do
+  different jobs and work together.</p>
+  <div class="shots" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:14px;margin:18px 0">
+    <img src="/img/guides/crash-neruina-entity.jpg" width="872" height="547" loading="lazy" style="display:block;width:100%;height:auto" alt="Neruina chat message in the game: caught ticking entity Pig at its coordinates, it has been suspended, with What Is This and Copy Crash buttons; the burning pig stands still">
+    <img src="/img/guides/crash-modkeel-entity.jpg" width="872" height="547" loading="lazy" style="display:block;width:100%;height:auto" alt="Modkeel Companion on the next start after the ticking entity crash: your world is safe, it may have been Crash Test Mod, button Disable Crash Test Mod">
+    <img src="/img/guides/crash-notenoughcrashes-entity.jpg" width="872" height="547" loading="lazy" style="display:block;width:100%;height:auto" alt="Not Enough Crashes crash screen: potential causes Crash Test Mod and Fabric Entity Events, before the game closed">
+    <img src="/img/guides/crash-crashpatch-entity.jpg" width="872" height="547" loading="lazy" style="display:block;width:100%;height:auto" alt="CrashPatch crash screen: this could have been caused by Minecraft, before the game closed">
   </div>
 
   <h2>At a glance</h2>
@@ -186,7 +218,7 @@
   <div class="faq">
     <details><summary>Is there a mod that tells you which mod crashed Minecraft?</summary><p>Yes, several, in different ways. The Modkeel Companion names the one mod that most likely caused the crash, says how sure it is and why, and turns it off in one click. Not Enough Crashes lists the mods involved in the crash. Crash Assistant shows the logs, recognises known problems and offers fixes for them.</p></details>
     <details><summary>Which crash mod backs up my world?</summary><p>Of the mods compared here, only the Modkeel Companion copies worlds: before a world loads with a different set of mods. Neruina protects worlds in another way: it suspends the entity, block or item whose ticking crashes, so the world can still be opened.</p></details>
-    <details><summary>Which crash mod lets me keep playing after a crash?</summary><p>Not Enough Crashes and CrashPatch send you back to the title screen after many crashes instead of closing the game. The Modkeel Companion and Crash Assistant act after the game has closed: on the next start or in a separate window.</p></details>
+    <details><summary>Which crash mod lets me keep playing after a crash?</summary><p>Not Enough Crashes and CrashPatch send you back to the title screen after many crashes instead of closing the game, though in our test a ticking entity crash still closed it. Neruina keeps the game running through ticking entity and block crashes by suspending what failed. The Modkeel Companion and Crash Assistant act after the game has closed: on the next start or in a separate window.</p></details>
     <details><summary>Can I use more than one crash mod?</summary><p>They do different jobs, so combining them can make sense; for example Neruina against ticking crashes and the Modkeel Companion for world copies and naming the mod. Test the combination in your pack before shipping it.</p></details>
   </div>
 
