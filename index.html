@@ -46,7 +46,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 a { color: inherit; }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 .pixel { font-family: "Silkscreen", monospace; letter-spacing: .04em; text-transform: uppercase; }
 .wrap { width: min(1120px, 100% - 32px); margin-inline: auto; }
 
@@ -294,10 +294,10 @@ footer a { color: var(--text); }
         <button role="tab" aria-selected="false" data-shot="1">Pack health</button>
       </div>
       <div class="frame">
-        <img class="on" src="img/gallery-crash.webp" width="852" height="479" alt="After a crash, Modkeel names the mod that most likely caused it and offers to disable it.">
-        <img src="img/gallery-health.webp" width="852" height="479" alt="The pack health screen: world backups, changes Modkeel made and fixes it is watching." loading="lazy">
+        <img class="on" src="img/gallery-crash.webp" width="1600" height="900" alt="After a crash, Modkeel says the world is safe, names the mod that most likely caused it and offers to disable it.">
+        <img src="img/gallery-health.webp" width="1600" height="900" alt="The pack health screen: the last crash, warnings such as low memory, world copies, mods and lag spikes." loading="lazy">
       </div>
-      <p class="caption" aria-live="polite">The next start names the likely cause, how sure Modkeel is and why.</p>
+      <p class="caption" aria-live="polite">The next start says your world is safe and names the likely cause, and why.</p>
     </div>
     <div class="reveal">
       <p class="kicker pixel">Modkeel Companion</p>
@@ -411,8 +411,8 @@ footer a { color: var(--text); }
 <script>
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .15 });
   document.querySelectorAll(".reveal").forEach(el => io.observe(el));
-  const CAPTIONS = ["The next start names the likely cause, how sure Modkeel is and why.",
-    "World backups, what Modkeel changed and the fixes it is watching."];
+  const CAPTIONS = ["The next start says your world is safe and names the likely cause, and why.",
+    "The last crash, what needs a look (memory, graphics), world copies, mods and lag spikes."];
   const tabs = document.querySelectorAll(".tabs button"), shots = document.querySelectorAll(".frame img");
   tabs.forEach(t => t.addEventListener("click", () => {
     const n = +t.dataset.shot;
