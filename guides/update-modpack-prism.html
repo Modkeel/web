@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Update a modpack in Prism Launcher without losing your world · Modkeel</title>
+<meta name="description" content="Update a Prism Launcher instance to a new Minecraft version and keep the old one and its world: copy the instance, change the version, update the mods, and what the Modkeel lab found when it moved a 29-mod Fabric pack to 26.2 and 26.3.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Modkeel">
+<meta property="og:title" content="Update a modpack in Prism Launcher without losing your world">
+<meta property="og:description" content="Update a Prism Launcher instance to a new Minecraft version and keep the old one and its world: copy the instance, change the version, update the mods, and what the Modkeel lab found when it moved a 29-mod Fabric pack to 26.2 and 26.3.">
+<meta property="og:url" content="https://modkeel.com/guides/update-modpack-prism">
+<meta property="og:image" content="https://modkeel.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Modkeel: the mod that most likely crashed the game, and a one-click fix">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://modkeel.com/guides/update-modpack-prism">
+<meta name="theme-color" content="#111923">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HowTo",
+      "name": "Update a modpack in Prism Launcher without losing your world",
+      "dateModified": "2026-10-17",
+      "tool": [{"@type": "HowToTool", "name": "Prism Launcher"}, {"@type": "HowToTool", "name": "Modkeel Companion"}],
+      "step": [
+        {"@type": "HowToStep", "name": "Copy the instance", "text": "Right-click the instance, Copy, keep Copy saves ticked; with links on, tick Don't link saves."},
+        {"@type": "HowToStep", "name": "Change the Minecraft version", "text": "In the copy: Edit, Version, select Minecraft, Change Version; then the loader the same way."},
+        {"@type": "HowToStep", "name": "Update the mods", "text": "Mods, Check for Updates; jars added by hand and mods with no release for the version need another source."},
+        {"@type": "HowToStep", "name": "Open a copy of the world", "text": "With the Modkeel Companion in the new instance, the world is copied before it loads with the new mods, and a crash names the mod on the next start."}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "How do I update a modpack to a new Minecraft version in Prism Launcher?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Right-click the instance and choose Copy, with Copy saves ticked. In the copy, open Edit, Version, select Minecraft and press Change Version, then do the same for the loader. In Mods, press Check for Updates. Open a copy of the world first, and keep the old instance until the new one has run for a while."}},
+        {"@type": "Question", "name": "Does Prism's Check for Updates find a build for the new Minecraft version?",
+         "acceptedAnswer": {"@type": "Answer", "text": "For mods Prism downloaded itself, yes: it looks for a release made for the instance's Minecraft version and loader. Jars you dropped into the mods folder by hand carry no metadata, so Prism cannot update them, and a mod with no release for the new version keeps its old file, which usually will not start there."}},
+        {"@type": "Question", "name": "Will copying a Prism instance copy my worlds?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Yes when Copy saves is ticked, which is the default. If you turn on symbolic or hard links to save space, also tick Don't link saves: otherwise both instances share the same world folder, and opening it on the new version upgrades the old instance's world too."}}
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {"@type": "ListItem", "position": 1, "name": "Modkeel", "item": "https://modkeel.com/"},
+  {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://modkeel.com/guides/"},
+  {"@type": "ListItem", "position": 3, "name": "Update a modpack in Prism Launcher", "item": "https://modkeel.com/guides/update-modpack-prism"}
+ ]
+}
+</script>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/minecraft/">Lab data</a><a href="/crashes/">Crash help</a><a href="https://github.com/Modkeel/companion/releases/latest">Download</a></span></div></nav>
+<main class="wrap">
+  <span class="tag pixel">Prism Launcher guide</span>
+  <h1>Update a modpack in Prism Launcher without losing your world</h1>
+  <p class="lede">Prism already does the hard part: it keeps instances apart, so the new version
+  goes in a copy and the old instance, with its world, stays as it was. Copy the instance with
+  its saves, change the Minecraft version in the copy, update the mods, and open the world there
+  only after the mods are sorted. The Modkeel Companion adds the way back inside the new
+  instance.</p>
+  <p class="updated">Written October 17, 2026, against Prism Launcher's own menus. Fabric, NeoForge,
+  Forge and Quilt instances.</p>
+
+  <h2>Step by step</h2>
+  <ol>
+    <li><b>Copy the instance.</b> Right-click it and choose <b>Copy</b>. Keep <b>Copy saves</b>
+      ticked. If you turn on symbolic or hard links to save space, also tick <b>Don't link
+      saves</b>; otherwise both instances share one world folder, and the new version upgrades the
+      old instance's world as well. Name the copy after the version, for example "My pack
+      (26.3)".</li>
+    <li><b>Change the Minecraft version in the copy.</b> <b>Edit</b>, <b>Version</b>, select
+      <b>Minecraft</b>, <b>Change Version</b>. Then select the loader (Fabric Loader, NeoForge,
+      Forge) and <b>Change Version</b> again, to one made for the new Minecraft.</li>
+    <li><b>Update the mods.</b> In <b>Mods</b>, press <b>Check for Updates</b>. Prism looks for a
+      release of each mod made for the new version and loader and lists what it will replace.</li>
+    <li><b>Look at what it could not update.</b> Two kinds of jar stay as they were: ones you
+      dropped into the mods folder by hand (Prism has no metadata for them), and mods whose author
+      has not released for the new version yet. An old file left in a new version usually stops the
+      game from starting. Find those below before you open the world.</li>
+    <li><b>Add the Modkeel Companion to the new instance</b> and open the world. It copies the
+      world before it loads with the new mods, and if the game crashes, the next start names the
+      mod that most likely caused it and turns it off in one click. The old instance is still
+      there if you want to stop and wait.</li>
+  </ol>
+
+  <h2>Every jar, including the ones Prism cannot update</h2>
+  <p><a href="https://github.com/Modkeel/modkeel">modkeel move</a>, a free open source command, does
+  steps 2 to 4 from the mods folder itself. It only reads the old instance: each jar is identified
+  by its hash on Modrinth and CurseForge, so jars added by hand count too, and each gets the
+  build made for the new version. With a Prism instance it then adds "<i>name</i> (<i>version</i>)"
+  next to the old one, with its memory and Java settings, configs, resource packs and shader
+  packs; worlds are left for you to copy, because opening one on a new version upgrades it for
+  good.</p>
+  <pre><code>pip install modkeel
+modkeel instances
+modkeel move "My pack" -m 26.3</code></pre>
+  <p>On October 17, 2026 we moved The Essentials Pack, 29 Fabric mods on Minecraft 1.21.11
+  (Sodium, Iris, Lithium, Simple Voice Chat, WorldEdit, Carpet and more), to <a
+  href="/minecraft/26-2">26.2</a> and to <a href="/minecraft/26-3">26.3</a>. Every one of the 29 had
+  an official build for each version, Text Placeholder API came along as a dependency, and nothing
+  had to be compiled. When a mod has no build for the new version, move tries an older build of
+  it that still passes its checks there, then community builds, and says which one it used. When a
+  mod has nothing,
+  <a href="/guides/mod-not-updated">every option for a mod that is not updated</a>.</p>
+  <p class="hint">move writes a new Prism (or MultiMC) instance only; for the Modrinth App and
+  CurseForge it puts the pack in a folder, because those launchers keep their instances in their
+  own database.</p>
+
+  <div class="cta">
+    <h2>Keep the way back inside the new instance</h2>
+    <p>The Modkeel Companion is a free, open source mod for Fabric, NeoForge and Forge. It copies
+    each world before it loads with different mods; if the game then crashes, the next start names
+    the mod that most likely caused it, how sure it is and why, and turns that mod off or goes back
+    to the mods that last worked in one click. It has no mixins, so it cannot be what breaks a
+    pack.</p>
+    <p><a class="btn" href="https://github.com/Modkeel/companion/releases/latest">Get the Modkeel Companion</a></p>
+    <p>Crashed already? <a href="/crashes/diagnose">Paste the crash report</a> to see which mod
+    caused it.</p>
+  </div>
+
+  <h2>Questions</h2>
+  <div class="faq">
+    <details><summary>How do I update a modpack to a new Minecraft version in Prism Launcher?</summary><p>Right-click the instance and choose Copy, with Copy saves ticked. In the copy, open Edit, Version, select Minecraft and press Change Version, then do the same for the loader. In Mods, press Check for Updates. Open a copy of the world first, and keep the old instance until the new one has run for a while.</p></details>
+    <details><summary>Does Prism's Check for Updates find a build for the new Minecraft version?</summary><p>For mods Prism downloaded itself, yes: it looks for a release made for the instance's Minecraft version and loader. Jars you dropped into the mods folder by hand carry no metadata, so Prism cannot update them, and a mod with no release for the new version keeps its old file, which usually will not start there.</p></details>
+    <details><summary>Will copying a Prism instance copy my worlds?</summary><p>Yes when Copy saves is ticked, which is the default. If you turn on symbolic or hard links to save space, also tick Don't link saves: otherwise both instances share the same world folder, and opening it on the new version upgrades the old instance's world too.</p></details>
+  </div>
+
+  <h2>Related</h2>
+  <ul>
+    <li><a href="/guides/update-modpack">Update a modpack without losing your world</a>, in any launcher</li>
+    <li><a href="/guides/mod-not-updated">A mod hasn't updated to the new Minecraft version</a></li>
+    <li><a href="/guides/crash-mods-compared">Crash helper mods compared</a></li>
+  </ul>
+  <p>Still stuck? <a href="/support">Write to Modkeel support</a> with your Minecraft version, loader and the log.</p>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/about">About</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/support">Support</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+</body>
+</html>
