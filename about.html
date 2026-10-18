@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Modkeel · Modkeel</title>
+<meta name="description" content="Modkeel is built and run by Juan Zabala, an independent developer: free, open source tools for modded Minecraft, and a lab that tests mods in real games.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Modkeel">
+<meta property="og:title" content="About Modkeel">
+<meta property="og:description" content="Modkeel is built and run by Juan Zabala, an independent developer: free, open source tools for modded Minecraft, and a lab that tests mods in real games.">
+<meta property="og:url" content="https://modkeel.com/about">
+<meta property="og:image" content="https://modkeel.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Modkeel: the mod that most likely crashed the game, and a one-click fix">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://modkeel.com/about">
+<meta name="theme-color" content="#111923">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/page.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "AboutPage",
+   "name": "About Modkeel",
+   "url": "https://modkeel.com/about",
+   "description": "Modkeel is built and run by Juan Zabala, an independent developer: free, open source tools for modded Minecraft, and a lab that tests mods in real games.",
+   "about": {
+    "@id": "https://modkeel.com/#org"
+   },
+   "author": {
+    "@id": "https://modkeel.com/about#juan"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://modkeel.com/about#juan",
+   "name": "Juan Zabala",
+   "url": "https://github.com/juanzab",
+   "sameAs": [
+    "https://github.com/juanzab"
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://modkeel.com/#org",
+   "name": "Modkeel",
+   "url": "https://modkeel.com/",
+   "email": "support@modkeel.com",
+   "founder": {
+    "@id": "https://modkeel.com/about#juan"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Modkeel",
+     "item": "https://modkeel.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "About",
+     "item": "https://modkeel.com/about"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/minecraft/">Lab data</a><a href="/crashes/">Crash help</a><a href="https://github.com/Modkeel/companion/releases/latest">Download</a></span></div></nav>
+<main class="wrap">
+  <span class="tag pixel">About</span>
+  <h1>About Modkeel</h1>
+  <p class="lede">Modkeel is free, open source (MIT) tooling for modded Minecraft. It is built
+  and run by <a href="https://github.com/juanzab">Juan Zabala</a>, an independent developer.</p>
+
+  <h2>What Modkeel makes</h2>
+  <ul>
+    <li><b>The Modkeel Companion</b>, a mod for Fabric, NeoForge and Forge. It copies each world
+      before it loads with different mods; after a crash, the next start names the mod that most
+      likely caused it and offers to turn it off, or to go back to the mods that last worked.</li>
+    <li><b>The Modkeel app</b> for Windows, macOS and Linux. Name a mod and your Minecraft version:
+      it looks for the author's build, an older build that still runs there, or a community port,
+      checks each one before you get it, and can move a whole pack to another version as a new
+      instance beside the old one.</li>
+    <li><b>The Modkeel CLI</b>, the same engine on the command line, on PyPI as
+      <code>modkeel</code>.</li>
+    <li><b>An MCP server</b> at <code>https://api.modkeel.com/mcp</code>, so AI assistants can read
+      a crash or look up a mod with the lab's data: <a href="/mcp">how to add it</a>.</li>
+    <li><b><a href="/ports/">Community ports</a></b>: builds of mods for Minecraft versions their
+      authors have not released for yet, made from each mod's own source on GitHub Actions.</li>
+  </ul>
+
+  <h2>How the lab tests</h2>
+  <ul>
+    <li><b>Real games.</b> Mods are started in real Minecraft clients and servers, and the lab
+      records what happened: a world loaded, a server finished starting, or the game stopped.
+      A port is listed only after it ran in a modpack on a real server and client.</li>
+    <li><b>Bytecode linkage checks.</b> Before a JAR built for one Minecraft version is offered for
+      another, its bytecode is checked against the target version: the classes, methods and fields
+      it calls must exist there, and its mixins must still find their targets.</li>
+    <li><b>JAR safety scans.</b> Every JAR is scanned before the lab starts a game with it, for
+      known malware, webhooks, code that reads login files and sends data out, and code that runs
+      other programs or downloads more code.</li>
+    <li><b>Readiness data.</b> Every day the lab asks Modrinth which of the most downloaded mods have
+      a release build for the newest Minecraft versions, and publishes the counts on the
+      <a href="/minecraft/">version pages</a>.</li>
+    <li><b>Benchmarks.</b> Frame rate and server timings with each mod against the same game without
+      mods; <a href="/minecraft/#method">how they are measured</a>, with the raw data.</li>
+  </ul>
+  <p>Lab data is published under CC BY 4.0: see <a href="/mods/">mods</a> and
+  <a href="/minecraft/">Minecraft versions</a>.</p>
+
+  <h2>Public code</h2>
+  <p>The code is public in the <a href="https://github.com/Modkeel">Modkeel organization on
+  GitHub</a>: <a href="https://github.com/Modkeel/companion">the Companion</a>,
+  <a href="https://github.com/Modkeel/app">the app</a>,
+  <a href="https://github.com/Modkeel/modkeel">the CLI</a>,
+  <a href="https://github.com/Modkeel/packs">the modpacks</a>,
+  <a href="https://github.com/Modkeel/ports">the ports</a> and
+  <a href="https://github.com/Modkeel/web">this site</a>. Every download is built there by GitHub
+  Actions: <a href="/verify">how to check one</a>.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:support@modkeel.com">support@modkeel.com</a>, or the
+  <a href="/support">support page</a> for bug trackers.</p>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/about">About</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/support">Support</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+</body>
+</html>

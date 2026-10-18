@@ -29,21 +29,8 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "HowTo",
-      "name": "Update a modpack to a new Minecraft version without losing your world",
-      "description": "Copy the world, swap each mod for a release made for the new version, start once, and keep a way back.",
-      "step": [
-        {"@type": "HowToStep", "name": "Copy the world", "text": "Copy the world folder before anything changes, or let the Modkeel Companion copy it before the world loads with different mods."},
-        {"@type": "HowToStep", "name": "Check each mod", "text": "For every mod, find a release made for the new Minecraft version on its Modrinth or CurseForge page. Mods without one stay behind for now."},
-        {"@type": "HowToStep", "name": "Swap the files", "text": "Make a new instance for the new version and put in only releases made for it, plus the loader version they ask for."},
-        {"@type": "HowToStep", "name": "Start once and keep a way back", "text": "Open a copy of the world first. If the game crashes, find the mod that caused it and turn it off, or go back to the old instance."}
-      ]
-    },
-    {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "How do I update my modpack to a new Minecraft version without losing my world?",
-         "acceptedAnswer": {"@type": "Answer", "text": "Copy the world first, then swap every mod for a release made for the new version and open a copy of the world. The Modkeel Companion, a free mod for Fabric, NeoForge and Forge, copies each world before it loads with different mods, and if the game then crashes it names the mod that most likely caused it and turns it off in one click."}},
         {"@type": "Question", "name": "Do mods made for an older Minecraft version work on a newer one?",
          "acceptedAnswer": {"@type": "Answer", "text": "Usually not. In the Modkeel lab on October 3, 2026, releases of 16 mods made for an older version did not start on Minecraft 26.2, and releases of 13 mods did not start on 26.3. Use a release made for the version you play."}},
         {"@type": "Question", "name": "What happens to my world if I remove a mod?",
@@ -53,6 +40,32 @@
       ]
     }
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Modkeel",
+   "item": "https://modkeel.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Guides",
+   "item": "https://modkeel.com/guides/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Update a modpack",
+   "item": "https://modkeel.com/guides/update-modpack"
+  }
+ ]
 }
 </script>
 </head>
@@ -86,7 +99,9 @@
       for the new version. The <a href="/minecraft/">Modkeel lab data</a> also says which releases
       started in real games on each version and which ran together.</li>
     <li><b>Wait for the mods your world depends on.</b> If a mod that adds blocks or creatures has no
-      release for the new version yet, update later, or play the new version in a new world.</li>
+      release for the new version yet, update later, or play the new version in a new world. A
+      <a href="/ports/">community port</a> the lab ran on the new version can stand in:
+      <a href="/guides/mod-not-updated">every option for a mod that is not updated</a>.</li>
     <li><b>Make a new instance.</b> In your launcher, make an instance for the new version with only
       releases made for it, and the loader version they ask for. Keep the old instance.</li>
     <li><b>Open a copy of the world.</b> If it crashes, the crash report usually names the mod; turn
@@ -114,11 +129,12 @@
 
   <h2>Related</h2>
   <ul>
-    <li><a href="/crashes/which-mod-crashed">Find which mod crashed Minecraft</a></li>
+    <li><a href="/crashes/which-mod-crashed">Minecraft froze or closed with no crash report</a></li>
     <li><a href="/minecraft/">Mods tested by Minecraft version</a></li>
     <li><a href="/crashes/mod-loading-failed">Mod loading failed: missing or incompatible mods</a></li>
   </ul>
+  <p>Still stuck? <a href="/support">Write to Modkeel support</a> with your Minecraft version, loader and the log.</p>
 </main>
-<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/about">About</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/support">Support</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
 </body>
 </html>

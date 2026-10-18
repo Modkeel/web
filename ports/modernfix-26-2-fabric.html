@@ -54,22 +54,6 @@
    "mainEntity": [
     {
      "@type": "Question",
-     "name": "Is there ModernFix for Minecraft 26.2 Fabric?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "ModernFix has no official Minecraft 26.2 Fabric build yet. Its author's newest Fabric build, 5.20.3+mc1.21.4, is for Minecraft 1.21.4. Its author still builds for NeoForge (newest for 26.1.2). A community port runs on 26.2: the Modkeel lab ran it in a modpack on a real 26.2 server and client."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "How did Modkeel check the 26.2 port?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "On September 29, 2026, the lab put the port in its Keel: Better Structures modpack, 32 mods on Fabric 26.2, and started a real dedicated server: it was ready in 10 seconds. The test then generated every structure the pack's mods add, one by one with the server's own /place structure command: 197 in all (1 more cannot fit at the test spots, a known limit of those structures, not of the ports). A real client then started with the same mods and joined a world. Nothing crashed."
-     }
-    },
-    {
-     "@type": "Question",
      "name": "Does the port work on NeoForge and Forge?",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -85,6 +69,29 @@
      }
     }
    ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Modkeel",
+     "item": "https://modkeel.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Ports",
+     "item": "https://modkeel.com/ports/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ModernFix for 26.2",
+     "item": "https://modkeel.com/ports/modernfix-26-2-fabric"
+    }
+   ]
   }
  ]
 }
@@ -96,8 +103,8 @@
   <span class="tag pixel">Ports</span>
   <h1>ModernFix for Minecraft 26.2 (Fabric)</h1>
   <p class="lede">ModernFix has no official Minecraft 26.2 Fabric build yet. Its author&#x27;s newest Fabric build, 5.20.3+mc1.21.4, is for Minecraft 1.21.4. Its author still builds for NeoForge (newest for 26.1.2). A community port runs on 26.2: the Modkeel lab ran it in a modpack on a real 26.2 server and client.</p>
-  <p class="updated">Author's builds checked on Modrinth on October 14, 2026;
-  ports tested on September 29, 2026.</p>
+<!--volatile-->  <p class="updated">Author's builds checked on Modrinth on October 17, 2026;
+  ports tested on September 29, 2026.</p><!--/volatile-->
 
   <h2>How the lab checked</h2>
   <p>On September 29, 2026, the lab put the port in its Keel: Better Structures modpack, 32 mods on Fabric 26.2, and started a real dedicated server: it was ready in 10 seconds. The test then generated every structure the pack's mods add, one by one with the server's own <code>/place structure</code> command: 197 in all (1 more cannot fit at the test spots, a known limit of those structures, not of the ports). A real client then started with the same mods and joined a world. Nothing crashed.</p>
@@ -128,18 +135,19 @@
     Modrinth page lists 26.2 for Fabric.</li>
   </ul>
 
+  <p>While it waits for an official build:
+  <a href="/guides/mod-not-updated">what to do when a mod is not updated yet</a>. Every port the lab tested:
+  <a href="/ports/">community ports</a>.</p>
+
   <div class="cta">
     <h2>Trying ModernFix on 26.2?</h2>
-    <p>Your pack is not the lab&#x27;s: a port can fail in it. The Modkeel Companion, a free mod for Fabric, copies each world before it loads with different mods; if the game then crashes, it names the mod that most likely caused it and turns that mod off, or goes back to the mods that last worked, in one click.</p>
+    <p>The Modkeel Companion, a free mod for Fabric, backs up each world first.
+    <a href="/crashes/diagnose">Crashed already?</a></p>
     <p><a class="btn" href="https://github.com/Modkeel/companion/releases/latest">Get the Modkeel Companion</a></p>
-    <p>Crashed already? <a href="/crashes/diagnose">Paste the crash report</a> to see which mod
-    caused it.</p>
   </div>
 
   <h2>Questions</h2>
   <div class="faq">
-    <details><summary>Is there ModernFix for Minecraft 26.2 Fabric?</summary><p>ModernFix has no official Minecraft 26.2 Fabric build yet. Its author&#x27;s newest Fabric build, 5.20.3+mc1.21.4, is for Minecraft 1.21.4. Its author still builds for NeoForge (newest for 26.1.2). A community port runs on 26.2: the Modkeel lab ran it in a modpack on a real 26.2 server and client.</p></details>
-    <details><summary>How did Modkeel check the 26.2 port?</summary><p>On September 29, 2026, the lab put the port in its Keel: Better Structures modpack, 32 mods on Fabric 26.2, and started a real dedicated server: it was ready in 10 seconds. The test then generated every structure the pack&#x27;s mods add, one by one with the server&#x27;s own /place structure command: 197 in all (1 more cannot fit at the test spots, a known limit of those structures, not of the ports). A real client then started with the same mods and joined a world. Nothing crashed.</p></details>
     <details><summary>Does the port work on NeoForge and Forge?</summary><p>The lab ran it on Fabric 26.2 only. It is a Fabric build.</p></details>
     <details><summary>What happens to my world when the official build comes out?</summary><p>Nobody can test that until it exists. Back up the world before adding a port and again before switching to the official build.</p></details>
   </div>
@@ -151,6 +159,6 @@
     where to get a mod for your version: it finds official builds and these ports.</p>
   </div>
 </main>
-<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · Lab data CC BY 4.0, "Modkeel lab data (modkeel.com)". Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/about">About</a> · <a href="/privacy">Privacy</a> · <a href="/support">Support</a> · Lab data CC BY 4.0, "Modkeel lab data (modkeel.com)". Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
 </body>
 </html>

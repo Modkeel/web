@@ -10,7 +10,8 @@
 
 ## Crash help
 
-- [Find which mod crashed Minecraft](https://modkeel.com/crashes/which-mod-crashed): where the crash report is, which lines name the mod, narrowing it down by halves, and the Companion naming it on the next start.
+- [Minecraft froze or closed with no crash report](https://modkeel.com/crashes/which-mod-crashed): where the cause is written instead (latest.log, debug.log, hs_err_pid files, the launcher log) and halving the mods folder, with the dependency and world caveats.
+- [Guides](https://modkeel.com/guides/): every guide, one line each.
 - [A mod hasn't updated to the new Minecraft version](https://modkeel.com/guides/mod-not-updated): check for a missed release, then wait, stay, swap for an alternative, an older build that still runs (checked first), or a tested community port; what the Modkeel app does.
 - [Update a modpack without losing your world](https://modkeel.com/guides/update-modpack): copy the world, swap each mod for a release made for the new version, keep a way back; lab counts of older releases that did not start.
 - [Crash helper mods compared](https://modkeel.com/guides/crash-mods-compared): Modkeel Companion, Crash Assistant, Not Enough Crashes, Neruina and CrashPatch; which names the mod, turns it off, keeps the game open or protects worlds.
@@ -26,6 +27,7 @@
 
 - [Mods tested by Minecraft version](https://modkeel.com/minecraft/): which mod releases ran on each Minecraft version in the Modkeel lab, which ran together, and which releases made for older versions did not start.
 - [Minecraft 26.3](https://modkeel.com/minecraft/26-3), [26.2](https://modkeel.com/minecraft/26-2), [1.21.11](https://modkeel.com/minecraft/1-21-11), [1.21.1](https://modkeel.com/minecraft/1-21-1), [1.20.1](https://modkeel.com/minecraft/1-20-1).
+- [Mods](https://modkeel.com/mods/): every mod the lab ran, one line each.
 - Per mod: which releases ran on which Minecraft version and the mods each ran with, at https://modkeel.com/mods/{mod_id}, e.g. [Sodium](https://modkeel.com/mods/sodium), [Lithium](https://modkeel.com/mods/lithium), [Iris Shaders](https://modkeel.com/mods/iris).
 - [Community ports](https://modkeel.com/ports/): mods built by Modkeel for Minecraft versions their authors have not released for yet, each tested in a real game, e.g. [YUNG's mods on 26.2 Fabric](https://modkeel.com/ports/yungs-mods-26-2-fabric).
 - Benchmarks: [client FPS](https://modkeel.com/data/client-bench.json) and [server optimizers](https://modkeel.com/data/perf-bench.json) per Minecraft version, CC BY 4.0, drawn as cards on each version page.
@@ -44,6 +46,7 @@ Read-only JSON at https://api.modkeel.com, no key, open to any origin. Data: wha
 
 ## Project
 
+- [About](https://modkeel.com/about): what Modkeel is, who builds it (Juan Zabala, https://github.com/juanzab), how the lab tests, contact.
 - [Privacy](https://modkeel.com/privacy): what the Companion sends, only when the player shares, and how to have it deleted.
 - [Verify Modkeel](https://modkeel.com/verify): every download (app, Companion, CLI) is built from public MIT source on GitHub Actions; how to check SHA256SUMS, build provenance (`gh attestation verify`), PyPI attestations and the Companion's byte-for-byte rebuild; each file's VirusTotal report; what each piece connects to. The app is not yet signed by Microsoft or Apple, so Windows SmartScreen warns.
 - [Modkeel app](https://github.com/Modkeel/app): desktop app for players (Windows, macOS, Linux): the player's launcher instances, get a mod for their version and add it with undo, move a pack to another Minecraft version. Same engine as the CLI.

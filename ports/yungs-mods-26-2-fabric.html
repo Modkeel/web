@@ -133,10 +133,10 @@
    "mainEntity": [
     {
      "@type": "Question",
-     "name": "Is there YUNG's mods for Minecraft 26.2 Fabric?",
+     "name": "Do the ports work on NeoForge and Forge?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "12 of YUNG's mods have no official Minecraft 26.2 Fabric build yet (their newest Fabric builds are for 26.1.2). Community ports of all of them run on 26.2: the Modkeel lab ran them in a modpack on a real 26.2 server and client, where the server generated the 20 structures they add."
+      "text": "The lab ran them on Fabric 26.2 only. They are Fabric builds."
      }
     },
     {
@@ -149,27 +149,34 @@
     },
     {
      "@type": "Question",
-     "name": "How did Modkeel check the 26.2 ports?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "On September 29, 2026, the lab put all 12 ports in its Keel: Better Structures modpack, 32 mods on Fabric 26.2, and started a real dedicated server: it was ready in 10 seconds. The test then generated every structure the pack's mods add, one by one with the server's own /place structure command: 197 in all (1 more cannot fit at the test spots, a known limit of those structures, not of the ports). A real client then started with the same mods and joined a world. Nothing crashed."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Do the ports work on NeoForge and Forge?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The lab ran them on Fabric 26.2 only. They are Fabric builds."
-     }
-    },
-    {
-     "@type": "Question",
      "name": "What happens to my world when the official builds come out?",
      "acceptedAnswer": {
       "@type": "Answer",
       "text": "Nobody can test that until they exist. Back up the world before adding a port and again before switching to the official build."
      }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Modkeel",
+     "item": "https://modkeel.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Ports",
+     "item": "https://modkeel.com/ports/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "YUNG's mods for 26.2",
+     "item": "https://modkeel.com/ports/yungs-mods-26-2-fabric"
     }
    ]
   }
@@ -183,8 +190,8 @@
   <span class="tag pixel">Ports</span>
   <h1>YUNG&#x27;s mods for Minecraft 26.2 (Fabric)</h1>
   <p class="lede">12 of YUNG&#x27;s mods have no official Minecraft 26.2 Fabric build yet (their newest Fabric builds are for 26.1.2). Community ports of all of them run on 26.2: the Modkeel lab ran them in a modpack on a real 26.2 server and client, where the server generated the 20 structures they add.</p>
-  <p class="updated">Author's builds checked on Modrinth on October 14, 2026;
-  ports tested on September 29, 2026.</p>
+<!--volatile-->  <p class="updated">Author's builds checked on Modrinth on October 17, 2026;
+  ports tested on September 29, 2026.</p><!--/volatile-->
 
   <div class="scroll"><table>
     <thead><tr><th>Mod</th><th>Author's newest Fabric</th><th>On 26.2</th><th>Structures generated</th></tr></thead>
@@ -311,20 +318,21 @@
     Modrinth pages list 26.2 for Fabric.</li>
   </ul>
 
+  <p>While they wait for an official build:
+  <a href="/guides/mod-not-updated">what to do when a mod is not updated yet</a>. Every port the lab tested:
+  <a href="/ports/">community ports</a>.</p>
+
   <div class="cta">
     <h2>Trying these on 26.2?</h2>
-    <p>Your pack is not the lab&#x27;s: a port can fail in it. The Modkeel Companion, a free mod for Fabric, copies each world before it loads with different mods; if the game then crashes, it names the mod that most likely caused it and turns that mod off, or goes back to the mods that last worked, in one click.</p>
+    <p>The Modkeel Companion, a free mod for Fabric, backs up each world first.
+    <a href="/crashes/diagnose">Crashed already?</a></p>
     <p><a class="btn" href="https://github.com/Modkeel/companion/releases/latest">Get the Modkeel Companion</a></p>
-    <p>Crashed already? <a href="/crashes/diagnose">Paste the crash report</a> to see which mod
-    caused it.</p>
   </div>
 
   <h2>Questions</h2>
   <div class="faq">
-    <details><summary>Is there YUNG&#x27;s mods for Minecraft 26.2 Fabric?</summary><p>12 of YUNG&#x27;s mods have no official Minecraft 26.2 Fabric build yet (their newest Fabric builds are for 26.1.2). Community ports of all of them run on 26.2: the Modkeel lab ran them in a modpack on a real 26.2 server and client, where the server generated the 20 structures they add.</p></details>
-    <details><summary>Do I need all of YUNG&#x27;s mods?</summary><p>No. Add the ones you want, plus YUNG&#x27;s API, which they need.</p></details>
-    <details><summary>How did Modkeel check the 26.2 ports?</summary><p>On September 29, 2026, the lab put all 12 ports in its Keel: Better Structures modpack, 32 mods on Fabric 26.2, and started a real dedicated server: it was ready in 10 seconds. The test then generated every structure the pack&#x27;s mods add, one by one with the server&#x27;s own /place structure command: 197 in all (1 more cannot fit at the test spots, a known limit of those structures, not of the ports). A real client then started with the same mods and joined a world. Nothing crashed.</p></details>
     <details><summary>Do the ports work on NeoForge and Forge?</summary><p>The lab ran them on Fabric 26.2 only. They are Fabric builds.</p></details>
+    <details><summary>Do I need all of YUNG&#x27;s mods?</summary><p>No. Add the ones you want, plus YUNG&#x27;s API, which they need.</p></details>
     <details><summary>What happens to my world when the official builds come out?</summary><p>Nobody can test that until they exist. Back up the world before adding a port and again before switching to the official build.</p></details>
   </div>
 
@@ -335,6 +343,6 @@
     where to get a mod for your version: it finds official builds and these ports.</p>
   </div>
 </main>
-<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · Lab data CC BY 4.0, "Modkeel lab data (modkeel.com)". Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/about">About</a> · <a href="/privacy">Privacy</a> · <a href="/support">Support</a> · Lab data CC BY 4.0, "Modkeel lab data (modkeel.com)". Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
 </body>
 </html>

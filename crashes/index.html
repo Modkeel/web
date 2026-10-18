@@ -24,6 +24,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/page.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Modkeel",
+   "item": "https://modkeel.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Crash help",
+   "item": "https://modkeel.com/crashes/"
+  }
+ ]
+}
+</script>
 </head>
 <body>
 <nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/crashes/">Crash help</a><a href="https://github.com/Modkeel/companion/releases/latest">Download</a></span></div></nav>
@@ -37,9 +57,9 @@
   that most likely caused it.</p>
 
   <ul class="guides">
-    <li><a href="/crashes/which-mod-crashed">Find which mod crashed Minecraft</a>
-      <p>Where the crash report is, which lines name the mod, and how to narrow it down when
-      none does.</p></li>
+    <li><a href="/crashes/which-mod-crashed">Minecraft froze or closed with no crash report</a>
+      <p>No file in <code>crash-reports</code>: where the cause is written instead, and how to
+      halve the mods folder.</p></li>
     <li><a href="/guides/crash-mods-compared">Crash helper mods compared</a>
       <p>Which mod names the culprit, turns it off, keeps the game open or protects the
       world.</p></li>
@@ -74,7 +94,8 @@
     the chat. It names the mod, checks the rest of your pack and finds a build that works.
     <a href="/mcp">How to add it</a>.</p>
   </div>
+  <p>Still stuck? <a href="/support">Write to Modkeel support</a> with your Minecraft version, loader and the log.</p>
 </main>
-<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/privacy">Privacy</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/about">About</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/support">Support</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
 </body>
 </html>
