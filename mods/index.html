@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mods tested in the Modkeel lab · Modkeel</title>
+<meta name="description" content="Minecraft mods the Modkeel lab ran in real games: Sodium, Iris, Lithium and more, with what each one changed where the lab measured it.">
+<link rel="canonical" href="https://modkeel.com/mods/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Modkeel">
+<meta property="og:title" content="Mods tested in the Modkeel lab">
+<meta property="og:description" content="Minecraft mods the Modkeel lab ran in real games: Sodium, Iris, Lithium and more, with what each one changed where the lab measured it.">
+<meta property="og:url" content="https://modkeel.com/mods/">
+<meta property="og:image" content="https://modkeel.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Modkeel: the mod that most likely crashed the game, and a one-click fix">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#111923">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/page.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Modkeel",
+     "item": "https://modkeel.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Mods",
+     "item": "https://modkeel.com/mods/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="/"><img src="/img/icon-64.png" alt="" width="32" height="32">Modkeel</a><span class="links"><a href="/minecraft/">Lab data</a><a href="/crashes/">Crash help</a><a href="https://github.com/Modkeel/companion/releases/latest">Download</a></span></div></nav>
+<main class="wrap">
+  <span class="tag pixel">Mods</span>
+  <h1>Mods the Modkeel lab ran</h1>
+  <p class="lede">Each page shows which releases of a mod started in real Minecraft games in the
+  lab, which mods ran in the same game with it, and what it changed in the frame rate or on a
+  server where the lab measured it. Most searched mods first.</p>
+<!--volatile-->  <p class="updated">Lab data as of October 15, 2026.</p><!--/volatile-->
+  <ul class="guides">
+    <li><a href="/mods/sodium">Sodium</a><p>Its biggest frame rate change in the Modkeel lab: on Minecraft 1.20.1, Sodium raised the frame rate 130% over terrain (210 to 482 FPS) and 27% with 300 mobs behind a wall (55 to 70 FPS); it lowered the frame rate 14% with 300 mobs in view (82 to 70 FPS), because on Windows with an NVIDIA card Sodium turns on a driver workaround against crashes that makes each draw call wait, and this version draws mobs of mixed kinds in many small draw calls.</p></li>
+    <li><a href="/mods/iris">Iris Shaders</a><p>Its biggest frame rate change in the Modkeel lab: on Minecraft 1.20.1, Iris Shaders, which runs on Sodium and had no shader pack loaded, raised the frame rate 105% with 300 mobs in view (82 to 167 FPS), 127% over terrain (210 to 475 FPS) and 178% with 300 mobs behind a wall (55 to 153 FPS).</p></li>
+    <li><a href="/mods/lithium">Lithium</a><p>On a plain Minecraft 26.3 server in the lab&#x27;s benchmark, Lithium beat every run without it on 400 mobs (-52%), redstone (-37%) and new terrain (-5%); it lost to every one on memory after start (+6%).</p></li>
+    <li><a href="/mods/ferritecore">FerriteCore</a><p>On a plain Minecraft 26.3 server in the lab&#x27;s benchmark, FerriteCore beat every run without it on memory after start (-6%); it lost to every one on redstone (+6%).</p></li>
+    <li><a href="/mods/entityculling">Entity Culling</a><p>Its biggest frame rate change in the Modkeel lab: on Minecraft 26.1.2, Entity Culling raised the frame rate 143% with 300 mobs behind a wall (103 to 250 FPS).</p></li>
+    <li><a href="/mods/modernfix">ModernFix</a><p>On a plain Minecraft 26.3 server in the lab&#x27;s benchmark, ModernFix-mVUS beat every run without it on memory after start (-5%) and new terrain (-5%).</p></li>
+    <li><a href="/mods/immediatelyfast">ImmediatelyFast</a><p>Its biggest frame rate change in the Modkeel lab: on Minecraft 1.21.1, ImmediatelyFast raised the frame rate 40% with 300 mobs in view (103 to 144 FPS) and 28% with 300 mobs behind a wall (85 to 109 FPS).</p></li>
+    <li><a href="/mods/modmenu">Mod Menu</a><p>Ran on Minecraft 1.20.1 and 1.21.11, in the same game as 6 other mods; nothing measured yet.</p></li>
+    <li><a href="/mods/c2me">Concurrent Chunk Management Engine (Fabric)</a><p>On a plain Minecraft 26.3 server in the lab&#x27;s benchmark, C2ME beat every run without it on new terrain (-15%) and memory after new terrain (-56%); it lost to every one on memory after start (+5%).</p></li>
+    <li><a href="/mods/krypton">Krypton</a><p>Ran on Minecraft 1.20.1 and 26.3, in the same game as 7 other mods; nothing measured yet.</p></li>
+    <li><a href="/mods/lambdynlights">LambDynamicLights - Dynamic Lights</a><p>Ran on Minecraft 1.20.1 and 1.21.11, in the same game as 6 other mods; nothing measured yet.</p></li>
+    <li><a href="/mods/moreculling">More Culling</a><p>Ran on Minecraft 1.20.1 and 26.3, in the same game as 6 other mods; nothing measured yet.</p></li>
+    <li><a href="/mods/scalablelux">ScalableLux</a><p>On a plain Minecraft 26.3 server in the lab&#x27;s benchmark, ScalableLux beat every run without it on new terrain (-10%); it lost to every one on memory after new terrain (+118%).</p></li>
+    <li><a href="/mods/sodium-extra">Sodium Extra</a><p>Ran on Minecraft 1.20.1 and 1.21.11, in the same game as 6 other mods; nothing measured yet.</p></li>
+    <li><a href="/mods/vmp">Very Many Players (Fabric)</a><p>Ran on Minecraft 1.20.1 and 26.3, in the same game as 7 other mods; nothing measured yet.</p></li>
+  </ul>
+  <p>By Minecraft version instead: <a href="/minecraft/">lab data per version</a>. A mod with no
+  build for your version yet: <a href="/ports/">community ports</a> the lab tested, and
+  <a href="/guides/mod-not-updated">what to do while it is not updated</a>.</p>
+</main>
+<footer><div class="wrap"><a href="/">modkeel.com</a> · <a href="/about">About</a> · <a href="/privacy">Privacy</a> · <a href="/support">Support</a> · Lab data CC BY 4.0, "Modkeel lab data (modkeel.com)". Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</div></footer>
+</body>
+</html>
