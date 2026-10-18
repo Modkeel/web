@@ -31,7 +31,7 @@
     {
       "@type": "Article",
       "headline": "Minecraft crash helper mods compared",
-      "dateModified": "2026-10-12",
+      "dateModified": "2026-10-17",
       "author": {"@type": "Organization", "name": "Modkeel", "url": "https://modkeel.com/"},
       "about": [
         {"@type": "SoftwareApplication", "name": "Modkeel Companion", "url": "https://github.com/Modkeel/companion", "applicationCategory": "GameApplication", "image": "https://modkeel.com/img/icon.png", "screenshot": "https://modkeel.com/img/guides/crash-modkeel.jpg"},
@@ -50,6 +50,8 @@
          "acceptedAnswer": {"@type": "Answer", "text": "Of the mods compared here, only the Modkeel Companion copies worlds: before a world loads with a different set of mods. Neruina protects worlds in another way: it suspends the entity, block or item whose ticking crashes, so the world can still be opened."}},
         {"@type": "Question", "name": "Which crash mod lets me keep playing after a crash?",
          "acceptedAnswer": {"@type": "Answer", "text": "Not Enough Crashes and CrashPatch send you back to the title screen after many crashes instead of closing the game. The Modkeel Companion and Crash Assistant act after the game has closed: on the next start or in a separate window."}},
+        {"@type": "Question", "name": "Which crash tool is right about which mod crashed Minecraft?",
+         "acceptedAnswer": {"@type": "Answer", "text": "One that names the culprit from the stack trace and the log, shows its evidence and says when it cannot tell. In the Modkeel lab's two tests on Minecraft 26.2, the Modkeel Companion named the right mod with the reason and how sure it was; Not Enough Crashes named it next to a Fabric API module that only passed the error along; CrashPatch named Minecraft; Crash Assistant named no mod. For crashes during startup, Crash Assistant's separate window catches the most."}},
         {"@type": "Question", "name": "Can I use more than one crash mod?",
          "acceptedAnswer": {"@type": "Answer", "text": "They do different jobs, so combining them can make sense; for example Neruina against ticking crashes and the Modkeel Companion for world copies and naming the mod. Test the combination in your pack before shipping it."}}
       ]
@@ -93,7 +95,7 @@
   problems; Not Enough Crashes lists the mods in the crash and keeps the game open; Neruina stops
   ticking crashes from breaking a world; the Modkeel Companion names the one mod that most likely
   caused the crash, turns it off in one click and copies worlds before mods change.</p>
-  <p class="updated">Checked October 4, 2026, from each mod's Modrinth page and files; tested in a real game October 12 and 15, 2026. Written by
+  <p class="updated">Checked October 4, 2026, from each mod's Modrinth page and files; tested in a real game October 12 and 15, 2026; criteria added October 17, 2026. Written by
   Modkeel, which makes the Companion; corrections are welcome on
   <a href="https://github.com/Modkeel/companion/issues">GitHub</a>.</p>
 
@@ -182,6 +184,41 @@
   </table>
   </div>
 
+  <h2>What makes a crash tool right about the mod</h2>
+  <p>Players asking which crash tool to trust want the same five things, and the two tests above
+  show how far each mod gets on them.</p>
+  <ol>
+    <li><b>The culprit from the crash itself, with the evidence.</b> The stack trace and the log
+    say whose code failed; the mod list alone does not. In both tests the Companion named Crash
+    Test Mod and gave the reason in plain words ("its code is in the error"; for a broken mixin,
+    "its mixin failed to apply"). Not Enough Crashes named it too, next to a Fabric API module that
+    only passed the error along. CrashPatch named Minecraft, and Crash Assistant named no mod for
+    either crash.</li>
+    <li><b>How sure it is, and when it cannot tell.</b> A tool that always names a mod is wrong
+    whenever the crash does not point at one. The Companion grades each answer ("It was", "It was
+    probably", "It may have been": the first test got "probably", the ticking one "may have
+    been"), and when nothing
+    points at one mod it says "It is not clear which mod it was" and offers to go back to the
+    mods that last worked instead of guessing.</li>
+    <li><b>The exact file, not only the mod.</b> A mod can crash in one build and not the next.
+    The Companion matches each jar by its fingerprint against the Modkeel lab ("this exact file
+    crashed on Minecraft 26.2 in the Modkeel lab"), says when a file name points at another
+    Minecraft version, and when another mod expects a different version of it.</li>
+    <li><b>Crashes before the game opens.</b> Crash Assistant is strongest here: it loads very
+    early and its window is a separate program, so it also shows up when startup fails. The
+    Companion reads a startup crash on the next start; on NeoForge and Forge it also starts before
+    the loader reads the mods and turns off a jar that would close the game before any mod runs
+    (two mods that cannot be used together, a Forge mod made for another version). A crash that
+    repeats on every launch before mods load leaves it no chance: paste <code>latest.log</code>
+    into the <a href="/crashes/diagnose">crash reader</a>, which gives the same reading from
+    outside the game.</li>
+    <li><b>The crash stays on your PC.</b> The Companion reads crashes on your computer; nothing
+    is uploaded to find the mod, and sharing an anonymous report is a box you tick, with every
+    field shown first. Crash Assistant and Not Enough Crashes also keep logs local until you click
+    Upload; Crash Assistant sends them to mclo.gs, which removes tokens, IP addresses and user
+    names.</li>
+  </ol>
+
   <h2>Crash Assistant</h2>
   <p>By KostromDan; the most downloaded of the group (about 20 million downloads on Modrinth
   alone). After the game closes, a separate window shows every relevant log and checks it
@@ -245,6 +282,7 @@
     <details><summary>Is there a mod that tells you which mod crashed Minecraft?</summary><p>Yes, several, in different ways. The Modkeel Companion names the one mod that most likely caused the crash, says how sure it is and why, and turns it off in one click. Not Enough Crashes lists the mods involved in the crash. Crash Assistant shows the logs, recognises known problems and offers fixes for them.</p></details>
     <details><summary>Which crash mod backs up my world?</summary><p>Of the mods compared here, only the Modkeel Companion copies worlds: before a world loads with a different set of mods. Neruina protects worlds in another way: it suspends the entity, block or item whose ticking crashes, so the world can still be opened.</p></details>
     <details><summary>Which crash mod lets me keep playing after a crash?</summary><p>Not Enough Crashes and CrashPatch send you back to the title screen after many crashes instead of closing the game, though in our test a ticking entity crash still closed it. Neruina keeps the game running through ticking entity and block crashes by suspending what failed. The Modkeel Companion and Crash Assistant act after the game has closed: on the next start or in a separate window.</p></details>
+    <details><summary>Which crash tool is right about which mod crashed Minecraft?</summary><p>One that names the culprit from the stack trace and the log, shows its evidence and says when it cannot tell. In the Modkeel lab's two tests on Minecraft 26.2, the Modkeel Companion named the right mod with the reason and how sure it was; Not Enough Crashes named it next to a Fabric API module that only passed the error along; CrashPatch named Minecraft; Crash Assistant named no mod. For crashes during startup, Crash Assistant's separate window catches the most.</p></details>
     <details><summary>Can I use more than one crash mod?</summary><p>They do different jobs, so combining them can make sense; for example Neruina against ticking crashes and the Modkeel Companion for world copies and naming the mod. Test the combination in your pack before shipping it.</p></details>
   </div>
 
