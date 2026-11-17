@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-16",
+ "checked": "2026-11-17",
  "top": 300,
  "released": {
   "26.3": "2026-09-15",
@@ -91,8 +91,8 @@
    "vvuO3ImH",
    "rLLJ1OZM",
    "c7m1mi73",
-   "rI0hvYcd",
    "codAaoxh",
+   "rI0hvYcd",
    "fRiHVvU7",
    "8qkXwOnk",
    "ETlrkaYF",
@@ -142,8 +142,8 @@
    "sk9knFPE",
    "v3CYg2V9",
    "lOOpEntO",
-   "o1C1Dkj5",
    "XeEZ3fK2",
+   "o1C1Dkj5",
    "3sjzyvGR",
    "ufdDoWPd",
    "3dT9sgt4",
@@ -184,8 +184,8 @@
    "4WWQxlQP",
    "1OE8wbN0",
    "DjLobEOy",
-   "pJogNFap",
    "RSeLon5O",
+   "pJogNFap",
    "t5FRdP87",
    "m5T5xmUy",
    "9NM0dXub",
@@ -218,12 +218,12 @@
    "p8RJPJIC",
    "I7k4B65h",
    "AtB5mHky",
-   "gc8OEnCC",
    "K01OU20C",
+   "gc8OEnCC",
    "DWuwk8aA",
    "ziOp6EO8",
-   "rUgZvGzi",
    "yWSAtnfH",
+   "rUgZvGzi",
    "IYY9Siz8",
    "x3HZvrj6",
    "lfHFW1mp",
@@ -284,8 +284,8 @@
    "POQ2i9zu",
    "7zlUOZvb",
    "fJFETWDN",
-   "NTi7d3Xc",
    "TjSm1wrD",
+   "NTi7d3Xc",
    "1u6JkXh5",
    "TiF5QWZY",
    "ONZm0H7Y",
@@ -306,7 +306,7 @@
    "o6qsdrrQ",
    "Vz96hXMh",
    "r4PuRGfV",
-   "k23mNPhZ"
+   "Kp2uclYl"
   ],
   "neoforge": [
    "AANobbMI",
@@ -428,8 +428,8 @@
    "sk9knFPE",
    "v3CYg2V9",
    "lOOpEntO",
-   "o1C1Dkj5",
    "XeEZ3fK2",
+   "o1C1Dkj5",
    "3sjzyvGR",
    "ufdDoWPd",
    "3dT9sgt4",
@@ -468,8 +468,8 @@
    "4WWQxlQP",
    "1OE8wbN0",
    "DjLobEOy",
-   "pJogNFap",
    "RSeLon5O",
+   "pJogNFap",
    "t5FRdP87",
    "m5T5xmUy",
    "9NM0dXub",
@@ -501,8 +501,8 @@
    "AtB5mHky",
    "ziOp6EO8",
    "yWSAtnfH",
-   "2cMuAZAp",
    "IYY9Siz8",
+   "2cMuAZAp",
    "x3HZvrj6",
    "lfHFW1mp",
    "jtmvUHXj",
@@ -554,8 +554,8 @@
    "r0v8vy1s",
    "7zlUOZvb",
    "fJFETWDN",
-   "NTi7d3Xc",
    "TjSm1wrD",
+   "NTi7d3Xc",
    "1u6JkXh5",
    "TiF5QWZY",
    "R0bDWFAW",
@@ -576,25 +576,25 @@
    "o6qsdrrQ",
    "Vz96hXMh",
    "r4PuRGfV",
-   "k23mNPhZ",
    "Kp2uclYl",
+   "k23mNPhZ",
    "UT2M39wf",
    "fgmhI8kH",
    "atHH8NyV",
-   "bI8Nt3uA",
    "nT86WUER",
+   "bI8Nt3uA",
    "GNxdLCoP",
    "MI1LWe93",
-   "WBvnqHfV",
    "6xwxDTgf",
+   "WBvnqHfV",
    "Ins7SzzR",
    "6L3ydNi8",
    "vPNqo58Q",
    "DMu0oBKf",
    "W5rjEyqs",
    "t5W7Jfwy",
-   "ZVzW5oNS",
    "1s5x833P",
+   "ZVzW5oNS",
    "iAiqcykM",
    "XD7XOrAF",
    "KUZAAwdD",
@@ -615,7 +615,7 @@
   "P7dR8mSH": {
    "slug": "fabric-api",
    "title": "Fabric API",
-   "downloads": 288246789,
+   "downloads": 288624256,
    "icon": "https://cdn.modrinth.com/data/P7dR8mSH/icon.png",
    "loaders": [
     "fabric",
@@ -639,7 +639,7 @@
   "AANobbMI": {
    "slug": "sodium",
    "title": "Sodium",
-   "downloads": 253106880,
+   "downloads": 253432494,
    "icon": "https://cdn.modrinth.com/data/AANobbMI/295862f4724dc3f78df3447ad6072b2dcd3ef0c9_96.webp",
    "loaders": [
     "fabric",
@@ -677,7 +677,7 @@
   "YL57xq9U": {
    "slug": "iris",
    "title": "Iris Shaders",
-   "downloads": 195385004,
+   "downloads": 195604048,
    "icon": "https://cdn.modrinth.com/data/YL57xq9U/18d0e7f076d3d6ed5bedd472b853909aac5da202_96.webp",
    "loaders": [
     "decoration",
@@ -712,7 +712,7 @@
   "NNAgCjsB": {
    "slug": "entityculling",
    "title": "Entity Culling",
-   "downloads": 189432852,
+   "downloads": 189745378,
    "icon": "https://cdn.modrinth.com/data/NNAgCjsB/7873452d6cede4daed12da3d7d8c193ab88b4fd6_96.webp",
    "loaders": [
     "babric",
@@ -748,7 +748,7 @@
   "9s6osm5g": {
    "slug": "cloth-config",
    "title": "Cloth Config API",
-   "downloads": 186485037,
+   "downloads": 186722302,
    "icon": "https://cdn.modrinth.com/data/9s6osm5g/ed8a2316cbb6f4fc5f510e8e13a59a85cbbbff4d_96.webp",
    "loaders": [
     "fabric",
@@ -782,7 +782,7 @@
   "uXXizFIs": {
    "slug": "ferrite-core",
    "title": "FerriteCore",
-   "downloads": 168007991,
+   "downloads": 168237971,
    "icon": "https://cdn.modrinth.com/data/uXXizFIs/222a126f26f8f9ae1eb339f3b767677f18bff31f_96.webp",
    "loaders": [
     "fabric",
@@ -793,7 +793,7 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "fabric": {
       "release": "2026-03-24",
       "latest": "2026-03-24"
@@ -803,7 +803,7 @@
       "latest": "2026-03-24"
      }
     },
-    "26.2": {
+    "26.3": {
      "fabric": {
       "release": "2026-03-24",
       "latest": "2026-03-24"
@@ -818,7 +818,7 @@
   "mOgUt4GM": {
    "slug": "modmenu",
    "title": "Mod Menu",
-   "downloads": 161692723,
+   "downloads": 161919595,
    "icon": "https://cdn.modrinth.com/data/mOgUt4GM/5a20ed1450a0e1e79a1fe04e61bb4e5878bf1d20.png",
    "loaders": [
     "fabric",
@@ -855,7 +855,7 @@
   "gvQqBUqZ": {
    "slug": "lithium",
    "title": "Lithium",
-   "downloads": 144005190,
+   "downloads": 144224673,
    "icon": "https://cdn.modrinth.com/data/gvQqBUqZ/bcc8686c13af0143adf4285d741256af824f70b7_96.webp",
    "loaders": [
     "fabric",
@@ -897,7 +897,7 @@
   "5ZwdcRci": {
    "slug": "immediatelyfast",
    "title": "ImmediatelyFast",
-   "downloads": 138367871,
+   "downloads": 138557401,
    "icon": "https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp",
    "loaders": [
     "fabric",
@@ -940,7 +940,7 @@
   "1eAoo2KR": {
    "slug": "yacl",
    "title": "YetAnotherConfigLib (YACL)",
-   "downloads": 135795900,
+   "downloads": 135959045,
    "icon": "https://cdn.modrinth.com/data/1eAoo2KR/08c0cd32515e260f4bb20bbc0696510041523f9a_96.webp",
    "loaders": [
     "fabric",
@@ -977,22 +977,22 @@
   "Ha28R6CL": {
    "slug": "fabric-language-kotlin",
    "title": "Fabric Language Kotlin",
-   "downloads": 131519209,
+   "downloads": 131664570,
    "icon": "https://cdn.modrinth.com/data/Ha28R6CL/72c3d74aeb665e45aea93a945a01474cbce3b7da_96.webp",
    "loaders": [
     "fabric",
     "library"
    ],
    "builds": {
-    "26.3": {
-     "fabric": {
-      "release": "2026-09-07",
-      "latest": "2026-10-09"
-     }
-    },
     "26.2": {
      "fabric": {
       "release": "2026-06-03",
+      "latest": "2026-10-09"
+     }
+    },
+    "26.3": {
+     "fabric": {
+      "release": "2026-09-07",
       "latest": "2026-10-09"
      }
     }
@@ -1001,7 +1001,7 @@
   "1bokaNcj": {
    "slug": "xaeros-minimap",
    "title": "Xaero's Minimap",
-   "downloads": 120908985,
+   "downloads": 121031529,
    "icon": "https://cdn.modrinth.com/data/1bokaNcj/354080f65407e49f486fcf9c4580e82c45ae63b8_96.webp",
    "loaders": [
     "adventure",
@@ -1054,7 +1054,7 @@
   "BVzZfTc1": {
    "slug": "entitytexturefeatures",
    "title": "[ETF] Entity Texture Features",
-   "downloads": 111839927,
+   "downloads": 111979182,
    "icon": "https://cdn.modrinth.com/data/BVzZfTc1/af683d206d50b05258d865b0d6e4aa2f2cee12f2_96.webp",
    "loaders": [
     "decoration",
@@ -1098,7 +1098,7 @@
   "lhGA9TYQ": {
    "slug": "architectury-api",
    "title": "Architectury API",
-   "downloads": 108902741,
+   "downloads": 109035559,
    "icon": "https://cdn.modrinth.com/data/lhGA9TYQ/05fe3a61c28faaccaec3533b92e1b321edde7bf6_96.webp",
    "loaders": [
     "fabric",
@@ -1111,21 +1111,21 @@
     "26.3": {
      "neoforge": {
       "release": "2026-09-15",
-      "latest": "2026-10-09"
+      "latest": "2026-11-16"
      },
      "fabric": {
       "release": "2026-09-15",
-      "latest": "2026-10-09"
+      "latest": "2026-11-16"
      }
     },
     "26.2": {
-     "fabric": {
-      "release": "2026-06-17",
-      "latest": "2026-10-09"
-     },
      "neoforge": {
       "release": "2026-06-17",
-      "latest": "2026-10-09"
+      "latest": "2026-11-16"
+     },
+     "fabric": {
+      "release": "2026-06-17",
+      "latest": "2026-11-16"
      }
     }
    }
@@ -1133,7 +1133,7 @@
   "PtjYWJkn": {
    "slug": "sodium-extra",
    "title": "Sodium Extra",
-   "downloads": 107363559,
+   "downloads": 107513719,
    "icon": "https://cdn.modrinth.com/data/PtjYWJkn/0df4fb22a11e1dcb5e83cb0aadd275b571aca7a9_96.webp",
    "loaders": [
     "cursed",
@@ -1171,7 +1171,7 @@
   "NcUtCpym": {
    "slug": "xaeros-world-map",
    "title": "Xaero's World Map",
-   "downloads": 106158370,
+   "downloads": 106270017,
    "icon": "https://cdn.modrinth.com/data/NcUtCpym/354080f65407e49f486fcf9c4580e82c45ae63b8_96.webp",
    "loaders": [
     "adventure",
@@ -1224,7 +1224,7 @@
   "4I1XuqiY": {
    "slug": "entity-model-features",
    "title": "[EMF] Entity Model Features",
-   "downloads": 106067177,
+   "downloads": 106193500,
    "icon": "https://cdn.modrinth.com/data/4I1XuqiY/6e5bbd0d06b1741bfdab6c0cfab6de8fdaf0064c_96.webp",
    "loaders": [
     "decoration",
@@ -1269,7 +1269,7 @@
   "OhduvhIc": {
    "slug": "veinminer",
    "title": "VeinMiner",
-   "downloads": 104195719,
+   "downloads": 104525869,
    "icon": "https://cdn.modrinth.com/data/OhduvhIc/5ea1f538e66ee4d4e5e571ad952cba0e06e0bd5c.png",
    "loaders": [
     "bukkit",
@@ -1354,7 +1354,7 @@
   "EsAfCjCV": {
    "slug": "appleskin",
    "title": "AppleSkin",
-   "downloads": 99366239,
+   "downloads": 99490856,
    "icon": "https://cdn.modrinth.com/data/EsAfCjCV/icon.png",
    "loaders": [
     "fabric",
@@ -1390,7 +1390,7 @@
   "MPCX6s5C": {
    "slug": "not-enough-animations",
    "title": "Not Enough Animations",
-   "downloads": 94864442,
+   "downloads": 94968851,
    "icon": "https://cdn.modrinth.com/data/MPCX6s5C/b97fd5f7a893165052408b747286d6eb38d57abb_96.webp",
    "loaders": [
     "adventure",
@@ -1425,7 +1425,7 @@
   "Bh37bMuy": {
    "slug": "reeses-sodium-options",
    "title": "Reese's Sodium Options",
-   "downloads": 88871355,
+   "downloads": 88975764,
    "icon": "https://cdn.modrinth.com/data/Bh37bMuy/icon.png",
    "loaders": [
     "fabric",
@@ -1461,7 +1461,7 @@
   "u6dRKJwZ": {
    "slug": "jei",
    "title": "Just Enough Items (JEI)",
-   "downloads": 85923801,
+   "downloads": 86024325,
    "icon": "https://cdn.modrinth.com/data/u6dRKJwZ/4a3f18ac0d096c9f8e9176984c44be4e58f94c89_96.webp",
    "loaders": [
     "fabric",
@@ -1500,7 +1500,7 @@
   "zV5r3pPn": {
    "slug": "3dskinlayers",
    "title": "3D Skin Layers",
-   "downloads": 84919210,
+   "downloads": 85014987,
    "icon": "https://cdn.modrinth.com/data/zV5r3pPn/ff7010d4ec0275609866c8b0f603b25e25949c08_96.webp",
    "loaders": [
     "adventure",
@@ -1536,7 +1536,7 @@
   "nmDcB62a": {
    "slug": "modernfix",
    "title": "ModernFix",
-   "downloads": 84434779,
+   "downloads": 84523377,
    "icon": "https://cdn.modrinth.com/data/nmDcB62a/2af94de5e08ae54567ee86b968fc7ce076d9fee5_96.webp",
    "loaders": [
     "fabric",
@@ -1550,7 +1550,7 @@
   "1IjD5062": {
    "slug": "continuity",
    "title": "Continuity",
-   "downloads": 80264579,
+   "downloads": 80356315,
    "icon": "https://cdn.modrinth.com/data/1IjD5062/icon.png",
    "loaders": [
     "decoration",
@@ -1582,7 +1582,7 @@
   "8BmcQJ2H": {
    "slug": "geckolib",
    "title": "Geckolib",
-   "downloads": 77599621,
+   "downloads": 77712958,
    "icon": "https://cdn.modrinth.com/data/8BmcQJ2H/012d1aadbc754995de66e8c149a56aa10b63fe05_96.webp",
    "loaders": [
     "fabric",
@@ -1627,7 +1627,7 @@
   "9eGKb6K1": {
    "slug": "simple-voice-chat",
    "title": "Simple Voice Chat",
-   "downloads": 76972797,
+   "downloads": 77074375,
    "icon": "https://cdn.modrinth.com/data/9eGKb6K1/icon.png",
    "loaders": [
     "adventure",
@@ -1766,7 +1766,7 @@
   "dxa0Bm8m": {
    "slug": "veinminer-client",
    "title": "VeinMiner Hotkey",
-   "downloads": 76154840,
+   "downloads": 76450757,
    "icon": "https://cdn.modrinth.com/data/dxa0Bm8m/3cfaaf9dcd74090bf78a03650ee43bf864d21ea5_96.webp",
    "loaders": [
     "equipment",
@@ -1810,7 +1810,7 @@
   "eXts2L7r": {
    "slug": "placeholder-api",
    "title": "Text Placeholder API",
-   "downloads": 75627773,
+   "downloads": 75759425,
    "icon": "https://cdn.modrinth.com/data/eXts2L7r/e9c9990896e6422bffc5f73d2c41b8f077348f83.png",
    "loaders": [
     "fabric",
@@ -1836,7 +1836,7 @@
   "51shyZVL": {
    "slug": "moreculling",
    "title": "More Culling",
-   "downloads": 74991103,
+   "downloads": 75129764,
    "icon": "https://cdn.modrinth.com/data/51shyZVL/c51b07193b56e952269ef50101d12aecba2b4747_96.webp",
    "loaders": [
     "fabric",
@@ -1886,7 +1886,7 @@
   "nvQzSEkH": {
    "slug": "jade",
    "title": "Jade 🔍",
-   "downloads": 74266545,
+   "downloads": 74348502,
    "icon": "https://cdn.modrinth.com/data/nvQzSEkH/b04217bc2b7dc524c4d12f81ff42cc1cefb9b0fc_96.webp",
    "loaders": [
     "fabric",
@@ -1934,7 +1934,7 @@
   "w7ThoJFB": {
    "slug": "zoomify",
    "title": "Zoomify (Zoom)",
-   "downloads": 72837263,
+   "downloads": 72922053,
    "icon": "https://cdn.modrinth.com/data/w7ThoJFB/e2de67a0bfb9e8aa2347982ab3ec5463f26cca31_96.webp",
    "loaders": [
     "fabric",
@@ -1968,7 +1968,7 @@
   "LQ3K71Q1": {
    "slug": "dynamic-fps",
    "title": "Dynamic FPS",
-   "downloads": 72407875,
+   "downloads": 72498740,
    "icon": "https://cdn.modrinth.com/data/LQ3K71Q1/5056368d0d87c1a9f3efead0cb48ab39a4ea87bf_96.webp",
    "loaders": [
     "fabric",
@@ -2013,7 +2013,7 @@
   "ohNO6lps": {
    "slug": "forge-config-api-port",
    "title": "Forge Config API Port",
-   "downloads": 71819050,
+   "downloads": 71903434,
    "icon": "https://cdn.modrinth.com/data/ohNO6lps/cb3b942cc18a66a0f35f802e004713f134e46cc2_96.webp",
    "loaders": [
     "fabric",
@@ -2055,7 +2055,7 @@
   "e0M1UDsY": {
    "slug": "collective",
    "title": "Collective",
-   "downloads": 71264720,
+   "downloads": 71354481,
    "icon": "https://cdn.modrinth.com/data/e0M1UDsY/f5e4fe9ac298e2c14591920d6bda937c566accd0_96.webp",
    "loaders": [
     "fabric",
@@ -2106,7 +2106,7 @@
   "Wq5SjeWM": {
    "slug": "fancymenu",
    "title": "FancyMenu",
-   "downloads": 70535734,
+   "downloads": 70590270,
    "icon": "https://cdn.modrinth.com/data/Wq5SjeWM/e4e82d028244a1326e6d346bf5b5336140576bb9_96.webp",
    "loaders": [
     "fabric",
@@ -2140,7 +2140,7 @@
   "QAGBst4M": {
    "slug": "puzzles-lib",
    "title": "Puzzles Lib",
-   "downloads": 66964360,
+   "downloads": 67033370,
    "icon": "https://cdn.modrinth.com/data/QAGBst4M/c78216c61f65b6ce82593e4e92e9c358402bb524_96.webp",
    "loaders": [
     "fabric",
@@ -2174,7 +2174,7 @@
   "J81TRJWm": {
    "slug": "konkrete",
    "title": "Konkrete",
-   "downloads": 66123988,
+   "downloads": 66184378,
    "icon": "https://cdn.modrinth.com/data/J81TRJWm/f27c753fd9ec7944b49f4fe2d7cfd32527340183_96.webp",
    "loaders": [
     "fabric",
@@ -2208,7 +2208,7 @@
   "aC3cM3Vq": {
    "slug": "mouse-tweaks",
    "title": "Mouse Tweaks",
-   "downloads": 64879634,
+   "downloads": 64962425,
    "icon": "https://cdn.modrinth.com/data/aC3cM3Vq/6c0eaa4e60a9c87f4766f222ff63286f09da32c0_96.webp",
    "loaders": [
     "fabric",
@@ -2252,7 +2252,7 @@
   "MBAkmtvl": {
    "slug": "balm",
    "title": "Balm",
-   "downloads": 64671043,
+   "downloads": 64743503,
    "icon": "https://cdn.modrinth.com/data/MBAkmtvl/285b7bcfd6e525c043e640b08f3efc0cde90f7dd_96.webp",
    "loaders": [
     "fabric",
@@ -2286,7 +2286,7 @@
   "yBW8D80W": {
    "slug": "lambdynamiclights",
    "title": "LambDynamicLights - Dynamic Lights",
-   "downloads": 64098285,
+   "downloads": 64179084,
    "icon": "https://cdn.modrinth.com/data/yBW8D80W/d4f5c3ff8df7caf024178b04eca6d69f95979cfe_96.webp",
    "loaders": [
     "adventure",
@@ -2330,7 +2330,7 @@
   "qQyHxfxd": {
    "slug": "no-chat-reports",
    "title": "No Chat Reports",
-   "downloads": 62348614,
+   "downloads": 62405823,
    "icon": "https://cdn.modrinth.com/data/qQyHxfxd/icon.png",
    "loaders": [
     "fabric",
@@ -2375,7 +2375,7 @@
   "qyVF9oeo": {
    "slug": "sound-physics-remastered",
    "title": "Sound Physics Remastered",
-   "downloads": 57178339,
+   "downloads": 57235743,
    "icon": "https://cdn.modrinth.com/data/qyVF9oeo/798fbfae58ec95ad51f3e1d522b43227306c326c.png",
    "loaders": [
     "adventure",
@@ -2427,7 +2427,7 @@
   "OsZiaDHq": {
    "slug": "creativecore",
    "title": "CreativeCore",
-   "downloads": 55985011,
+   "downloads": 56047258,
    "icon": "https://cdn.modrinth.com/data/OsZiaDHq/4953ecd3c0c8b185b2a56d64cdb104b03f3e5038_96.webp",
    "loaders": [
     "fabric",
@@ -2461,7 +2461,7 @@
   "CVT4pFB2": {
    "slug": "melody",
    "title": "Melody",
-   "downloads": 53493989,
+   "downloads": 53543677,
    "icon": "https://cdn.modrinth.com/data/CVT4pFB2/87ac2562f06b104c827d322b4b937bad8fac5fbc_96.webp",
    "loaders": [
     "fabric",
@@ -2495,7 +2495,7 @@
   "Wb5oqrBJ": {
    "slug": "chat-heads",
    "title": "Chat Heads",
-   "downloads": 53256786,
+   "downloads": 53312225,
    "icon": "https://cdn.modrinth.com/data/Wb5oqrBJ/icon.png",
    "loaders": [
     "decoration",
@@ -2530,7 +2530,7 @@
   "ccKDOlHs": {
    "slug": "owo-lib",
    "title": "oωo (owo-lib)",
-   "downloads": 51395349,
+   "downloads": 51439734,
    "icon": "https://cdn.modrinth.com/data/ccKDOlHs/42c9fe358c72dd5afda078271c574c325e963d19_96.webp",
    "loaders": [
     "fabric",
@@ -2554,7 +2554,7 @@
   "uy4Cnpcm": {
    "slug": "bookshelf-lib",
    "title": "Bookshelf",
-   "downloads": 49295621,
+   "downloads": 49339134,
    "icon": "https://cdn.modrinth.com/data/uy4Cnpcm/002e73d916fb63c9c85e212ac47fde4ef9c4a65f.png",
    "loaders": [
     "fabric",
@@ -2590,7 +2590,7 @@
   "k2ZPuTBm": {
    "slug": "essential",
    "title": "Essential Mod",
-   "downloads": 48854485,
+   "downloads": 48910045,
    "icon": "https://cdn.modrinth.com/data/k2ZPuTBm/7f7ac7cf2a46d5f02e9644372c44b3095ad61ffb_96.webp",
    "loaders": [
     "fabric",
@@ -2634,7 +2634,7 @@
   "g96Z4WVZ": {
    "slug": "badoptimizations",
    "title": "BadOptimizations",
-   "downloads": 48289824,
+   "downloads": 48362081,
    "icon": "",
    "loaders": [
     "fabric",
@@ -2668,7 +2668,7 @@
   "Orvt0mRa": {
    "slug": "indium",
    "title": "Indium",
-   "downloads": 45966181,
+   "downloads": 45986963,
    "icon": "https://cdn.modrinth.com/data/Orvt0mRa/13f4ab01fac350702ba20871c9f964064073a5e2_96.webp",
    "loaders": [
     "fabric",
@@ -2680,7 +2680,7 @@
   "fQEb0iXm": {
    "slug": "krypton",
    "title": "Krypton",
-   "downloads": 45439072,
+   "downloads": 45491467,
    "icon": "https://cdn.modrinth.com/data/fQEb0iXm/3ea60899d060a9286e03b87bfa9e71d0cbe2dde7_96.webp",
    "loaders": [
     "fabric",
@@ -2705,7 +2705,7 @@
   "hYykXjDp": {
    "slug": "fzzy-config",
    "title": "Fzzy Config",
-   "downloads": 44568701,
+   "downloads": 44637802,
    "icon": "https://cdn.modrinth.com/data/hYykXjDp/11f469b1bf1f201a95c2e3ddc09ca47d85c3ed53.png",
    "loaders": [
     "fabric",
@@ -2747,7 +2747,7 @@
   "uLbm7CG6": {
    "slug": "language-reload",
    "title": "Language Reload",
-   "downloads": 44333265,
+   "downloads": 44385957,
    "icon": "https://cdn.modrinth.com/data/uLbm7CG6/9cae8ec18cac3b1cc6ef1efa239f381d669264e6.png",
    "loaders": [
     "fabric",
@@ -2781,7 +2781,7 @@
   "twkfQtEc": {
    "slug": "moonlight",
    "title": "Moonlight Lib",
-   "downloads": 43686288,
+   "downloads": 43729810,
    "icon": "https://cdn.modrinth.com/data/twkfQtEc/icon.png",
    "loaders": [
     "fabric",
@@ -2794,7 +2794,7 @@
   "kkmrDlKT": {
    "slug": "terrablender",
    "title": "TerraBlender",
-   "downloads": 43363340,
+   "downloads": 43421476,
    "icon": "https://cdn.modrinth.com/data/kkmrDlKT/ffe690c604b123c63ee77a5baf76cf008cb73663.png",
    "loaders": [
     "fabric",
@@ -2838,7 +2838,7 @@
   "Wnxd13zP": {
    "slug": "clumps",
    "title": "Clumps",
-   "downloads": 43116214,
+   "downloads": 43176101,
    "icon": "https://cdn.modrinth.com/data/Wnxd13zP/6a965bb7974c3e759a53a1c89c35de4acd4cf86a_96.webp",
    "loaders": [
     "fabric",
@@ -2873,7 +2873,7 @@
   "fuuu3xnx": {
    "slug": "searchables",
    "title": "Searchables",
-   "downloads": 42893542,
+   "downloads": 42947163,
    "icon": "https://cdn.modrinth.com/data/fuuu3xnx/206971d54b37b30a2e728b1c194f7f096963d05a_96.webp",
    "loaders": [
     "fabric",
@@ -2908,7 +2908,7 @@
   "xv94TkTM": {
    "slug": "controlling",
    "title": "Controlling",
-   "downloads": 42701835,
+   "downloads": 42754646,
    "icon": "https://cdn.modrinth.com/data/xv94TkTM/bdb6feb3d04ca37da4ed5aa73fef062a39d8b3e5_96.webp",
    "loaders": [
     "fabric",
@@ -2942,7 +2942,7 @@
   "O7RBXm3n": {
    "slug": "inventory-profiles-next",
    "title": "Inventory Profiles Next",
-   "downloads": 42469135,
+   "downloads": 42502063,
    "icon": "https://cdn.modrinth.com/data/O7RBXm3n/04cdecd37b4c7409f70d36fcdc85722ebf14aab8_96.webp",
    "loaders": [
     "fabric",
@@ -2986,7 +2986,7 @@
   "VSNURh3q": {
    "slug": "c2me-fabric",
    "title": "Concurrent Chunk Management Engine (Fabric)",
-   "downloads": 41790775,
+   "downloads": 41895447,
    "icon": "https://cdn.modrinth.com/data/VSNURh3q/3c2ce471054466712a44c8758a03e03bb868f93b_96.webp",
    "loaders": [
     "fabric",
@@ -3010,7 +3010,7 @@
   "rcTfTZr3": {
    "slug": "presence-footsteps",
    "title": "Presence Footsteps",
-   "downloads": 41625490,
+   "downloads": 41656614,
    "icon": "https://cdn.modrinth.com/data/rcTfTZr3/c08dc581f0bf3b729f86e962fa800463af86e9a2_96.webp",
    "loaders": [
     "decoration",
@@ -3044,7 +3044,7 @@
   "2M01OLQq": {
    "slug": "shulkerboxtooltip",
    "title": "Shulker Box Tooltip",
-   "downloads": 41581513,
+   "downloads": 41635633,
    "icon": "https://cdn.modrinth.com/data/2M01OLQq/bb490716cf2590cf84100a495931c3d4743bce43_96.webp",
    "loaders": [
     "fabric",
@@ -3079,7 +3079,7 @@
   "fM515JnW": {
    "slug": "ambientsounds",
    "title": "AmbientSounds",
-   "downloads": 41532337,
+   "downloads": 41568913,
    "icon": "https://cdn.modrinth.com/data/fM515JnW/9a8eca9c055ec1dd753a7209210fcb22a2d40ff7_96.webp",
    "loaders": [
     "decoration",
@@ -3113,7 +3113,7 @@
   "UVtY3ZAC": {
    "slug": "enchantment-descriptions",
    "title": "Enchantment Descriptions",
-   "downloads": 40239261,
+   "downloads": 40275875,
    "icon": "https://cdn.modrinth.com/data/UVtY3ZAC/1f857baf3d1f78e40343925176c084838c91a891_96.webp",
    "loaders": [
     "fabric",
@@ -3149,7 +3149,7 @@
   "QwxR6Gcd": {
    "slug": "debugify",
    "title": "Debugify",
-   "downloads": 39419206,
+   "downloads": 39466488,
    "icon": "https://cdn.modrinth.com/data/QwxR6Gcd/d16ec025a7f2d9908248bb4d1477e3e624a2f17f_96.webp",
    "loaders": [
     "fabric",
@@ -3176,7 +3176,7 @@
   "GcWjdA9I": {
    "slug": "malilib",
    "title": "MaLiLib",
-   "downloads": 39277305,
+   "downloads": 39322317,
    "icon": "https://cdn.modrinth.com/data/GcWjdA9I/a530ae55df5e0c405f5cf1b3e4fd6163a398bdc3.png",
    "loaders": [
     "fabric",
@@ -3206,7 +3206,7 @@
   "NRjRiSSD": {
    "slug": "memoryleakfix",
    "title": "Memory Leak Fix",
-   "downloads": 38988506,
+   "downloads": 39008118,
    "icon": "https://cdn.modrinth.com/data/NRjRiSSD/a279c19f9c3574339fa90f675aa8a94f8f6cff92_96.webp",
    "loaders": [
     "fabric",
@@ -3219,7 +3219,7 @@
   "HXF82T3G": {
    "slug": "biomes-o-plenty",
    "title": "Biomes O' Plenty",
-   "downloads": 38902693,
+   "downloads": 38930388,
    "icon": "https://cdn.modrinth.com/data/HXF82T3G/ffb870e12c325b795d54833f8f899126553ef06f.png",
    "loaders": [
     "adventure",
@@ -3269,7 +3269,7 @@
   "5faXoLqX": {
    "slug": "iceberg",
    "title": "Iceberg",
-   "downloads": 38231660,
+   "downloads": 38267239,
    "icon": "https://cdn.modrinth.com/data/5faXoLqX/88c9b9918841470dad995049244ef7a3cb2f34f5_96.webp",
    "loaders": [
     "fabric",
@@ -3311,7 +3311,7 @@
   "uCdwusMi": {
    "slug": "distanthorizons",
    "title": "Distant Horizons",
-   "downloads": 38085629,
+   "downloads": 38123130,
    "icon": "https://cdn.modrinth.com/data/uCdwusMi/e716cda9bb568b5373ff76e363fb4c6d7278fba6_96.webp",
    "loaders": [
     "fabric",
@@ -3348,7 +3348,7 @@
   "sk9rgfiA": {
    "slug": "embeddium",
    "title": "Embeddium",
-   "downloads": 38034274,
+   "downloads": 38068650,
    "icon": "https://cdn.modrinth.com/data/sk9rgfiA/55f9c50284f8abbbe2a485abfd6a16209201e451_96.webp",
    "loaders": [
     "fabric",
@@ -3361,7 +3361,7 @@
   "G1hIVOrD": {
    "slug": "resourceful-lib",
    "title": "Resourceful Lib",
-   "downloads": 37648640,
+   "downloads": 37686723,
    "icon": "https://cdn.modrinth.com/data/G1hIVOrD/52130f41d05162ce6d7d1832a47d3c238d102632_96.webp",
    "loaders": [
     "fabric",
@@ -3395,7 +3395,7 @@
   "nU0bVIaL": {
    "slug": "patchouli",
    "title": "Patchouli",
-   "downloads": 37241496,
+   "downloads": 37274410,
    "icon": "https://cdn.modrinth.com/data/nU0bVIaL/c271809dda89c9e7a39f19d91f7cf6fba3ede585_96.webp",
    "loaders": [
     "fabric",
@@ -3410,7 +3410,7 @@
   "MdwFAVRL": {
    "slug": "cobblemon",
    "title": "Cobblemon",
-   "downloads": 37010980,
+   "downloads": 37035225,
    "icon": "https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp",
    "loaders": [
     "adventure",
@@ -3426,7 +3426,7 @@
   "Ua7DFN59": {
    "slug": "yungs-api",
    "title": "YUNG's API",
-   "downloads": 36937179,
+   "downloads": 36972638,
    "icon": "https://cdn.modrinth.com/data/Ua7DFN59/0fab1c351bf00926a8e1c91dc64b7c88832c3e1f_96.webp",
    "loaders": [
     "fabric",
@@ -3440,7 +3440,7 @@
   "onSQdWhM": {
    "slug": "libipn",
    "title": "libIPN",
-   "downloads": 36824852,
+   "downloads": 36859365,
    "icon": "https://cdn.modrinth.com/data/onSQdWhM/feb2d62d9f150539bfd2a69d373866b1e643545c_96.webp",
    "loaders": [
     "fabric",
@@ -3479,7 +3479,7 @@
   "8shC1gFX": {
    "slug": "betterf3",
    "title": "BetterF3",
-   "downloads": 36551695,
+   "downloads": 36584839,
    "icon": "https://cdn.modrinth.com/data/8shC1gFX/icon.png",
    "loaders": [
     "decoration",
@@ -3524,7 +3524,7 @@
   "LN9BxssP": {
    "slug": "supermartijn642s-config-lib",
    "title": "SuperMartijn642's Config Lib",
-   "downloads": 34272226,
+   "downloads": 34303951,
    "icon": "https://cdn.modrinth.com/data/LN9BxssP/ad25597dd1b10b49cdfbc97c70d401e3158000f7_96.webp",
    "loaders": [
     "fabric",
@@ -3571,7 +3571,7 @@
   "3azQ6p0W": {
    "slug": "cherished-worlds",
    "title": "Cherished Worlds",
-   "downloads": 34209320,
+   "downloads": 34240016,
    "icon": "https://cdn.modrinth.com/data/3azQ6p0W/14d3a7430f4e834fc0a86d228c6e17e5b9b33a0a.png",
    "loaders": [
     "fabric",
@@ -3611,7 +3611,7 @@
   "QdG47OkI": {
    "slug": "modelfix",
    "title": "Model Gap Fix",
-   "downloads": 33931661,
+   "downloads": 33952307,
    "icon": "https://cdn.modrinth.com/data/QdG47OkI/5a8203e120985d11616614e11ad7b888997000d8.png",
    "loaders": [
     "fabric",
@@ -3626,7 +3626,7 @@
   "vvuO3ImH": {
    "slug": "curios",
    "title": "Curios API",
-   "downloads": 33801515,
+   "downloads": 33838382,
    "icon": "https://cdn.modrinth.com/data/vvuO3ImH/2a7323ca80849de0bcb50299e18acdf8bf394682.png",
    "loaders": [
     "adventure",
@@ -3656,7 +3656,7 @@
   "rLLJ1OZM": {
    "slug": "coroutil",
    "title": "CoroUtil",
-   "downloads": 32513745,
+   "downloads": 32541837,
    "icon": "https://cdn.modrinth.com/data/rLLJ1OZM/7c7b819ec62d311533db06f6674ce4ebeb867a9d_96.webp",
    "loaders": [
     "fabric",
@@ -3676,7 +3676,7 @@
   "c7m1mi73": {
    "slug": "packet-fixer",
    "title": "Packet Fixer",
-   "downloads": 31523038,
+   "downloads": 31560416,
    "icon": "https://cdn.modrinth.com/data/c7m1mi73/388af00d61fa57e7e10612bcc099bf6ee0794e5e.png",
    "loaders": [
     "fabric",
@@ -3717,35 +3717,10 @@
     }
    }
   },
-  "rI0hvYcd": {
-   "slug": "visuality",
-   "title": "Visuality",
-   "downloads": 31104874,
-   "icon": "https://cdn.modrinth.com/data/rI0hvYcd/5c866549318e907bbfe0d525afe43cb17a36a481.png",
-   "loaders": [
-    "decoration",
-    "fabric",
-    "quilt"
-   ],
-   "builds": {
-    "26.3": {
-     "fabric": {
-      "pre": "2026-09-20",
-      "latest": "2026-09-20"
-     }
-    },
-    "26.2": {
-     "fabric": {
-      "pre": "2026-06-18",
-      "latest": "2026-09-20"
-     }
-    }
-   }
-  },
   "codAaoxh": {
    "slug": "midnightlib",
    "title": "MidnightLib",
-   "downloads": 31093060,
+   "downloads": 31136637,
    "icon": "https://cdn.modrinth.com/data/codAaoxh/76ce92742fea39dadbf9a68a389b4690f10ebd52_96.webp",
    "loaders": [
     "fabric",
@@ -3786,10 +3761,35 @@
     }
    }
   },
+  "rI0hvYcd": {
+   "slug": "visuality",
+   "title": "Visuality",
+   "downloads": 31132286,
+   "icon": "https://cdn.modrinth.com/data/rI0hvYcd/5c866549318e907bbfe0d525afe43cb17a36a481.png",
+   "loaders": [
+    "decoration",
+    "fabric",
+    "quilt"
+   ],
+   "builds": {
+    "26.2": {
+     "fabric": {
+      "pre": "2026-06-18",
+      "latest": "2026-09-20"
+     }
+    },
+    "26.3": {
+     "fabric": {
+      "pre": "2026-09-20",
+      "latest": "2026-09-20"
+     }
+    }
+   }
+  },
   "fRiHVvU7": {
    "slug": "emi",
    "title": "EMI",
-   "downloads": 31050114,
+   "downloads": 31078897,
    "icon": "https://cdn.modrinth.com/data/fRiHVvU7/395fe5302b2bab612ef0623509f768f3c5a5ee0f.webp",
    "loaders": [
     "fabric",
@@ -3804,7 +3804,7 @@
   "8qkXwOnk": {
    "slug": "morechathistory",
    "title": "More Chat History",
-   "downloads": 30283821,
+   "downloads": 30319597,
    "icon": "https://cdn.modrinth.com/data/8qkXwOnk/icon.png",
    "loaders": [
     "fabric",
@@ -3813,13 +3813,13 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "fabric": {
       "release": "2026-03-24",
       "latest": "2026-03-24"
      }
     },
-    "26.2": {
+    "26.3": {
      "fabric": {
       "release": "2026-03-24",
       "latest": "2026-03-24"
@@ -3830,7 +3830,7 @@
   "ETlrkaYF": {
    "slug": "cubes-without-borders",
    "title": "Cubes Without Borders",
-   "downloads": 30016164,
+   "downloads": 30058573,
    "icon": "https://cdn.modrinth.com/data/ETlrkaYF/6c1711b4b788b5f25cc1e99ed8805aea94d9e167_96.webp",
    "loaders": [
     "fabric",
@@ -3882,7 +3882,7 @@
   "4H6sumDB": {
    "slug": "euphoria-patches",
    "title": "Euphoria Patches",
-   "downloads": 29954218,
+   "downloads": 29984113,
    "icon": "https://cdn.modrinth.com/data/4H6sumDB/437130f3f10997f720ff0b788cb24cde3b3b8541.png",
    "loaders": [
     "fabric",
@@ -3893,24 +3893,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "fabric": {
-      "release": "2026-09-15",
-      "latest": "2026-09-15"
-     },
-     "quilt": {
-      "release": "2026-09-15",
-      "latest": "2026-09-15"
-     },
-     "forge": {
-      "release": "2026-09-15",
-      "latest": "2026-09-15"
-     },
-     "neoforge": {
-      "release": "2026-09-15",
-      "latest": "2026-09-15"
-     }
-    },
     "26.2": {
      "fabric": {
       "release": "2026-05-31",
@@ -3928,13 +3910,31 @@
       "release": "2026-05-31",
       "latest": "2026-09-15"
      }
+    },
+    "26.3": {
+     "fabric": {
+      "release": "2026-09-15",
+      "latest": "2026-09-15"
+     },
+     "quilt": {
+      "release": "2026-09-15",
+      "latest": "2026-09-15"
+     },
+     "forge": {
+      "release": "2026-09-15",
+      "latest": "2026-09-15"
+     },
+     "neoforge": {
+      "release": "2026-09-15",
+      "latest": "2026-09-15"
+     }
     }
    }
   },
   "fFEIiSDQ": {
    "slug": "supplementaries",
    "title": "Supplementaries",
-   "downloads": 29365405,
+   "downloads": 29393169,
    "icon": "https://cdn.modrinth.com/data/fFEIiSDQ/e9f5f66fa3b67e54acb91258a1428d68311c58bc_96.webp",
    "loaders": [
     "decoration",
@@ -3950,7 +3950,7 @@
   "ZP7xHXtw": {
    "slug": "rrls",
    "title": "Remove Reloading Screen",
-   "downloads": 28723568,
+   "downloads": 28758652,
    "icon": "https://cdn.modrinth.com/data/ZP7xHXtw/7a416b09817a79adfa6a3ef9368990135e276821_96.webp",
    "loaders": [
     "cursed",
@@ -3987,7 +3987,7 @@
   "gedNE4y2": {
    "slug": "playeranimator",
    "title": "playerAnimator",
-   "downloads": 28696496,
+   "downloads": 28724967,
    "icon": "",
    "loaders": [
     "fabric",
@@ -4001,7 +4001,7 @@
   "WhbRG4iK": {
    "slug": "fallingleaves",
    "title": "Falling Leaves",
-   "downloads": 28275580,
+   "downloads": 28297224,
    "icon": "https://cdn.modrinth.com/data/WhbRG4iK/58f5b66cb54787d9c25228d667f61144371c3867_96.webp",
    "loaders": [
     "decoration",
@@ -4025,7 +4025,7 @@
   "bEpr0Arc": {
    "slug": "litematica",
    "title": "Litematica",
-   "downloads": 28150176,
+   "downloads": 28185016,
    "icon": "https://cdn.modrinth.com/data/bEpr0Arc/25b5529d7a3b030ac136a6ce879d8ed2a1aa4a8d.png",
    "loaders": [
     "fabric",
@@ -4054,7 +4054,7 @@
   "joEfVgkn": {
    "slug": "carry-on",
    "title": "Carry On",
-   "downloads": 28073916,
+   "downloads": 28106798,
    "icon": "https://cdn.modrinth.com/data/joEfVgkn/d7750a532cd45c9020bf4d07f304191de6e98c19_96.webp",
    "loaders": [
     "fabric",
@@ -4099,7 +4099,7 @@
   "LOpKHB2A": {
    "slug": "waystones",
    "title": "Waystones",
-   "downloads": 27922835,
+   "downloads": 27964518,
    "icon": "https://cdn.modrinth.com/data/LOpKHB2A/d56c030a875582aff5bab477ddcfec317a1610f0_96.webp",
    "loaders": [
     "adventure",
@@ -4137,7 +4137,7 @@
   "JuksLGBQ": {
    "slug": "optigui",
    "title": "OptiGUI",
-   "downloads": 27888938,
+   "downloads": 27925279,
    "icon": "https://cdn.modrinth.com/data/JuksLGBQ/5e7e96524f7a7bcd8fb8936da34f8a26fb5c6a41_96.webp",
    "loaders": [
     "decoration",
@@ -4171,7 +4171,7 @@
   "Q2OqKxDG": {
    "slug": "better-advancements",
    "title": "Better Advancements",
-   "downloads": 27834683,
+   "downloads": 27862017,
    "icon": "https://cdn.modrinth.com/data/Q2OqKxDG/b1519a191e62135647f66394d526d179ab5b598d.png",
    "loaders": [
     "fabric",
@@ -4213,7 +4213,7 @@
   "pJmCFF0p": {
    "slug": "handcrafted",
    "title": "Handcrafted",
-   "downloads": 27775118,
+   "downloads": 27797367,
    "icon": "https://cdn.modrinth.com/data/pJmCFF0p/e89faefc522d601db2a5fd70136f37ef7ce18569.png",
    "loaders": [
     "decoration",
@@ -4227,7 +4227,7 @@
   "fPetb5Kh": {
    "slug": "natures-compass",
    "title": "Nature's Compass",
-   "downloads": 27680174,
+   "downloads": 27707325,
    "icon": "https://cdn.modrinth.com/data/fPetb5Kh/95e4110a4cf600843c4ba9d545cc1b60e2c00eaa.png",
    "loaders": [
     "adventure",
@@ -4266,7 +4266,7 @@
   "3IuO68q1": {
    "slug": "puzzle",
    "title": "Puzzle",
-   "downloads": 27556021,
+   "downloads": 27587714,
    "icon": "https://cdn.modrinth.com/data/3IuO68q1/7f24e545ac7779557dfffb89b6e0981d0c2d4a7e_96.webp",
    "loaders": [
     "fabric",
@@ -4309,7 +4309,7 @@
   "nfn13YXA": {
    "slug": "rei",
    "title": "Roughly Enough Items (REI)",
-   "downloads": 27445998,
+   "downloads": 27463123,
    "icon": "https://cdn.modrinth.com/data/nfn13YXA/54ac5daa4166011bae713448e84413987316433a_96.webp",
    "loaders": [
     "fabric",
@@ -4343,7 +4343,7 @@
   "kfqD1JRw": {
    "slug": "visual-workbench",
    "title": "Visual Workbench",
-   "downloads": 27305614,
+   "downloads": 27327925,
    "icon": "https://cdn.modrinth.com/data/kfqD1JRw/e56a31e890d21c82cc454593e023df09f5ae3c36_96.webp",
    "loaders": [
     "fabric",
@@ -4377,7 +4377,7 @@
   "M1953qlQ": {
    "slug": "resourceful-config",
    "title": "Resourceful Config",
-   "downloads": 27026548,
+   "downloads": 27061743,
    "icon": "https://cdn.modrinth.com/data/M1953qlQ/cadcab644905f7e9ee92220d29f5c27113eb167b_96.webp",
    "loaders": [
     "fabric",
@@ -4416,7 +4416,7 @@
   "qANg5Jrr": {
    "slug": "e4mc",
    "title": "e4mc",
-   "downloads": 26817251,
+   "downloads": 26854545,
    "icon": "https://cdn.modrinth.com/data/qANg5Jrr/b2a7b56dadf51d104bfb315e5e8241515e346fae_96.webp",
    "loaders": [
     "fabric",
@@ -4427,20 +4427,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-09-27",
-      "latest": "2026-10-01"
-     },
-     "fabric": {
-      "release": "2026-09-27",
-      "latest": "2026-10-01"
-     },
-     "quilt": {
-      "release": "2026-09-27",
-      "latest": "2026-10-01"
-     }
-    },
     "26.2": {
      "neoforge": {
       "release": "2026-06-19",
@@ -4454,13 +4440,27 @@
       "release": "2026-06-19",
       "latest": "2026-10-01"
      }
+    },
+    "26.3": {
+     "neoforge": {
+      "release": "2026-09-27",
+      "latest": "2026-10-01"
+     },
+     "fabric": {
+      "release": "2026-09-27",
+      "latest": "2026-10-01"
+     },
+     "quilt": {
+      "release": "2026-09-27",
+      "latest": "2026-10-01"
+     }
     }
    }
   },
   "tagwiZkJ": {
    "slug": "polymorph",
    "title": "Polymorph",
-   "downloads": 26662794,
+   "downloads": 26686621,
    "icon": "https://cdn.modrinth.com/data/tagwiZkJ/ed244c5829bde539763c7fffb55cb3194a349d66.png",
    "loaders": [
     "fabric",
@@ -4474,7 +4474,7 @@
   "otVJckYQ": {
    "slug": "cit-resewn",
    "title": "CIT Resewn",
-   "downloads": 26091416,
+   "downloads": 26108513,
    "icon": "https://cdn.modrinth.com/data/otVJckYQ/4d29d9564b0ec6e21841097527c0b489dcc6a318_96.webp",
    "loaders": [
     "fabric",
@@ -4485,7 +4485,7 @@
   "OVuFYfre": {
    "slug": "ebe",
    "title": "Enhanced Block Entities",
-   "downloads": 25953012,
+   "downloads": 25967684,
    "icon": "https://cdn.modrinth.com/data/OVuFYfre/7313d540ef9514d8680acd5b3feb6a5a079f20fe_96.webp",
    "loaders": [
     "fabric",
@@ -4498,7 +4498,7 @@
   "9mtu0sUO": {
    "slug": "fast-ip-ping",
    "title": "Fast IP Ping",
-   "downloads": 25921974,
+   "downloads": 25961590,
    "icon": "https://cdn.modrinth.com/data/9mtu0sUO/dca186a8a57d45ad06e88de6cfc45d4cc4c6a0ba.png",
    "loaders": [
     "fabric",
@@ -4540,7 +4540,7 @@
   "nPZr02ET": {
    "slug": "netherportalfix",
    "title": "NetherPortalFix",
-   "downloads": 25852800,
+   "downloads": 25878020,
    "icon": "https://cdn.modrinth.com/data/nPZr02ET/1496de70af297897258b7520aafc0886fa0ad918_96.webp",
    "loaders": [
     "fabric",
@@ -4576,7 +4576,7 @@
   "XaDC71GB": {
    "slug": "lithostitched",
    "title": "Lithostitched",
-   "downloads": 25789265,
+   "downloads": 25830732,
    "icon": "https://cdn.modrinth.com/data/XaDC71GB/bc3425bcb318176adc7da99b6eec48787eed98d3.png",
    "loaders": [
     "fabric",
@@ -4612,7 +4612,7 @@
   "vE2FN5qn": {
    "slug": "lmd",
    "title": "Let Me Despawn",
-   "downloads": 25661943,
+   "downloads": 25691489,
    "icon": "https://cdn.modrinth.com/data/vE2FN5qn/2609f745e46bd92e57a67e1da07319eb2154c6f7.png",
    "loaders": [
     "bukkit",
@@ -4700,20 +4700,20 @@
   "kqJFAPU9": {
    "slug": "better-mount-hud",
    "title": "Better Mount HUD",
-   "downloads": 25530772,
+   "downloads": 25561332,
    "icon": "https://cdn.modrinth.com/data/kqJFAPU9/2347cd97d4d4a5f87842dccebd8eba211d77d37a_96.webp",
    "loaders": [
     "fabric",
     "utility"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "fabric": {
       "release": "2026-06-19",
       "latest": "2026-06-19"
      }
     },
-    "26.2": {
+    "26.3": {
      "fabric": {
       "release": "2026-06-19",
       "latest": "2026-06-19"
@@ -4724,7 +4724,7 @@
   "DOUdJVEm": {
    "slug": "controlify",
    "title": "Controlify (Controller support)",
-   "downloads": 25524626,
+   "downloads": 25553765,
    "icon": "https://cdn.modrinth.com/data/DOUdJVEm/5a6c126c4c761ba3e8e9d3ef09a68e16ff60ff22_96.webp",
    "loaders": [
     "fabric",
@@ -4757,7 +4757,7 @@
   "EIa1eiMm": {
    "slug": "sodium-shadowy-path-blocks",
    "title": "Sodium Shadowy Path Blocks (SSPB)",
-   "downloads": 25490206,
+   "downloads": 25526120,
    "icon": "https://cdn.modrinth.com/data/EIa1eiMm/7ea3bc26470ba1f45b1c980d5058b033a752396b_96.webp",
    "loaders": [
     "decoration",
@@ -4799,7 +4799,7 @@
   "5aaWibi9": {
    "slug": "trinkets",
    "title": "Trinkets",
-   "downloads": 25387496,
+   "downloads": 25404330,
    "icon": "https://cdn.modrinth.com/data/5aaWibi9/icon.png",
    "loaders": [
     "equipment",
@@ -4813,7 +4813,7 @@
   "s3dmwKy5": {
    "slug": "glitchcore",
    "title": "GlitchCore",
-   "downloads": 25216959,
+   "downloads": 25250569,
    "icon": "https://cdn.modrinth.com/data/s3dmwKy5/76dd9e7bc737a02b723730ab34f536ab43936980.png",
    "loaders": [
     "fabric",
@@ -4855,7 +4855,7 @@
   "idMHQ4n2": {
    "slug": "customskinloader",
    "title": "CustomSkinLoader",
-   "downloads": 25115999,
+   "downloads": 25138625,
    "icon": "https://cdn.modrinth.com/data/idMHQ4n2/icon.png",
    "loaders": [
     "decoration",
@@ -4865,24 +4865,6 @@
     "quilt"
    ],
    "builds": {
-    "26.3": {
-     "fabric": {
-      "release": "2026-10-11",
-      "latest": "2026-10-11"
-     },
-     "forge": {
-      "release": "2026-10-11",
-      "latest": "2026-10-11"
-     },
-     "neoforge": {
-      "release": "2026-10-11",
-      "latest": "2026-10-11"
-     },
-     "quilt": {
-      "release": "2026-10-11",
-      "latest": "2026-10-11"
-     }
-    },
     "26.2": {
      "fabric": {
       "release": "2026-06-20",
@@ -4898,6 +4880,24 @@
      },
      "quilt": {
       "release": "2026-06-20",
+      "latest": "2026-10-11"
+     }
+    },
+    "26.3": {
+     "fabric": {
+      "release": "2026-10-11",
+      "latest": "2026-10-11"
+     },
+     "forge": {
+      "release": "2026-10-11",
+      "latest": "2026-10-11"
+     },
+     "neoforge": {
+      "release": "2026-10-11",
+      "latest": "2026-10-11"
+     },
+     "quilt": {
+      "release": "2026-10-11",
       "latest": "2026-10-11"
      }
     }
@@ -4906,7 +4906,7 @@
   "x1hIzbuY": {
    "slug": "fastquit",
    "title": "FastQuit",
-   "downloads": 25103260,
+   "downloads": 25138318,
    "icon": "https://cdn.modrinth.com/data/x1hIzbuY/930154d1ed3e855079c5f6ee63faeb9bcbe87cfd_96.webp",
    "loaders": [
     "fabric",
@@ -4915,13 +4915,13 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "fabric": {
       "release": "2026-07-30",
       "latest": "2026-07-30"
      }
     },
-    "26.2": {
+    "26.3": {
      "fabric": {
       "release": "2026-07-30",
       "latest": "2026-07-30"
@@ -4932,7 +4932,7 @@
   "89Wsn8GD": {
    "slug": "capes",
    "title": "Capes",
-   "downloads": 25065834,
+   "downloads": 25081303,
    "icon": "https://cdn.modrinth.com/data/89Wsn8GD/icon.png",
    "loaders": [
     "fabric",
@@ -4957,7 +4957,7 @@
   "b1ZV3DIJ": {
    "slug": "athena-ctm",
    "title": "Athena",
-   "downloads": 24931898,
+   "downloads": 24956250,
    "icon": "https://cdn.modrinth.com/data/b1ZV3DIJ/3dec7dd828894a4c5c6d98eaf960e9a418647b55_96.webp",
    "loaders": [
     "decoration",
@@ -4982,7 +4982,7 @@
   "8oi3bsk5": {
    "slug": "terralith",
    "title": "Terralith",
-   "downloads": 24884168,
+   "downloads": 24910277,
    "icon": "https://cdn.modrinth.com/data/8oi3bsk5/1959d924a1088944bbf07a06ba523726112d7e7a_96.webp",
    "loaders": [
     "datapack",
@@ -5026,7 +5026,7 @@
   "WwbubTsV": {
    "slug": "yosbr",
    "title": "Your Options Shall Be Respected (YOSBR)",
-   "downloads": 24845331,
+   "downloads": 24861362,
    "icon": "https://cdn.modrinth.com/data/WwbubTsV/08ee1a97db9303b646e7464f55949735cf57e6e8_96.webp",
    "loaders": [
     "fabric",
@@ -5034,7 +5034,7 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "fabric": {
       "release": "2023-06-12",
       "latest": "2023-06-12"
@@ -5044,7 +5044,7 @@
       "latest": "2023-06-12"
      }
     },
-    "26.2": {
+    "26.3": {
      "fabric": {
       "release": "2023-06-12",
       "latest": "2023-06-12"
@@ -5059,7 +5059,7 @@
   "Xy8aRQKS": {
    "slug": "physicsmod",
    "title": "Physics Mod",
-   "downloads": 24721906,
+   "downloads": 24734784,
    "icon": "https://cdn.modrinth.com/data/Xy8aRQKS/9368cdc9121aa1589afbb6440329a90dbb8daf20.gif",
    "loaders": [
     "decoration",
@@ -5111,7 +5111,7 @@
   "DnNYdJsx": {
    "slug": "chatanimation",
    "title": "Chat Animation [Smooth Chat]",
-   "downloads": 24607033,
+   "downloads": 24635621,
    "icon": "https://cdn.modrinth.com/data/DnNYdJsx/f6b2002ed12e72c4d74d56b80fe768ae96cd4d24_96.webp",
    "loaders": [
     "decoration",
@@ -5156,7 +5156,7 @@
   "SaCpeal4": {
    "slug": "comforts",
    "title": "Comforts",
-   "downloads": 24408450,
+   "downloads": 24431735,
    "icon": "https://cdn.modrinth.com/data/SaCpeal4/ed4840f0c9a30e04ad88413bd82cd762dd6ec95d.png",
    "loaders": [
     "adventure",
@@ -5182,7 +5182,7 @@
   "l6YH9Als": {
    "slug": "spark",
    "title": "spark",
-   "downloads": 24386122,
+   "downloads": 24416177,
    "icon": "https://cdn.modrinth.com/data/l6YH9Als/61a777dd08a8447ac93e8b6372e6d27d48cd1e1a_96.webp",
    "loaders": [
     "fabric",
@@ -5192,20 +5192,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-09-19",
-      "latest": "2026-09-19"
-     },
-     "fabric": {
-      "release": "2026-09-19",
-      "latest": "2026-09-19"
-     },
-     "forge": {
-      "release": "2026-09-19",
-      "latest": "2026-09-19"
-     }
-    },
     "26.2": {
      "neoforge": {
       "release": "2026-06-18",
@@ -5219,13 +5205,27 @@
       "release": "2026-06-18",
       "latest": "2026-09-19"
      }
+    },
+    "26.3": {
+     "neoforge": {
+      "release": "2026-09-19",
+      "latest": "2026-09-19"
+     },
+     "fabric": {
+      "release": "2026-09-19",
+      "latest": "2026-09-19"
+     },
+     "forge": {
+      "release": "2026-09-19",
+      "latest": "2026-09-19"
+     }
     }
    }
   },
   "EltpO5cN": {
    "slug": "lootr",
    "title": "Lootr",
-   "downloads": 24287781,
+   "downloads": 24315403,
    "icon": "https://cdn.modrinth.com/data/EltpO5cN/3dc915eb1bbcd65654c17eb3870de4aba055d0c6_96.webp",
    "loaders": [
     "fabric",
@@ -5259,7 +5259,7 @@
   "Z2mXHnxP": {
    "slug": "yungs-better-nether-fortresses",
    "title": "YUNG's Better Nether Fortresses",
-   "downloads": 24116280,
+   "downloads": 24137001,
    "icon": "https://cdn.modrinth.com/data/Z2mXHnxP/3c88dd70c00b5e47addd9fdeba53a7c96076088d_96.webp",
    "loaders": [
     "adventure",
@@ -5274,7 +5274,7 @@
   "BAscRYKm": {
    "slug": "chipped",
    "title": "Chipped",
-   "downloads": 24057973,
+   "downloads": 24076280,
    "icon": "https://cdn.modrinth.com/data/BAscRYKm/4faa514b4824672a0877d026bcd5a94bc8aad985_96.webp",
    "loaders": [
     "decoration",
@@ -5287,7 +5287,7 @@
   "gF3BGWvG": {
    "slug": "open-parties-and-claims",
    "title": "Open Parties and Claims",
-   "downloads": 24039014,
+   "downloads": 24059058,
    "icon": "https://cdn.modrinth.com/data/gF3BGWvG/410c5443b268912b11709e7d03dd9ec3fda38ea5.png",
    "loaders": [
     "fabric",
@@ -5339,7 +5339,7 @@
   "sk9knFPE": {
    "slug": "rhino",
    "title": "Rhino",
-   "downloads": 23782180,
+   "downloads": 23802896,
    "icon": "https://cdn.modrinth.com/data/sk9knFPE/fd4ab05472a7e28fbd62054e5640ef61308cc4a6_96.webp",
    "loaders": [
     "fabric",
@@ -5354,7 +5354,7 @@
   "v3CYg2V9": {
    "slug": "drippy-loading-screen",
    "title": "Drippy Loading Screen",
-   "downloads": 23621464,
+   "downloads": 23642983,
    "icon": "https://cdn.modrinth.com/data/v3CYg2V9/827d193a7e102b2c860683f55bb468dd34e8ee51_96.webp",
    "loaders": [
     "fabric",
@@ -5388,7 +5388,7 @@
   "lOOpEntO": {
    "slug": "attributefix",
    "title": "AttributeFix",
-   "downloads": 23338261,
+   "downloads": 23360044,
    "icon": "https://cdn.modrinth.com/data/lOOpEntO/68a2de475417c87817e11f49beaa903e4774ca20_96.webp",
    "loaders": [
     "fabric",
@@ -5420,25 +5420,10 @@
     }
    }
   },
-  "o1C1Dkj5": {
-   "slug": "yungs-better-dungeons",
-   "title": "YUNG's Better Dungeons",
-   "downloads": 23287655,
-   "icon": "https://cdn.modrinth.com/data/o1C1Dkj5/9b54b2d932a5a5b6565c93814935c04902f3179b_96.webp",
-   "loaders": [
-    "adventure",
-    "decoration",
-    "fabric",
-    "forge",
-    "neoforge",
-    "worldgen"
-   ],
-   "builds": {}
-  },
   "XeEZ3fK2": {
    "slug": "freecam",
    "title": "Freecam",
-   "downloads": 23286666,
+   "downloads": 23316714,
    "icon": "https://cdn.modrinth.com/data/XeEZ3fK2/9529a900a2aa6ed56c1b3167f165bac91b3acd6e_96.webp",
    "loaders": [
     "fabric",
@@ -5473,10 +5458,25 @@
     }
    }
   },
+  "o1C1Dkj5": {
+   "slug": "yungs-better-dungeons",
+   "title": "YUNG's Better Dungeons",
+   "downloads": 23310018,
+   "icon": "https://cdn.modrinth.com/data/o1C1Dkj5/9b54b2d932a5a5b6565c93814935c04902f3179b_96.webp",
+   "loaders": [
+    "adventure",
+    "decoration",
+    "fabric",
+    "forge",
+    "neoforge",
+    "worldgen"
+   ],
+   "builds": {}
+  },
   "3sjzyvGR": {
    "slug": "modern-ui",
    "title": "Modern UI",
-   "downloads": 23280771,
+   "downloads": 23290799,
    "icon": "https://cdn.modrinth.com/data/3sjzyvGR/7967a20b1dc7e7bfd63aced5a2a20d8fde812c78_96.webp",
    "loaders": [
     "fabric",
@@ -5493,7 +5493,7 @@
   "ufdDoWPd": {
    "slug": "kiwi",
    "title": "Kiwi 🥝",
-   "downloads": 23254274,
+   "downloads": 23275448,
    "icon": "https://cdn.modrinth.com/data/ufdDoWPd/c8271bb2f34ff7af3768f103d50bceee8435b49c_96.webp",
    "loaders": [
     "fabric",
@@ -5528,7 +5528,7 @@
   "3dT9sgt4": {
    "slug": "yungs-better-ocean-monuments",
    "title": "YUNG's Better Ocean Monuments",
-   "downloads": 23114712,
+   "downloads": 23133789,
    "icon": "https://cdn.modrinth.com/data/3dT9sgt4/05c04c64ab9e5bf523701fa7bc0ac54adec25337_96.webp",
    "loaders": [
     "adventure",
@@ -5543,7 +5543,7 @@
   "umyGl7zF": {
    "slug": "kubejs",
    "title": "KubeJS",
-   "downloads": 22970074,
+   "downloads": 22991733,
    "icon": "https://cdn.modrinth.com/data/umyGl7zF/ced768ee05e293837a24eacf00838061e02964a0_96.webp",
    "loaders": [
     "fabric",
@@ -5558,7 +5558,7 @@
   "nrikgvxm": {
    "slug": "particle-rain",
    "title": "Particle Rain",
-   "downloads": 22918764,
+   "downloads": 22952071,
    "icon": "https://cdn.modrinth.com/data/nrikgvxm/e637304d1bec07c39e833d810aa4bdbb9703bf95_96.webp",
    "loaders": [
     "decoration",
@@ -5585,7 +5585,7 @@
   "Gi02250Z": {
    "slug": "almanac",
    "title": "Almanac",
-   "downloads": 22847393,
+   "downloads": 22877049,
    "icon": "https://cdn.modrinth.com/data/Gi02250Z/f0bb3148fcb735bb989ef5723d199114e1f24542.png",
    "loaders": [
     "fabric",
@@ -5629,7 +5629,7 @@
   "G1s2WpNo": {
    "slug": "better-third-person",
    "title": "Better Third Person",
-   "downloads": 22615615,
+   "downloads": 22633100,
    "icon": "https://cdn.modrinth.com/data/G1s2WpNo/icon.png",
    "loaders": [
     "adventure",
@@ -5643,7 +5643,7 @@
   "tpehi7ww": {
    "slug": "dungeons-and-taverns",
    "title": "Dungeons and Taverns",
-   "downloads": 22287800,
+   "downloads": 22302392,
    "icon": "https://cdn.modrinth.com/data/tpehi7ww/429ba22d212868940cdd82465df949ac51c9791e_96.webp",
    "loaders": [
     "adventure",
@@ -5698,7 +5698,7 @@
   "ZcR9weSm": {
    "slug": "dynamiccrosshair",
    "title": "Dynamic Crosshair",
-   "downloads": 22277176,
+   "downloads": 22295888,
    "icon": "https://cdn.modrinth.com/data/ZcR9weSm/8da8af58ca961f937bd05d41dcefa26be7b5c182.png",
    "loaders": [
     "fabric",
@@ -5724,7 +5724,7 @@
   "M08ruV16": {
    "slug": "bobby",
    "title": "Bobby",
-   "downloads": 22029209,
+   "downloads": 22045787,
    "icon": "https://cdn.modrinth.com/data/M08ruV16/icon.png",
    "loaders": [
     "fabric"
@@ -5747,7 +5747,7 @@
   "rlloIFEV": {
    "slug": "travelersbackpack",
    "title": "Traveler's Backpack",
-   "downloads": 21946388,
+   "downloads": 21968539,
    "icon": "https://cdn.modrinth.com/data/rlloIFEV/271b2133a315ee3d864ea5a429472f0e71591fe3_96.webp",
    "loaders": [
     "adventure",
@@ -5761,13 +5761,13 @@
    ],
    "builds": {
     "26.3": {
-     "neoforge": {
-      "release": "2026-09-24",
-      "latest": "2026-11-14"
-     },
      "fabric": {
       "release": "2026-09-24",
-      "latest": "2026-11-14"
+      "latest": "2026-11-16"
+     },
+     "neoforge": {
+      "release": "2026-09-24",
+      "latest": "2026-11-16"
      }
     },
     "26.2": {
@@ -5785,7 +5785,7 @@
   "SNVQ2c0g": {
    "slug": "mru",
    "title": "MRU",
-   "downloads": 21883383,
+   "downloads": 21912989,
    "icon": "https://cdn.modrinth.com/data/SNVQ2c0g/82339bfc8a0a3a6a3c376f5c29555a378379cfa0_96.webp",
    "loaders": [
     "fabric",
@@ -5819,7 +5819,7 @@
   "PRN43VSY": {
    "slug": "animatica",
    "title": "Animatica",
-   "downloads": 21761602,
+   "downloads": 21773926,
    "icon": "https://cdn.modrinth.com/data/PRN43VSY/a3e7ee6b63650e8ec58b78e9348e5e64d7ccad89_96.webp",
    "loaders": [
     "decoration",
@@ -5832,7 +5832,7 @@
   "ix1qq8Ux": {
    "slug": "crash-assistant",
    "title": "Crash Assistant",
-   "downloads": 21710369,
+   "downloads": 21750365,
    "icon": "https://cdn.modrinth.com/data/ix1qq8Ux/0850872f4de156ee91a8b1d1f71615cb4615bfa4_96.webp",
    "loaders": [
     "fabric",
@@ -5846,24 +5846,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-09-16",
-      "latest": "2026-09-20"
-     },
-     "forge": {
-      "release": "2026-09-16",
-      "latest": "2026-09-20"
-     },
-     "fabric": {
-      "release": "2026-09-16",
-      "latest": "2026-09-20"
-     },
-     "quilt": {
-      "release": "2026-09-16",
-      "latest": "2026-09-20"
-     }
-    },
     "26.2": {
      "neoforge": {
       "release": "2026-06-16",
@@ -5881,13 +5863,31 @@
       "release": "2026-06-16",
       "latest": "2026-09-20"
      }
+    },
+    "26.3": {
+     "neoforge": {
+      "release": "2026-09-16",
+      "latest": "2026-09-20"
+     },
+     "forge": {
+      "release": "2026-09-16",
+      "latest": "2026-09-20"
+     },
+     "fabric": {
+      "release": "2026-09-16",
+      "latest": "2026-09-20"
+     },
+     "quilt": {
+      "release": "2026-09-16",
+      "latest": "2026-09-20"
+     }
     }
    }
   },
   "HjmxVlSr": {
    "slug": "yungs-better-mineshafts",
    "title": "YUNG's Better Mineshafts",
-   "downloads": 21516320,
+   "downloads": 21536057,
    "icon": "https://cdn.modrinth.com/data/HjmxVlSr/4e41ef8344db48b8368cd3d6f35844c8a619f446_96.webp",
    "loaders": [
     "adventure",
@@ -5902,7 +5902,7 @@
   "Es5v4eyq": {
    "slug": "sodium-options-api",
    "title": "Sodium Options API",
-   "downloads": 21489719,
+   "downloads": 21504438,
    "icon": "https://cdn.modrinth.com/data/Es5v4eyq/7bff17babb498584c0edd74211d97435b651c11f_96.webp",
    "loaders": [
     "fabric",
@@ -5916,7 +5916,7 @@
   "z9Ve58Ih": {
    "slug": "yungs-better-jungle-temples",
    "title": "YUNG's Better Jungle Temples",
-   "downloads": 21289069,
+   "downloads": 21305731,
    "icon": "https://cdn.modrinth.com/data/z9Ve58Ih/a142b7d112fe6812592de7db2d2badb1398100a7_96.webp",
    "loaders": [
     "adventure",
@@ -5931,7 +5931,7 @@
   "XZNI4Cpy": {
    "slug": "toms-storage",
    "title": "Tom's Simple Storage Mod",
-   "downloads": 21241357,
+   "downloads": 21261933,
    "icon": "https://cdn.modrinth.com/data/XZNI4Cpy/1949d7adbf962ac86912608edfb93fa5342bffd6_96.webp",
    "loaders": [
     "fabric",
@@ -5966,7 +5966,7 @@
   "2BwBOmBQ": {
    "slug": "yungs-better-end-island",
    "title": "YUNG's Better End Island",
-   "downloads": 20865122,
+   "downloads": 20883736,
    "icon": "https://cdn.modrinth.com/data/2BwBOmBQ/78c665ae3617a5b7e8902242b480d7f71ef04307_96.webp",
    "loaders": [
     "adventure",
@@ -5981,7 +5981,7 @@
   "n6PXGAoM": {
    "slug": "better-stats",
    "title": "Better Statistics Screen",
-   "downloads": 20644846,
+   "downloads": 20662992,
    "icon": "https://cdn.modrinth.com/data/n6PXGAoM/c5a85914f01be35575abe61c2d19d48e08581034_96.webp",
    "loaders": [
     "fabric",
@@ -6018,7 +6018,7 @@
   "sGmHWmeL": {
    "slug": "mixintrace",
    "title": "MixinTrace",
-   "downloads": 20522825,
+   "downloads": 20536039,
    "icon": "https://cdn.modrinth.com/data/sGmHWmeL/12ba031116f1f516cd750bacfa9c897947adb578_96.webp",
    "loaders": [
     "fabric",
@@ -6029,7 +6029,7 @@
   "6iTJugQR": {
    "slug": "amendments",
    "title": "Amendments",
-   "downloads": 20391292,
+   "downloads": 20412821,
    "icon": "https://cdn.modrinth.com/data/6iTJugQR/46e156f1c798bfc3c18bd2a55567af1086674f02_96.webp",
    "loaders": [
     "fabric",
@@ -6041,7 +6041,7 @@
   "fALzjamp": {
    "slug": "chunky",
    "title": "Chunky",
-   "downloads": 20346144,
+   "downloads": 20378856,
    "icon": "https://cdn.modrinth.com/data/fALzjamp/e1954413665e57b7bae1feef44eda530270c7d47_96.webp",
    "loaders": [
     "bukkit",
@@ -6057,7 +6057,7 @@
     "worldgen"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "fabric": {
       "release": "2026-05-04",
       "latest": "2026-11-04"
@@ -6091,7 +6091,7 @@
       "latest": "2026-11-04"
      }
     },
-    "26.2": {
+    "26.3": {
      "fabric": {
       "release": "2026-05-04",
       "latest": "2026-11-04"
@@ -6130,7 +6130,7 @@
   "KjL0jE2w": {
    "slug": "enhancedvisuals",
    "title": "EnhancedVisuals",
-   "downloads": 20308960,
+   "downloads": 20322701,
    "icon": "https://cdn.modrinth.com/data/KjL0jE2w/94613d78601f0b6b0c6e95f8eddd7d58738ac449_96.webp",
    "loaders": [
     "adventure",
@@ -6165,7 +6165,7 @@
   "HaaH232J": {
    "slug": "yeetus-experimentus",
    "title": "Yeetus Experimentus",
-   "downloads": 20253819,
+   "downloads": 20273501,
    "icon": "https://cdn.modrinth.com/data/HaaH232J/6aee853f7f555ec6b033176fea8b78494cb538c1_96.webp",
    "loaders": [
     "fabric",
@@ -6200,7 +6200,7 @@
   "PxQSWIcD": {
    "slug": "sodium-dynamic-lights",
    "title": "Sodium Dynamic Lights",
-   "downloads": 20223221,
+   "downloads": 20243128,
    "icon": "https://cdn.modrinth.com/data/PxQSWIcD/a5ab5515213391934e18baaf487c87e4b24ebfa3_96.webp",
    "loaders": [
     "decoration",
@@ -6215,7 +6215,7 @@
   "ZouiUX7t": {
    "slug": "sound",
    "title": "Sounds",
-   "downloads": 20018585,
+   "downloads": 20039874,
    "icon": "https://cdn.modrinth.com/data/ZouiUX7t/b6ae84ea14654245f58856722473afeddf72360c_96.webp",
    "loaders": [
     "fabric",
@@ -6248,7 +6248,7 @@
   "3qsfQtE9": {
    "slug": "fabrishot",
    "title": "Fabrishot",
-   "downloads": 20010238,
+   "downloads": 20020792,
    "icon": "https://cdn.modrinth.com/data/3qsfQtE9/icon.png",
    "loaders": [
     "fabric",
@@ -6272,7 +6272,7 @@
   "3qAYkBMB": {
    "slug": "polytone",
    "title": "Polytone",
-   "downloads": 19626067,
+   "downloads": 19661831,
    "icon": "https://cdn.modrinth.com/data/3qAYkBMB/828636188cd2427eb1158dd1e0bddd42d318ccbf_96.webp",
    "loaders": [
     "fabric",
@@ -6307,7 +6307,7 @@
   "Nv2fQJo5": {
    "slug": "replaymod",
    "title": "ReplayMod",
-   "downloads": 19514550,
+   "downloads": 19525085,
    "icon": "https://cdn.modrinth.com/data/Nv2fQJo5/icon.png",
    "loaders": [
     "fabric",
@@ -6332,7 +6332,7 @@
   "cl223EMc": {
    "slug": "cristel-lib",
    "title": "Cristel Lib",
-   "downloads": 19396293,
+   "downloads": 19419383,
    "icon": "https://cdn.modrinth.com/data/cl223EMc/22b1072af55724911840b93a30cf8d3b3fc514bf_96.webp",
    "loaders": [
     "cursed",
@@ -6377,7 +6377,7 @@
   "yD9qW65f": {
    "slug": "chloride",
    "title": "(Sodium) Chloride",
-   "downloads": 19386547,
+   "downloads": 19405148,
    "icon": "https://cdn.modrinth.com/data/yD9qW65f/250a2ffc6d59e30d49aaaf65d62b94db5de80978_96.webp",
    "loaders": [
     "fabric",
@@ -6402,7 +6402,7 @@
   "kidLKymU": {
    "slug": "yungs-better-strongholds",
    "title": "YUNG's Better Strongholds",
-   "downloads": 19368873,
+   "downloads": 19387373,
    "icon": "https://cdn.modrinth.com/data/kidLKymU/bfb3cac4ca4d7d891fbbcb34a1d61eaa1d6f3e9a_96.webp",
    "loaders": [
     "adventure",
@@ -6417,7 +6417,7 @@
   "rOUBggPv": {
    "slug": "supermartijn642s-core-lib",
    "title": "SuperMartijn642's Core Lib",
-   "downloads": 19339031,
+   "downloads": 19361098,
    "icon": "https://cdn.modrinth.com/data/rOUBggPv/e745e719d7fe2aa0335d819ca9c97defbf2e0bcb_96.webp",
    "loaders": [
     "fabric",
@@ -6464,7 +6464,7 @@
   "WEg59z5b": {
    "slug": "default-options",
    "title": "Default Options",
-   "downloads": 19335646,
+   "downloads": 19352997,
    "icon": "https://cdn.modrinth.com/data/WEg59z5b/ce5654a0aaa534f6a7c203870c67d09c4b80aedb_96.webp",
    "loaders": [
     "fabric",
@@ -6499,7 +6499,7 @@
   "Dk6su9JN": {
    "slug": "cut-through",
    "title": "Cut Through",
-   "downloads": 19137136,
+   "downloads": 19157105,
    "icon": "https://cdn.modrinth.com/data/Dk6su9JN/7d3394c6c15bf9bdfe04fd25b317e237feac6c55_96.webp",
    "loaders": [
     "adventure",
@@ -6535,7 +6535,7 @@
   "kYuIpRLv": {
    "slug": "wavey-capes",
    "title": "Wavey Capes",
-   "downloads": 19125942,
+   "downloads": 19148709,
    "icon": "https://cdn.modrinth.com/data/kYuIpRLv/a51c297bdaf9685a23cc9994372fa8d45852b98b_96.webp",
    "loaders": [
     "decoration",
@@ -6570,7 +6570,7 @@
   "4WWQxlQP": {
    "slug": "servercore",
    "title": "ServerCore",
-   "downloads": 19068579,
+   "downloads": 19106323,
    "icon": "https://cdn.modrinth.com/data/4WWQxlQP/5207e4657a1d0e929506a8c07491a42fa73b0a29_96.webp",
    "loaders": [
     "fabric",
@@ -6605,7 +6605,7 @@
   "1OE8wbN0": {
    "slug": "prism-lib",
    "title": "Prism",
-   "downloads": 18915951,
+   "downloads": 18933458,
    "icon": "https://cdn.modrinth.com/data/1OE8wbN0/2fecc17cdc6036b648f0defc7c9a85a6733be435_96.webp",
    "loaders": [
     "decoration",
@@ -6649,7 +6649,7 @@
   "DjLobEOy": {
    "slug": "towns-and-towers",
    "title": "Towns and Towers",
-   "downloads": 18874962,
+   "downloads": 18893903,
    "icon": "https://cdn.modrinth.com/data/DjLobEOy/f7f552ec019c9ad8b777c9ab5eecbb95da8707a0_96.webp",
    "loaders": [
     "adventure",
@@ -6699,10 +6699,52 @@
     }
    }
   },
+  "RSeLon5O": {
+   "slug": "particle-core",
+   "title": "Particle Core",
+   "downloads": 18866408,
+   "icon": "https://cdn.modrinth.com/data/RSeLon5O/147110a6a4457b2f287f68fc626771f0f8ef2cde_96.webp",
+   "loaders": [
+    "fabric",
+    "forge",
+    "game-mechanics",
+    "management",
+    "neoforge",
+    "optimization",
+    "quilt",
+    "utility"
+   ],
+   "builds": {
+    "26.2": {
+     "fabric": {
+      "release": "2026-07-08",
+      "latest": "2026-10-10"
+     },
+     "neoforge": {
+      "release": "2026-07-08",
+      "latest": "2026-10-10"
+     },
+     "quilt": {
+      "release": "2026-07-08",
+      "latest": "2026-07-08"
+     }
+    },
+    "26.3": {
+     "fabric": {
+      "release": "2026-10-10",
+      "latest": "2026-10-10"
+     },
+     "neoforge": {
+      "release": "2026-10-10",
+      "latest": "2026-10-10"
+     }
+    }
+   }
+  },
   "pJogNFap": {
    "slug": "paginatedadvancements",
    "title": "Paginated Advancements & Custom Frames",
-   "downloads": 18836846,
+   "downloads": 18863468,
    "icon": "https://cdn.modrinth.com/data/pJogNFap/icon.png",
    "loaders": [
     "fabric",
@@ -6733,52 +6775,10 @@
     }
    }
   },
-  "RSeLon5O": {
-   "slug": "particle-core",
-   "title": "Particle Core",
-   "downloads": 18828630,
-   "icon": "https://cdn.modrinth.com/data/RSeLon5O/147110a6a4457b2f287f68fc626771f0f8ef2cde_96.webp",
-   "loaders": [
-    "fabric",
-    "forge",
-    "game-mechanics",
-    "management",
-    "neoforge",
-    "optimization",
-    "quilt",
-    "utility"
-   ],
-   "builds": {
-    "26.3": {
-     "fabric": {
-      "release": "2026-10-10",
-      "latest": "2026-10-10"
-     },
-     "neoforge": {
-      "release": "2026-10-10",
-      "latest": "2026-10-10"
-     }
-    },
-    "26.2": {
-     "fabric": {
-      "release": "2026-07-08",
-      "latest": "2026-10-10"
-     },
-     "neoforge": {
-      "release": "2026-07-08",
-      "latest": "2026-10-10"
-     },
-     "quilt": {
-      "release": "2026-07-08",
-      "latest": "2026-07-08"
-     }
-    }
-   }
-  },
   "t5FRdP87": {
    "slug": "yungs-better-witch-huts",
    "title": "YUNG's Better Witch Huts",
-   "downloads": 18653924,
+   "downloads": 18669339,
    "icon": "https://cdn.modrinth.com/data/t5FRdP87/20d3e930ec0a010723df61df091160104294e0b0_96.webp",
    "loaders": [
     "adventure",
@@ -6793,7 +6793,7 @@
   "m5T5xmUy": {
    "slug": "bettergrassify",
    "title": "BetterGrassify",
-   "downloads": 18636391,
+   "downloads": 18666996,
    "icon": "https://cdn.modrinth.com/data/m5T5xmUy/a69f6abbc0c2007e7b630f55f797c505c23c11f5_96.webp",
    "loaders": [
     "fabric",
@@ -6829,7 +6829,7 @@
   "9NM0dXub": {
    "slug": "advancement-plaques",
    "title": "Advancement Plaques",
-   "downloads": 18444232,
+   "downloads": 18462350,
    "icon": "https://cdn.modrinth.com/data/9NM0dXub/bb63f53585dd34679781c9964874dce8acdf6d26_96.webp",
    "loaders": [
     "adventure",
@@ -6873,7 +6873,7 @@
   "4sP0LXxp": {
    "slug": "veinminer-enchantment",
    "title": "VeinMiner Enchantment",
-   "downloads": 18343211,
+   "downloads": 18367293,
    "icon": "https://cdn.modrinth.com/data/4sP0LXxp/1e37ba60062cf9455fc75d61c653a75d11825783.png",
    "loaders": [
     "datapack",
@@ -6888,36 +6888,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "fabric": {
-      "release": "2026-07-26",
-      "latest": "2026-11-14"
-     },
-     "folia": {
-      "release": "2026-07-26",
-      "latest": "2026-11-14"
-     },
-     "neoforge": {
-      "release": "2026-07-26",
-      "latest": "2026-11-14"
-     },
-     "paper": {
-      "release": "2026-07-26",
-      "latest": "2026-11-14"
-     },
-     "purpur": {
-      "release": "2026-07-26",
-      "latest": "2026-11-14"
-     },
-     "quilt": {
-      "release": "2026-07-26",
-      "latest": "2026-11-14"
-     },
-     "datapack": {
-      "release": "2026-09-26",
-      "latest": "2026-09-26"
-     }
-    },
     "26.2": {
      "fabric": {
       "release": "2026-06-04",
@@ -6947,13 +6917,43 @@
       "release": "2026-03-24",
       "latest": "2026-03-24"
      }
+    },
+    "26.3": {
+     "fabric": {
+      "release": "2026-07-26",
+      "latest": "2026-11-14"
+     },
+     "folia": {
+      "release": "2026-07-26",
+      "latest": "2026-11-14"
+     },
+     "neoforge": {
+      "release": "2026-07-26",
+      "latest": "2026-11-14"
+     },
+     "paper": {
+      "release": "2026-07-26",
+      "latest": "2026-11-14"
+     },
+     "purpur": {
+      "release": "2026-07-26",
+      "latest": "2026-11-14"
+     },
+     "quilt": {
+      "release": "2026-07-26",
+      "latest": "2026-11-14"
+     },
+     "datapack": {
+      "release": "2026-09-26",
+      "latest": "2026-09-26"
+     }
     }
    }
   },
   "qJDfP7WN": {
    "slug": "main-menu-credits",
    "title": "Main Menu Credits",
-   "downloads": 18342469,
+   "downloads": 18364367,
    "icon": "https://cdn.modrinth.com/data/qJDfP7WN/e2acf6f5e78b9d5a868256cc95f77a35affdeb4b_96.webp",
    "loaders": [
     "fabric",
@@ -6963,7 +6963,7 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "fabric": {
       "release": "2026-06-17",
       "latest": "2026-06-17"
@@ -6973,7 +6973,7 @@
       "latest": "2026-06-17"
      }
     },
-    "26.2": {
+    "26.3": {
      "fabric": {
       "release": "2026-06-17",
       "latest": "2026-06-17"
@@ -6988,7 +6988,7 @@
   "wnEe9KBa": {
    "slug": "vmp-fabric",
    "title": "Very Many Players (Fabric)",
-   "downloads": 18153190,
+   "downloads": 18176881,
    "icon": "https://cdn.modrinth.com/data/wnEe9KBa/0bb4b66e80c6cca9c37f6f1021a94670d6f820dc_96.webp",
    "loaders": [
     "fabric",
@@ -7012,7 +7012,7 @@
   "PWERr14M": {
    "slug": "i18nupdatemod",
    "title": "I18nUpdateMod",
-   "downloads": 18121348,
+   "downloads": 18134661,
    "icon": "https://cdn.modrinth.com/data/PWERr14M/d2bbfcc25d25d92896d8b0b63face492310b3f4b.png",
    "loaders": [
     "fabric",
@@ -7026,7 +7026,7 @@
   "cVNW5lr6": {
    "slug": "item-highlighter",
    "title": "Item Highlighter",
-   "downloads": 17933044,
+   "downloads": 17947024,
    "icon": "https://cdn.modrinth.com/data/cVNW5lr6/5e15f8c53ea36ca5391cdd9bbdea33261fa4c18d_96.webp",
    "loaders": [
     "adventure",
@@ -7071,7 +7071,7 @@
   "Eldc1g37": {
    "slug": "tcdcommons",
    "title": "TCDCommons API",
-   "downloads": 17858406,
+   "downloads": 17876525,
    "icon": "https://cdn.modrinth.com/data/Eldc1g37/36f2c7c76a7fc63e827bc20657853b7f1d9e4060.png",
    "loaders": [
     "fabric",
@@ -7108,7 +7108,7 @@
   "REfW2AEX": {
    "slug": "invmove",
    "title": "InvMove",
-   "downloads": 17766948,
+   "downloads": 17781439,
    "icon": "https://cdn.modrinth.com/data/REfW2AEX/24c63fa80c1e94bc45ca600ba9e0993ff91d289b_96.webp",
    "loaders": [
     "fabric",
@@ -7144,7 +7144,7 @@
   "lWDHr9jE": {
    "slug": "tectonic",
    "title": "Tectonic",
-   "downloads": 17748334,
+   "downloads": 17768489,
    "icon": "https://cdn.modrinth.com/data/lWDHr9jE/d8b3413f797479dcc0d8764756613e449a358a2e_96.webp",
    "loaders": [
     "adventure",
@@ -7191,7 +7191,7 @@
   "OZBR5JT5": {
    "slug": "easy-anvils",
    "title": "Easy Anvils",
-   "downloads": 17726045,
+   "downloads": 17743547,
    "icon": "https://cdn.modrinth.com/data/OZBR5JT5/6d18be3377180e9afe80da0551934b29bdd2bacb_96.webp",
    "loaders": [
     "equipment",
@@ -7226,7 +7226,7 @@
   "RH2KUdKJ": {
    "slug": "shatterbyte-lib",
    "title": "ShatterLib | OctoLib",
-   "downloads": 17609081,
+   "downloads": 17632205,
    "icon": "https://cdn.modrinth.com/data/RH2KUdKJ/a4043436fa16d40de4faa032b08e0879b8397259_96.webp",
    "loaders": [
     "fabric",
@@ -7261,7 +7261,7 @@
   "5sy6g3kz": {
    "slug": "better-combat",
    "title": "Better Combat",
-   "downloads": 17556649,
+   "downloads": 17572700,
    "icon": "https://cdn.modrinth.com/data/5sy6g3kz/4d59a2a1ddd25f977b39c89e391edc4cdc7c71ba_96.webp",
    "loaders": [
     "adventure",
@@ -7300,7 +7300,7 @@
   "XNlO7sBv": {
    "slug": "yungs-better-desert-temples",
    "title": "YUNG's Better Desert Temples",
-   "downloads": 17496272,
+   "downloads": 17510171,
    "icon": "https://cdn.modrinth.com/data/XNlO7sBv/32fc82949e922ad9281ac9a8fe965afc04261848_96.webp",
    "loaders": [
     "adventure",
@@ -7315,7 +7315,7 @@
   "2RKFTmiB": {
    "slug": "tooltipfix",
    "title": "ToolTipFix",
-   "downloads": 17185263,
+   "downloads": 17197988,
    "icon": "https://cdn.modrinth.com/data/2RKFTmiB/37917b544806c3e959be5b42bec64842f795d185_96.webp",
    "loaders": [
     "fabric",
@@ -7327,7 +7327,7 @@
   "WKwQAwke": {
    "slug": "libjf",
    "title": "LibJF",
-   "downloads": 17119721,
+   "downloads": 17144622,
    "icon": "https://cdn.modrinth.com/data/WKwQAwke/icon.png",
    "loaders": [
     "fabric",
@@ -7360,7 +7360,7 @@
   "7vxePowz": {
    "slug": "farmers-delight-refabricated",
    "title": "Farmer's Delight Refabricated",
-   "downloads": 17063667,
+   "downloads": 17080840,
    "icon": "https://cdn.modrinth.com/data/7vxePowz/26e8448993e9bda4dba92b6e7a1a13d9c4333138.png",
    "loaders": [
     "decoration",
@@ -7386,7 +7386,7 @@
   "ZX66K16c": {
    "slug": "pick-up-notifier",
    "title": "Pick Up Notifier",
-   "downloads": 16719378,
+   "downloads": 16734965,
    "icon": "https://cdn.modrinth.com/data/ZX66K16c/769d7c843339981c1f8e5eec5ff983294a3671fb_96.webp",
    "loaders": [
     "fabric",
@@ -7420,7 +7420,7 @@
   "86xjpqqS": {
    "slug": "yes-steve-model",
    "title": "Yes Steve Model",
-   "downloads": 16690365,
+   "downloads": 16707416,
    "icon": "https://cdn.modrinth.com/data/86xjpqqS/9f58c3977a8949f75300f065c9a63f34022c415a.jpeg",
    "loaders": [
     "decoration",
@@ -7433,7 +7433,7 @@
   "IwCkru1D": {
    "slug": "cicada",
    "title": "CICADA",
-   "downloads": 16661650,
+   "downloads": 16675662,
    "icon": "https://cdn.modrinth.com/data/IwCkru1D/53eee5642c7c426729b8313628b83f8513322484.png",
    "loaders": [
     "fabric",
@@ -7457,7 +7457,7 @@
   "ulloLmqG": {
    "slug": "another-furniture",
    "title": "Another Furniture",
-   "downloads": 16642723,
+   "downloads": 16656724,
    "icon": "https://cdn.modrinth.com/data/ulloLmqG/6cdf97184b145e086291c27c0ef933c512e01f08_96.webp",
    "loaders": [
     "decoration",
@@ -7471,7 +7471,7 @@
   "Ps1zyz6x": {
    "slug": "scalablelux",
    "title": "ScalableLux",
-   "downloads": 16483884,
+   "downloads": 16522172,
    "icon": "https://cdn.modrinth.com/data/Ps1zyz6x/27133942a1a58af1bb11b087957ea4cc14414dd3_96.webp",
    "loaders": [
     "fabric",
@@ -7506,7 +7506,7 @@
   "Ht4BfYp6": {
    "slug": "yungs-bridges",
    "title": "YUNG's Bridges",
-   "downloads": 16458556,
+   "downloads": 16471277,
    "icon": "https://cdn.modrinth.com/data/Ht4BfYp6/b465e98ac5f2742cf52292e6649b6abb76665e8f_96.webp",
    "loaders": [
     "adventure",
@@ -7521,7 +7521,7 @@
   "NRLPy2mk": {
    "slug": "globalpacks",
    "title": "Global Packs",
-   "downloads": 16450130,
+   "downloads": 16463409,
    "icon": "https://cdn.modrinth.com/data/NRLPy2mk/94f1043a08a0b4d1458ab247dcb7dc21611d75c8.png",
    "loaders": [
     "fabric",
@@ -7556,7 +7556,7 @@
   "yM94ont6": {
    "slug": "notenoughcrashes",
    "title": "Not Enough Crashes",
-   "downloads": 16441464,
+   "downloads": 16462016,
    "icon": "https://cdn.modrinth.com/data/yM94ont6/0bd6cd7608cde62529c05ed19626029c062107ed_96.webp",
    "loaders": [
     "fabric",
@@ -7599,7 +7599,7 @@
   "fnAffV0n": {
    "slug": "deeperdarker",
    "title": "Deeper and Darker",
-   "downloads": 16427540,
+   "downloads": 16438468,
    "icon": "https://cdn.modrinth.com/data/fnAffV0n/be8023f374038c6bd8a52a0e5b2cbc4eb1a37746_96.webp",
    "loaders": [
     "adventure",
@@ -7616,7 +7616,7 @@
   "H8CaAYZC": {
    "slug": "starlight",
    "title": "Starlight (Fabric)",
-   "downloads": 16416181,
+   "downloads": 16423168,
    "icon": "https://cdn.modrinth.com/data/H8CaAYZC/aa11bf788b9893370ff1e26af1c275dfd7590c59_96.webp",
    "loaders": [
     "fabric",
@@ -7627,7 +7627,7 @@
   "p19vrgc2": {
    "slug": "fusion-connected-textures",
    "title": "Fusion (Connected Textures)",
-   "downloads": 16302310,
+   "downloads": 16321971,
    "icon": "https://cdn.modrinth.com/data/p19vrgc2/8a9940a468bb536f7402b389d583e7f070ee14fb_96.webp",
    "loaders": [
     "decoration",
@@ -7679,7 +7679,7 @@
   "p8RJPJIC": {
    "slug": "ixeris",
    "title": "Ixeris",
-   "downloads": 16220746,
+   "downloads": 16304863,
    "icon": "https://cdn.modrinth.com/data/p8RJPJIC/4ca312df105cb246a91f5b782bfd863930d8888f_96.webp",
    "loaders": [
     "fabric",
@@ -7722,7 +7722,7 @@
   "I7k4B65h": {
    "slug": "justenoughcharacters",
    "title": "JustEnoughCharacters",
-   "downloads": 16097974,
+   "downloads": 16116447,
    "icon": "https://cdn.modrinth.com/data/I7k4B65h/cf0bd54ec20a5f780ea3192a66f4942fa77246d1_96.webp",
    "loaders": [
     "fabric",
@@ -7731,16 +7731,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-10-13",
-      "latest": "2026-10-13"
-     },
-     "fabric": {
-      "release": "2026-10-13",
-      "latest": "2026-10-13"
-     }
-    },
     "26.2": {
      "neoforge": {
       "release": "2026-08-16",
@@ -7750,13 +7740,23 @@
       "release": "2026-08-16",
       "latest": "2026-10-13"
      }
+    },
+    "26.3": {
+     "neoforge": {
+      "release": "2026-10-13",
+      "latest": "2026-10-13"
+     },
+     "fabric": {
+      "release": "2026-10-13",
+      "latest": "2026-10-13"
+     }
     }
    }
   },
   "AtB5mHky": {
    "slug": "what-are-they-up-to",
    "title": "What Are They Up To (Watut)",
-   "downloads": 16068325,
+   "downloads": 16082052,
    "icon": "https://cdn.modrinth.com/data/AtB5mHky/f0809106cc4633fb64323664664280f860b080a4_96.webp",
    "loaders": [
     "fabric",
@@ -7774,40 +7774,10 @@
     }
    }
   },
-  "gc8OEnCC": {
-   "slug": "betterend",
-   "title": "BetterEnd",
-   "downloads": 16046441,
-   "icon": "https://cdn.modrinth.com/data/gc8OEnCC/3afe2f097e9deff31158da380647fdc47131756f_96.webp",
-   "loaders": [
-    "decoration",
-    "equipment",
-    "fabric",
-    "food",
-    "mobs",
-    "worldgen"
-   ],
-   "builds": {
-    "26.2": {
-     "fabric": {
-      "release": "2026-10-30",
-      "latest": "2026-11-12",
-      "pre": "2026-07-31"
-     }
-    },
-    "26.3": {
-     "fabric": {
-      "release": "2026-11-01",
-      "latest": "2026-11-01",
-      "pre": "2026-10-10"
-     }
-    }
-   }
-  },
   "K01OU20C": {
    "slug": "cardinal-components-api",
    "title": "Cardinal Components API",
-   "downloads": 16045202,
+   "downloads": 16056797,
    "icon": "https://cdn.modrinth.com/data/K01OU20C/c95792db39092b68abb6266237382281d441ad9d.webp",
    "loaders": [
     "fabric",
@@ -7837,10 +7807,40 @@
     }
    }
   },
+  "gc8OEnCC": {
+   "slug": "betterend",
+   "title": "BetterEnd",
+   "downloads": 16055509,
+   "icon": "https://cdn.modrinth.com/data/gc8OEnCC/3afe2f097e9deff31158da380647fdc47131756f_96.webp",
+   "loaders": [
+    "decoration",
+    "equipment",
+    "fabric",
+    "food",
+    "mobs",
+    "worldgen"
+   ],
+   "builds": {
+    "26.2": {
+     "fabric": {
+      "release": "2026-10-30",
+      "latest": "2026-11-12",
+      "pre": "2026-07-31"
+     }
+    },
+    "26.3": {
+     "fabric": {
+      "release": "2026-11-01",
+      "latest": "2026-11-01",
+      "pre": "2026-10-10"
+     }
+    }
+   }
+  },
   "DWuwk8aA": {
    "slug": "skyboxify",
    "title": "Skyboxify",
-   "downloads": 15806913,
+   "downloads": 15836937,
    "icon": "https://cdn.modrinth.com/data/DWuwk8aA/7fe3045177b02be3aaf2706fdbbe469a1e268bd6_96.webp",
    "loaders": [
     "adventure",
@@ -7866,7 +7866,7 @@
   "ziOp6EO8": {
    "slug": "corgilib",
    "title": "CorgiLib",
-   "downloads": 15775025,
+   "downloads": 15789835,
    "icon": "https://cdn.modrinth.com/data/ziOp6EO8/46be0599bd15d6eff8c6da814b28700dc53a3eb7_96.webp",
    "loaders": [
     "fabric",
@@ -7877,21 +7877,10 @@
    ],
    "builds": {}
   },
-  "rUgZvGzi": {
-   "slug": "eating-animation",
-   "title": "Eating Animation",
-   "downloads": 15761365,
-   "icon": "https://cdn.modrinth.com/data/rUgZvGzi/3728bc0dd14ce1ec84599f9dad43aa5fbcfbef2a.gif",
-   "loaders": [
-    "fabric",
-    "food"
-   ],
-   "builds": {}
-  },
   "yWSAtnfH": {
    "slug": "bisect-mod",
    "title": "BisectHosting Server Integration Menu",
-   "downloads": 15759125,
+   "downloads": 15774792,
    "icon": "https://cdn.modrinth.com/data/yWSAtnfH/1441c2b75045151c4cf3f0b78511ead9fe4dae27_96.webp",
    "loaders": [
     "fabric",
@@ -7931,10 +7920,21 @@
     }
    }
   },
+  "rUgZvGzi": {
+   "slug": "eating-animation",
+   "title": "Eating Animation",
+   "downloads": 15769527,
+   "icon": "https://cdn.modrinth.com/data/rUgZvGzi/3728bc0dd14ce1ec84599f9dad43aa5fbcfbef2a.gif",
+   "loaders": [
+    "fabric",
+    "food"
+   ],
+   "builds": {}
+  },
   "IYY9Siz8": {
    "slug": "jamlib",
    "title": "JamLib",
-   "downloads": 15742983,
+   "downloads": 15763547,
    "icon": "https://cdn.modrinth.com/data/IYY9Siz8/7585f4d35b18467c2d0d9c496e3b7cd4919c413a_96.webp",
    "loaders": [
     "fabric",
@@ -7973,7 +7973,7 @@
   "x3HZvrj6": {
    "slug": "immersive-aircraft",
    "title": "Immersive Aircraft",
-   "downloads": 15620742,
+   "downloads": 15630751,
    "icon": "https://cdn.modrinth.com/data/x3HZvrj6/08205d73c1e3e28eae9c4c6e272eaae34326e4b0_96.webp",
    "loaders": [
     "adventure",
@@ -8001,7 +8001,7 @@
   "lfHFW1mp": {
    "slug": "journeymap",
    "title": "JourneyMap",
-   "downloads": 15548103,
+   "downloads": 15561171,
    "icon": "https://cdn.modrinth.com/data/lfHFW1mp/a1c571a21a88f6fa59eab67829f216f65ab393ee_96.webp",
    "loaders": [
     "adventure",
@@ -8067,7 +8067,7 @@
   "jtmvUHXj": {
    "slug": "accessories",
    "title": "Accessories",
-   "downloads": 15263547,
+   "downloads": 15286572,
    "icon": "https://cdn.modrinth.com/data/jtmvUHXj/14fabf4859e845b0bd6659daf2375be3e88f59ec.png",
    "loaders": [
     "adventure",
@@ -8083,7 +8083,7 @@
   "smUP7V3r": {
    "slug": "durability-tooltip",
    "title": "Durability Tooltip",
-   "downloads": 15255064,
+   "downloads": 15270261,
    "icon": "https://cdn.modrinth.com/data/smUP7V3r/icon.png",
    "loaders": [
     "fabric",
@@ -8130,7 +8130,7 @@
   "hvFnDODi": {
    "slug": "lazydfu",
    "title": "LazyDFU",
-   "downloads": 15182394,
+   "downloads": 15190682,
    "icon": "https://cdn.modrinth.com/data/hvFnDODi/48fa17d2335d565ac51cd9d75b3755cee061e409_96.webp",
    "loaders": [
     "fabric",
@@ -8141,7 +8141,7 @@
   "vBbPDuOs": {
    "slug": "txnilib",
    "title": "TxniLib",
-   "downloads": 15113233,
+   "downloads": 15127540,
    "icon": "https://cdn.modrinth.com/data/vBbPDuOs/230624c5d6b08c340e02d2a0f67c737f759bf4e2_96.webp",
    "loaders": [
     "fabric",
@@ -8154,7 +8154,7 @@
   "Y8uFrUil": {
    "slug": "ukulib",
    "title": "ukulib",
-   "downloads": 15034344,
+   "downloads": 15061888,
    "icon": "https://cdn.modrinth.com/data/Y8uFrUil/3306adc6d3ba21b11bb14f06f00c21cd5f47e506.webp",
    "loaders": [
     "fabric",
@@ -8197,7 +8197,7 @@
   "H5XMjpHi": {
    "slug": "first-person-model",
    "title": "First-person Model",
-   "downloads": 15000422,
+   "downloads": 15013188,
    "icon": "https://cdn.modrinth.com/data/H5XMjpHi/1f3b44a945f8f0f1b5afc4ff46e4f8a8bda86e95_96.webp",
    "loaders": [
     "decoration",
@@ -8233,7 +8233,7 @@
   "hB899VmG": {
    "slug": "exposure",
    "title": "Exposure",
-   "downloads": 14963489,
+   "downloads": 14973950,
    "icon": "https://cdn.modrinth.com/data/hB899VmG/58e78eeca0f5185ac349e8d08a3aafdc0a96180d.gif",
    "loaders": [
     "adventure",
@@ -8250,7 +8250,7 @@
   "kCpssoSb": {
    "slug": "fastload",
    "title": "Fastload",
-   "downloads": 14944770,
+   "downloads": 14954426,
    "icon": "https://cdn.modrinth.com/data/kCpssoSb/47742fe96d19cdad9a3eb6a73bd9c7c1547fb4ad.png",
    "loaders": [
     "fabric",
@@ -8264,7 +8264,7 @@
   "muf0XoRe": {
    "slug": "repurposed-structures-fabric",
    "title": "Repurposed Structures - Fabric",
-   "downloads": 14898427,
+   "downloads": 14910269,
    "icon": "https://cdn.modrinth.com/data/muf0XoRe/icon.png",
    "loaders": [
     "fabric",
@@ -8289,7 +8289,7 @@
   "WMDesFsZ": {
    "slug": "imblocker-original",
    "title": "IMBlocker",
-   "downloads": 14779253,
+   "downloads": 14795203,
    "icon": "https://cdn.modrinth.com/data/WMDesFsZ/681ebabfa43cbbbe80bf8eb54f123780c3852ef4_96.webp",
    "loaders": [
     "fabric",
@@ -8298,16 +8298,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-09-17",
-      "latest": "2026-11-11"
-     },
-     "fabric": {
-      "release": "2026-09-12",
-      "latest": "2026-11-11"
-     }
-    },
     "26.2": {
      "neoforge": {
       "release": "2026-06-17",
@@ -8317,13 +8307,23 @@
       "release": "2026-06-17",
       "latest": "2026-11-11"
      }
+    },
+    "26.3": {
+     "neoforge": {
+      "release": "2026-09-17",
+      "latest": "2026-11-11"
+     },
+     "fabric": {
+      "release": "2026-09-12",
+      "latest": "2026-11-11"
+     }
     }
    }
   },
   "YBz7DOs8": {
    "slug": "nuit",
    "title": "Nuit",
-   "downloads": 14776746,
+   "downloads": 14788437,
    "icon": "https://cdn.modrinth.com/data/YBz7DOs8/a3f83fe38d8de6243891693840c6b1b064757bfe_96.webp",
    "loaders": [
     "fabric",
@@ -8359,7 +8359,7 @@
   "B1CcCd9h": {
    "slug": "particular",
    "title": "Particular ✨",
-   "downloads": 14719068,
+   "downloads": 14730547,
    "icon": "https://cdn.modrinth.com/data/B1CcCd9h/1764f9ce329d9e87a6e043d0f3eb68bb1855c0cf_96.webp",
    "loaders": [
     "decoration",
@@ -8370,7 +8370,7 @@
   "QQXAdCzh": {
    "slug": "ping-wheel",
    "title": "Ping Wheel",
-   "downloads": 14704571,
+   "downloads": 14719812,
    "icon": "https://cdn.modrinth.com/data/QQXAdCzh/6d15088ddd1e07abcba1a2e796d1f9c7a3138b1d_96.webp",
    "loaders": [
     "fabric",
@@ -8414,7 +8414,7 @@
   "mSQF1NpT": {
    "slug": "elytra-slot",
    "title": "Elytra Slot",
-   "downloads": 14697524,
+   "downloads": 14710783,
    "icon": "https://cdn.modrinth.com/data/mSQF1NpT/b59d48e0111456cac90a18e4edc0b0d9727414a2.png",
    "loaders": [
     "equipment",
@@ -8429,7 +8429,7 @@
   "9hx3AbJM": {
    "slug": "easy-magic",
    "title": "Easy Magic",
-   "downloads": 14569718,
+   "downloads": 14583503,
    "icon": "https://cdn.modrinth.com/data/9hx3AbJM/5387d7206ba13438d088d127845d255c1a79b9c2_96.webp",
    "loaders": [
     "fabric",
@@ -8463,7 +8463,7 @@
   "wdLuzzEP": {
    "slug": "gamma-utils",
    "title": "Gamma Utils (Fullbright)",
-   "downloads": 14558108,
+   "downloads": 14579226,
    "icon": "https://cdn.modrinth.com/data/wdLuzzEP/b6014c210bbedacf610f7d2dba55149dae9677c8.png",
    "loaders": [
     "fabric",
@@ -8497,7 +8497,7 @@
   "P1Kv5EAO": {
    "slug": "necronomicon",
    "title": "Necronomicon API",
-   "downloads": 14521909,
+   "downloads": 14534885,
    "icon": "https://cdn.modrinth.com/data/P1Kv5EAO/45ae65c167af03db946bbd0e84ba5d2dcbc91138.png",
    "loaders": [
     "fabric",
@@ -8511,7 +8511,7 @@
   "BdKIyOLe": {
    "slug": "boat-item-view",
    "title": "Boat Item View",
-   "downloads": 14475437,
+   "downloads": 14487339,
    "icon": "https://cdn.modrinth.com/data/BdKIyOLe/icon.png",
    "loaders": [
     "adventure",
@@ -8560,7 +8560,7 @@
   "P0Mu4wcQ": {
    "slug": "artifacts",
    "title": "Artifacts",
-   "downloads": 14374766,
+   "downloads": 14389335,
    "icon": "https://cdn.modrinth.com/data/P0Mu4wcQ/icon.png",
    "loaders": [
     "adventure",
@@ -8574,7 +8574,7 @@
   "aaRl8GiW": {
    "slug": "prickle",
    "title": "Prickle",
-   "downloads": 14364718,
+   "downloads": 14385167,
    "icon": "https://cdn.modrinth.com/data/aaRl8GiW/36749d1d2d87d14d7f703b18e8726c7b78057abb.png",
    "loaders": [
     "fabric",
@@ -8611,7 +8611,7 @@
   "N6n5dqoA": {
    "slug": "axiom",
    "title": "Axiom",
-   "downloads": 14349453,
+   "downloads": 14366248,
    "icon": "https://cdn.modrinth.com/data/N6n5dqoA/dd175669d5ac228dc00453d13528ad26c1f056ac.png",
    "loaders": [
     "fabric",
@@ -8637,7 +8637,7 @@
   "MS1ZMyR7": {
    "slug": "better-ping-display-fabric",
    "title": "Better Ping Display [Fabric]",
-   "downloads": 14319028,
+   "downloads": 14329447,
    "icon": "https://cdn.modrinth.com/data/MS1ZMyR7/icon.png",
    "loaders": [
     "fabric",
@@ -8648,7 +8648,7 @@
   "lL2MtE37": {
    "slug": "bad-wither-no-cookie",
    "title": "Bad Wither No Cookie - Reloaded",
-   "downloads": 14318092,
+   "downloads": 14326565,
    "icon": "https://cdn.modrinth.com/data/lL2MtE37/a6e0b3969dec2c2fc98081d5f95ae8edac8ada95_96.webp",
    "loaders": [
     "fabric",
@@ -8668,7 +8668,7 @@
   "DFqQfIBR": {
    "slug": "craftpresence",
    "title": "CraftPresence",
-   "downloads": 13999675,
+   "downloads": 14009080,
    "icon": "https://cdn.modrinth.com/data/DFqQfIBR/16d9958b2b764a82185ad53db94ea0f37d5a80d7_96.webp",
    "loaders": [
     "fabric",
@@ -8722,7 +8722,7 @@
   "gPCdW0Wr": {
    "slug": "make_bubbles_pop",
    "title": "Make Bubbles Pop",
-   "downloads": 13966716,
+   "downloads": 13976088,
    "icon": "https://cdn.modrinth.com/data/gPCdW0Wr/4616c50230e3e716f02127a0e74f250470a07e85.png",
    "loaders": [
     "adventure",
@@ -8733,9 +8733,9 @@
     "quilt"
    ],
    "builds": {
-    "26.3": {
+    "26.2": {
      "neoforge": {
-      "pre": "2026-09-16",
+      "pre": "2026-09-05",
       "latest": "2026-09-16"
      },
      "fabric": {
@@ -8743,9 +8743,9 @@
       "latest": "2026-07-02"
      }
     },
-    "26.2": {
+    "26.3": {
      "neoforge": {
-      "pre": "2026-09-05",
+      "pre": "2026-09-16",
       "latest": "2026-09-16"
      },
      "fabric": {
@@ -8758,7 +8758,7 @@
   "vdjF5PL5": {
    "slug": "dynamictrees",
    "title": "Dynamic Trees",
-   "downloads": 13928250,
+   "downloads": 13937147,
    "icon": "https://cdn.modrinth.com/data/vdjF5PL5/6dac1c1ae1389888eb6856c70bd27c9b94bf611c_96.webp",
    "loaders": [
     "adventure",
@@ -8776,7 +8776,7 @@
   "RLzHAoZe": {
    "slug": "resourcify",
    "title": "Resourcify",
-   "downloads": 13887874,
+   "downloads": 13906909,
    "icon": "https://cdn.modrinth.com/data/RLzHAoZe/a353989ea9f0f124ebe7cf3e67274c2d72751431_96.webp",
    "loaders": [
     "fabric",
@@ -8812,7 +8812,7 @@
   "9jxwkYQL": {
    "slug": "sophisticated-core-unofficial-fabric-port",
    "title": "Sophisticated Core (Unofficial Fabric port)",
-   "downloads": 13765615,
+   "downloads": 13776591,
    "icon": "https://cdn.modrinth.com/data/9jxwkYQL/1cdcf75010fe58c81e40085534750f2b7236d08a.png",
    "loaders": [
     "fabric",
@@ -8823,7 +8823,7 @@
   "MpzVLzy5": {
    "slug": "betternether",
    "title": "BetterNether",
-   "downloads": 13756361,
+   "downloads": 13764795,
    "icon": "https://cdn.modrinth.com/data/MpzVLzy5/82b6331f54a6ba1cdc8124fc79395df18421efca_96.webp",
    "loaders": [
     "decoration",
@@ -8853,7 +8853,7 @@
   "ZzjhlDgM": {
    "slug": "create-steam-n-rails",
    "title": "Create: Steam 'n' Rails",
-   "downloads": 13599796,
+   "downloads": 13608289,
    "icon": "https://cdn.modrinth.com/data/ZzjhlDgM/efac0150d612ab52768620dd53a7e8c27ce2fb0d_96.webp",
    "loaders": [
     "adventure",
@@ -8871,7 +8871,7 @@
   "AVq17PqV": {
    "slug": "leaves-be-gone",
    "title": "Leaves Be Gone",
-   "downloads": 13593242,
+   "downloads": 13605170,
    "icon": "https://cdn.modrinth.com/data/AVq17PqV/72915db87281bf57b62cc4ec7dc9ea75865b2f5f_96.webp",
    "loaders": [
     "fabric",
@@ -8906,7 +8906,7 @@
   "Adega8YN": {
    "slug": "mmmmmmmmmmmm",
    "title": "MmmMmmMmmMmm",
-   "downloads": 13507461,
+   "downloads": 13522178,
    "icon": "https://cdn.modrinth.com/data/Adega8YN/f5e7ffbd18426c584bd43b59770fb2965d420c9f.png",
    "loaders": [
     "decoration",
@@ -8921,7 +8921,7 @@
   "CllP7wW0": {
    "slug": "smooth-scroll",
    "title": "Smooth Scrolling",
-   "downloads": 13416956,
+   "downloads": 13435252,
    "icon": "https://cdn.modrinth.com/data/CllP7wW0/6d787d5cd5fface4fe9a5f6ce0770576bca09132.png",
    "loaders": [
     "cursed",
@@ -8960,7 +8960,7 @@
   "5WeWGLoJ": {
    "slug": "forge-config-screens",
    "title": "Forge Config Screens",
-   "downloads": 13402550,
+   "downloads": 13414516,
    "icon": "https://cdn.modrinth.com/data/5WeWGLoJ/218f26d9a3c3fd683c2cc6aaa4a5c04f597cb434_96.webp",
    "loaders": [
     "fabric",
@@ -8974,7 +8974,7 @@
   "ZYgyPyfq": {
    "slug": "yungs-extras",
    "title": "YUNG's Extras",
-   "downloads": 13353595,
+   "downloads": 13365680,
    "icon": "https://cdn.modrinth.com/data/ZYgyPyfq/153c00f1d64b90c8b5fd0c5136df91a65efc1df2_96.webp",
    "loaders": [
     "adventure",
@@ -8989,7 +8989,7 @@
   "Cnejf5xM": {
    "slug": "rightclickharvest",
    "title": "RightClickHarvest",
-   "downloads": 13336365,
+   "downloads": 13355045,
    "icon": "https://cdn.modrinth.com/data/Cnejf5xM/b6e535989217836c2adc49b06f4b3c8f429afda3_96.webp",
    "loaders": [
     "fabric",
@@ -9030,7 +9030,7 @@
   "Fb4jn8m6": {
    "slug": "fallingtree",
    "title": "FallingTree",
-   "downloads": 13209324,
+   "downloads": 13223797,
    "icon": "https://cdn.modrinth.com/data/Fb4jn8m6/02610e2f41e1a4ea06b36ad5034be2b3d03b8f88_96.webp",
    "loaders": [
     "fabric",
@@ -9072,7 +9072,7 @@
   "Bh6ZOMvp": {
    "slug": "smarter-farmers-farmers-replant",
    "title": "Smarter Farmers (farmers replant)",
-   "downloads": 13108018,
+   "downloads": 13119177,
    "icon": "https://cdn.modrinth.com/data/Bh6ZOMvp/b2ae7d685a0e2e2d8cce0a1e8e103b5583b8bc53_96.webp",
    "loaders": [
     "fabric",
@@ -9085,7 +9085,7 @@
   "SszvX85I": {
    "slug": "cobblemon-mega-showdown",
    "title": "Cobblemon: Mega Showdown",
-   "downloads": 13084810,
+   "downloads": 13096117,
    "icon": "https://cdn.modrinth.com/data/SszvX85I/62338ad15814a49df76dfbece1edba24ebca4135.png",
    "loaders": [
     "adventure",
@@ -9101,7 +9101,7 @@
   "BgNRHReB": {
    "slug": "bclib",
    "title": "BCLib",
-   "downloads": 13050104,
+   "downloads": 13059466,
    "icon": "https://cdn.modrinth.com/data/BgNRHReB/9cbe79c9f1f12fd9696ba81e54d7ddd42476e777_96.webp",
    "loaders": [
     "fabric",
@@ -9126,7 +9126,7 @@
   "vqqx0QiE": {
    "slug": "sodium-extras",
    "title": "Sodium Extras",
-   "downloads": 13037488,
+   "downloads": 13046476,
    "icon": "https://cdn.modrinth.com/data/vqqx0QiE/3fcad840acf5e9e27fc71fa195f89a769f6ad27a_96.webp",
    "loaders": [
     "fabric",
@@ -9140,7 +9140,7 @@
   "4das1Fjq": {
    "slug": "flashback",
    "title": "Flashback",
-   "downloads": 12991698,
+   "downloads": 13012509,
    "icon": "https://cdn.modrinth.com/data/4das1Fjq/e81c66aacf2e12c09a95e4f971ea5e2b9f608317_96.webp",
    "loaders": [
     "fabric",
@@ -9164,7 +9164,7 @@
   "4q8UOK1d": {
    "slug": "subtle-effects",
    "title": "Subtle Effects",
-   "downloads": 12985719,
+   "downloads": 13011088,
    "icon": "https://cdn.modrinth.com/data/4q8UOK1d/8a5d3febe9a9badba435a3f66a49668d04ada01f_96.webp",
    "loaders": [
     "adventure",
@@ -9200,7 +9200,7 @@
   "kepjj2sy": {
    "slug": "shoulder-surfing-reloaded",
    "title": "Shoulder Surfing Reloaded",
-   "downloads": 12926061,
+   "downloads": 12942772,
    "icon": "https://cdn.modrinth.com/data/kepjj2sy/4e83375b655b3a9f0e981bd747b095a4009df4e9_96.webp",
    "loaders": [
     "adventure",
@@ -9243,7 +9243,7 @@
   "705gWllI": {
    "slug": "emiffect",
    "title": "EMIffect",
-   "downloads": 12870454,
+   "downloads": 12880382,
    "icon": "https://cdn.modrinth.com/data/705gWllI/e940511ee36de841ea1c55777a27f06cf0cff5e6.png",
    "loaders": [
     "cursed",
@@ -9259,7 +9259,7 @@
   "1DWmBJVA": {
    "slug": "lets-do-vinery",
    "title": "[Let's Do] Vinery",
-   "downloads": 12780174,
+   "downloads": 12790366,
    "icon": "https://cdn.modrinth.com/data/1DWmBJVA/029aec55be4d860ba0aede4939dd93332b6dafad_96.webp",
    "loaders": [
     "adventure",
@@ -9278,7 +9278,7 @@
   "h2jngREY": {
    "slug": "trek",
    "title": "Trek",
-   "downloads": 12749927,
+   "downloads": 12762105,
    "icon": "https://cdn.modrinth.com/data/h2jngREY/e4d877248cf243e4e99cd71464417388ea332835_96.webp",
    "loaders": [
     "adventure",
@@ -9339,7 +9339,7 @@
   "gqRXDo8B": {
    "slug": "villager-names-serilum",
    "title": "Villager Names",
-   "downloads": 12732410,
+   "downloads": 12744008,
    "icon": "https://cdn.modrinth.com/data/gqRXDo8B/44a24693e277ae99295054691d0acbbbf0d56774_96.webp",
    "loaders": [
     "adventure",
@@ -9392,7 +9392,7 @@
   "YsFycamt": {
    "slug": "resource-pack-overrides",
    "title": "Resource Pack Overrides",
-   "downloads": 12727757,
+   "downloads": 12741366,
    "icon": "https://cdn.modrinth.com/data/YsFycamt/e7e3f23803e72f3e3b480c15f640a8f93a60bcb4_96.webp",
    "loaders": [
     "fabric",
@@ -9427,7 +9427,7 @@
   "RV1qfVQ8": {
    "slug": "explorers-compass",
    "title": "Explorer's Compass",
-   "downloads": 12629195,
+   "downloads": 12643797,
    "icon": "https://cdn.modrinth.com/data/RV1qfVQ8/8f36254e98a4caa95684fcf4dbe72c2264c98cfc.png",
    "loaders": [
     "adventure",
@@ -9466,7 +9466,7 @@
   "AMCbgyVw": {
    "slug": "tips",
    "title": "Tips",
-   "downloads": 12621271,
+   "downloads": 12631507,
    "icon": "https://cdn.modrinth.com/data/AMCbgyVw/72004203af0b996cb8ea09c66231dc50e4a62f82.png",
    "loaders": [
     "adventure",
@@ -9481,7 +9481,7 @@
   "EnPUzSTg": {
    "slug": "xaeroplus",
    "title": "XaeroPlus",
-   "downloads": 12390355,
+   "downloads": 12397612,
    "icon": "https://cdn.modrinth.com/data/EnPUzSTg/c1924a4ab8bab6def9aa2304491df7bf49b142d1_96.webp",
    "loaders": [
     "adventure",
@@ -9526,7 +9526,7 @@
   "qw2Ls89j": {
    "slug": "rebind-narrator",
    "title": "Rebind Narrator",
-   "downloads": 12320465,
+   "downloads": 12330903,
    "icon": "https://cdn.modrinth.com/data/qw2Ls89j/83ae038314b8be2822ed4cd573721301becd2b51_96.webp",
    "loaders": [
     "fabric",
@@ -9540,7 +9540,7 @@
   "r0v8vy1s": {
    "slug": "alternate-current",
    "title": "Alternate Current",
-   "downloads": 12310090,
+   "downloads": 12324842,
    "icon": "https://cdn.modrinth.com/data/r0v8vy1s/fbb5a094676807df4b5ca1686033d5eb5fc389fd.png",
    "loaders": [
     "fabric",
@@ -9586,7 +9586,7 @@
   "POQ2i9zu": {
    "slug": "friends-and-foes",
    "title": "Friends&Foes (Fabric/Quilt)",
-   "downloads": 12301963,
+   "downloads": 12308589,
    "icon": "https://cdn.modrinth.com/data/POQ2i9zu/0d5db692d86ca2f99935ebc01123d4c55a714122_96.webp",
    "loaders": [
     "adventure",
@@ -9621,7 +9621,7 @@
   "7zlUOZvb": {
    "slug": "azurelib",
    "title": "AzureLib",
-   "downloads": 12245705,
+   "downloads": 12257516,
    "icon": "https://cdn.modrinth.com/data/7zlUOZvb/8b2cb16452c1d3bb33574519a6f5cf4ce86f13a3_96.webp",
    "loaders": [
     "babric",
@@ -9660,7 +9660,7 @@
   "fJFETWDN": {
    "slug": "lootjs",
    "title": "LootJS: KubeJS Addon",
-   "downloads": 12158038,
+   "downloads": 12167577,
    "icon": "https://cdn.modrinth.com/data/fJFETWDN/icon.png",
    "loaders": [
     "fabric",
@@ -9670,28 +9670,10 @@
    ],
    "builds": {}
   },
-  "NTi7d3Xc": {
-   "slug": "oh-the-biomes-weve-gone",
-   "title": "Oh The Biomes We've Gone",
-   "downloads": 12093697,
-   "icon": "https://cdn.modrinth.com/data/NTi7d3Xc/dd307fc5ac2b3da4f02104bfa0fe93f470108d82.png",
-   "loaders": [
-    "adventure",
-    "decoration",
-    "fabric",
-    "food",
-    "forge",
-    "mobs",
-    "neoforge",
-    "quilt",
-    "worldgen"
-   ],
-   "builds": {}
-  },
   "TjSm1wrD": {
    "slug": "modernfix-mvus",
    "title": "ModernFix-mVUS",
-   "downloads": 12057652,
+   "downloads": 12109627,
    "icon": "https://cdn.modrinth.com/data/TjSm1wrD/e1d2433476995be1b1a94ff1afaf6167752274ae_96.webp",
    "loaders": [
     "fabric",
@@ -9722,10 +9704,28 @@
     }
    }
   },
+  "NTi7d3Xc": {
+   "slug": "oh-the-biomes-weve-gone",
+   "title": "Oh The Biomes We've Gone",
+   "downloads": 12102557,
+   "icon": "https://cdn.modrinth.com/data/NTi7d3Xc/dd307fc5ac2b3da4f02104bfa0fe93f470108d82.png",
+   "loaders": [
+    "adventure",
+    "decoration",
+    "fabric",
+    "food",
+    "forge",
+    "mobs",
+    "neoforge",
+    "quilt",
+    "worldgen"
+   ],
+   "builds": {}
+  },
   "1u6JkXh5": {
    "slug": "worldedit",
    "title": "WorldEdit",
-   "downloads": 11938782,
+   "downloads": 11957600,
    "icon": "https://cdn.modrinth.com/data/1u6JkXh5/30698991048ced77e60c4e8284007d3782f2e6a3_96.webp",
    "loaders": [
     "bukkit",
@@ -9741,38 +9741,6 @@
     "utility"
    ],
    "builds": {
-    "26.3": {
-     "bukkit": {
-      "release": "2026-10-15",
-      "latest": "2026-10-15",
-      "pre": "2026-09-21"
-     },
-     "folia": {
-      "release": "2026-10-15",
-      "latest": "2026-10-15",
-      "pre": "2026-09-21"
-     },
-     "paper": {
-      "release": "2026-10-15",
-      "latest": "2026-10-15",
-      "pre": "2026-09-21"
-     },
-     "spigot": {
-      "release": "2026-10-15",
-      "latest": "2026-10-15",
-      "pre": "2026-09-21"
-     },
-     "fabric": {
-      "release": "2026-10-15",
-      "latest": "2026-10-15",
-      "pre": "2026-09-21"
-     },
-     "neoforge": {
-      "release": "2026-10-15",
-      "latest": "2026-10-15",
-      "pre": "2026-09-21"
-     }
-    },
     "26.2": {
      "bukkit": {
       "release": "2026-07-04",
@@ -9804,13 +9772,45 @@
       "latest": "2026-08-09",
       "pre": "2026-06-18"
      }
+    },
+    "26.3": {
+     "bukkit": {
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-21"
+     },
+     "folia": {
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-21"
+     },
+     "paper": {
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-21"
+     },
+     "spigot": {
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-21"
+     },
+     "fabric": {
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-21"
+     },
+     "neoforge": {
+      "release": "2026-10-15",
+      "latest": "2026-10-15",
+      "pre": "2026-09-21"
+     }
     }
    }
   },
   "TiF5QWZY": {
    "slug": "respackopts",
    "title": "Respackopts",
-   "downloads": 11875191,
+   "downloads": 11893587,
    "icon": "https://cdn.modrinth.com/data/TiF5QWZY/16b68a9cf4a526e0b03e77310c98040ac2e6225c_96.webp",
    "loaders": [
     "fabric",
@@ -9843,7 +9843,7 @@
   "ONZm0H7Y": {
    "slug": "better-block-entities",
    "title": "Better Block Entities",
-   "downloads": 11822144,
+   "downloads": 11859906,
    "icon": "https://cdn.modrinth.com/data/ONZm0H7Y/5ff4f3ad6948a0bf185f641c407878932bae3dcf.png",
    "loaders": [
     "fabric",
@@ -9880,7 +9880,7 @@
   "TQTTVgYE": {
    "slug": "carpet",
    "title": "Carpet",
-   "downloads": 11803679,
+   "downloads": 11816975,
    "icon": "https://cdn.modrinth.com/data/TQTTVgYE/3ad650635d067b6bfa09403cf5e70e0947a05c07_96.webp",
    "loaders": [
     "fabric",
@@ -9905,7 +9905,7 @@
   "ouNrBQtq": {
    "slug": "sophisticated-backpacks-unoffical-fabric-port",
    "title": "Sophisticated Backpacks (Unoffical Fabric port)",
-   "downloads": 11803397,
+   "downloads": 11814287,
    "icon": "https://cdn.modrinth.com/data/ouNrBQtq/0681de545fe72aa7e1bfccba1b8a12765f658c09_96.webp",
    "loaders": [
     "equipment",
@@ -9917,7 +9917,7 @@
   "IKARgflD": {
    "slug": "diagonal-fences",
    "title": "Diagonal Fences",
-   "downloads": 11791383,
+   "downloads": 11804368,
    "icon": "https://cdn.modrinth.com/data/IKARgflD/c72c104166bb80db7a19926d12989eeaacadaae5_96.webp",
    "loaders": [
     "decoration",
@@ -9952,7 +9952,7 @@
   "C7I0BCni": {
    "slug": "macaws-windows",
    "title": "Macaw's Windows",
-   "downloads": 11772157,
+   "downloads": 11783410,
    "icon": "https://cdn.modrinth.com/data/C7I0BCni/7eb5e7816f887154e69a4001bee5bcc143242b32_96.webp",
    "loaders": [
     "decoration",
@@ -9994,7 +9994,7 @@
   "F8BQNPWX": {
    "slug": "naturalist",
    "title": "Naturalist",
-   "downloads": 11761923,
+   "downloads": 11771595,
    "icon": "https://cdn.modrinth.com/data/F8BQNPWX/e52917ba0f5ecc1d827f0d4465a15422e0584bf5_96.webp",
    "loaders": [
     "adventure",
@@ -10030,7 +10030,7 @@
   "6FtRfnLg": {
    "slug": "do-a-barrel-roll",
    "title": "Do a Barrel Roll",
-   "downloads": 11760683,
+   "downloads": 11769825,
    "icon": "https://cdn.modrinth.com/data/6FtRfnLg/adc87c81f55b75a07d29349452c1c8da0ad925a4_96.webp",
    "loaders": [
     "equipment",
@@ -10057,7 +10057,7 @@
   "CFX9ftUJ": {
    "slug": "advanced-netherite",
    "title": "Advanced Netherite",
-   "downloads": 11736186,
+   "downloads": 11746786,
    "icon": "https://cdn.modrinth.com/data/CFX9ftUJ/7b013fed831aa73654edaaff022455543f301468.gif",
    "loaders": [
     "adventure",
@@ -10093,7 +10093,7 @@
   "8VDCUS3b": {
    "slug": "the-lost-cities",
    "title": "The Lost Cities",
-   "downloads": 11594588,
+   "downloads": 11602695,
    "icon": "https://cdn.modrinth.com/data/8VDCUS3b/32939d6f7f9e73649a551407159291313c157720_96.webp",
    "loaders": [
     "adventure",
@@ -10130,7 +10130,7 @@
   "GmwLse2I": {
    "slug": "macaws-fences-and-walls",
    "title": "Macaw's Fences and Walls",
-   "downloads": 11563283,
+   "downloads": 11574069,
    "icon": "https://cdn.modrinth.com/data/GmwLse2I/ebe4d2375e0a402e5587665ba9da5eb50f37422a_96.webp",
    "loaders": [
     "decoration",
@@ -10172,7 +10172,7 @@
   "NK39zBp2": {
    "slug": "blur-plus",
    "title": "Blur+",
-   "downloads": 11533251,
+   "downloads": 11545870,
    "icon": "https://cdn.modrinth.com/data/NK39zBp2/1bb976c95042f20f26e27e6c4eb9e359e45d5002.webp",
    "loaders": [
     "decoration",
@@ -10214,7 +10214,7 @@
   "8DfbfASn": {
    "slug": "when-dungeons-arise",
    "title": "When Dungeons Arise",
-   "downloads": 11479779,
+   "downloads": 11488782,
    "icon": "https://cdn.modrinth.com/data/8DfbfASn/4240773f6aa5f8c69f44a5e2e0ff313f98ff3389_96.webp",
    "loaders": [
     "adventure",
@@ -10228,7 +10228,7 @@
   "CU0PAyzb": {
    "slug": "paxi",
    "title": "Paxi",
-   "downloads": 11475872,
+   "downloads": 11487608,
    "icon": "https://cdn.modrinth.com/data/CU0PAyzb/7cdff54a4bbcda7574159625c31e96cff55744a4_96.webp",
    "loaders": [
     "fabric",
@@ -10242,7 +10242,7 @@
   "kU1G12Nn": {
    "slug": "createaddition",
    "title": "Create Crafts & Additions",
-   "downloads": 11471811,
+   "downloads": 11484097,
    "icon": "https://cdn.modrinth.com/data/kU1G12Nn/d8d1ec226747a800ba175f70ad00a80f37047cb6_96.webp",
    "loaders": [
     "decoration",
@@ -10261,7 +10261,7 @@
   "hl5OLM95": {
    "slug": "geophilic",
    "title": "Geophilic",
-   "downloads": 11281731,
+   "downloads": 11294089,
    "icon": "https://cdn.modrinth.com/data/hl5OLM95/6846fa80f84d2baa0dd07f8ee65b6f10bf223a84_96.webp",
    "loaders": [
     "adventure",
@@ -10273,28 +10273,6 @@
     "worldgen"
    ],
    "builds": {
-    "26.3": {
-     "fabric": {
-      "release": "2026-09-24",
-      "latest": "2026-09-24"
-     },
-     "forge": {
-      "release": "2026-09-24",
-      "latest": "2026-09-24"
-     },
-     "neoforge": {
-      "release": "2026-09-24",
-      "latest": "2026-09-24"
-     },
-     "quilt": {
-      "release": "2026-09-24",
-      "latest": "2026-09-24"
-     },
-     "datapack": {
-      "release": "2026-09-24",
-      "latest": "2026-09-24"
-     }
-    },
     "26.2": {
      "fabric": {
       "release": "2026-06-16",
@@ -10316,13 +10294,35 @@
       "release": "2026-06-16",
       "latest": "2026-09-24"
      }
+    },
+    "26.3": {
+     "fabric": {
+      "release": "2026-09-24",
+      "latest": "2026-09-24"
+     },
+     "forge": {
+      "release": "2026-09-24",
+      "latest": "2026-09-24"
+     },
+     "neoforge": {
+      "release": "2026-09-24",
+      "latest": "2026-09-24"
+     },
+     "quilt": {
+      "release": "2026-09-24",
+      "latest": "2026-09-24"
+     },
+     "datapack": {
+      "release": "2026-09-24",
+      "latest": "2026-09-24"
+     }
     }
    }
   },
   "o6qsdrrQ": {
    "slug": "zume",
    "title": "Zume",
-   "downloads": 11258251,
+   "downloads": 11267358,
    "icon": "https://cdn.modrinth.com/data/o6qsdrrQ/baecae4eaaac86de4ac699f57e5203edb3019f3f.png",
    "loaders": [
     "fabric",
@@ -10335,7 +10335,7 @@
   "Vz96hXMh": {
    "slug": "highlight",
    "title": "Highlight",
-   "downloads": 11249661,
+   "downloads": 11257661,
    "icon": "https://cdn.modrinth.com/data/Vz96hXMh/e4a210b52cd7b46b6b803c5d52e7b6bef7d478a3_96.webp",
    "loaders": [
     "decoration",
@@ -10369,7 +10369,7 @@
   "r4PuRGfV": {
    "slug": "mes-moogs-end-structures",
    "title": "MES - Moog's End Structures",
-   "downloads": 11249656,
+   "downloads": 11257297,
    "icon": "https://cdn.modrinth.com/data/r4PuRGfV/d6eddee27d7863a8bae92c5d0a91a80b8e89f537.gif",
    "loaders": [
     "adventure",
@@ -10381,20 +10381,6 @@
     "worldgen"
    ],
    "builds": {
-    "26.3": {
-     "fabric": {
-      "release": "2026-09-17",
-      "latest": "2026-09-17"
-     },
-     "forge": {
-      "release": "2026-09-17",
-      "latest": "2026-09-17"
-     },
-     "neoforge": {
-      "release": "2026-09-17",
-      "latest": "2026-09-17"
-     }
-    },
     "26.2": {
      "fabric": {
       "release": "2026-05-22",
@@ -10408,415 +10394,27 @@
       "release": "2026-05-22",
       "latest": "2026-09-17"
      }
-    }
-   }
-  },
-  "k23mNPhZ": {
-   "slug": "aquamirae",
-   "title": "Aquamirae",
-   "downloads": 11229317,
-   "icon": "https://cdn.modrinth.com/data/k23mNPhZ/e33ffb391c8c05f1ea99b09d00d5369e0ac44ae7_96.webp",
-   "loaders": [
-    "adventure",
-    "equipment",
-    "fabric",
-    "food",
-    "forge",
-    "magic",
-    "mobs",
-    "neoforge",
-    "quilt",
-    "worldgen"
-   ],
-   "builds": {}
-  },
-  "ordsPcFz": {
-   "slug": "kotlin-for-forge",
-   "title": "Kotlin for Forge",
-   "downloads": 54917956,
-   "icon": "https://cdn.modrinth.com/data/ordsPcFz/064b8f129b776eb303f7f8b1a610e21d153c74b9_96.webp",
-   "loaders": [
-    "forge",
-    "library",
-    "neoforge"
-   ],
-   "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-10-10",
-      "latest": "2026-11-09"
-     }
     },
-    "26.2": {
-     "neoforge": {
-      "release": "2026-06-28",
-      "latest": "2026-11-09"
-     }
-    }
-   }
-  },
-  "GchcoXML": {
-   "slug": "oculus",
-   "title": "Oculus",
-   "downloads": 38735801,
-   "icon": "https://cdn.modrinth.com/data/GchcoXML/09ef853cdfd3d467dead4faef37102535a2185d5_96.webp",
-   "loaders": [
-    "decoration",
-    "forge",
-    "neoforge",
-    "optimization"
-   ],
-   "builds": {}
-  },
-  "SzzJttH8": {
-   "slug": "timeless-and-classics-zero",
-   "title": "[TaCZ] Timeless and Classics Zero",
-   "downloads": 32848265,
-   "icon": "https://cdn.modrinth.com/data/SzzJttH8/fd27766d2bb8390d284696b1dbd358f87e081439_96.webp",
-   "loaders": [
-    "adventure",
-    "equipment",
-    "forge",
-    "neoforge"
-   ],
-   "builds": {}
-  },
-  "Aqlf1Shp": {
-   "slug": "forgified-fabric-api",
-   "title": "Forgified Fabric API",
-   "downloads": 30939240,
-   "icon": "https://cdn.modrinth.com/data/Aqlf1Shp/bcdcfed483b0365807f75181eea89b7960cd3b1b_96.webp",
-   "loaders": [
-    "forge",
-    "library",
-    "neoforge"
-   ],
-   "builds": {
-    "26.2": {
-     "neoforge": {
-      "release": "2026-10-23",
-      "latest": "2026-10-23",
-      "pre": "2026-10-07"
-     }
-    }
-   }
-  },
-  "LNytGWDc": {
-   "slug": "create",
-   "title": "Create",
-   "downloads": 28201215,
-   "icon": "https://cdn.modrinth.com/data/LNytGWDc/61d716699bcf1ec42ed4926a9e1c7311be6087e2_96.webp",
-   "loaders": [
-    "decoration",
-    "forge",
-    "neoforge",
-    "technology",
-    "utility"
-   ],
-   "builds": {}
-  },
-  "u58R1TMW": {
-   "slug": "connector",
-   "title": "Sinytra Connector",
-   "downloads": 27327964,
-   "icon": "https://cdn.modrinth.com/data/u58R1TMW/cc0775e1d038b26b7c91144fe4c5ee3b21d3a6a3_96.webp",
-   "loaders": [
-    "cursed",
-    "forge",
-    "library",
-    "magic",
-    "neoforge",
-    "utility"
-   ],
-   "builds": {
-    "26.2": {
-     "neoforge": {
-      "pre": "2026-10-14",
-      "latest": "2026-10-30"
-     }
-    }
-   }
-  },
-  "qnQsVE2z": {
-   "slug": "quark",
-   "title": "Quark",
-   "downloads": 26438382,
-   "icon": "https://cdn.modrinth.com/data/qnQsVE2z/aef2119751d026421b9e9dc83d4470eec9f91a16_96.webp",
-   "loaders": [
-    "forge",
-    "game-mechanics",
-    "neoforge",
-    "technology",
-    "utility"
-   ],
-   "builds": {}
-  },
-  "R2OftAxM": {
-   "slug": "farmers-delight",
-   "title": "Farmer's Delight",
-   "downloads": 25857505,
-   "icon": "https://cdn.modrinth.com/data/R2OftAxM/8e7aa38ab94d94bb0a2894a218b69beb49002b34.png",
-   "loaders": [
-    "decoration",
-    "equipment",
-    "food",
-    "forge",
-    "neoforge"
-   ],
-   "builds": {}
-  },
-  "TyCTlI4b": {
-   "slug": "sophisticated-backpacks",
-   "title": "Sophisticated Backpacks",
-   "downloads": 21018758,
-   "icon": "https://cdn.modrinth.com/data/TyCTlI4b/e31c7e2f8769d317339e25b2a8d1b40fbf312729_96.webp",
-   "loaders": [
-    "forge",
-    "neoforge",
-    "storage"
-   ],
-   "builds": {
     "26.3": {
+     "fabric": {
+      "release": "2026-09-17",
+      "latest": "2026-09-17"
+     },
+     "forge": {
+      "release": "2026-09-17",
+      "latest": "2026-09-17"
+     },
      "neoforge": {
-      "release": "2026-09-30",
-      "latest": "2026-11-15"
-     }
-    },
-    "26.2": {
-     "neoforge": {
-      "release": "2026-06-20",
-      "latest": "2026-11-15"
-     }
-    }
-   }
-  },
-  "nmoqTijg": {
-   "slug": "sophisticated-core",
-   "title": "Sophisticated Core",
-   "downloads": 20580813,
-   "icon": "https://cdn.modrinth.com/data/nmoqTijg/83f980596761b59f5c3e4e4d2c90d031d9d69ff6.png",
-   "loaders": [
-    "forge",
-    "library",
-    "neoforge",
-    "storage"
-   ],
-   "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-09-30",
-      "latest": "2026-11-15"
-     }
-    },
-    "26.2": {
-     "neoforge": {
-      "release": "2026-06-20",
-      "latest": "2026-11-15"
+      "release": "2026-09-17",
+      "latest": "2026-09-17"
      }
     }
    }
-  },
-  "46KJle7n": {
-   "slug": "l_enders-cataclysm",
-   "title": "L_Ender's Cataclysm",
-   "downloads": 19456452,
-   "icon": "https://cdn.modrinth.com/data/46KJle7n/4de43b519c4b4ce09c5a3155e908da446dbf455a_96.webp",
-   "loaders": [
-    "adventure",
-    "equipment",
-    "forge",
-    "mobs",
-    "neoforge"
-   ],
-   "builds": {}
-  },
-  "jJfV67b1": {
-   "slug": "citadel",
-   "title": "Citadel",
-   "downloads": 17442463,
-   "icon": "https://cdn.modrinth.com/data/jJfV67b1/0aa5d9f63754fa9a39b9d3deff95e5819fa5b721_96.webp",
-   "loaders": [
-    "forge",
-    "library",
-    "neoforge"
-   ],
-   "builds": {}
-  },
-  "MVARlG2f": {
-   "slug": "zeta",
-   "title": "Zeta",
-   "downloads": 16669647,
-   "icon": "https://cdn.modrinth.com/data/MVARlG2f/d09aff2a1c134defab38a19db7c7431df8173a14_96.webp",
-   "loaders": [
-    "forge",
-    "library",
-    "neoforge"
-   ],
-   "builds": {}
-  },
-  "2cMuAZAp": {
-   "slug": "alexs-mobs",
-   "title": "Alex's Mobs",
-   "downloads": 15744146,
-   "icon": "https://cdn.modrinth.com/data/2cMuAZAp/fbe04602fb0fb336be05e7c40378156b49d50156_96.webp",
-   "loaders": [
-    "adventure",
-    "equipment",
-    "forge",
-    "mobs",
-    "neoforge"
-   ],
-   "builds": {}
-  },
-  "DSVgwcji": {
-   "slug": "ai-improvements",
-   "title": "AI Improvements: Performance Tuning",
-   "downloads": 14588506,
-   "icon": "https://cdn.modrinth.com/data/DSVgwcji/819dbaeb9b0dac8250a1403d1db7e7646f9a9b8f.png",
-   "loaders": [
-    "forge",
-    "neoforge",
-    "optimization"
-   ],
-   "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-04-05",
-      "latest": "2026-10-03"
-     }
-    },
-    "26.2": {
-     "neoforge": {
-      "release": "2026-04-05",
-      "latest": "2026-04-05"
-     }
-    }
-   }
-  },
-  "H1sntfo8": {
-   "slug": "guard-villagers",
-   "title": "Guard Villagers",
-   "downloads": 13870386,
-   "icon": "https://cdn.modrinth.com/data/H1sntfo8/b95a237f1b05eb3aa8e27b16b756db99d327c37f_96.webp",
-   "loaders": [
-    "forge",
-    "mobs",
-    "neoforge",
-    "utility"
-   ],
-   "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-10-05",
-      "latest": "2026-10-05"
-     }
-    },
-    "26.2": {
-     "neoforge": {
-      "release": "2026-06-20",
-      "latest": "2026-09-12"
-     }
-    }
-   }
-  },
-  "icU5P2Mk": {
-   "slug": "spartan-weaponry",
-   "title": "Spartan Weaponry",
-   "downloads": 13436776,
-   "icon": "https://cdn.modrinth.com/data/icU5P2Mk/f13551ab4b8e441a15214df5680bd0c953f8633c_96.webp",
-   "loaders": [
-    "equipment",
-    "forge",
-    "game-mechanics",
-    "neoforge"
-   ],
-   "builds": {}
-  },
-  "FYpiwiBR": {
-   "slug": "connector-extras",
-   "title": "Connector Extras",
-   "downloads": 12839112,
-   "icon": "https://cdn.modrinth.com/data/FYpiwiBR/4d971565fdc65e96bef4caf84de5611f3f1fcbb0_96.webp",
-   "loaders": [
-    "forge",
-    "neoforge",
-    "utility"
-   ],
-   "builds": {
-    "26.2": {
-     "neoforge": {
-      "release": "2026-10-14",
-      "latest": "2026-10-14"
-     }
-    }
-   }
-  },
-  "RYtXKJPr": {
-   "slug": "gravestone-mod",
-   "title": "GraveStone Mod",
-   "downloads": 12663816,
-   "icon": "https://cdn.modrinth.com/data/RYtXKJPr/ee9d4610b3892547c20ac61bcdb2517d1b3a4649_96.webp",
-   "loaders": [
-    "adventure",
-    "forge",
-    "neoforge",
-    "technology",
-    "utility"
-   ],
-   "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-09-25",
-      "latest": "2026-10-01"
-     }
-    },
-    "26.2": {
-     "neoforge": {
-      "release": "2026-07-30",
-      "latest": "2026-08-17",
-      "pre": "2026-06-16"
-     }
-    }
-   }
-  },
-  "R0bDWFAW": {
-   "slug": "touhou-little-maid",
-   "title": "Touhou Little Maid",
-   "downloads": 11854777,
-   "icon": "https://cdn.modrinth.com/data/R0bDWFAW/63bf98269f3a9f695a4d04328b42a8c2a117c3fc_96.webp",
-   "loaders": [
-    "decoration",
-    "forge",
-    "mobs",
-    "neoforge",
-    "utility"
-   ],
-   "builds": {}
-  },
-  "U6GY0xp0": {
-   "slug": "alexs-caves",
-   "title": "Alex's Caves",
-   "downloads": 11511584,
-   "icon": "https://cdn.modrinth.com/data/U6GY0xp0/4165eef78a7efa0f5acda964dd094c08ee0e5680.png",
-   "loaders": [
-    "adventure",
-    "equipment",
-    "food",
-    "forge",
-    "game-mechanics",
-    "magic",
-    "mobs",
-    "neoforge",
-    "technology",
-    "transportation",
-    "worldgen"
-   ],
-   "builds": {}
   },
   "Kp2uclYl": {
    "slug": "inventoryhudplus",
    "title": "InventoryHUD+",
-   "downloads": 11216968,
+   "downloads": 11237008,
    "icon": "https://cdn.modrinth.com/data/Kp2uclYl/9a7a5546c3e77ecac35c07bf5ea3ec7e71c9a8f3_96.webp",
    "loaders": [
     "adventure",
@@ -10858,10 +10456,412 @@
     }
    }
   },
+  "ordsPcFz": {
+   "slug": "kotlin-for-forge",
+   "title": "Kotlin for Forge",
+   "downloads": 54973424,
+   "icon": "https://cdn.modrinth.com/data/ordsPcFz/064b8f129b776eb303f7f8b1a610e21d153c74b9_96.webp",
+   "loaders": [
+    "forge",
+    "library",
+    "neoforge"
+   ],
+   "builds": {
+    "26.2": {
+     "neoforge": {
+      "release": "2026-06-28",
+      "latest": "2026-11-09"
+     }
+    },
+    "26.3": {
+     "neoforge": {
+      "release": "2026-10-10",
+      "latest": "2026-11-09"
+     }
+    }
+   }
+  },
+  "GchcoXML": {
+   "slug": "oculus",
+   "title": "Oculus",
+   "downloads": 38764429,
+   "icon": "https://cdn.modrinth.com/data/GchcoXML/09ef853cdfd3d467dead4faef37102535a2185d5_96.webp",
+   "loaders": [
+    "decoration",
+    "forge",
+    "neoforge",
+    "optimization"
+   ],
+   "builds": {}
+  },
+  "SzzJttH8": {
+   "slug": "timeless-and-classics-zero",
+   "title": "[TaCZ] Timeless and Classics Zero",
+   "downloads": 32875134,
+   "icon": "https://cdn.modrinth.com/data/SzzJttH8/fd27766d2bb8390d284696b1dbd358f87e081439_96.webp",
+   "loaders": [
+    "adventure",
+    "equipment",
+    "forge",
+    "neoforge"
+   ],
+   "builds": {}
+  },
+  "Aqlf1Shp": {
+   "slug": "forgified-fabric-api",
+   "title": "Forgified Fabric API",
+   "downloads": 30972803,
+   "icon": "https://cdn.modrinth.com/data/Aqlf1Shp/bcdcfed483b0365807f75181eea89b7960cd3b1b_96.webp",
+   "loaders": [
+    "forge",
+    "library",
+    "neoforge"
+   ],
+   "builds": {
+    "26.2": {
+     "neoforge": {
+      "release": "2026-10-23",
+      "latest": "2026-10-23",
+      "pre": "2026-10-07"
+     }
+    }
+   }
+  },
+  "LNytGWDc": {
+   "slug": "create",
+   "title": "Create",
+   "downloads": 28226502,
+   "icon": "https://cdn.modrinth.com/data/LNytGWDc/61d716699bcf1ec42ed4926a9e1c7311be6087e2_96.webp",
+   "loaders": [
+    "decoration",
+    "forge",
+    "neoforge",
+    "technology",
+    "utility"
+   ],
+   "builds": {}
+  },
+  "u58R1TMW": {
+   "slug": "connector",
+   "title": "Sinytra Connector",
+   "downloads": 27355569,
+   "icon": "https://cdn.modrinth.com/data/u58R1TMW/cc0775e1d038b26b7c91144fe4c5ee3b21d3a6a3_96.webp",
+   "loaders": [
+    "cursed",
+    "forge",
+    "library",
+    "magic",
+    "neoforge",
+    "utility"
+   ],
+   "builds": {
+    "26.2": {
+     "neoforge": {
+      "pre": "2026-10-14",
+      "latest": "2026-10-30"
+     }
+    }
+   }
+  },
+  "qnQsVE2z": {
+   "slug": "quark",
+   "title": "Quark",
+   "downloads": 26455332,
+   "icon": "https://cdn.modrinth.com/data/qnQsVE2z/aef2119751d026421b9e9dc83d4470eec9f91a16_96.webp",
+   "loaders": [
+    "forge",
+    "game-mechanics",
+    "neoforge",
+    "technology",
+    "utility"
+   ],
+   "builds": {}
+  },
+  "R2OftAxM": {
+   "slug": "farmers-delight",
+   "title": "Farmer's Delight",
+   "downloads": 25885352,
+   "icon": "https://cdn.modrinth.com/data/R2OftAxM/8e7aa38ab94d94bb0a2894a218b69beb49002b34.png",
+   "loaders": [
+    "decoration",
+    "equipment",
+    "food",
+    "forge",
+    "neoforge"
+   ],
+   "builds": {}
+  },
+  "TyCTlI4b": {
+   "slug": "sophisticated-backpacks",
+   "title": "Sophisticated Backpacks",
+   "downloads": 21051140,
+   "icon": "https://cdn.modrinth.com/data/TyCTlI4b/e31c7e2f8769d317339e25b2a8d1b40fbf312729_96.webp",
+   "loaders": [
+    "forge",
+    "neoforge",
+    "storage"
+   ],
+   "builds": {
+    "26.3": {
+     "neoforge": {
+      "release": "2026-09-30",
+      "latest": "2026-11-15"
+     }
+    },
+    "26.2": {
+     "neoforge": {
+      "release": "2026-06-20",
+      "latest": "2026-11-15"
+     }
+    }
+   }
+  },
+  "nmoqTijg": {
+   "slug": "sophisticated-core",
+   "title": "Sophisticated Core",
+   "downloads": 20616111,
+   "icon": "https://cdn.modrinth.com/data/nmoqTijg/83f980596761b59f5c3e4e4d2c90d031d9d69ff6.png",
+   "loaders": [
+    "forge",
+    "library",
+    "neoforge",
+    "storage"
+   ],
+   "builds": {
+    "26.3": {
+     "neoforge": {
+      "release": "2026-09-30",
+      "latest": "2026-11-16"
+     }
+    },
+    "26.2": {
+     "neoforge": {
+      "release": "2026-06-20",
+      "latest": "2026-11-16"
+     }
+    }
+   }
+  },
+  "46KJle7n": {
+   "slug": "l_enders-cataclysm",
+   "title": "L_Ender's Cataclysm",
+   "downloads": 19468064,
+   "icon": "https://cdn.modrinth.com/data/46KJle7n/4de43b519c4b4ce09c5a3155e908da446dbf455a_96.webp",
+   "loaders": [
+    "adventure",
+    "equipment",
+    "forge",
+    "mobs",
+    "neoforge"
+   ],
+   "builds": {}
+  },
+  "jJfV67b1": {
+   "slug": "citadel",
+   "title": "Citadel",
+   "downloads": 17455523,
+   "icon": "https://cdn.modrinth.com/data/jJfV67b1/0aa5d9f63754fa9a39b9d3deff95e5819fa5b721_96.webp",
+   "loaders": [
+    "forge",
+    "library",
+    "neoforge"
+   ],
+   "builds": {}
+  },
+  "MVARlG2f": {
+   "slug": "zeta",
+   "title": "Zeta",
+   "downloads": 16686685,
+   "icon": "https://cdn.modrinth.com/data/MVARlG2f/d09aff2a1c134defab38a19db7c7431df8173a14_96.webp",
+   "loaders": [
+    "forge",
+    "library",
+    "neoforge"
+   ],
+   "builds": {}
+  },
+  "2cMuAZAp": {
+   "slug": "alexs-mobs",
+   "title": "Alex's Mobs",
+   "downloads": 15752436,
+   "icon": "https://cdn.modrinth.com/data/2cMuAZAp/fbe04602fb0fb336be05e7c40378156b49d50156_96.webp",
+   "loaders": [
+    "adventure",
+    "equipment",
+    "forge",
+    "mobs",
+    "neoforge"
+   ],
+   "builds": {}
+  },
+  "DSVgwcji": {
+   "slug": "ai-improvements",
+   "title": "AI Improvements: Performance Tuning",
+   "downloads": 14602523,
+   "icon": "https://cdn.modrinth.com/data/DSVgwcji/819dbaeb9b0dac8250a1403d1db7e7646f9a9b8f.png",
+   "loaders": [
+    "forge",
+    "neoforge",
+    "optimization"
+   ],
+   "builds": {
+    "26.3": {
+     "neoforge": {
+      "release": "2026-04-05",
+      "latest": "2026-10-03"
+     }
+    },
+    "26.2": {
+     "neoforge": {
+      "release": "2026-04-05",
+      "latest": "2026-04-05"
+     }
+    }
+   }
+  },
+  "H1sntfo8": {
+   "slug": "guard-villagers",
+   "title": "Guard Villagers",
+   "downloads": 13882735,
+   "icon": "https://cdn.modrinth.com/data/H1sntfo8/b95a237f1b05eb3aa8e27b16b756db99d327c37f_96.webp",
+   "loaders": [
+    "forge",
+    "mobs",
+    "neoforge",
+    "utility"
+   ],
+   "builds": {
+    "26.3": {
+     "neoforge": {
+      "release": "2026-10-05",
+      "latest": "2026-10-05"
+     }
+    },
+    "26.2": {
+     "neoforge": {
+      "release": "2026-06-20",
+      "latest": "2026-09-12"
+     }
+    }
+   }
+  },
+  "icU5P2Mk": {
+   "slug": "spartan-weaponry",
+   "title": "Spartan Weaponry",
+   "downloads": 13444772,
+   "icon": "https://cdn.modrinth.com/data/icU5P2Mk/f13551ab4b8e441a15214df5680bd0c953f8633c_96.webp",
+   "loaders": [
+    "equipment",
+    "forge",
+    "game-mechanics",
+    "neoforge"
+   ],
+   "builds": {}
+  },
+  "FYpiwiBR": {
+   "slug": "connector-extras",
+   "title": "Connector Extras",
+   "downloads": 12850177,
+   "icon": "https://cdn.modrinth.com/data/FYpiwiBR/4d971565fdc65e96bef4caf84de5611f3f1fcbb0_96.webp",
+   "loaders": [
+    "forge",
+    "neoforge",
+    "utility"
+   ],
+   "builds": {
+    "26.2": {
+     "neoforge": {
+      "release": "2026-10-14",
+      "latest": "2026-10-14"
+     }
+    }
+   }
+  },
+  "RYtXKJPr": {
+   "slug": "gravestone-mod",
+   "title": "GraveStone Mod",
+   "downloads": 12676787,
+   "icon": "https://cdn.modrinth.com/data/RYtXKJPr/ee9d4610b3892547c20ac61bcdb2517d1b3a4649_96.webp",
+   "loaders": [
+    "adventure",
+    "forge",
+    "neoforge",
+    "technology",
+    "utility"
+   ],
+   "builds": {
+    "26.3": {
+     "neoforge": {
+      "release": "2026-09-25",
+      "latest": "2026-10-01"
+     }
+    },
+    "26.2": {
+     "neoforge": {
+      "release": "2026-07-30",
+      "latest": "2026-08-17",
+      "pre": "2026-06-16"
+     }
+    }
+   }
+  },
+  "R0bDWFAW": {
+   "slug": "touhou-little-maid",
+   "title": "Touhou Little Maid",
+   "downloads": 11861571,
+   "icon": "https://cdn.modrinth.com/data/R0bDWFAW/63bf98269f3a9f695a4d04328b42a8c2a117c3fc_96.webp",
+   "loaders": [
+    "decoration",
+    "forge",
+    "mobs",
+    "neoforge",
+    "utility"
+   ],
+   "builds": {}
+  },
+  "U6GY0xp0": {
+   "slug": "alexs-caves",
+   "title": "Alex's Caves",
+   "downloads": 11515988,
+   "icon": "https://cdn.modrinth.com/data/U6GY0xp0/4165eef78a7efa0f5acda964dd094c08ee0e5680.png",
+   "loaders": [
+    "adventure",
+    "equipment",
+    "food",
+    "forge",
+    "game-mechanics",
+    "magic",
+    "mobs",
+    "neoforge",
+    "technology",
+    "transportation",
+    "worldgen"
+   ],
+   "builds": {}
+  },
+  "k23mNPhZ": {
+   "slug": "aquamirae",
+   "title": "Aquamirae",
+   "downloads": 11236539,
+   "icon": "https://cdn.modrinth.com/data/k23mNPhZ/e33ffb391c8c05f1ea99b09d00d5369e0ac44ae7_96.webp",
+   "loaders": [
+    "adventure",
+    "equipment",
+    "fabric",
+    "food",
+    "forge",
+    "magic",
+    "mobs",
+    "neoforge",
+    "quilt",
+    "worldgen"
+   ],
+   "builds": {}
+  },
   "UT2M39wf": {
    "slug": "copycats",
    "title": "Create: Copycats+",
-   "downloads": 11178490,
+   "downloads": 11193822,
    "icon": "https://cdn.modrinth.com/data/UT2M39wf/17960b56556c644249686a22172eda0924f8bbe0_96.webp",
    "loaders": [
     "decoration",
@@ -10875,7 +10875,7 @@
   "fgmhI8kH": {
    "slug": "ct-overhaul-village",
    "title": "ChoiceTheorem's Overhauled Village",
-   "downloads": 11044346,
+   "downloads": 11053563,
    "icon": "https://cdn.modrinth.com/data/fgmhI8kH/9c616710df27b0bc60281a7ad69a2a6f77ea2d72_96.webp",
    "loaders": [
     "adventure",
@@ -10913,7 +10913,7 @@
   "atHH8NyV": {
    "slug": "legendary-tooltips",
    "title": "Legendary Tooltips",
-   "downloads": 11035130,
+   "downloads": 11045120,
    "icon": "https://cdn.modrinth.com/data/atHH8NyV/bd47257c8d4aca0e04c43269e5beb7af680b144b_96.webp",
    "loaders": [
     "adventure",
@@ -10956,24 +10956,10 @@
     }
    }
   },
-  "bI8Nt3uA": {
-   "slug": "cobblemon-pokenav",
-   "title": "Cobblemon PokeNav",
-   "downloads": 11001554,
-   "icon": "https://cdn.modrinth.com/data/bI8Nt3uA/ddfdb17c516e97c28941acb153bf0f051b7d02d5.png",
-   "loaders": [
-    "equipment",
-    "fabric",
-    "neoforge",
-    "social",
-    "utility"
-   ],
-   "builds": {}
-  },
   "nT86WUER": {
    "slug": "unilib",
    "title": "UniLib",
-   "downloads": 11000926,
+   "downloads": 11013767,
    "icon": "https://cdn.modrinth.com/data/nT86WUER/18a8e4a90f336acdfc10d670248495eb41315196.png",
    "loaders": [
     "fabric",
@@ -11024,10 +11010,24 @@
     }
    }
   },
+  "bI8Nt3uA": {
+   "slug": "cobblemon-pokenav",
+   "title": "Cobblemon PokeNav",
+   "downloads": 11011747,
+   "icon": "https://cdn.modrinth.com/data/bI8Nt3uA/ddfdb17c516e97c28941acb153bf0f051b7d02d5.png",
+   "loaders": [
+    "equipment",
+    "fabric",
+    "neoforge",
+    "social",
+    "utility"
+   ],
+   "builds": {}
+  },
   "GNxdLCoP": {
    "slug": "cull-leaves",
    "title": "Cull Leaves",
-   "downloads": 10993526,
+   "downloads": 11007925,
    "icon": "https://cdn.modrinth.com/data/GNxdLCoP/icon.png",
    "loaders": [
     "fabric",
@@ -11070,7 +11070,7 @@
   "MI1LWe93": {
    "slug": "creeper-overhaul",
    "title": "Creeper Overhaul",
-   "downloads": 10969414,
+   "downloads": 10975849,
    "icon": "https://cdn.modrinth.com/data/MI1LWe93/d42fb7a69f1e7a86584fa1ed43520af98acec065.png",
    "loaders": [
     "adventure",
@@ -11081,27 +11081,10 @@
    ],
    "builds": {}
   },
-  "WBvnqHfV": {
-   "slug": "natures-spirit",
-   "title": "Nature's Spirit",
-   "downloads": 10888642,
-   "icon": "https://cdn.modrinth.com/data/WBvnqHfV/18a231be7363cacb9411c5dd5f0e803f3bbf9997.webp",
-   "loaders": [
-    "adventure",
-    "decoration",
-    "fabric",
-    "food",
-    "forge",
-    "neoforge",
-    "quilt",
-    "worldgen"
-   ],
-   "builds": {}
-  },
   "6xwxDTgf": {
    "slug": "vanillabackport",
    "title": "Vanilla Backport",
-   "downloads": 10884965,
+   "downloads": 10901418,
    "icon": "https://cdn.modrinth.com/data/6xwxDTgf/9b2a6826b723d74570e293ab6b96dbe28f4fd993_96.webp",
    "loaders": [
     "adventure",
@@ -11115,10 +11098,27 @@
    ],
    "builds": {}
   },
+  "WBvnqHfV": {
+   "slug": "natures-spirit",
+   "title": "Nature's Spirit",
+   "downloads": 10894932,
+   "icon": "https://cdn.modrinth.com/data/WBvnqHfV/18a231be7363cacb9411c5dd5f0e803f3bbf9997.webp",
+   "loaders": [
+    "adventure",
+    "decoration",
+    "fabric",
+    "food",
+    "forge",
+    "neoforge",
+    "quilt",
+    "worldgen"
+   ],
+   "builds": {}
+  },
   "Ins7SzzR": {
    "slug": "neat",
    "title": "Neat",
-   "downloads": 10802571,
+   "downloads": 10810271,
    "icon": "https://cdn.modrinth.com/data/Ins7SzzR/a2b99cc9bc355ae461f71dff13f9a6808827d399_96.webp",
    "loaders": [
     "fabric",
@@ -11147,7 +11147,7 @@
   "6L3ydNi8": {
    "slug": "starter-kit",
    "title": "Starter Kit",
-   "downloads": 10801636,
+   "downloads": 10808756,
    "icon": "https://cdn.modrinth.com/data/6L3ydNi8/946acc868c947e5f3ff7a1c1ccb268d09a14f6e5_96.webp",
    "loaders": [
     "adventure",
@@ -11200,7 +11200,7 @@
   "vPNqo58Q": {
    "slug": "client-tweaks",
    "title": "Client Tweaks",
-   "downloads": 10726568,
+   "downloads": 10733690,
    "icon": "https://cdn.modrinth.com/data/vPNqo58Q/a9144fbd356f92c39be0e5b70d73136ac37fe0f6_96.webp",
    "loaders": [
     "fabric",
@@ -11235,7 +11235,7 @@
   "DMu0oBKf": {
    "slug": "crafting-tweaks",
    "title": "Crafting Tweaks",
-   "downloads": 10687079,
+   "downloads": 10697089,
    "icon": "https://cdn.modrinth.com/data/DMu0oBKf/32bc48587e2c1b0457698a9f4f9ecf3bbda6b42b_96.webp",
    "loaders": [
     "fabric",
@@ -11270,7 +11270,7 @@
   "W5rjEyqs": {
    "slug": "spartan-shields",
    "title": "Spartan Shields",
-   "downloads": 10664642,
+   "downloads": 10672226,
    "icon": "https://cdn.modrinth.com/data/W5rjEyqs/c8175d71a1936dd278092f0e0767f70607369fea_96.webp",
    "loaders": [
     "equipment",
@@ -11283,7 +11283,7 @@
   "t5W7Jfwy": {
    "slug": "pehkui",
    "title": "Pehkui",
-   "downloads": 10659332,
+   "downloads": 10668942,
    "icon": "https://cdn.modrinth.com/data/t5W7Jfwy/icon.png",
    "loaders": [
     "fabric",
@@ -11295,10 +11295,44 @@
    ],
    "builds": {}
   },
+  "1s5x833P": {
+   "slug": "neruina",
+   "title": "Neruina - Ticking Entity Fixer",
+   "downloads": 10667072,
+   "icon": "https://cdn.modrinth.com/data/1s5x833P/b7e3cf809f07d3cad88a60834c3e4e7248021744_96.webp",
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge",
+    "utility"
+   ],
+   "builds": {
+    "26.3": {
+     "neoforge": {
+      "release": "2026-10-15",
+      "latest": "2026-10-17"
+     },
+     "fabric": {
+      "release": "2026-10-15",
+      "latest": "2026-10-17"
+     }
+    },
+    "26.2": {
+     "neoforge": {
+      "release": "2026-07-17",
+      "latest": "2026-10-17"
+     },
+     "fabric": {
+      "release": "2026-07-17",
+      "latest": "2026-10-17"
+     }
+    }
+   }
+  },
   "ZVzW5oNS": {
    "slug": "incendium",
    "title": "Incendium Legacy",
-   "downloads": 10657297,
+   "downloads": 10665284,
    "icon": "https://cdn.modrinth.com/data/ZVzW5oNS/65c8dcaaf260e5b2182c228a1a442c792a7c4782.jpeg",
    "loaders": [
     "adventure",
@@ -11356,44 +11390,10 @@
     }
    }
   },
-  "1s5x833P": {
-   "slug": "neruina",
-   "title": "Neruina - Ticking Entity Fixer",
-   "downloads": 10651751,
-   "icon": "https://cdn.modrinth.com/data/1s5x833P/b7e3cf809f07d3cad88a60834c3e4e7248021744_96.webp",
-   "loaders": [
-    "fabric",
-    "forge",
-    "neoforge",
-    "utility"
-   ],
-   "builds": {
-    "26.3": {
-     "neoforge": {
-      "release": "2026-10-15",
-      "latest": "2026-10-17"
-     },
-     "fabric": {
-      "release": "2026-10-15",
-      "latest": "2026-10-17"
-     }
-    },
-    "26.2": {
-     "neoforge": {
-      "release": "2026-07-17",
-      "latest": "2026-10-17"
-     },
-     "fabric": {
-      "release": "2026-07-17",
-      "latest": "2026-10-17"
-     }
-    }
-   }
-  },
   "iAiqcykM": {
    "slug": "just-zoom",
    "title": "Just Zoom",
-   "downloads": 10622300,
+   "downloads": 10635286,
    "icon": "https://cdn.modrinth.com/data/iAiqcykM/1ea49f93020b6bd030f73dd39efc52b396d4dc8b.png",
    "loaders": [
     "fabric",
@@ -11427,7 +11427,7 @@
   "XD7XOrAF": {
    "slug": "overflowing-bars",
    "title": "Overflowing Bars",
-   "downloads": 10616745,
+   "downloads": 10627586,
    "icon": "https://cdn.modrinth.com/data/XD7XOrAF/d90f38fb48581277f61e9f4bb3e1cb8e9ebe47e1_96.webp",
    "loaders": [
     "fabric",
@@ -11463,7 +11463,7 @@
   "KUZAAwdD": {
    "slug": "better-mods-button",
    "title": "Better Mods Button",
-   "downloads": 10545738,
+   "downloads": 10553465,
    "icon": "https://cdn.modrinth.com/data/KUZAAwdD/285e532c2337f8b423228baad478ffafb670bb94_96.webp",
    "loaders": [
     "forge",
@@ -11475,7 +11475,7 @@
   "67kVxsaO": {
    "slug": "lmft",
    "title": "Load My F***ing Tags",
-   "downloads": 10539788,
+   "downloads": 10550245,
    "icon": "https://cdn.modrinth.com/data/67kVxsaO/7dcdbb029ee6ca870cfb67ede4937d132705f5dd_96.webp",
    "loaders": [
     "cursed",
@@ -11489,7 +11489,7 @@
   "FzyTKtVF": {
    "slug": "stoneworks",
    "title": "Stoneworks",
-   "downloads": 10489616,
+   "downloads": 10497885,
    "icon": "https://cdn.modrinth.com/data/FzyTKtVF/c18c5fb3daa800d5d612efac7d658eafdcf51129_96.webp",
    "loaders": [
     "decoration",
@@ -11523,7 +11523,7 @@
   "YhmgMVyu": {
    "slug": "aether",
    "title": "The Aether",
-   "downloads": 10464982,
+   "downloads": 10475991,
    "icon": "https://cdn.modrinth.com/data/YhmgMVyu/f76fada67156fdeab0974f5f791f936be524d5d3_96.webp",
    "loaders": [
     "adventure",
@@ -11545,7 +11545,7 @@
   "HpdHOPOp": {
    "slug": "nuit-interop",
    "title": "Nuit Interop",
-   "downloads": 10462921,
+   "downloads": 10473031,
    "icon": "https://cdn.modrinth.com/data/HpdHOPOp/4997b6770402493f256d0e1f56c6084ea44fce29_96.webp",
    "loaders": [
     "fabric",
@@ -11579,7 +11579,7 @@
   "bK3Ubu9p": {
    "slug": "simply-swords",
    "title": "Simply Swords",
-   "downloads": 10410622,
+   "downloads": 10419076,
    "icon": "https://cdn.modrinth.com/data/bK3Ubu9p/9d244d5a3b7a3a15ffa749d941fb6c40445afcdd_96.webp",
    "loaders": [
     "equipment",
@@ -11593,7 +11593,7 @@
   "z3TzcquW": {
    "slug": "fast-paintings",
    "title": "Fast Paintings",
-   "downloads": 10374926,
+   "downloads": 10386201,
    "icon": "https://cdn.modrinth.com/data/z3TzcquW/607a27538c10ba588108eb9717c975a21801a8f9_96.webp",
    "loaders": [
     "fabric",
@@ -11606,7 +11606,7 @@
   "wF189hn9": {
    "slug": "ukus-armor-hud",
    "title": "uku's Armor HUD",
-   "downloads": 10281686,
+   "downloads": 10302735,
    "icon": "https://cdn.modrinth.com/data/wF189hn9/a790ea8edc940ba6fd6bb92f298a19e438904e4a.png",
    "loaders": [
     "equipment",
@@ -11649,7 +11649,7 @@
   "yPlaLxD1": {
    "slug": "iron-furnaces",
    "title": "Iron Furnaces",
-   "downloads": 10232802,
+   "downloads": 10241761,
    "icon": "https://cdn.modrinth.com/data/yPlaLxD1/8788274b9d09dba7bfc99b29d9d0a708ba5e4e74.png",
    "loaders": [
     "forge",
@@ -11662,7 +11662,7 @@
   "Tkikq67H": {
    "slug": "regions-unexplored",
    "title": "Regions Unexplored",
-   "downloads": 10159562,
+   "downloads": 10167183,
    "icon": "https://cdn.modrinth.com/data/Tkikq67H/e1e85f8a91f09154c2e822fd9a15e167c0230a31_96.webp",
    "loaders": [
     "adventure",
@@ -11678,7 +11678,7 @@
   "HqKoXaXz": {
    "slug": "hardcore-revival",
    "title": "Hardcore Revival",
-   "downloads": 10126858,
+   "downloads": 10134321,
    "icon": "https://cdn.modrinth.com/data/HqKoXaXz/37f51593b0a4b81c66f6843c35010e5acc6ee08a_96.webp",
    "loaders": [
     "adventure",
@@ -11714,7 +11714,7 @@
   "i6fiqm5y": {
    "slug": "platform",
    "title": "Platform",
-   "downloads": 10100783,
+   "downloads": 10119463,
    "icon": "https://cdn.modrinth.com/data/i6fiqm5y/845fd627768b2d473416066a024c2c86bb3d9942_96.webp",
    "loaders": [
     "fabric",
